@@ -37,9 +37,6 @@ jobs:
       run: python scripts/crawlers/google_crawler.py
       continue-on-error: true
       
-    - name: Run OpenRouter crawler
-      run: python scripts/crawlers/openrouter_crawler.py
-      continue-on-error: true
       
     - name: Run DeepSeek crawler
       run: python scripts/crawlers/deepseek_crawler.py

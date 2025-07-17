@@ -350,62 +350,62 @@ class GoogleWebScraper(WebScraperBase):
         return pricing.get(model_id, {'input_price': 0, 'output_price': 0})
     
     def get_fallback_models(self) -> List[Dict[str, Any]]:
-        """스크래핑 실패 시 사용할 기본 모델 데이터"""
+        """스크래핑 실패 시 사용할 기본 모델 데이터 (2025년 1월 최신)"""
         return [
+            {
+                'id': 'gemini-2.0-flash',
+                'name': 'Gemini 2.0 Flash',
+                'description': 'Next generation multimodal model with enhanced capabilities',
+                'input_price': 0.075,
+                'output_price': 0.30,
+                'context_window': 1000000,
+                'max_output': 8192,
+                'features': ['chat', 'vision', 'audio', 'video', 'function-calling', 'fast', 'next-gen', 'multimodal'],
+                'status': 'ga'
+            },
             {
                 'id': 'gemini-1.5-pro',
                 'name': 'Gemini 1.5 Pro',
-                'description': 'Advanced model with 2M context window for complex tasks',
+                'description': 'Advanced model with 2M context window for complex reasoning',
                 'input_price': 1.25,
                 'output_price': 5.00,
                 'context_window': 2097152,
                 'max_output': 8192,
-                'features': ['chat', 'vision', 'audio', 'video', 'function-calling', 'json-mode', 'long-context', 'coding'],
+                'features': ['chat', 'vision', 'audio', 'video', 'function-calling', 'json-mode', 'long-context', 'coding', 'reasoning'],
                 'status': 'ga'
             },
             {
                 'id': 'gemini-1.5-flash',
                 'name': 'Gemini 1.5 Flash',
-                'description': 'Fast and efficient model optimized for speed',
+                'description': 'Fast and efficient multimodal model for production use',
                 'input_price': 0.075,
                 'output_price': 0.30,
                 'context_window': 1000000,
                 'max_output': 8192,
-                'features': ['chat', 'vision', 'audio', 'video', 'function-calling', 'fast', 'coding'],
+                'features': ['chat', 'vision', 'audio', 'video', 'function-calling', 'fast', 'coding', 'multimodal'],
                 'status': 'ga'
             },
             {
                 'id': 'gemini-1.5-flash-8b',
                 'name': 'Gemini 1.5 Flash-8B',
-                'description': 'Smallest and fastest Gemini model',
+                'description': 'Smallest and fastest Gemini model for lightweight tasks',
                 'input_price': 0.0375,
                 'output_price': 0.15,
                 'context_window': 1000000,
                 'max_output': 8192,
-                'features': ['chat', 'vision', 'function-calling', 'fast', 'lightweight'],
+                'features': ['chat', 'vision', 'function-calling', 'fast', 'lightweight', 'cost-effective'],
                 'status': 'ga'
             },
             {
-                'id': 'gemini-pro',
-                'name': 'Gemini 1.0 Pro',
-                'description': 'Versatile model for text generation',
-                'input_price': 0.50,
-                'output_price': 1.50,
-                'context_window': 32768,
+                'id': 'gemini-exp-1206',
+                'name': 'Gemini Exp 1206',
+                'description': 'Experimental model with enhanced reasoning capabilities',
+                'input_price': 1.25,
+                'output_price': 5.00,
+                'context_window': 2097152,
                 'max_output': 8192,
-                'features': ['chat', 'function-calling'],
-                'status': 'legacy'
-            },
-            {
-                'id': 'gemini-2.0-flash',
-                'name': 'Gemini 2.0 Flash',
-                'description': 'Next generation flash model with improved performance',
-                'input_price': 0.075,
-                'output_price': 0.30,
-                'context_window': 1000000,
-                'max_output': 8192,
-                'features': ['chat', 'vision', 'fast', 'next-gen'],
-                'status': 'preview'
+                'features': ['chat', 'vision', 'experimental', 'advanced-reasoning', 'research'],
+                'status': 'experimental'
             }
         ]
     

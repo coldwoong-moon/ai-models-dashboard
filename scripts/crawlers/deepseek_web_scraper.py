@@ -44,6 +44,10 @@ class DeepSeekWebScraper(WebScraperBase):
         # 중복 제거 및 병합
         models = self.merge_duplicate_models(models)
         
+        # 스크래핑 실패 시 기본 데이터 사용
+        if not models:
+            models = self.get_fallback_models()
+        
         return models
     
     def is_pricing_table(self, table) -> bool:
@@ -334,6 +338,44 @@ class DeepSeekWebScraper(WebScraperBase):
                 merged[model_id] = model
         
         return list(merged.values())
+    
+    def get_fallback_models(self) -> List[Dict[str, Any]]:
+        """스크래핑 실패 시 사용할 기본 모델 (2025년 1월 최신)"""
+        return [
+            {
+                'id': 'deepseek-chat',
+                'name': 'DeepSeek-V3',
+                'description': 'DeepSeek-V3: 671B parameter model excelling at reasoning, coding, and math',
+                'input_price': 0.14,
+                'output_price': 0.28,
+                'context_window': 64000,
+                'max_output': 8192,
+                'features': ['chat', 'coding', 'math', 'reasoning', 'long-context', 'multilingual', 'function-calling'],
+                'status': 'ga'
+            },
+            {
+                'id': 'deepseek-reasoner',
+                'name': 'DeepSeek-R1',
+                'description': 'Advanced reasoning model with transparent thinking process',
+                'input_price': 0.55,
+                'output_price': 2.19,
+                'context_window': 64000,
+                'max_output': 8192,
+                'features': ['reasoning', 'thinking', 'transparent-reasoning', 'math', 'complex-tasks'],
+                'status': 'ga'
+            },
+            {
+                'id': 'deepseek-coder',
+                'name': 'DeepSeek-Coder-V2',
+                'description': 'Specialized model for code generation and analysis',
+                'input_price': 0.14,
+                'output_price': 0.28,
+                'context_window': 128000,
+                'max_output': 8192,
+                'features': ['coding', 'code-generation', 'code-analysis', 'debugging', 'function-calling'],
+                'status': 'ga'
+            }
+        ]
     
     async def scrape_pricing(self) -> Dict[str, Dict[str, float]]:
         """가격 정보만 스크래핑"""

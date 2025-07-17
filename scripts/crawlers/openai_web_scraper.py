@@ -226,72 +226,72 @@ class OpenAIWebScraper(WebScraperBase):
             return 'ga'
     
     def get_fallback_models(self) -> List[Dict[str, Any]]:
-        """스크래핑 실패 시 사용할 기본 모델 데이터"""
+        """스크래핑 실패 시 사용할 기본 모델 데이터 (2025년 1월 최신)"""
         return [
             {
                 'id': 'gpt-4o',
                 'name': 'GPT-4o',
-                'description': 'Most capable model with multimodal abilities',
+                'description': 'Most capable multimodal model with vision and advanced reasoning',
                 'input_price': 2.50,
                 'output_price': 10.00,
                 'context_window': 128000,
                 'max_output': 16384,
-                'features': ['chat', 'vision', 'function-calling', 'json-mode'],
+                'features': ['chat', 'vision', 'function-calling', 'json-mode', 'multimodal'],
                 'status': 'ga'
             },
             {
                 'id': 'gpt-4o-mini',
                 'name': 'GPT-4o mini',
-                'description': 'Affordable small model for fast tasks',
+                'description': 'Affordable multimodal model with vision capabilities',
                 'input_price': 0.15,
                 'output_price': 0.60,
                 'context_window': 128000,
                 'max_output': 16384,
-                'features': ['chat', 'vision', 'function-calling', 'fast'],
+                'features': ['chat', 'vision', 'function-calling', 'json-mode', 'fast', 'multimodal'],
                 'status': 'ga'
             },
             {
-                'id': 'o1-preview',
-                'name': 'o1-preview',
-                'description': 'Reasoning model for complex tasks',
+                'id': 'o1',
+                'name': 'o1',
+                'description': 'Advanced reasoning model for complex problem-solving',
                 'input_price': 15.00,
                 'output_price': 60.00,
-                'context_window': 128000,
-                'max_output': 32768,
-                'features': ['reasoning', 'complex-tasks', 'thinking'],
-                'status': 'preview'
+                'context_window': 200000,
+                'max_output': 100000,
+                'features': ['reasoning', 'complex-tasks', 'thinking', 'math', 'coding'],
+                'status': 'ga'
             },
             {
                 'id': 'o1-mini',
                 'name': 'o1-mini',
-                'description': 'Fast reasoning model for coding',
+                'description': 'Fast reasoning model optimized for coding and STEM',
                 'input_price': 3.00,
                 'output_price': 12.00,
                 'context_window': 128000,
                 'max_output': 65536,
-                'features': ['reasoning', 'coding', 'fast', 'thinking'],
+                'features': ['reasoning', 'coding', 'fast', 'thinking', 'math', 'stem'],
                 'status': 'ga'
             },
             {
                 'id': 'gpt-4-turbo',
                 'name': 'GPT-4 Turbo',
-                'description': 'High-intelligence model',
+                'description': 'Previous generation high-intelligence model with vision',
                 'input_price': 10.00,
                 'output_price': 30.00,
                 'context_window': 128000,
                 'max_output': 4096,
-                'features': ['chat', 'vision', 'function-calling'],
+                'features': ['chat', 'vision', 'function-calling', 'json-mode'],
                 'status': 'ga'
             },
             {
                 'id': 'gpt-3.5-turbo',
                 'name': 'GPT-3.5 Turbo',
-                'description': 'Fast model for simple tasks',
+                'description': 'Fast and cost-effective model for simple tasks',
                 'input_price': 0.50,
                 'output_price': 1.50,
                 'context_window': 16385,
                 'max_output': 4096,
-                'features': ['chat', 'function-calling', 'fast'],
+                'features': ['chat', 'function-calling', 'fast', 'cost-effective'],
                 'status': 'ga'
             }
         ]

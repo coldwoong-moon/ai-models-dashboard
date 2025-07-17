@@ -293,61 +293,61 @@ class AnthropicWebScraper(WebScraperBase):
         return max_outputs.get(model_id, 4096)
     
     def get_fallback_models(self) -> List[Dict[str, Any]]:
-        """스크래핑 실패 시 사용할 기본 모델 데이터"""
+        """스크래핑 실패 시 사용할 기본 모델 데이터 (2025년 1월 최신)"""
         return [
             {
                 'id': 'claude-3-5-sonnet-20241022',
                 'name': 'Claude 3.5 Sonnet',
-                'description': 'Most intelligent model, combining top-tier performance with improved speed',
+                'description': 'Most intelligent model with advanced reasoning, coding, and vision capabilities',
                 'input_price': 3.00,
                 'output_price': 15.00,
                 'context_window': 200000,
                 'max_output': 8192,
-                'features': ['chat', 'coding', 'analysis', 'creative-writing', 'vision', 'computer-use'],
+                'features': ['chat', 'coding', 'analysis', 'creative-writing', 'vision', 'computer-use', 'reasoning'],
                 'status': 'ga'
             },
             {
                 'id': 'claude-3-5-haiku-20241022',
                 'name': 'Claude 3.5 Haiku',
-                'description': 'Fast and affordable model for everyday tasks',
+                'description': 'Fast and affordable model with vision capabilities for everyday tasks',
                 'input_price': 0.80,
                 'output_price': 4.00,
                 'context_window': 200000,
                 'max_output': 8192,
-                'features': ['chat', 'coding', 'fast', 'vision'],
+                'features': ['chat', 'coding', 'fast', 'vision', 'cost-effective'],
                 'status': 'ga'
             },
             {
                 'id': 'claude-3-opus-20240229',
                 'name': 'Claude 3 Opus',
-                'description': 'Powerful model for complex tasks and research',
+                'description': 'Most powerful model for complex reasoning and research tasks',
                 'input_price': 15.00,
                 'output_price': 75.00,
                 'context_window': 200000,
                 'max_output': 4096,
-                'features': ['chat', 'coding', 'analysis', 'research', 'complex-reasoning', 'vision'],
+                'features': ['chat', 'coding', 'analysis', 'research', 'complex-reasoning', 'vision', 'creative-writing'],
                 'status': 'ga'
             },
             {
                 'id': 'claude-3-sonnet-20240229',
                 'name': 'Claude 3 Sonnet',
-                'description': 'Balanced model for general use',
+                'description': 'Balanced model for general purpose tasks with good performance',
                 'input_price': 3.00,
                 'output_price': 15.00,
                 'context_window': 200000,
                 'max_output': 4096,
-                'features': ['chat', 'coding', 'analysis', 'vision'],
+                'features': ['chat', 'coding', 'analysis', 'vision', 'general-purpose'],
                 'status': 'ga'
             },
             {
                 'id': 'claude-3-haiku-20240307',
                 'name': 'Claude 3 Haiku',
-                'description': 'Fastest and most compact model',
+                'description': 'Fastest and most compact model for simple tasks',
                 'input_price': 0.25,
                 'output_price': 1.25,
                 'context_window': 200000,
                 'max_output': 4096,
-                'features': ['chat', 'fast', 'lightweight', 'vision'],
+                'features': ['chat', 'fast', 'lightweight', 'vision', 'simple-tasks'],
                 'status': 'ga'
             }
         ]

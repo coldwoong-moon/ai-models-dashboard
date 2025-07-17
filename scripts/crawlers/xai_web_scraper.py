@@ -351,29 +351,40 @@ class XAIWebScraper(WebScraperBase):
         return list(seen.values())
     
     def get_fallback_models(self) -> List[Dict[str, Any]]:
-        """스크래핑 실패 시 사용할 기본 모델"""
+        """스크래핑 실패 시 사용할 기본 모델 (2025년 1월 최신)"""
         return [
             {
                 'id': 'grok-2',
                 'name': 'Grok-2',
-                'description': 'State-of-the-art language model with real-time knowledge from X',
-                'input_price': 10.00,
-                'output_price': 30.00,
+                'description': 'Advanced reasoning model with real-time knowledge from X platform',
+                'input_price': 2.00,
+                'output_price': 10.00,
                 'context_window': 131072,
                 'max_output': 4096,
-                'features': ['chat', 'real-time', 'x-integration', 'reasoning', 'coding', 'multilingual'],
+                'features': ['chat', 'real-time', 'x-integration', 'reasoning', 'coding', 'multilingual', 'current-events'],
                 'status': 'ga'
             },
             {
                 'id': 'grok-2-vision',
                 'name': 'Grok-2 Vision',
-                'description': 'Multimodal model that understands both text and images',
-                'input_price': 10.00,
-                'output_price': 30.00,
+                'description': 'Multimodal model with vision capabilities and real-time knowledge',
+                'input_price': 2.00,
+                'output_price': 10.00,
                 'context_window': 131072,
                 'max_output': 4096,
-                'features': ['chat', 'vision', 'real-time', 'x-integration', 'multimodal', 'reasoning'],
+                'features': ['chat', 'vision', 'real-time', 'x-integration', 'multimodal', 'reasoning', 'image-analysis'],
                 'status': 'ga'
+            },
+            {
+                'id': 'grok-beta',
+                'name': 'Grok-3 (Beta)',
+                'description': 'Next generation Grok model with enhanced capabilities',
+                'input_price': 5.00,
+                'output_price': 15.00,
+                'context_window': 200000,
+                'max_output': 8192,
+                'features': ['chat', 'reasoning', 'advanced-capabilities', 'beta', 'next-gen'],
+                'status': 'beta'
             }
         ]
     

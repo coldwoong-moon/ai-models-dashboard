@@ -24,8 +24,12 @@ class DataProcessor:
             }
         }
         
-        # 각 제공업체 데이터 로드
+        # 각 제공업체 데이터 로드 (OpenRouter 제외)
+        excluded_providers = ['openrouter']
         for json_file in self.data_dir.glob("*.json"):
+            # OpenRouter 파일 스킵
+            if json_file.stem in excluded_providers:
+                continue
             try:
                 with open(json_file, 'r', encoding='utf-8') as f:
                     provider_data = json.load(f)

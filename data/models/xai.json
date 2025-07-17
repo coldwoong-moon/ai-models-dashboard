@@ -5,16 +5,16 @@
     "website": "",
     "api_endpoint": ""
   },
-  "last_updated": "2025-07-17T15:21:20.774719",
+  "last_updated": "2025-07-17T15:34:34.642839",
   "models": [
     {
       "id": "grok-2",
       "name": "Grok-2",
       "provider": "xai",
-      "description": "State-of-the-art language model with real-time knowledge from X",
+      "description": "Advanced reasoning model with real-time knowledge from X platform",
       "pricing": {
-        "input": 10.0,
-        "output": 30.0,
+        "input": 2.0,
+        "output": 10.0,
         "unit": "1M tokens"
       },
       "context_window": 131072,
@@ -27,23 +27,24 @@
         "x-integration",
         "reasoning",
         "coding",
-        "multilingual"
+        "multilingual",
+        "current-events"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T15:21:20.774575"
+      "last_updated": "2025-07-17T15:34:34.642726"
     },
     {
       "id": "grok-2-vision",
       "name": "Grok-2 Vision",
       "provider": "xai",
-      "description": "Multimodal model that understands both text and images",
+      "description": "Multimodal model with vision capabilities and real-time knowledge",
       "pricing": {
-        "input": 10.0,
-        "output": 30.0,
+        "input": 2.0,
+        "output": 10.0,
         "unit": "1M tokens"
       },
       "context_window": 131072,
@@ -56,7 +57,8 @@
         "real-time",
         "x-integration",
         "multimodal",
-        "reasoning"
+        "reasoning",
+        "image-analysis"
       ],
       "modalities": [
         "text",
@@ -64,7 +66,35 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T15:21:20.774595"
+      "last_updated": "2025-07-17T15:34:34.642741"
+    },
+    {
+      "id": "grok-beta",
+      "name": "Grok-3 (Beta)",
+      "provider": "xai",
+      "description": "Next generation Grok model with enhanced capabilities",
+      "pricing": {
+        "input": 5.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 200000,
+      "max_output": 8192,
+      "release_date": "2024",
+      "status": "beta",
+      "features": [
+        "chat",
+        "reasoning",
+        "advanced-capabilities",
+        "beta",
+        "next-gen"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T15:34:34.642744"
     }
   ]
 }
