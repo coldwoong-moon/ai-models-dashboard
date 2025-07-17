@@ -5,7 +5,7 @@
     "website": "https://openai.com",
     "api_endpoint": "https://api.openai.com/v1"
   },
-  "last_updated": "2025-07-17T16:57:28.118372",
+  "last_updated": "2025-07-17T12:13:48.379505",
   "models": [
     {
       "id": "gpt-4o",
@@ -34,7 +34,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T07:31:46.647962"
+      "last_updated": "2025-07-17T12:13:48.379374"
     },
     {
       "id": "gpt-4o-mini",
@@ -64,7 +64,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T07:31:46.647974"
+      "last_updated": "2025-07-17T12:13:48.379386"
     },
     {
       "id": "o1",
@@ -92,7 +92,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T07:31:46.647979"
+      "last_updated": "2025-07-17T12:13:48.379392"
     },
     {
       "id": "o1-mini",
@@ -121,7 +121,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T07:31:46.647983"
+      "last_updated": "2025-07-17T12:13:48.379397"
     },
     {
       "id": "gpt-4-turbo",
@@ -149,7 +149,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T07:31:46.647988"
+      "last_updated": "2025-07-17T12:13:48.379402"
     },
     {
       "id": "gpt-3.5-turbo",
@@ -176,110 +176,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T07:31:46.647992"
-    },
-    {
-      "id": "o3",
-      "name": "o3",
-      "provider": "openai",
-      "description": "Next generation reasoning model with enhanced problem-solving capabilities",
-      "pricing": {
-        "input": 20.0,
-        "output": 80.0,
-        "unit": "1M tokens"
-      },
-      "input_price": 20.0,
-      "output_price": 80.0,
-      "context_window": 256000,
-      "max_output": 32768,
-      "release_date": "2025-04-01",
-      "status": "ga",
-      "features": [
-        "reasoning",
-        "complex-tasks",
-        "thinking",
-        "math",
-        "coding",
-        "planning"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-07-17T16:57:28.118353",
-      "notes": "Released April 2025 - Successor to o1 with improved reasoning",
-      "source": "manual_curation"
-    },
-    {
-      "id": "o4-mini",
-      "name": "o4-mini",
-      "provider": "openai",
-      "description": "Fast reasoning model optimized for coding and STEM",
-      "pricing": {
-        "input": 5.0,
-        "output": 20.0,
-        "unit": "1M tokens"
-      },
-      "input_price": 5.0,
-      "output_price": 20.0,
-      "context_window": 128000,
-      "max_output": 16384,
-      "release_date": "2025-04-01",
-      "status": "ga",
-      "features": [
-        "reasoning",
-        "coding",
-        "fast",
-        "thinking",
-        "math",
-        "stem"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-07-17T16:57:28.118357",
-      "notes": "Released April 2025 - Faster and cheaper reasoning model",
-      "source": "manual_curation"
-    },
-    {
-      "id": "gpt-5-preview",
-      "name": "GPT-5 Preview",
-      "provider": "openai",
-      "description": "Early preview of revolutionary GPT-5 with multimodal capabilities",
-      "pricing": {
-        "input": 30.0,
-        "output": 120.0,
-        "unit": "1M tokens"
-      },
-      "input_price": 30.0,
-      "output_price": 120.0,
-      "context_window": 500000,
-      "max_output": 32768,
-      "release_date": "2025-06-15",
-      "status": "preview",
-      "features": [
-        "chat",
-        "vision",
-        "audio",
-        "video",
-        "reasoning",
-        "multimodal",
-        "tool-use"
-      ],
-      "modalities": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-07-17T16:57:28.118360",
-      "notes": "Preview release June 2025 - Full release expected Q3 2025",
-      "source": "manual_curation"
+      "last_updated": "2025-07-17T12:13:48.379412"
     }
   ]
 }
