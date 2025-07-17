@@ -358,5 +358,7 @@ class MistralCrawler(BaseCrawler):
         return benchmarks.get(model_id, {})
 
 if __name__ == "__main__":
-    crawler = MistralCrawler()
+    # 웹 스크래핑 버전 사용
+    from mistral_web_scraper import MistralCrawlerV2
+    crawler = MistralCrawlerV2()
     crawler.run()

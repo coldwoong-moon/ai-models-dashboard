@@ -5,7 +5,7 @@
     "website": "https://anthropic.com",
     "api_endpoint": "https://api.anthropic.com"
   },
-  "last_updated": "2025-07-17T10:37:05.877552",
+  "last_updated": "2025-07-17T15:20:37.910286",
   "models": [
     {
       "id": "claude-3-5-sonnet-20241022",
@@ -19,29 +19,23 @@
       },
       "context_window": 200000,
       "max_output": 8192,
-      "release_date": "2024-10-22",
+      "release_date": "",
       "status": "ga",
       "features": [
         "chat",
+        "coding",
+        "analysis",
+        "creative-writing",
         "vision",
-        "tool-use",
-        "json-mode",
         "computer-use"
       ],
       "modalities": [
         "text",
         "image"
       ],
-      "use_cases": [
-        "Complex reasoning",
-        "Creative writing",
-        "Code generation",
-        "Computer automation",
-        "Advanced analysis",
-        "Image understanding"
-      ],
-      "training_cutoff": "2024-04",
-      "last_updated": "2025-07-17T10:37:05.877498"
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T15:20:37.910161"
     },
     {
       "id": "claude-3-5-haiku-20241022",
@@ -49,39 +43,33 @@
       "provider": "anthropic",
       "description": "Fast and affordable model for everyday tasks",
       "pricing": {
-        "input": 1.0,
-        "output": 5.0,
+        "input": 0.8,
+        "output": 4.0,
         "unit": "1M tokens"
       },
       "context_window": 200000,
       "max_output": 8192,
-      "release_date": "2024-11-04",
+      "release_date": "",
       "status": "ga",
       "features": [
         "chat",
-        "vision",
-        "tool-use",
-        "json-mode"
+        "coding",
+        "fast",
+        "vision"
       ],
       "modalities": [
         "text",
         "image"
       ],
-      "use_cases": [
-        "Customer support",
-        "Content moderation",
-        "Quick data extraction",
-        "Simple automation",
-        "Basic image analysis"
-      ],
-      "training_cutoff": "2024-07",
-      "last_updated": "2025-07-17T10:37:05.877508"
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T15:20:37.910184"
     },
     {
       "id": "claude-3-opus-20240229",
       "name": "Claude 3 Opus",
       "provider": "anthropic",
-      "description": "Powerful model for highly complex tasks",
+      "description": "Powerful model for complex tasks and research",
       "pricing": {
         "input": 15.0,
         "output": 75.0,
@@ -89,31 +77,29 @@
       },
       "context_window": 200000,
       "max_output": 4096,
-      "release_date": "2024-02-29",
+      "release_date": "",
       "status": "ga",
       "features": [
         "chat",
-        "vision",
-        "tool-use"
+        "coding",
+        "analysis",
+        "research",
+        "complex-reasoning",
+        "vision"
       ],
       "modalities": [
         "text",
         "image"
       ],
-      "use_cases": [
-        "Research analysis",
-        "Complex problem solving",
-        "Advanced mathematics",
-        "Expert-level tasks"
-      ],
-      "training_cutoff": "2023-08",
-      "last_updated": "2025-07-17T10:37:05.877510"
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T15:20:37.910187"
     },
     {
       "id": "claude-3-sonnet-20240229",
       "name": "Claude 3 Sonnet",
       "provider": "anthropic",
-      "description": "Balanced performance and speed",
+      "description": "Balanced model for general use",
       "pricing": {
         "input": 3.0,
         "output": 15.0,
@@ -121,31 +107,27 @@
       },
       "context_window": 200000,
       "max_output": 4096,
-      "release_date": "2024-02-29",
+      "release_date": "",
       "status": "ga",
       "features": [
         "chat",
-        "vision",
-        "tool-use"
+        "coding",
+        "analysis",
+        "vision"
       ],
       "modalities": [
         "text",
         "image"
       ],
-      "use_cases": [
-        "General assistance",
-        "Content creation",
-        "Data analysis",
-        "Code review"
-      ],
-      "training_cutoff": "2023-08",
-      "last_updated": "2025-07-17T10:37:05.877511"
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T15:20:37.910188"
     },
     {
       "id": "claude-3-haiku-20240307",
       "name": "Claude 3 Haiku",
       "provider": "anthropic",
-      "description": "Fast, compact model for lightweight tasks",
+      "description": "Fastest and most compact model",
       "pricing": {
         "input": 0.25,
         "output": 1.25,
@@ -153,97 +135,21 @@
       },
       "context_window": 200000,
       "max_output": 4096,
-      "release_date": "2024-03-07",
+      "release_date": "",
       "status": "ga",
       "features": [
         "chat",
-        "vision",
-        "tool-use"
+        "fast",
+        "lightweight",
+        "vision"
       ],
       "modalities": [
         "text",
         "image"
       ],
-      "use_cases": [
-        "Quick responses",
-        "Simple queries",
-        "Basic tasks",
-        "High-volume processing"
-      ],
-      "training_cutoff": "2023-08",
-      "last_updated": "2025-07-17T10:37:05.877513"
-    },
-    {
-      "id": "claude-2.1",
-      "name": "Claude 2.1",
-      "provider": "anthropic",
-      "description": "Previous generation model",
-      "pricing": {
-        "input": 8.0,
-        "output": 24.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 200000,
-      "max_output": 4096,
-      "release_date": "2023-11-21",
-      "status": "deprecated",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
       "use_cases": [],
-      "training_cutoff": "2023-01",
-      "last_updated": "2025-07-17T10:37:05.877514"
-    },
-    {
-      "id": "claude-2.0",
-      "name": "Claude 2.0",
-      "provider": "anthropic",
-      "description": "Previous generation model",
-      "pricing": {
-        "input": 8.0,
-        "output": 24.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 100000,
-      "max_output": 4096,
-      "release_date": "2023-07-11",
-      "status": "deprecated",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "2023-01",
-      "last_updated": "2025-07-17T10:37:05.877515"
-    },
-    {
-      "id": "claude-instant-1.2",
-      "name": "Claude Instant 1.2",
-      "provider": "anthropic",
-      "description": "Fast, affordable model (legacy)",
-      "pricing": {
-        "input": 0.8,
-        "output": 2.4,
-        "unit": "1M tokens"
-      },
-      "context_window": 100000,
-      "max_output": 4096,
-      "release_date": "2023-08-09",
-      "status": "deprecated",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "2023-01",
-      "last_updated": "2025-07-17T10:37:05.877516"
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T15:20:37.910190"
     }
   ]
 }

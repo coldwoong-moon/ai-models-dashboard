@@ -246,5 +246,7 @@ class DeepSeekCrawler(BaseCrawler):
         return benchmarks.get(model_id, {})
 
 if __name__ == "__main__":
-    crawler = DeepSeekCrawler()
+    # 웹 스크래핑 버전 사용
+    from deepseek_web_scraper import DeepSeekCrawlerV2
+    crawler = DeepSeekCrawlerV2()
     crawler.run()

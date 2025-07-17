@@ -240,5 +240,7 @@ class GoogleCrawler(BaseCrawler):
         return {}
 
 if __name__ == "__main__":
-    crawler = GoogleCrawler()
+    # 웹 스크래핑 버전 사용
+    from google_web_scraper import GoogleCrawlerV2
+    crawler = GoogleCrawlerV2()
     crawler.run()

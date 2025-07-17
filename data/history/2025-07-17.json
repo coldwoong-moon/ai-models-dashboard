@@ -1,86 +1,89 @@
 {
   "date": "2025-07-17",
-  "timestamp": "2025-07-17T10:37:06.802925",
+  "timestamp": "2025-07-17T15:21:27.837128",
   "statistics": {
-    "total_models": 100,
-    "free_models": 100,
+    "total_models": 347,
+    "free_models": 347,
     "paid_models": 0,
-    "providers": 8,
+    "providers": 7,
     "provider_breakdown": {
-      "anthropic": 8,
-      "openai": 7,
-      "xai": 6,
-      "mistral": 10,
-      "openrouter": 44,
+      "anthropic": 5,
+      "openai": 6,
+      "xai": 2,
+      "mistral": 6,
+      "openrouter": 295,
       "cohere": 11,
-      "deepseek": 6,
-      "google": 8
+      "google": 22
     },
     "price_range": {
-      "min": 0.04,
-      "max": 30.0,
-      "average": 3.01
+      "min": 0.0,
+      "max": 150.0,
+      "average": 2.46
     },
     "features": {
-      "chat": 44,
-      "vision": 18,
-      "tool-use": 5,
-      "json-mode": 14,
+      "chat": 96,
+      "coding": 14,
+      "analysis": 3,
+      "creative-writing": 1,
+      "vision": 10,
       "computer-use": 1,
-      "function-calling": 22,
-      "reasoning": 23,
-      "complex-tasks": 1,
-      "coding": 8,
-      "fast": 1,
-      "real-time-data": 4,
-      "humor": 3,
-      "math": 2,
-      "experimental": 2,
-      "multilingual": 9,
-      "apache-license": 3,
-      "code-completion": 4,
-      "long-context": 1,
-      "fast-inference": 3,
-      "open-source": 1,
+      "fast": 55,
+      "research": 1,
+      "complex-reasoning": 1,
+      "lightweight": 3,
+      "function-calling": 7,
+      "json-mode": 1,
+      "reasoning": 27,
+      "complex-tasks": 2,
+      "thinking": 2,
+      "real-time": 2,
+      "x-integration": 2,
+      "multilingual": 10,
+      "multimodal": 34,
+      "cost-efficient": 1,
+      "mixture-of-experts": 2,
+      "efficient": 1,
+      "powerful": 1,
+      "image-understanding": 1,
+      "code-generation": 1,
+      "fill-in-the-middle": 1,
+      "multilingual-code": 1,
+      "large-context": 148,
+      "instruction": 48,
+      "mega-context": 18,
+      "online": 5,
+      "long-context": 3,
       "rag": 2,
+      "fast-inference": 2,
+      "experimental": 1,
       "embeddings": 4,
       "semantic-search": 2,
       "clustering": 1,
-      "lightweight": 2,
       "reranking": 2,
       "search-optimization": 2,
       "relevance-scoring": 1,
-      "debug": 1,
-      "problem-solving": 1,
-      "audio": 3,
-      "multimodal-live": 1,
-      "video": 2,
-      "code-execution": 2,
-      "education": 1,
-      "tutoring": 1
+      "audio": 1
     },
     "modalities": {
-      "text": 100,
-      "image": 18,
-      "audio": 3,
-      "video": 3
+      "text": 347,
+      "image": 10,
+      "audio": 1
     },
     "status": {
-      "ga": 88,
-      "deprecated": 4,
+      "ga": 328,
       "preview": 2,
-      "beta": 1,
-      "experimental": 5
+      "beta": 14,
+      "experimental": 3
     },
     "context_windows": {
       "min": 512,
       "max": 2097152,
-      "over_100k": 74,
-      "over_1m": 8
+      "over_100k": 173,
+      "over_1m": 16
     }
   },
   "provider_count": 8,
-  "model_count": 100,
+  "model_count": 347,
   "price_snapshot": [
     {
       "unique_id": "anthropic/claude-3-5-sonnet-20241022",
@@ -97,8 +100,8 @@
       "id": "claude-3-5-haiku-20241022",
       "name": "Claude 3.5 Haiku",
       "provider": "anthropic",
-      "input_price": 1.0,
-      "output_price": 5.0,
+      "input_price": 0.8,
+      "output_price": 4.0,
       "context_window": 200000,
       "status": "ga"
     },
@@ -131,36 +134,6 @@
       "output_price": 1.25,
       "context_window": 200000,
       "status": "ga"
-    },
-    {
-      "unique_id": "anthropic/claude-2.1",
-      "id": "claude-2.1",
-      "name": "Claude 2.1",
-      "provider": "anthropic",
-      "input_price": 8.0,
-      "output_price": 24.0,
-      "context_window": 200000,
-      "status": "deprecated"
-    },
-    {
-      "unique_id": "anthropic/claude-2.0",
-      "id": "claude-2.0",
-      "name": "Claude 2.0",
-      "provider": "anthropic",
-      "input_price": 8.0,
-      "output_price": 24.0,
-      "context_window": 100000,
-      "status": "deprecated"
-    },
-    {
-      "unique_id": "anthropic/claude-instant-1.2",
-      "id": "claude-instant-1.2",
-      "name": "Claude Instant 1.2",
-      "provider": "anthropic",
-      "input_price": 0.8,
-      "output_price": 2.4,
-      "context_window": 100000,
-      "status": "deprecated"
     },
     {
       "unique_id": "openai/gpt-4o",
@@ -200,7 +173,7 @@
       "input_price": 3.0,
       "output_price": 12.0,
       "context_window": 128000,
-      "status": "preview"
+      "status": "ga"
     },
     {
       "unique_id": "openai/gpt-4-turbo",
@@ -210,16 +183,6 @@
       "input_price": 10.0,
       "output_price": 30.0,
       "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "openai/gpt-4",
-      "id": "gpt-4",
-      "name": "GPT-4",
-      "provider": "openai",
-      "input_price": 30.0,
-      "output_price": 60.0,
-      "context_window": 8192,
       "status": "ga"
     },
     {
@@ -235,121 +198,61 @@
     {
       "unique_id": "xai/grok-2",
       "id": "grok-2",
-      "name": "Grok 2",
+      "name": "Grok-2",
       "provider": "xai",
-      "input_price": 2.0,
-      "output_price": 10.0,
+      "input_price": 10.0,
+      "output_price": 30.0,
       "context_window": 131072,
       "status": "ga"
     },
     {
       "unique_id": "xai/grok-2-vision",
       "id": "grok-2-vision",
-      "name": "Grok 2 Vision",
+      "name": "Grok-2 Vision",
       "provider": "xai",
-      "input_price": 2.0,
-      "output_price": 10.0,
+      "input_price": 10.0,
+      "output_price": 30.0,
       "context_window": 131072,
       "status": "ga"
     },
     {
-      "unique_id": "xai/grok-1.5-vision",
-      "id": "grok-1.5-vision",
-      "name": "Grok 1.5 Vision",
-      "provider": "xai",
-      "input_price": 2.0,
-      "output_price": 10.0,
-      "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "xai/grok-1.5",
-      "id": "grok-1.5",
-      "name": "Grok 1.5",
-      "provider": "xai",
-      "input_price": 2.0,
-      "output_price": 10.0,
-      "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "xai/grok-1",
-      "id": "grok-1",
-      "name": "Grok 1",
-      "provider": "xai",
-      "input_price": 2.0,
-      "output_price": 10.0,
-      "context_window": 8192,
-      "status": "deprecated"
-    },
-    {
-      "unique_id": "xai/grok-beta",
-      "id": "grok-beta",
-      "name": "Grok Beta",
-      "provider": "xai",
-      "input_price": 5.0,
-      "output_price": 15.0,
-      "context_window": 25000,
-      "status": "beta"
-    },
-    {
-      "unique_id": "mistral/mistral-large-2411",
-      "id": "mistral-large-2411",
-      "name": "Mistral Large 2411",
+      "unique_id": "mistral/mistral-large-latest",
+      "id": "mistral-large-latest",
+      "name": "Mistral Large",
       "provider": "mistral",
-      "input_price": 2.0,
-      "output_price": 6.0,
+      "input_price": 3.0,
+      "output_price": 9.0,
       "context_window": 128000,
       "status": "ga"
     },
     {
-      "unique_id": "mistral/mistral-large-2407",
-      "id": "mistral-large-2407",
-      "name": "Mistral Large 2407",
+      "unique_id": "mistral/mistral-small-latest",
+      "id": "mistral-small-latest",
+      "name": "Mistral Small",
       "provider": "mistral",
-      "input_price": 2.0,
-      "output_price": 6.0,
-      "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "mistral/mistral-medium",
-      "id": "mistral-medium",
-      "name": "Mistral Medium",
-      "provider": "mistral",
-      "input_price": 2.7,
-      "output_price": 8.1,
+      "input_price": 0.2,
+      "output_price": 0.6,
       "context_window": 32000,
       "status": "ga"
     },
     {
-      "unique_id": "mistral/mistral-small-2409",
-      "id": "mistral-small-2409",
-      "name": "Mistral Small 2409",
+      "unique_id": "mistral/open-mixtral-8x7b",
+      "id": "open-mixtral-8x7b",
+      "name": "Mixtral 8x7B",
       "provider": "mistral",
-      "input_price": 0.2,
-      "output_price": 0.6,
-      "context_window": 128000,
+      "input_price": 0.5,
+      "output_price": 0.5,
+      "context_window": 32000,
       "status": "ga"
     },
     {
-      "unique_id": "mistral/mistral-nemo",
-      "id": "mistral-nemo",
-      "name": "Mistral Nemo",
-      "provider": "mistral",
-      "input_price": 0.15,
-      "output_price": 0.15,
-      "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "mistral/pixtral-large-2411",
-      "id": "pixtral-large-2411",
-      "name": "Pixtral Large 2411",
+      "unique_id": "mistral/open-mixtral-8x22b",
+      "id": "open-mixtral-8x22b",
+      "name": "Mixtral 8x22B",
       "provider": "mistral",
       "input_price": 2.0,
       "output_price": 6.0,
-      "context_window": 128000,
+      "context_window": 65536,
       "status": "ga"
     },
     {
@@ -363,9 +266,9 @@
       "status": "ga"
     },
     {
-      "unique_id": "mistral/codestral-2405",
-      "id": "codestral-2405",
-      "name": "Codestral 2405",
+      "unique_id": "mistral/codestral-latest",
+      "id": "codestral-latest",
+      "name": "Codestral",
       "provider": "mistral",
       "input_price": 0.2,
       "output_price": 0.6,
@@ -373,29 +276,49 @@
       "status": "ga"
     },
     {
-      "unique_id": "mistral/codestral-mamba-2407",
-      "id": "codestral-mamba-2407",
-      "name": "Codestral Mamba 2407",
-      "provider": "mistral",
-      "input_price": 0.25,
-      "output_price": 0.25,
-      "context_window": 256000,
+      "unique_id": "openrouter/switchpoint/router",
+      "id": "switchpoint/router",
+      "name": "Switchpoint Router",
+      "provider": "openrouter",
+      "input_price": 0.85,
+      "output_price": 3.4,
+      "context_window": 131072,
       "status": "ga"
     },
     {
-      "unique_id": "mistral/mistral-7b",
-      "id": "mistral-7b",
-      "name": "Mistral 7B",
-      "provider": "mistral",
-      "input_price": 0.25,
-      "output_price": 0.25,
-      "context_window": 32000,
+      "unique_id": "openrouter/moonshotai/kimi-k2:free",
+      "id": "moonshotai/kimi-k2:free",
+      "name": "MoonshotAI: Kimi K2 (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 65536,
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/mistralai/mistral-medium-3",
-      "id": "mistralai/mistral-medium-3",
-      "name": "Mistral",
+      "unique_id": "openrouter/moonshotai/kimi-k2",
+      "id": "moonshotai/kimi-k2",
+      "name": "MoonshotAI: Kimi K2",
+      "provider": "openrouter",
+      "input_price": 0.14,
+      "output_price": 2.49,
+      "context_window": 63000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/thudm/glm-4.1v-9b-thinking",
+      "id": "thudm/glm-4.1v-9b-thinking",
+      "name": "THUDM: GLM 4.1V 9B Thinking",
+      "provider": "openrouter",
+      "input_price": 0.035,
+      "output_price": 0.138,
+      "context_window": 65536,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/devstral-medium",
+      "id": "mistralai/devstral-medium",
+      "name": "Mistral: Devstral Medium",
       "provider": "openrouter",
       "input_price": 0.4,
       "output_price": 2.0,
@@ -403,9 +326,869 @@
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/mistralai/devstral-small",
+      "id": "mistralai/devstral-small",
+      "name": "Mistral: Devstral Small 1.1",
+      "provider": "openrouter",
+      "input_price": 0.07,
+      "output_price": 0.28,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "name": "Venice: Uncensored (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/x-ai/grok-4",
+      "id": "x-ai/grok-4",
+      "name": "xAI: Grok 4",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 256000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-3n-e2b-it:free",
+      "id": "google/gemma-3n-e2b-it:free",
+      "name": "Google: Gemma 3n 2B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/tencent/hunyuan-a13b-instruct:free",
+      "id": "tencent/hunyuan-a13b-instruct:free",
+      "name": "Tencent: Hunyuan A13B Instruct (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/tencent/hunyuan-a13b-instruct",
+      "id": "tencent/hunyuan-a13b-instruct",
+      "name": "Tencent: Hunyuan A13B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.03,
+      "output_price": 0.03,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/tngtech/deepseek-r1t2-chimera:free",
+      "id": "tngtech/deepseek-r1t2-chimera:free",
+      "name": "TNG: DeepSeek R1T2 Chimera (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/morph/morph-v3-large",
+      "id": "morph/morph-v3-large",
+      "name": "Morph: Morph V3 Large",
+      "provider": "openrouter",
+      "input_price": 1.2,
+      "output_price": 2.7,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/morph/morph-v3-fast",
+      "id": "morph/morph-v3-fast",
+      "name": "Morph: Morph V3 Fast",
+      "provider": "openrouter",
+      "input_price": 1.2,
+      "output_price": 2.7,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/baidu/ernie-4.5-300b-a47b",
+      "id": "baidu/ernie-4.5-300b-a47b",
+      "name": "Baidu: ERNIE 4.5 300B A47B ",
+      "provider": "openrouter",
+      "input_price": 0.28,
+      "output_price": 1.1,
+      "context_window": 123000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/inception/mercury",
+      "id": "inception/mercury",
+      "name": "Inception: Mercury",
+      "provider": "openrouter",
+      "input_price": 0.25,
+      "output_price": 1.0,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/morph/morph-v2",
+      "id": "morph/morph-v2",
+      "name": "Morph: Fast Apply",
+      "provider": "openrouter",
+      "input_price": 1.2,
+      "output_price": 2.7,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-small-3.2-24b-instruct:free",
+      "id": "mistralai/mistral-small-3.2-24b-instruct:free",
+      "name": "Mistral: Mistral Small 3.2 24B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 96000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-small-3.2-24b-instruct",
+      "id": "mistralai/mistral-small-3.2-24b-instruct",
+      "name": "Mistral: Mistral Small 3.2 24B",
+      "provider": "openrouter",
+      "input_price": 0.05,
+      "output_price": 0.1,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/minimax/minimax-m1",
+      "id": "minimax/minimax-m1",
+      "name": "MiniMax: MiniMax M1",
+      "provider": "openrouter",
+      "input_price": 0.3,
+      "output_price": 1.65,
+      "context_window": 1000000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemini-2.5-flash",
+      "id": "google/gemini-2.5-flash",
+      "name": "Google: Gemini 2.5 Flash",
+      "provider": "openrouter",
+      "input_price": 0.3,
+      "output_price": 2.5,
+      "context_window": 1048576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemini-2.5-pro",
+      "id": "google/gemini-2.5-pro",
+      "name": "Google: Gemini 2.5 Pro",
+      "provider": "openrouter",
+      "input_price": 1.25,
+      "output_price": 10.0,
+      "context_window": 1048576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/moonshotai/kimi-dev-72b:free",
+      "id": "moonshotai/kimi-dev-72b:free",
+      "name": "Kimi Dev 72b (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/o3-pro",
+      "id": "openai/o3-pro",
+      "name": "OpenAI: o3 Pro",
+      "provider": "openrouter",
+      "input_price": 20.0,
+      "output_price": 80.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/x-ai/grok-3-mini",
+      "id": "x-ai/grok-3-mini",
+      "name": "xAI: Grok 3 Mini",
+      "provider": "openrouter",
+      "input_price": 0.3,
+      "output_price": 0.5,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/x-ai/grok-3",
+      "id": "x-ai/grok-3",
+      "name": "xAI: Grok 3",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/magistral-small-2506",
+      "id": "mistralai/magistral-small-2506",
+      "name": "Mistral: Magistral Small 2506",
+      "provider": "openrouter",
+      "input_price": 0.1,
+      "output_price": 0.3,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/magistral-medium-2506",
+      "id": "mistralai/magistral-medium-2506",
+      "name": "Mistral: Magistral Medium 2506",
+      "provider": "openrouter",
+      "input_price": 2.0,
+      "output_price": 5.0,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/magistral-medium-2506:thinking",
+      "id": "mistralai/magistral-medium-2506:thinking",
+      "name": "Mistral: Magistral Medium 2506 (thinking)",
+      "provider": "openrouter",
+      "input_price": 2.0,
+      "output_price": 5.0,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-distill-qwen-7b",
+      "id": "deepseek/deepseek-r1-distill-qwen-7b",
+      "name": "DeepSeek: R1 Distill Qwen 7B",
+      "provider": "openrouter",
+      "input_price": 0.1,
+      "output_price": 0.2,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-0528-qwen3-8b:free",
+      "id": "deepseek/deepseek-r1-0528-qwen3-8b:free",
+      "name": "DeepSeek: Deepseek R1 0528 Qwen3 8B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-0528-qwen3-8b",
+      "id": "deepseek/deepseek-r1-0528-qwen3-8b",
+      "name": "DeepSeek: Deepseek R1 0528 Qwen3 8B",
+      "provider": "openrouter",
+      "input_price": 0.01,
+      "output_price": 0.02,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-0528:free",
+      "id": "deepseek/deepseek-r1-0528:free",
+      "name": "DeepSeek: R1 0528 (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-0528",
+      "id": "deepseek/deepseek-r1-0528",
+      "name": "DeepSeek: R1 0528",
+      "provider": "openrouter",
+      "input_price": 0.272,
+      "output_price": 0.272,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/sarvamai/sarvam-m:free",
+      "id": "sarvamai/sarvam-m:free",
+      "name": "Sarvam AI: Sarvam-M (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/sarvamai/sarvam-m",
+      "id": "sarvamai/sarvam-m",
+      "name": "Sarvam AI: Sarvam-M",
+      "provider": "openrouter",
+      "input_price": 0.022,
+      "output_price": 0.022,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-opus-4",
+      "id": "anthropic/claude-opus-4",
+      "name": "Anthropic: Claude Opus 4",
+      "provider": "openrouter",
+      "input_price": 15.0,
+      "output_price": 75.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-sonnet-4",
+      "id": "anthropic/claude-sonnet-4",
+      "name": "Anthropic: Claude Sonnet 4",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/devstral-small-2505:free",
+      "id": "mistralai/devstral-small-2505:free",
+      "name": "Mistral: Devstral Small 2505 (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/devstral-small-2505",
+      "id": "mistralai/devstral-small-2505",
+      "name": "Mistral: Devstral Small 2505",
+      "provider": "openrouter",
+      "input_price": 0.03,
+      "output_price": 0.03,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-3n-e4b-it:free",
+      "id": "google/gemma-3n-e4b-it:free",
+      "name": "Google: Gemma 3n 4B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-3n-e4b-it",
+      "id": "google/gemma-3n-e4b-it",
+      "name": "Google: Gemma 3n 4B",
+      "provider": "openrouter",
+      "input_price": 0.02,
+      "output_price": 0.04,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/codex-mini",
+      "id": "openai/codex-mini",
+      "name": "OpenAI: Codex Mini",
+      "provider": "openrouter",
+      "input_price": 1.5,
+      "output_price": 6.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-medium-3",
+      "id": "mistralai/mistral-medium-3",
+      "name": "Mistral: Mistral Medium 3",
+      "provider": "openrouter",
+      "input_price": 0.4,
+      "output_price": 2.0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/arcee-ai/caller-large",
+      "id": "arcee-ai/caller-large",
+      "name": "Arcee AI: Caller Large",
+      "provider": "openrouter",
+      "input_price": 0.55,
+      "output_price": 0.85,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/arcee-ai/spotlight",
+      "id": "arcee-ai/spotlight",
+      "name": "Arcee AI: Spotlight",
+      "provider": "openrouter",
+      "input_price": 0.18,
+      "output_price": 0.18,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/arcee-ai/maestro-reasoning",
+      "id": "arcee-ai/maestro-reasoning",
+      "name": "Arcee AI: Maestro Reasoning",
+      "provider": "openrouter",
+      "input_price": 0.9,
+      "output_price": 3.3,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/arcee-ai/virtuoso-large",
+      "id": "arcee-ai/virtuoso-large",
+      "name": "Arcee AI: Virtuoso Large",
+      "provider": "openrouter",
+      "input_price": 0.75,
+      "output_price": 1.2,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/arcee-ai/coder-large",
+      "id": "arcee-ai/coder-large",
+      "name": "Arcee AI: Coder Large",
+      "provider": "openrouter",
+      "input_price": 0.5,
+      "output_price": 0.8,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/arcee-ai/virtuoso-medium-v2",
+      "id": "arcee-ai/virtuoso-medium-v2",
+      "name": "Arcee AI: Virtuoso Medium V2",
+      "provider": "openrouter",
+      "input_price": 0.5,
+      "output_price": 0.8,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/arcee-ai/arcee-blitz",
+      "id": "arcee-ai/arcee-blitz",
+      "name": "Arcee AI: Arcee Blitz",
+      "provider": "openrouter",
+      "input_price": 0.45,
+      "output_price": 0.75,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/microsoft/phi-4-reasoning-plus",
+      "id": "microsoft/phi-4-reasoning-plus",
+      "name": "Microsoft: Phi 4 Reasoning Plus",
+      "provider": "openrouter",
+      "input_price": 0.07,
+      "output_price": 0.35,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/inception/mercury-coder",
+      "id": "inception/mercury-coder",
+      "name": "Inception: Mercury Coder",
+      "provider": "openrouter",
+      "input_price": 0.25,
+      "output_price": 1.0,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-4b:free",
+      "id": "qwen/qwen3-4b:free",
+      "name": "Qwen: Qwen3 4B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/opengvlab/internvl3-14b",
+      "id": "opengvlab/internvl3-14b",
+      "name": "OpenGVLab: InternVL3 14B",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 0.4,
+      "context_window": 12288,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-prover-v2",
+      "id": "deepseek/deepseek-prover-v2",
+      "name": "DeepSeek: DeepSeek Prover V2",
+      "provider": "openrouter",
+      "input_price": 0.5,
+      "output_price": 2.18,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-guard-4-12b",
+      "id": "meta-llama/llama-guard-4-12b",
+      "name": "Meta: Llama Guard 4 12B",
+      "provider": "openrouter",
+      "input_price": 0.05,
+      "output_price": 0.05,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-30b-a3b:free",
+      "id": "qwen/qwen3-30b-a3b:free",
+      "name": "Qwen: Qwen3 30B A3B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-30b-a3b",
+      "id": "qwen/qwen3-30b-a3b",
+      "name": "Qwen: Qwen3 30B A3B",
+      "provider": "openrouter",
+      "input_price": 0.08,
+      "output_price": 0.29,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-8b:free",
+      "id": "qwen/qwen3-8b:free",
+      "name": "Qwen: Qwen3 8B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-8b",
+      "id": "qwen/qwen3-8b",
+      "name": "Qwen: Qwen3 8B",
+      "provider": "openrouter",
+      "input_price": 0.035,
+      "output_price": 0.138,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-14b:free",
+      "id": "qwen/qwen3-14b:free",
+      "name": "Qwen: Qwen3 14B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-14b",
+      "id": "qwen/qwen3-14b",
+      "name": "Qwen: Qwen3 14B",
+      "provider": "openrouter",
+      "input_price": 0.06,
+      "output_price": 0.24,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-32b:free",
+      "id": "qwen/qwen3-32b:free",
+      "name": "Qwen: Qwen3 32B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-32b",
+      "id": "qwen/qwen3-32b",
+      "name": "Qwen: Qwen3 32B",
+      "provider": "openrouter",
+      "input_price": 0.1,
+      "output_price": 0.3,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-235b-a22b:free",
+      "id": "qwen/qwen3-235b-a22b:free",
+      "name": "Qwen: Qwen3 235B A22B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen3-235b-a22b",
+      "id": "qwen/qwen3-235b-a22b",
+      "name": "Qwen: Qwen3 235B A22B",
+      "provider": "openrouter",
+      "input_price": 0.13,
+      "output_price": 0.6,
+      "context_window": 40960,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/tngtech/deepseek-r1t-chimera:free",
+      "id": "tngtech/deepseek-r1t-chimera:free",
+      "name": "TNG: DeepSeek R1T Chimera (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/microsoft/mai-ds-r1:free",
+      "id": "microsoft/mai-ds-r1:free",
+      "name": "Microsoft: MAI DS R1 (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/thudm/glm-z1-32b:free",
+      "id": "thudm/glm-z1-32b:free",
+      "name": "THUDM: GLM Z1 32B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/thudm/glm-4-32b:free",
+      "id": "thudm/glm-4-32b:free",
+      "name": "THUDM: GLM 4 32B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/thudm/glm-4-32b",
+      "id": "thudm/glm-4-32b",
+      "name": "THUDM: GLM 4 32B",
+      "provider": "openrouter",
+      "input_price": 0.24,
+      "output_price": 0.24,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/o4-mini-high",
+      "id": "openai/o4-mini-high",
+      "name": "OpenAI: o4 Mini High",
+      "provider": "openrouter",
+      "input_price": 1.1,
+      "output_price": 4.4,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/o3",
+      "id": "openai/o3",
+      "name": "OpenAI: o3",
+      "provider": "openrouter",
+      "input_price": 2.0,
+      "output_price": 8.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/o4-mini",
+      "id": "openai/o4-mini",
+      "name": "OpenAI: o4 Mini",
+      "provider": "openrouter",
+      "input_price": 1.1,
+      "output_price": 4.4,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/shisa-ai/shisa-v2-llama3.3-70b:free",
+      "id": "shisa-ai/shisa-v2-llama3.3-70b:free",
+      "name": "Shisa AI: Shisa V2 Llama 3.3 70B  (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-4.1",
+      "id": "openai/gpt-4.1",
+      "name": "OpenAI: GPT-4.1",
+      "provider": "openrouter",
+      "input_price": 2.0,
+      "output_price": 8.0,
+      "context_window": 1047576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-4.1-mini",
+      "id": "openai/gpt-4.1-mini",
+      "name": "OpenAI: GPT-4.1 Mini",
+      "provider": "openrouter",
+      "input_price": 0.4,
+      "output_price": 1.6,
+      "context_window": 1047576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-4.1-nano",
+      "id": "openai/gpt-4.1-nano",
+      "name": "OpenAI: GPT-4.1 Nano",
+      "provider": "openrouter",
+      "input_price": 0.1,
+      "output_price": 0.4,
+      "context_window": 1047576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/eleutherai/llemma_7b",
+      "id": "eleutherai/llemma_7b",
+      "name": "EleutherAI: Llemma 7b",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 1.2,
+      "context_window": 4096,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/alfredpros/codellama-7b-instruct-solidity",
+      "id": "alfredpros/codellama-7b-instruct-solidity",
+      "name": "AlfredPros: CodeLLaMa 7B Instruct Solidity",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 1.2,
+      "context_window": 4096,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/moonshotai/kimi-vl-a3b-thinking:free",
+      "id": "moonshotai/kimi-vl-a3b-thinking:free",
+      "name": "Moonshot AI: Kimi VL A3B Thinking (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/x-ai/grok-3-mini-beta",
+      "id": "x-ai/grok-3-mini-beta",
+      "name": "xAI: Grok 3 Mini Beta",
+      "provider": "openrouter",
+      "input_price": 0.3,
+      "output_price": 0.5,
+      "context_window": 131072,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/x-ai/grok-3-beta",
+      "id": "x-ai/grok-3-beta",
+      "name": "xAI: Grok 3 Beta",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 131072,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-4-maverick",
+      "id": "meta-llama/llama-4-maverick",
+      "name": "Meta: Llama 4 Maverick",
+      "provider": "openrouter",
+      "input_price": 0.15,
+      "output_price": 0.6,
+      "context_window": 1048576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-4-scout",
+      "id": "meta-llama/llama-4-scout",
+      "name": "Meta: Llama 4 Scout",
+      "provider": "openrouter",
+      "input_price": 0.08,
+      "output_price": 0.3,
+      "context_window": 1048576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-v3-base:free",
+      "id": "deepseek/deepseek-v3-base:free",
+      "name": "DeepSeek: DeepSeek V3 Base (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/scb10x/llama3.1-typhoon2-70b-instruct",
+      "id": "scb10x/llama3.1-typhoon2-70b-instruct",
+      "name": "Typhoon2 70B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.88,
+      "output_price": 0.88,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemini-2.5-pro-exp-03-25",
+      "id": "google/gemini-2.5-pro-exp-03-25",
+      "name": "Google: Gemini 2.5 Pro Experimental",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 1048576,
+      "status": "experimental"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen2.5-vl-32b-instruct:free",
+      "id": "qwen/qwen2.5-vl-32b-instruct:free",
+      "name": "Qwen: Qwen2.5 VL 32B Instruct (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen2.5-vl-32b-instruct",
+      "id": "qwen/qwen2.5-vl-32b-instruct",
+      "name": "Qwen: Qwen2.5 VL 32B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 0.6,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/deepseek/deepseek-chat-v3-0324:free",
       "id": "deepseek/deepseek-chat-v3-0324:free",
-      "name": "DeepSeek",
+      "name": "DeepSeek: DeepSeek V3 0324 (free)",
       "provider": "openrouter",
       "input_price": 0,
       "output_price": 0,
@@ -415,7 +1198,7 @@
     {
       "unique_id": "openrouter/deepseek/deepseek-chat-v3-0324",
       "id": "deepseek/deepseek-chat-v3-0324",
-      "name": "DeepSeek",
+      "name": "DeepSeek: DeepSeek V3 0324",
       "provider": "openrouter",
       "input_price": 0.25,
       "output_price": 0.85,
@@ -423,29 +1206,639 @@
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/openai/gpt-4o-mini-search-preview",
-      "id": "openai/gpt-4o-mini-search-preview",
-      "name": "OpenAI",
+      "unique_id": "openrouter/featherless/qwerky-72b:free",
+      "id": "featherless/qwerky-72b:free",
+      "name": "Qwerky 72B (free)",
       "provider": "openrouter",
-      "input_price": 0.15,
-      "output_price": 0.6,
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/o1-pro",
+      "id": "openai/o1-pro",
+      "name": "OpenAI: o1-pro",
+      "provider": "openrouter",
+      "input_price": 150.0,
+      "output_price": 600.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-small-3.1-24b-instruct:free",
+      "id": "mistralai/mistral-small-3.1-24b-instruct:free",
+      "name": "Mistral: Mistral Small 3.1 24B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
       "context_window": 128000,
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/openai/gpt-4o-search-preview",
-      "id": "openai/gpt-4o-search-preview",
-      "name": "OpenAI",
+      "unique_id": "openrouter/mistralai/mistral-small-3.1-24b-instruct",
+      "id": "mistralai/mistral-small-3.1-24b-instruct",
+      "name": "Mistral: Mistral Small 3.1 24B",
+      "provider": "openrouter",
+      "input_price": 0.05,
+      "output_price": 0.1,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-3-4b-it:free",
+      "id": "google/gemma-3-4b-it:free",
+      "name": "Google: Gemma 3 4B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-3-4b-it",
+      "id": "google/gemma-3-4b-it",
+      "name": "Google: Gemma 3 4B",
+      "provider": "openrouter",
+      "input_price": 0.02,
+      "output_price": 0.04,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/ai21/jamba-1.6-large",
+      "id": "ai21/jamba-1.6-large",
+      "name": "AI21: Jamba 1.6 Large",
+      "provider": "openrouter",
+      "input_price": 2.0,
+      "output_price": 8.0,
+      "context_window": 256000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/ai21/jamba-1.6-mini",
+      "id": "ai21/jamba-1.6-mini",
+      "name": "AI21: Jamba Mini 1.6",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 0.4,
+      "context_window": 256000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-3-12b-it:free",
+      "id": "google/gemma-3-12b-it:free",
+      "name": "Google: Gemma 3 12B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 96000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-3-12b-it",
+      "id": "google/gemma-3-12b-it",
+      "name": "Google: Gemma 3 12B",
+      "provider": "openrouter",
+      "input_price": 0.03,
+      "output_price": 0.03,
+      "context_window": 96000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/cohere/command-a",
+      "id": "cohere/command-a",
+      "name": "Cohere: Command A",
       "provider": "openrouter",
       "input_price": 2.5,
       "output_price": 10.0,
+      "context_window": 256000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/rekaai/reka-flash-3:free",
+      "id": "rekaai/reka-flash-3:free",
+      "name": "Reka: Flash 3 (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/rekaai/reka-flash-3",
+      "id": "rekaai/reka-flash-3",
+      "name": "Reka: Flash 3",
+      "provider": "openrouter",
+      "input_price": 0.013,
+      "output_price": 0.013,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-3-27b-it:free",
+      "id": "google/gemma-3-27b-it:free",
+      "name": "Google: Gemma 3 27B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 96000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-3-27b-it",
+      "id": "google/gemma-3-27b-it",
+      "name": "Google: Gemma 3 27B",
+      "provider": "openrouter",
+      "input_price": 0.09,
+      "output_price": 0.17,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/thedrummer/skyfall-36b-v2",
+      "id": "thedrummer/skyfall-36b-v2",
+      "name": "TheDrummer: Skyfall 36B V2",
+      "provider": "openrouter",
+      "input_price": 0.4,
+      "output_price": 0.7,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/microsoft/phi-4-multimodal-instruct",
+      "id": "microsoft/phi-4-multimodal-instruct",
+      "name": "Microsoft: Phi 4 Multimodal Instruct",
+      "provider": "openrouter",
+      "input_price": 0.05,
+      "output_price": 0.1,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/perplexity/sonar-reasoning-pro",
+      "id": "perplexity/sonar-reasoning-pro",
+      "name": "Perplexity: Sonar Reasoning Pro",
+      "provider": "openrouter",
+      "input_price": 2.0,
+      "output_price": 8.0,
       "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/perplexity/sonar-pro",
+      "id": "perplexity/sonar-pro",
+      "name": "Perplexity: Sonar Pro",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/perplexity/sonar-deep-research",
+      "id": "perplexity/sonar-deep-research",
+      "name": "Perplexity: Sonar Deep Research",
+      "provider": "openrouter",
+      "input_price": 2.0,
+      "output_price": 8.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwq-32b:free",
+      "id": "qwen/qwq-32b:free",
+      "name": "Qwen: QwQ 32B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwq-32b",
+      "id": "qwen/qwq-32b",
+      "name": "Qwen: QwQ 32B",
+      "provider": "openrouter",
+      "input_price": 0.075,
+      "output_price": 0.15,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemini-2.0-flash-lite-001",
+      "id": "google/gemini-2.0-flash-lite-001",
+      "name": "Google: Gemini 2.0 Flash Lite",
+      "provider": "openrouter",
+      "input_price": 0.075,
+      "output_price": 0.3,
+      "context_window": 1048576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3.7-sonnet",
+      "id": "anthropic/claude-3.7-sonnet",
+      "name": "Anthropic: Claude 3.7 Sonnet",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3.7-sonnet:thinking",
+      "id": "anthropic/claude-3.7-sonnet:thinking",
+      "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3.7-sonnet:beta",
+      "id": "anthropic/claude-3.7-sonnet:beta",
+      "name": "Anthropic: Claude 3.7 Sonnet (self-moderated)",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 200000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/perplexity/r1-1776",
+      "id": "perplexity/r1-1776",
+      "name": "Perplexity: R1 1776",
+      "provider": "openrouter",
+      "input_price": 2.0,
+      "output_price": 8.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-saba",
+      "id": "mistralai/mistral-saba",
+      "name": "Mistral: Saba",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 0.6,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+      "id": "cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+      "name": "Dolphin3.0 R1 Mistral 24B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/cognitivecomputations/dolphin3.0-r1-mistral-24b",
+      "id": "cognitivecomputations/dolphin3.0-r1-mistral-24b",
+      "name": "Dolphin3.0 R1 Mistral 24B",
+      "provider": "openrouter",
+      "input_price": 0.013,
+      "output_price": 0.013,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/cognitivecomputations/dolphin3.0-mistral-24b:free",
+      "id": "cognitivecomputations/dolphin3.0-mistral-24b:free",
+      "name": "Dolphin3.0 Mistral 24B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-guard-3-8b",
+      "id": "meta-llama/llama-guard-3-8b",
+      "name": "Llama Guard 3 8B",
+      "provider": "openrouter",
+      "input_price": 0.02,
+      "output_price": 0.06,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/o3-mini-high",
+      "id": "openai/o3-mini-high",
+      "name": "OpenAI: o3 Mini High",
+      "provider": "openrouter",
+      "input_price": 1.1,
+      "output_price": 4.4,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-distill-llama-8b",
+      "id": "deepseek/deepseek-r1-distill-llama-8b",
+      "name": "DeepSeek: R1 Distill Llama 8B",
+      "provider": "openrouter",
+      "input_price": 0.04,
+      "output_price": 0.04,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemini-2.0-flash-001",
+      "id": "google/gemini-2.0-flash-001",
+      "name": "Google: Gemini 2.0 Flash",
+      "provider": "openrouter",
+      "input_price": 0.1,
+      "output_price": 0.4,
+      "context_window": 1048576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen-vl-plus",
+      "id": "qwen/qwen-vl-plus",
+      "name": "Qwen: Qwen VL Plus",
+      "provider": "openrouter",
+      "input_price": 0.21,
+      "output_price": 0.63,
+      "context_window": 7500,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/aion-labs/aion-1.0",
+      "id": "aion-labs/aion-1.0",
+      "name": "AionLabs: Aion-1.0",
+      "provider": "openrouter",
+      "input_price": 4.0,
+      "output_price": 8.0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/aion-labs/aion-1.0-mini",
+      "id": "aion-labs/aion-1.0-mini",
+      "name": "AionLabs: Aion-1.0-Mini",
+      "provider": "openrouter",
+      "input_price": 0.7,
+      "output_price": 1.4,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/aion-labs/aion-rp-llama-3.1-8b",
+      "id": "aion-labs/aion-rp-llama-3.1-8b",
+      "name": "AionLabs: Aion-RP 1.0 (8B)",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 0.2,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen-vl-max",
+      "id": "qwen/qwen-vl-max",
+      "name": "Qwen: Qwen VL Max",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 3.2,
+      "context_window": 7500,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen-turbo",
+      "id": "qwen/qwen-turbo",
+      "name": "Qwen: Qwen-Turbo",
+      "provider": "openrouter",
+      "input_price": 0.05,
+      "output_price": 0.2,
+      "context_window": 1000000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen2.5-vl-72b-instruct:free",
+      "id": "qwen/qwen2.5-vl-72b-instruct:free",
+      "name": "Qwen: Qwen2.5 VL 72B Instruct (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen2.5-vl-72b-instruct",
+      "id": "qwen/qwen2.5-vl-72b-instruct",
+      "name": "Qwen: Qwen2.5 VL 72B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.25,
+      "output_price": 0.75,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen-plus",
+      "id": "qwen/qwen-plus",
+      "name": "Qwen: Qwen-Plus",
+      "provider": "openrouter",
+      "input_price": 0.4,
+      "output_price": 1.2,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen-max",
+      "id": "qwen/qwen-max",
+      "name": "Qwen: Qwen-Max ",
+      "provider": "openrouter",
+      "input_price": 1.6,
+      "output_price": 6.4,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/o3-mini",
+      "id": "openai/o3-mini",
+      "name": "OpenAI: o3 Mini",
+      "provider": "openrouter",
+      "input_price": 1.1,
+      "output_price": 4.4,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-distill-qwen-1.5b",
+      "id": "deepseek/deepseek-r1-distill-qwen-1.5b",
+      "name": "DeepSeek: R1 Distill Qwen 1.5B",
+      "provider": "openrouter",
+      "input_price": 0.18,
+      "output_price": 0.18,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-small-24b-instruct-2501:free",
+      "id": "mistralai/mistral-small-24b-instruct-2501:free",
+      "name": "Mistral: Mistral Small 3 (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-small-24b-instruct-2501",
+      "id": "mistralai/mistral-small-24b-instruct-2501",
+      "name": "Mistral: Mistral Small 3",
+      "provider": "openrouter",
+      "input_price": 0.03,
+      "output_price": 0.03,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-distill-qwen-32b",
+      "id": "deepseek/deepseek-r1-distill-qwen-32b",
+      "name": "DeepSeek: R1 Distill Qwen 32B",
+      "provider": "openrouter",
+      "input_price": 0.075,
+      "output_price": 0.15,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-distill-qwen-14b:free",
+      "id": "deepseek/deepseek-r1-distill-qwen-14b:free",
+      "name": "DeepSeek: R1 Distill Qwen 14B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 64000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-distill-qwen-14b",
+      "id": "deepseek/deepseek-r1-distill-qwen-14b",
+      "name": "DeepSeek: R1 Distill Qwen 14B",
+      "provider": "openrouter",
+      "input_price": 0.15,
+      "output_price": 0.15,
+      "context_window": 64000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/perplexity/sonar-reasoning",
+      "id": "perplexity/sonar-reasoning",
+      "name": "Perplexity: Sonar Reasoning",
+      "provider": "openrouter",
+      "input_price": 1.0,
+      "output_price": 5.0,
+      "context_window": 127000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/perplexity/sonar",
+      "id": "perplexity/sonar",
+      "name": "Perplexity: Sonar",
+      "provider": "openrouter",
+      "input_price": 1.0,
+      "output_price": 1.0,
+      "context_window": 127072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/liquid/lfm-7b",
+      "id": "liquid/lfm-7b",
+      "name": "Liquid: LFM 7B",
+      "provider": "openrouter",
+      "input_price": 0.01,
+      "output_price": 0.01,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/liquid/lfm-3b",
+      "id": "liquid/lfm-3b",
+      "name": "Liquid: LFM 3B",
+      "provider": "openrouter",
+      "input_price": 0.02,
+      "output_price": 0.02,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-distill-llama-70b:free",
+      "id": "deepseek/deepseek-r1-distill-llama-70b:free",
+      "name": "DeepSeek: R1 Distill Llama 70B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1-distill-llama-70b",
+      "id": "deepseek/deepseek-r1-distill-llama-70b",
+      "name": "DeepSeek: R1 Distill Llama 70B",
+      "provider": "openrouter",
+      "input_price": 0.05,
+      "output_price": 0.05,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1:free",
+      "id": "deepseek/deepseek-r1:free",
+      "name": "DeepSeek: R1 (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/deepseek/deepseek-r1",
+      "id": "deepseek/deepseek-r1",
+      "name": "DeepSeek: R1",
+      "provider": "openrouter",
+      "input_price": 0.4,
+      "output_price": 2.0,
+      "context_window": 163840,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/minimax/minimax-01",
+      "id": "minimax/minimax-01",
+      "name": "MiniMax: MiniMax-01",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 1.1,
+      "context_window": 1000192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/codestral-2501",
+      "id": "mistralai/codestral-2501",
+      "name": "Mistral: Codestral 2501",
+      "provider": "openrouter",
+      "input_price": 0.3,
+      "output_price": 0.9,
+      "context_window": 262144,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/microsoft/phi-4",
+      "id": "microsoft/phi-4",
+      "name": "Microsoft: Phi 4",
+      "provider": "openrouter",
+      "input_price": 0.07,
+      "output_price": 0.14,
+      "context_window": 16384,
       "status": "ga"
     },
     {
       "unique_id": "openrouter/deepseek/deepseek-chat:free",
       "id": "deepseek/deepseek-chat:free",
-      "name": "DeepSeek",
+      "name": "DeepSeek: DeepSeek V3 (free)",
       "provider": "openrouter",
       "input_price": 0,
       "output_price": 0,
@@ -455,7 +1848,7 @@
     {
       "unique_id": "openrouter/deepseek/deepseek-chat",
       "id": "deepseek/deepseek-chat",
-      "name": "DeepSeek",
+      "name": "DeepSeek: DeepSeek V3",
       "provider": "openrouter",
       "input_price": 0.3,
       "output_price": 0.85,
@@ -463,9 +1856,39 @@
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/sao10k/l3.3-euryale-70b",
+      "id": "sao10k/l3.3-euryale-70b",
+      "name": "Sao10K: Llama 3.3 Euryale 70B",
+      "provider": "openrouter",
+      "input_price": 0.65,
+      "output_price": 0.75,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/o1",
+      "id": "openai/o1",
+      "name": "OpenAI: o1",
+      "provider": "openrouter",
+      "input_price": 15.0,
+      "output_price": 60.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/eva-unit-01/eva-llama-3.33-70b",
+      "id": "eva-unit-01/eva-llama-3.33-70b",
+      "name": "EVA Llama 3.33 70B",
+      "provider": "openrouter",
+      "input_price": 4.0,
+      "output_price": 6.0,
+      "context_window": 16384,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/x-ai/grok-2-vision-1212",
       "id": "x-ai/grok-2-vision-1212",
-      "name": "xAI",
+      "name": "xAI: Grok 2 Vision 1212",
       "provider": "openrouter",
       "input_price": 2.0,
       "output_price": 10.0,
@@ -475,7 +1898,7 @@
     {
       "unique_id": "openrouter/x-ai/grok-2-1212",
       "id": "x-ai/grok-2-1212",
-      "name": "xAI",
+      "name": "xAI: Grok 2 1212",
       "provider": "openrouter",
       "input_price": 2.0,
       "output_price": 10.0,
@@ -483,19 +1906,29 @@
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/cohere/command-r7b-12-2024",
+      "id": "cohere/command-r7b-12-2024",
+      "name": "Cohere: Command R7B (12-2024)",
+      "provider": "openrouter",
+      "input_price": 0.0375,
+      "output_price": 0.15,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/google/gemini-2.0-flash-exp:free",
       "id": "google/gemini-2.0-flash-exp:free",
-      "name": "Google",
+      "name": "Google: Gemini 2.0 Flash Experimental (free)",
       "provider": "openrouter",
       "input_price": 0,
       "output_price": 0,
       "context_window": 1048576,
-      "status": "ga"
+      "status": "experimental"
     },
     {
       "unique_id": "openrouter/meta-llama/llama-3.3-70b-instruct:free",
       "id": "meta-llama/llama-3.3-70b-instruct:free",
-      "name": "Meta",
+      "name": "Meta: Llama 3.3 70B Instruct (free)",
       "provider": "openrouter",
       "input_price": 0,
       "output_price": 0,
@@ -505,17 +1938,27 @@
     {
       "unique_id": "openrouter/meta-llama/llama-3.3-70b-instruct",
       "id": "meta-llama/llama-3.3-70b-instruct",
-      "name": "Meta",
+      "name": "Meta: Llama 3.3 70B Instruct",
       "provider": "openrouter",
-      "input_price": 0.04,
+      "input_price": 0.038,
       "output_price": 0.12,
       "context_window": 131072,
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/eva-unit-01/eva-qwen-2.5-72b",
+      "id": "eva-unit-01/eva-qwen-2.5-72b",
+      "name": "EVA Qwen2.5 72B",
+      "provider": "openrouter",
+      "input_price": 4.0,
+      "output_price": 6.0,
+      "context_window": 16384,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/openai/gpt-4o-2024-11-20",
       "id": "openai/gpt-4o-2024-11-20",
-      "name": "OpenAI",
+      "name": "OpenAI: GPT-4o (2024-11-20)",
       "provider": "openrouter",
       "input_price": 2.5,
       "output_price": 10.0,
@@ -545,7 +1988,7 @@
     {
       "unique_id": "openrouter/mistralai/pixtral-large-2411",
       "id": "mistralai/pixtral-large-2411",
-      "name": "Mistral",
+      "name": "Mistral: Pixtral Large 2411",
       "provider": "openrouter",
       "input_price": 2.0,
       "output_price": 6.0,
@@ -553,19 +1996,79 @@
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/x-ai/grok-vision-beta",
+      "id": "x-ai/grok-vision-beta",
+      "name": "xAI: Grok Vision Beta",
+      "provider": "openrouter",
+      "input_price": 5.0,
+      "output_price": 15.0,
+      "context_window": 8192,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/infermatic/mn-inferor-12b",
+      "id": "infermatic/mn-inferor-12b",
+      "name": "Infermatic: Mistral Nemo Inferor 12B",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 1.2,
+      "context_window": 16384,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen-2.5-coder-32b-instruct:free",
+      "id": "qwen/qwen-2.5-coder-32b-instruct:free",
+      "name": "Qwen2.5 Coder 32B Instruct (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen-2.5-coder-32b-instruct",
+      "id": "qwen/qwen-2.5-coder-32b-instruct",
+      "name": "Qwen2.5 Coder 32B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.06,
+      "output_price": 0.15,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/raifle/sorcererlm-8x22b",
+      "id": "raifle/sorcererlm-8x22b",
+      "name": "SorcererLM 8x22B",
+      "provider": "openrouter",
+      "input_price": 4.5,
+      "output_price": 4.5,
+      "context_window": 16000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/thedrummer/unslopnemo-12b",
+      "id": "thedrummer/unslopnemo-12b",
+      "name": "TheDrummer: UnslopNemo 12B",
+      "provider": "openrouter",
+      "input_price": 0.4,
+      "output_price": 0.4,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/anthropic/claude-3.5-haiku:beta",
       "id": "anthropic/claude-3.5-haiku:beta",
-      "name": "Anthropic",
+      "name": "Anthropic: Claude 3.5 Haiku (self-moderated)",
       "provider": "openrouter",
       "input_price": 0.8,
       "output_price": 4.0,
       "context_window": 200000,
-      "status": "ga"
+      "status": "beta"
     },
     {
       "unique_id": "openrouter/anthropic/claude-3.5-haiku",
       "id": "anthropic/claude-3.5-haiku",
-      "name": "Anthropic",
+      "name": "Anthropic: Claude 3.5 Haiku",
       "provider": "openrouter",
       "input_price": 0.8,
       "output_price": 4.0,
@@ -575,7 +2078,17 @@
     {
       "unique_id": "openrouter/anthropic/claude-3.5-haiku-20241022:beta",
       "id": "anthropic/claude-3.5-haiku-20241022:beta",
-      "name": "Anthropic",
+      "name": "Anthropic: Claude 3.5 Haiku (2024-10-22) (self-moderated)",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 4.0,
+      "context_window": 200000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3.5-haiku-20241022",
+      "id": "anthropic/claude-3.5-haiku-20241022",
+      "name": "Anthropic: Claude 3.5 Haiku (2024-10-22)",
       "provider": "openrouter",
       "input_price": 0.8,
       "output_price": 4.0,
@@ -583,19 +2096,29 @@
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/anthropic/claude-3.5-haiku-20241022",
-      "id": "anthropic/claude-3.5-haiku-20241022",
-      "name": "Anthropic",
+      "unique_id": "openrouter/anthracite-org/magnum-v4-72b",
+      "id": "anthracite-org/magnum-v4-72b",
+      "name": "Magnum v4 72B",
       "provider": "openrouter",
-      "input_price": 0.8,
-      "output_price": 4.0,
-      "context_window": 200000,
+      "input_price": 2.5,
+      "output_price": 3.0,
+      "context_window": 16384,
       "status": "ga"
     },
     {
       "unique_id": "openrouter/anthropic/claude-3.5-sonnet:beta",
       "id": "anthropic/claude-3.5-sonnet:beta",
-      "name": "Anthropic",
+      "name": "Anthropic: Claude 3.5 Sonnet (self-moderated)",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 200000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3.5-sonnet",
+      "id": "anthropic/claude-3.5-sonnet",
+      "name": "Anthropic: Claude 3.5 Sonnet",
       "provider": "openrouter",
       "input_price": 3.0,
       "output_price": 15.0,
@@ -603,19 +2126,39 @@
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/anthropic/claude-3.5-sonnet",
-      "id": "anthropic/claude-3.5-sonnet",
-      "name": "Anthropic",
+      "unique_id": "openrouter/mistralai/ministral-8b",
+      "id": "mistralai/ministral-8b",
+      "name": "Mistral: Ministral 8B",
       "provider": "openrouter",
-      "input_price": 3.0,
-      "output_price": 15.0,
-      "context_window": 200000,
+      "input_price": 0.1,
+      "output_price": 0.1,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/ministral-3b",
+      "id": "mistralai/ministral-3b",
+      "name": "Mistral: Ministral 3B",
+      "provider": "openrouter",
+      "input_price": 0.04,
+      "output_price": 0.04,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen-2.5-7b-instruct",
+      "id": "qwen/qwen-2.5-7b-instruct",
+      "name": "Qwen2.5 7B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.04,
+      "output_price": 0.1,
+      "context_window": 32768,
       "status": "ga"
     },
     {
       "unique_id": "openrouter/nvidia/llama-3.1-nemotron-70b-instruct",
       "id": "nvidia/llama-3.1-nemotron-70b-instruct",
-      "name": "NVIDIA",
+      "name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct",
       "provider": "openrouter",
       "input_price": 0.12,
       "output_price": 0.3,
@@ -623,12 +2166,122 @@
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/inflection/inflection-3-productivity",
+      "id": "inflection/inflection-3-productivity",
+      "name": "Inflection: Inflection 3 Productivity",
+      "provider": "openrouter",
+      "input_price": 2.5,
+      "output_price": 10.0,
+      "context_window": 8000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/inflection/inflection-3-pi",
+      "id": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
+      "provider": "openrouter",
+      "input_price": 2.5,
+      "output_price": 10.0,
+      "context_window": 8000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemini-flash-1.5-8b",
+      "id": "google/gemini-flash-1.5-8b",
+      "name": "Google: Gemini 1.5 Flash 8B",
+      "provider": "openrouter",
+      "input_price": 0.0375,
+      "output_price": 0.15,
+      "context_window": 1000000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/thedrummer/rocinante-12b",
+      "id": "thedrummer/rocinante-12b",
+      "name": "TheDrummer: Rocinante 12B",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 0.5,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthracite-org/magnum-v2-72b",
+      "id": "anthracite-org/magnum-v2-72b",
+      "name": "Magnum v2 72B",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 3.0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/liquid/lfm-40b",
+      "id": "liquid/lfm-40b",
+      "name": "Liquid: LFM 40B MoE",
+      "provider": "openrouter",
+      "input_price": 0.15,
+      "output_price": 0.15,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.2-3b-instruct:free",
+      "id": "meta-llama/llama-3.2-3b-instruct:free",
+      "name": "Meta: Llama 3.2 3B Instruct (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.2-3b-instruct",
+      "id": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.003,
+      "output_price": 0.006,
+      "context_window": 20000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.2-1b-instruct",
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.005,
+      "output_price": 0.01,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/meta-llama/llama-3.2-90b-vision-instruct",
       "id": "meta-llama/llama-3.2-90b-vision-instruct",
-      "name": "Meta",
+      "name": "Meta: Llama 3.2 90B Vision Instruct",
       "provider": "openrouter",
       "input_price": 1.2,
       "output_price": 1.2,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.2-11b-vision-instruct:free",
+      "id": "meta-llama/llama-3.2-11b-vision-instruct:free",
+      "name": "Meta: Llama 3.2 11B Vision Instruct (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.2-11b-vision-instruct",
+      "id": "meta-llama/llama-3.2-11b-vision-instruct",
+      "name": "Meta: Llama 3.2 11B Vision Instruct",
+      "provider": "openrouter",
+      "input_price": 0.049,
+      "output_price": 0.049,
       "context_window": 131072,
       "status": "ga"
     },
@@ -653,19 +2306,39 @@
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/neversleep/llama-3.1-lumimaid-8b",
+      "id": "neversleep/llama-3.1-lumimaid-8b",
+      "name": "NeverSleep: Lumimaid v0.2 8B",
+      "provider": "openrouter",
+      "input_price": 0.18,
+      "output_price": 1.0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/openai/o1-preview",
       "id": "openai/o1-preview",
-      "name": "OpenAI",
+      "name": "OpenAI: o1-preview",
       "provider": "openrouter",
       "input_price": 15.0,
       "output_price": 60.0,
+      "context_window": 128000,
+      "status": "preview"
+    },
+    {
+      "unique_id": "openrouter/openai/o1-mini",
+      "id": "openai/o1-mini",
+      "name": "OpenAI: o1-mini",
+      "provider": "openrouter",
+      "input_price": 1.1,
+      "output_price": 4.4,
       "context_window": 128000,
       "status": "ga"
     },
     {
       "unique_id": "openrouter/openai/o1-mini-2024-09-12",
       "id": "openai/o1-mini-2024-09-12",
-      "name": "OpenAI",
+      "name": "OpenAI: o1-mini (2024-09-12)",
       "provider": "openrouter",
       "input_price": 1.1,
       "output_price": 4.4,
@@ -673,29 +2346,19 @@
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/openai/o1-preview-2024-09-12",
-      "id": "openai/o1-preview-2024-09-12",
-      "name": "OpenAI",
+      "unique_id": "openrouter/mistralai/pixtral-12b",
+      "id": "mistralai/pixtral-12b",
+      "name": "Mistral: Pixtral 12B",
       "provider": "openrouter",
-      "input_price": 15.0,
-      "output_price": 60.0,
-      "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "openrouter/openai/o1-mini",
-      "id": "openai/o1-mini",
-      "name": "OpenAI",
-      "provider": "openrouter",
-      "input_price": 1.1,
-      "output_price": 4.4,
-      "context_window": 128000,
+      "input_price": 0.1,
+      "output_price": 0.1,
+      "context_window": 32768,
       "status": "ga"
     },
     {
       "unique_id": "openrouter/cohere/command-r-plus-08-2024",
       "id": "cohere/command-r-plus-08-2024",
-      "name": "Cohere",
+      "name": "Cohere: Command R+ (08-2024)",
       "provider": "openrouter",
       "input_price": 2.5,
       "output_price": 10.0,
@@ -703,19 +2366,9 @@
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/openai/gpt-4o-2024-08-06",
-      "id": "openai/gpt-4o-2024-08-06",
-      "name": "OpenAI",
-      "provider": "openrouter",
-      "input_price": 2.5,
-      "output_price": 10.0,
-      "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "openrouter/openai/gpt-4o-mini-2024-07-18",
-      "id": "openai/gpt-4o-mini-2024-07-18",
-      "name": "OpenAI",
+      "unique_id": "openrouter/cohere/command-r-08-2024",
+      "id": "cohere/command-r-08-2024",
+      "name": "Cohere: Command R (08-2024)",
       "provider": "openrouter",
       "input_price": 0.15,
       "output_price": 0.6,
@@ -723,39 +2376,59 @@
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/openai/gpt-4o-mini",
-      "id": "openai/gpt-4o-mini",
-      "name": "OpenAI",
+      "unique_id": "openrouter/qwen/qwen-2.5-vl-7b-instruct",
+      "id": "qwen/qwen-2.5-vl-7b-instruct",
+      "name": "Qwen: Qwen2.5-VL 7B Instruct",
       "provider": "openrouter",
-      "input_price": 0.15,
-      "output_price": 0.6,
+      "input_price": 0.2,
+      "output_price": 0.2,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/sao10k/l3.1-euryale-70b",
+      "id": "sao10k/l3.1-euryale-70b",
+      "name": "Sao10K: Llama 3.1 Euryale 70B v2.2",
+      "provider": "openrouter",
+      "input_price": 0.65,
+      "output_price": 0.75,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/microsoft/phi-3.5-mini-128k-instruct",
+      "id": "microsoft/phi-3.5-mini-128k-instruct",
+      "name": "Microsoft: Phi-3.5 Mini 128K Instruct",
+      "provider": "openrouter",
+      "input_price": 0.1,
+      "output_price": 0.1,
       "context_window": 128000,
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/anthropic/claude-3.5-sonnet-20240620:beta",
-      "id": "anthropic/claude-3.5-sonnet-20240620:beta",
-      "name": "Anthropic",
+      "unique_id": "openrouter/nousresearch/hermes-3-llama-3.1-70b",
+      "id": "nousresearch/hermes-3-llama-3.1-70b",
+      "name": "Nous: Hermes 3 70B Instruct",
       "provider": "openrouter",
-      "input_price": 3.0,
-      "output_price": 15.0,
-      "context_window": 200000,
+      "input_price": 0.1,
+      "output_price": 0.28,
+      "context_window": 131072,
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/anthropic/claude-3.5-sonnet-20240620",
-      "id": "anthropic/claude-3.5-sonnet-20240620",
-      "name": "Anthropic",
+      "unique_id": "openrouter/nousresearch/hermes-3-llama-3.1-405b",
+      "id": "nousresearch/hermes-3-llama-3.1-405b",
+      "name": "Nous: Hermes 3 405B Instruct",
       "provider": "openrouter",
-      "input_price": 3.0,
-      "output_price": 15.0,
-      "context_window": 200000,
+      "input_price": 0.7,
+      "output_price": 0.8,
+      "context_window": 131072,
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/openai/gpt-4o-2024-05-13",
-      "id": "openai/gpt-4o-2024-05-13",
-      "name": "OpenAI",
+      "unique_id": "openrouter/openai/chatgpt-4o-latest",
+      "id": "openai/chatgpt-4o-latest",
+      "name": "OpenAI: ChatGPT-4o",
       "provider": "openrouter",
       "input_price": 5.0,
       "output_price": 15.0,
@@ -763,9 +2436,319 @@
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/sao10k/l3-lunaris-8b",
+      "id": "sao10k/l3-lunaris-8b",
+      "name": "Sao10K: Llama 3 8B Lunaris",
+      "provider": "openrouter",
+      "input_price": 0.02,
+      "output_price": 0.05,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/aetherwiing/mn-starcannon-12b",
+      "id": "aetherwiing/mn-starcannon-12b",
+      "name": "Aetherwiing: Starcannon 12B",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 1.2,
+      "context_window": 16384,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-4o-2024-08-06",
+      "id": "openai/gpt-4o-2024-08-06",
+      "name": "OpenAI: GPT-4o (2024-08-06)",
+      "provider": "openrouter",
+      "input_price": 2.5,
+      "output_price": 10.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.1-405b",
+      "id": "meta-llama/llama-3.1-405b",
+      "name": "Meta: Llama 3.1 405B (base)",
+      "provider": "openrouter",
+      "input_price": 2.0,
+      "output_price": 2.0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/nothingiisreal/mn-celeste-12b",
+      "id": "nothingiisreal/mn-celeste-12b",
+      "name": "Mistral Nemo 12B Celeste",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 1.2,
+      "context_window": 16384,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.1-8b-instruct",
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "name": "Meta: Llama 3.1 8B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.015,
+      "output_price": 0.02,
+      "context_window": 131000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.1-405b-instruct:free",
+      "id": "meta-llama/llama-3.1-405b-instruct:free",
+      "name": "Meta: Llama 3.1 405B Instruct (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 65536,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.1-405b-instruct",
+      "id": "meta-llama/llama-3.1-405b-instruct",
+      "name": "Meta: Llama 3.1 405B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 0.8,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3.1-70b-instruct",
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "name": "Meta: Llama 3.1 70B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.1,
+      "output_price": 0.28,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-nemo:free",
+      "id": "mistralai/mistral-nemo:free",
+      "name": "Mistral: Mistral Nemo (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-nemo",
+      "id": "mistralai/mistral-nemo",
+      "name": "Mistral: Mistral Nemo",
+      "provider": "openrouter",
+      "input_price": 0.0075,
+      "output_price": 0.05,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini",
+      "name": "OpenAI: GPT-4o-mini",
+      "provider": "openrouter",
+      "input_price": 0.15,
+      "output_price": 0.6,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini-2024-07-18",
+      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
+      "provider": "openrouter",
+      "input_price": 0.15,
+      "output_price": 0.6,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-2-27b-it",
+      "id": "google/gemma-2-27b-it",
+      "name": "Google: Gemma 2 27B",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 0.8,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/alpindale/magnum-72b",
+      "id": "alpindale/magnum-72b",
+      "name": "Magnum 72B",
+      "provider": "openrouter",
+      "input_price": 4.0,
+      "output_price": 6.0,
+      "context_window": 16384,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-2-9b-it:free",
+      "id": "google/gemma-2-9b-it:free",
+      "name": "Google: Gemma 2 9B (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemma-2-9b-it",
+      "id": "google/gemma-2-9b-it",
+      "name": "Google: Gemma 2 9B",
+      "provider": "openrouter",
+      "input_price": 0.004,
+      "output_price": 0.004,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/01-ai/yi-large",
+      "id": "01-ai/yi-large",
+      "name": "01.AI: Yi Large",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 3.0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3.5-sonnet-20240620:beta",
+      "id": "anthropic/claude-3.5-sonnet-20240620:beta",
+      "name": "Anthropic: Claude 3.5 Sonnet (2024-06-20) (self-moderated)",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 200000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3.5-sonnet-20240620",
+      "id": "anthropic/claude-3.5-sonnet-20240620",
+      "name": "Anthropic: Claude 3.5 Sonnet (2024-06-20)",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/sao10k/l3-euryale-70b",
+      "id": "sao10k/l3-euryale-70b",
+      "name": "Sao10k: Llama 3 Euryale 70B v2.1",
+      "provider": "openrouter",
+      "input_price": 1.48,
+      "output_price": 1.48,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/cognitivecomputations/dolphin-mixtral-8x22b",
+      "id": "cognitivecomputations/dolphin-mixtral-8x22b",
+      "name": "Dolphin 2.9.2 Mixtral 8x22B 🐬",
+      "provider": "openrouter",
+      "input_price": 0.9,
+      "output_price": 0.9,
+      "context_window": 16000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/qwen/qwen-2-72b-instruct",
+      "id": "qwen/qwen-2-72b-instruct",
+      "name": "Qwen 2 72B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.9,
+      "output_price": 0.9,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-7b-instruct:free",
+      "id": "mistralai/mistral-7b-instruct:free",
+      "name": "Mistral: Mistral 7B Instruct (free)",
+      "provider": "openrouter",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-7b-instruct",
+      "id": "mistralai/mistral-7b-instruct",
+      "name": "Mistral: Mistral 7B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.028,
+      "output_price": 0.054,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/nousresearch/hermes-2-pro-llama-3-8b",
+      "id": "nousresearch/hermes-2-pro-llama-3-8b",
+      "name": "NousResearch: Hermes 2 Pro - Llama-3 8B",
+      "provider": "openrouter",
+      "input_price": 0.025,
+      "output_price": 0.04,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-7b-instruct-v0.3",
+      "id": "mistralai/mistral-7b-instruct-v0.3",
+      "name": "Mistral: Mistral 7B Instruct v0.3",
+      "provider": "openrouter",
+      "input_price": 0.028,
+      "output_price": 0.054,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/microsoft/phi-3-mini-128k-instruct",
+      "id": "microsoft/phi-3-mini-128k-instruct",
+      "name": "Microsoft: Phi-3 Mini 128K Instruct",
+      "provider": "openrouter",
+      "input_price": 0.1,
+      "output_price": 0.1,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/microsoft/phi-3-medium-128k-instruct",
+      "id": "microsoft/phi-3-medium-128k-instruct",
+      "name": "Microsoft: Phi-3 Medium 128K Instruct",
+      "provider": "openrouter",
+      "input_price": 1.0,
+      "output_price": 1.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/neversleep/llama-3-lumimaid-70b",
+      "id": "neversleep/llama-3-lumimaid-70b",
+      "name": "NeverSleep: Llama 3 Lumimaid 70B",
+      "provider": "openrouter",
+      "input_price": 4.0,
+      "output_price": 6.0,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemini-flash-1.5",
+      "id": "google/gemini-flash-1.5",
+      "name": "Google: Gemini 1.5 Flash ",
+      "provider": "openrouter",
+      "input_price": 0.075,
+      "output_price": 0.3,
+      "context_window": 1000000,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/openai/gpt-4o",
       "id": "openai/gpt-4o",
-      "name": "OpenAI",
+      "name": "OpenAI: GPT-4o",
       "provider": "openrouter",
       "input_price": 2.5,
       "output_price": 10.0,
@@ -775,7 +2758,7 @@
     {
       "unique_id": "openrouter/openai/gpt-4o:extended",
       "id": "openai/gpt-4o:extended",
-      "name": "OpenAI",
+      "name": "OpenAI: GPT-4o (extended)",
       "provider": "openrouter",
       "input_price": 6.0,
       "output_price": 18.0,
@@ -783,9 +2766,99 @@
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/meta-llama/llama-guard-2-8b",
+      "id": "meta-llama/llama-guard-2-8b",
+      "name": "Meta: LlamaGuard 2 8B",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 0.2,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-4o-2024-05-13",
+      "id": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI: GPT-4o (2024-05-13)",
+      "provider": "openrouter",
+      "input_price": 5.0,
+      "output_price": 15.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/sao10k/fimbulvetr-11b-v2",
+      "id": "sao10k/fimbulvetr-11b-v2",
+      "name": "Fimbulvetr 11B v2",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 1.2,
+      "context_window": 4096,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3-8b-instruct",
+      "id": "meta-llama/llama-3-8b-instruct",
+      "name": "Meta: Llama 3 8B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.03,
+      "output_price": 0.06,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/meta-llama/llama-3-70b-instruct",
+      "id": "meta-llama/llama-3-70b-instruct",
+      "name": "Meta: Llama 3 70B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.3,
+      "output_price": 0.4,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mixtral-8x22b-instruct",
+      "id": "mistralai/mixtral-8x22b-instruct",
+      "name": "Mistral: Mixtral 8x22B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.9,
+      "output_price": 0.9,
+      "context_window": 65536,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/microsoft/wizardlm-2-8x22b",
+      "id": "microsoft/wizardlm-2-8x22b",
+      "name": "WizardLM-2 8x22B",
+      "provider": "openrouter",
+      "input_price": 0.48,
+      "output_price": 0.48,
+      "context_window": 65536,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/google/gemini-pro-1.5",
+      "id": "google/gemini-pro-1.5",
+      "name": "Google: Gemini 1.5 Pro",
+      "provider": "openrouter",
+      "input_price": 1.25,
+      "output_price": 5.0,
+      "context_window": 2000000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-4-turbo",
+      "id": "openai/gpt-4-turbo",
+      "name": "OpenAI: GPT-4 Turbo",
+      "provider": "openrouter",
+      "input_price": 10.0,
+      "output_price": 30.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/cohere/command-r-plus",
       "id": "cohere/command-r-plus",
-      "name": "Cohere",
+      "name": "Cohere: Command R+",
       "provider": "openrouter",
       "input_price": 3.0,
       "output_price": 15.0,
@@ -795,7 +2868,7 @@
     {
       "unique_id": "openrouter/cohere/command-r-plus-04-2024",
       "id": "cohere/command-r-plus-04-2024",
-      "name": "Cohere",
+      "name": "Cohere: Command R+ (04-2024)",
       "provider": "openrouter",
       "input_price": 3.0,
       "output_price": 15.0,
@@ -803,9 +2876,69 @@
       "status": "ga"
     },
     {
+      "unique_id": "openrouter/sophosympatheia/midnight-rose-70b",
+      "id": "sophosympatheia/midnight-rose-70b",
+      "name": "Midnight Rose 70B",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 0.8,
+      "context_window": 4096,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/cohere/command",
+      "id": "cohere/command",
+      "name": "Cohere: Command",
+      "provider": "openrouter",
+      "input_price": 1.0,
+      "output_price": 2.0,
+      "context_window": 4096,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/cohere/command-r",
+      "id": "cohere/command-r",
+      "name": "Cohere: Command R",
+      "provider": "openrouter",
+      "input_price": 0.5,
+      "output_price": 1.5,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3-haiku:beta",
+      "id": "anthropic/claude-3-haiku:beta",
+      "name": "Anthropic: Claude 3 Haiku (self-moderated)",
+      "provider": "openrouter",
+      "input_price": 0.25,
+      "output_price": 1.25,
+      "context_window": 200000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3-haiku",
+      "id": "anthropic/claude-3-haiku",
+      "name": "Anthropic: Claude 3 Haiku",
+      "provider": "openrouter",
+      "input_price": 0.25,
+      "output_price": 1.25,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
       "unique_id": "openrouter/anthropic/claude-3-opus:beta",
       "id": "anthropic/claude-3-opus:beta",
-      "name": "Anthropic",
+      "name": "Anthropic: Claude 3 Opus (self-moderated)",
+      "provider": "openrouter",
+      "input_price": 15.0,
+      "output_price": 75.0,
+      "context_window": 200000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3-opus",
+      "id": "anthropic/claude-3-opus",
+      "name": "Anthropic: Claude 3 Opus",
       "provider": "openrouter",
       "input_price": 15.0,
       "output_price": 75.0,
@@ -813,13 +2946,33 @@
       "status": "ga"
     },
     {
-      "unique_id": "openrouter/anthropic/claude-3-opus",
-      "id": "anthropic/claude-3-opus",
-      "name": "Anthropic",
+      "unique_id": "openrouter/anthropic/claude-3-sonnet:beta",
+      "id": "anthropic/claude-3-sonnet:beta",
+      "name": "Anthropic: Claude 3 Sonnet (self-moderated)",
       "provider": "openrouter",
-      "input_price": 15.0,
-      "output_price": 75.0,
+      "input_price": 3.0,
+      "output_price": 15.0,
       "context_window": 200000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-3-sonnet",
+      "id": "anthropic/claude-3-sonnet",
+      "name": "Anthropic: Claude 3 Sonnet",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/cohere/command-r-03-2024",
+      "id": "cohere/command-r-03-2024",
+      "name": "Cohere: Command R (03-2024)",
+      "provider": "openrouter",
+      "input_price": 0.5,
+      "output_price": 1.5,
+      "context_window": 128000,
       "status": "ga"
     },
     {
@@ -830,6 +2983,246 @@
       "input_price": 2.0,
       "output_price": 6.0,
       "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/nousresearch/nous-hermes-2-mixtral-8x7b-dpo",
+      "id": "nousresearch/nous-hermes-2-mixtral-8x7b-dpo",
+      "name": "Nous: Hermes 2 Mixtral 8x7B DPO",
+      "provider": "openrouter",
+      "input_price": 0.6,
+      "output_price": 0.6,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-small",
+      "id": "mistralai/mistral-small",
+      "name": "Mistral Small",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 0.6,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-tiny",
+      "id": "mistralai/mistral-tiny",
+      "name": "Mistral Tiny",
+      "provider": "openrouter",
+      "input_price": 0.25,
+      "output_price": 0.25,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-7b-instruct-v0.2",
+      "id": "mistralai/mistral-7b-instruct-v0.2",
+      "name": "Mistral: Mistral 7B Instruct v0.2",
+      "provider": "openrouter",
+      "input_price": 0.2,
+      "output_price": 0.2,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mixtral-8x7b-instruct",
+      "id": "mistralai/mixtral-8x7b-instruct",
+      "name": "Mistral: Mixtral 8x7B Instruct",
+      "provider": "openrouter",
+      "input_price": 0.08,
+      "output_price": 0.24,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/neversleep/noromaid-20b",
+      "id": "neversleep/noromaid-20b",
+      "name": "Noromaid 20B",
+      "provider": "openrouter",
+      "input_price": 1.25,
+      "output_price": 2.0,
+      "context_window": 8192,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-2.1:beta",
+      "id": "anthropic/claude-2.1:beta",
+      "name": "Anthropic: Claude v2.1 (self-moderated)",
+      "provider": "openrouter",
+      "input_price": 8.0,
+      "output_price": 24.0,
+      "context_window": 200000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-2.1",
+      "id": "anthropic/claude-2.1",
+      "name": "Anthropic: Claude v2.1",
+      "provider": "openrouter",
+      "input_price": 8.0,
+      "output_price": 24.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-2:beta",
+      "id": "anthropic/claude-2:beta",
+      "name": "Anthropic: Claude v2 (self-moderated)",
+      "provider": "openrouter",
+      "input_price": 8.0,
+      "output_price": 24.0,
+      "context_window": 200000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-2",
+      "id": "anthropic/claude-2",
+      "name": "Anthropic: Claude v2",
+      "provider": "openrouter",
+      "input_price": 8.0,
+      "output_price": 24.0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/undi95/toppy-m-7b",
+      "id": "undi95/toppy-m-7b",
+      "name": "Toppy M 7B",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 1.2,
+      "context_window": 4096,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/alpindale/goliath-120b",
+      "id": "alpindale/goliath-120b",
+      "name": "Goliath 120B",
+      "provider": "openrouter",
+      "input_price": 9.0,
+      "output_price": 11.0,
+      "context_window": 6144,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openrouter/auto",
+      "id": "openrouter/auto",
+      "name": "Auto Router",
+      "provider": "openrouter",
+      "input_price": -1000000.0,
+      "output_price": -1000000.0,
+      "context_window": 2000000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-3.5-turbo-instruct",
+      "id": "openai/gpt-3.5-turbo-instruct",
+      "name": "OpenAI: GPT-3.5 Turbo Instruct",
+      "provider": "openrouter",
+      "input_price": 1.5,
+      "output_price": 2.0,
+      "context_window": 4095,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mistralai/mistral-7b-instruct-v0.1",
+      "id": "mistralai/mistral-7b-instruct-v0.1",
+      "name": "Mistral: Mistral 7B Instruct v0.1",
+      "provider": "openrouter",
+      "input_price": 0.11,
+      "output_price": 0.19,
+      "context_window": 2824,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/pygmalionai/mythalion-13b",
+      "id": "pygmalionai/mythalion-13b",
+      "name": "Pygmalion: Mythalion 13B",
+      "provider": "openrouter",
+      "input_price": 0.8,
+      "output_price": 1.2,
+      "context_window": 4096,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-3.5-turbo-16k",
+      "id": "openai/gpt-3.5-turbo-16k",
+      "name": "OpenAI: GPT-3.5 Turbo 16k",
+      "provider": "openrouter",
+      "input_price": 3.0,
+      "output_price": 4.0,
+      "context_window": 16385,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/mancer/weaver",
+      "id": "mancer/weaver",
+      "name": "Mancer: Weaver (alpha)",
+      "provider": "openrouter",
+      "input_price": 1.5,
+      "output_price": 1.5,
+      "context_window": 8000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-2.0:beta",
+      "id": "anthropic/claude-2.0:beta",
+      "name": "Anthropic: Claude v2.0 (self-moderated)",
+      "provider": "openrouter",
+      "input_price": 8.0,
+      "output_price": 24.0,
+      "context_window": 100000,
+      "status": "beta"
+    },
+    {
+      "unique_id": "openrouter/anthropic/claude-2.0",
+      "id": "anthropic/claude-2.0",
+      "name": "Anthropic: Claude v2.0",
+      "provider": "openrouter",
+      "input_price": 8.0,
+      "output_price": 24.0,
+      "context_window": 100000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/undi95/remm-slerp-l2-13b",
+      "id": "undi95/remm-slerp-l2-13b",
+      "name": "ReMM SLERP 13B",
+      "provider": "openrouter",
+      "input_price": 0.7,
+      "output_price": 1.0,
+      "context_window": 6144,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/gryphe/mythomax-l2-13b",
+      "id": "gryphe/mythomax-l2-13b",
+      "name": "MythoMax 13B",
+      "provider": "openrouter",
+      "input_price": 0.06,
+      "output_price": 0.06,
+      "context_window": 4096,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-3.5-turbo",
+      "id": "openai/gpt-3.5-turbo",
+      "name": "OpenAI: GPT-3.5 Turbo",
+      "provider": "openrouter",
+      "input_price": 0.5,
+      "output_price": 1.5,
+      "context_window": 16385,
+      "status": "ga"
+    },
+    {
+      "unique_id": "openrouter/openai/gpt-4",
+      "id": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "provider": "openrouter",
+      "input_price": 30.0,
+      "output_price": 60.0,
+      "context_window": 8191,
       "status": "ga"
     },
     {
@@ -943,83 +3336,73 @@
       "status": "ga"
     },
     {
-      "unique_id": "deepseek/deepseek-v3",
-      "id": "deepseek-v3",
-      "name": "DeepSeek V3",
-      "provider": "deepseek",
-      "input_price": 0.14,
-      "output_price": 0.28,
-      "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "deepseek/deepseek-v2.5",
-      "id": "deepseek-v2.5",
-      "name": "DeepSeek V2.5",
-      "provider": "deepseek",
-      "input_price": 0.14,
-      "output_price": 0.28,
-      "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "deepseek/deepseek-coder-v2",
-      "id": "deepseek-coder-v2",
-      "name": "DeepSeek Coder V2",
-      "provider": "deepseek",
-      "input_price": 0.14,
-      "output_price": 0.28,
-      "context_window": 128000,
-      "status": "ga"
-    },
-    {
-      "unique_id": "deepseek/deepseek-chat",
-      "id": "deepseek-chat",
-      "name": "DeepSeek Chat",
-      "provider": "deepseek",
-      "input_price": 0.14,
-      "output_price": 0.28,
-      "context_window": 32768,
-      "status": "ga"
-    },
-    {
-      "unique_id": "deepseek/deepseek-coder",
-      "id": "deepseek-coder",
-      "name": "DeepSeek Coder",
-      "provider": "deepseek",
-      "input_price": 0.14,
-      "output_price": 0.28,
-      "context_window": 16384,
-      "status": "ga"
-    },
-    {
-      "unique_id": "deepseek/deepseek-math",
-      "id": "deepseek-math",
-      "name": "DeepSeek Math",
-      "provider": "deepseek",
-      "input_price": 0.14,
-      "output_price": 0.28,
-      "context_window": 32768,
-      "status": "ga"
-    },
-    {
-      "unique_id": "google/gemini-2.0-flash-exp",
-      "id": "gemini-2.0-flash-exp",
-      "name": "Gemini 2.0 Flash (Experimental)",
+      "unique_id": "google/gemini-2.",
+      "id": "gemini-2.",
+      "name": "Gemini 2.",
       "provider": "google",
       "input_price": 0,
       "output_price": 0,
-      "context_window": 1048576,
-      "status": "experimental"
+      "context_window": 32768,
+      "status": "ga"
     },
     {
-      "unique_id": "google/gemini-1.5-pro",
-      "id": "gemini-1.5-pro",
-      "name": "Gemini 1.5 Pro",
+      "unique_id": "google/gemini-2.5-flash-lite-preview",
+      "id": "gemini-2.5-flash-lite-preview",
+      "name": "Gemini 2.5 Flash-Lite Preview",
       "provider": "google",
-      "input_price": 1.25,
-      "output_price": 5.0,
-      "context_window": 2097152,
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/gemini-2.5-flash-native-audio",
+      "id": "gemini-2.5-flash-native-audio",
+      "name": "Gemini 2.5 Flash Native Audio",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/gemini-2.5-flash-preview-tts",
+      "id": "gemini-2.5-flash-preview-tts",
+      "name": "Gemini 2.5 Flash Preview TTS",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/gemini-2.5-pro-preview-tts",
+      "id": "gemini-2.5-pro-preview-tts",
+      "name": "Gemini 2.5 Pro Preview TTS",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/gemini-2.0-flash",
+      "id": "gemini-2.0-flash",
+      "name": "Gemini 2.0 Flash",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/gemini-embedding",
+      "id": "gemini-embedding",
+      "name": "Gemini Embedding",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
       "status": "ga"
     },
     {
@@ -1027,60 +3410,150 @@
       "id": "gemini-1.5-flash",
       "name": "Gemini 1.5 Flash",
       "provider": "google",
-      "input_price": 0.075,
-      "output_price": 0.3,
-      "context_window": 1048576,
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 2097152,
       "status": "ga"
     },
     {
-      "unique_id": "google/gemini-1.5-flash-8b",
-      "id": "gemini-1.5-flash-8b",
-      "name": "Gemini 1.5 Flash-8B",
+      "unique_id": "google/gemini-1.5-pro",
+      "id": "gemini-1.5-pro",
+      "name": "Gemini 1.5 Pro",
       "provider": "google",
-      "input_price": 0.0375,
-      "output_price": 0.15,
-      "context_window": 1048576,
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 2097152,
       "status": "ga"
     },
     {
-      "unique_id": "google/gemini-1.0-pro",
-      "id": "gemini-1.0-pro",
-      "name": "Gemini 1.0 Pro",
+      "unique_id": "google/input-price",
+      "id": "input-price",
+      "name": "Input price",
       "provider": "google",
-      "input_price": 0.5,
-      "output_price": 1.5,
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/output-price",
+      "id": "output-price",
+      "name": "Output price",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/context-caching-price",
+      "id": "context-caching-price",
+      "name": "Context caching price",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 200000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/grounding-with-google-search",
+      "id": "grounding-with-google-search",
+      "name": "Grounding with Google Search",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
       "context_window": 32768,
       "status": "ga"
     },
     {
-      "unique_id": "google/gemini-exp-1206",
-      "id": "gemini-exp-1206",
-      "name": "Gemini Experimental 1206",
+      "unique_id": "google/used-to-improve-our-products",
+      "id": "used-to-improve-our-products",
+      "name": "Used to improve our products",
       "provider": "google",
       "input_price": 0,
       "output_price": 0,
-      "context_window": 2097152,
-      "status": "experimental"
+      "context_window": 32768,
+      "status": "ga"
     },
     {
-      "unique_id": "google/gemini-exp-1121",
-      "id": "gemini-exp-1121",
-      "name": "Gemini Experimental 1121",
+      "unique_id": "google/live-api",
+      "id": "live-api",
+      "name": "Live API",
       "provider": "google",
       "input_price": 0,
       "output_price": 0,
-      "context_window": 2097152,
-      "status": "experimental"
+      "context_window": 32768,
+      "status": "ga"
     },
     {
-      "unique_id": "google/learnlm-1.5-pro-experimental",
-      "id": "learnlm-1.5-pro-experimental",
-      "name": "LearnLM 1.5 Pro",
+      "unique_id": "google/context-caching",
+      "id": "context-caching",
+      "name": "Context caching",
       "provider": "google",
       "input_price": 0,
       "output_price": 0,
-      "context_window": 2097152,
-      "status": "experimental"
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/image-generation-pricing",
+      "id": "image-generation-pricing",
+      "name": "Image generation pricing",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/tuning-price",
+      "id": "tuning-price",
+      "name": "Tuning price",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/imagen-4-standard-image-price",
+      "id": "imagen-4-standard-image-price",
+      "name": "Imagen 4 Standard image price",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/imagen-4-ultra-image-price",
+      "id": "imagen-4-ultra-image-price",
+      "name": "Imagen 4 Ultra image price",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/image-price",
+      "id": "image-price",
+      "name": "Image price",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/video-price",
+      "id": "video-price",
+      "name": "Video price",
+      "provider": "google",
+      "input_price": 0,
+      "output_price": 0,
+      "context_window": 32768,
+      "status": "ga"
     }
   ]
 }

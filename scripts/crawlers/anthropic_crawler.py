@@ -220,5 +220,7 @@ class AnthropicCrawler(BaseCrawler):
         return {}
 
 if __name__ == "__main__":
-    crawler = AnthropicCrawler()
+    # 웹 스크래핑 버전 사용
+    from anthropic_web_scraper import AnthropicCrawlerV2
+    crawler = AnthropicCrawlerV2()
     crawler.run()
