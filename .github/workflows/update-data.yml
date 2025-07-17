@@ -23,35 +23,36 @@ jobs:
         pip install -r requirements.txt
         playwright install chromium
         
-    - name: Run OpenAI crawler
-      run: python scripts/crawlers/openai_crawler.py
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    - name: Run OpenAI web scraper
+      run: python scripts/crawlers/openai_web_scraper.py
       continue-on-error: true
         
-    - name: Run Anthropic crawler
-      run: python scripts/crawlers/anthropic_crawler.py
+    - name: Run Anthropic web scraper
+      run: python scripts/crawlers/anthropic_web_scraper.py
       continue-on-error: true
       
-    - name: Run Google crawler
-      run: python scripts/crawlers/google_crawler.py
+    - name: Run Google web scraper
+      run: python scripts/crawlers/google_web_scraper.py
       continue-on-error: true
       
-      
-    - name: Run DeepSeek crawler
-      run: python scripts/crawlers/deepseek_crawler.py
+    - name: Run DeepSeek web scraper
+      run: python scripts/crawlers/deepseek_web_scraper.py
       continue-on-error: true
       
-    - name: Run xAI crawler
-      run: python scripts/crawlers/xai_crawler.py
+    - name: Run xAI web scraper
+      run: python scripts/crawlers/xai_web_scraper.py
       continue-on-error: true
       
-    - name: Run Mistral crawler
-      run: python scripts/crawlers/mistral_crawler.py
+    - name: Run Mistral web scraper
+      run: python scripts/crawlers/mistral_web_scraper.py
       continue-on-error: true
       
-    - name: Run Cohere crawler
-      run: python scripts/crawlers/cohere_crawler.py
+    - name: Run Cohere web scraper
+      run: python scripts/crawlers/cohere_web_scraper.py
+      continue-on-error: true
+      
+    - name: Run all crawlers (alternative)
+      run: python scripts/run_all_crawlers.py
       continue-on-error: true
       
     - name: Process and consolidate data
