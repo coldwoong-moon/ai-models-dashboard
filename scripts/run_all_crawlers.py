@@ -38,7 +38,11 @@ def main():
         "crawlers/openai_crawler.py",
         "crawlers/anthropic_crawler.py",
         "crawlers/google_crawler.py",
-        "crawlers/openrouter_crawler.py"
+        "crawlers/openrouter_crawler.py",
+        "crawlers/deepseek_crawler.py",
+        "crawlers/xai_crawler.py",
+        "crawlers/mistral_crawler.py",
+        "crawlers/cohere_crawler.py"
     ]
     
     success_count = 0

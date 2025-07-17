@@ -41,6 +41,22 @@ jobs:
       run: python scripts/crawlers/openrouter_crawler.py
       continue-on-error: true
       
+    - name: Run DeepSeek crawler
+      run: python scripts/crawlers/deepseek_crawler.py
+      continue-on-error: true
+      
+    - name: Run xAI crawler
+      run: python scripts/crawlers/xai_crawler.py
+      continue-on-error: true
+      
+    - name: Run Mistral crawler
+      run: python scripts/crawlers/mistral_crawler.py
+      continue-on-error: true
+      
+    - name: Run Cohere crawler
+      run: python scripts/crawlers/cohere_crawler.py
+      continue-on-error: true
+      
     - name: Process and consolidate data
       run: python scripts/data_processor.py
       

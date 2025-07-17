@@ -1,0 +1,336 @@
+{
+  "provider": "mistral",
+  "provider_info": {
+    "name": "Mistral AI",
+    "website": "https://mistral.ai",
+    "api_endpoint": "https://api.mistral.ai"
+  },
+  "last_updated": "2025-07-17T10:37:06.651509",
+  "models": [
+    {
+      "id": "mistral-large-2411",
+      "name": "Mistral Large 2411",
+      "provider": "mistral",
+      "description": "Latest flagship model with enhanced reasoning and multilingual capabilities",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-11-15",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "function-calling",
+        "json-mode",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning tasks",
+        "Multilingual applications",
+        "Enterprise chatbots",
+        "Content generation",
+        "Function calling applications",
+        "JSON structured outputs"
+      ],
+      "training_cutoff": "2024-09",
+      "last_updated": "2025-07-17T10:37:06.651438"
+    },
+    {
+      "id": "mistral-large-2407",
+      "name": "Mistral Large 2407",
+      "provider": "mistral",
+      "description": "Previous version of the flagship model",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-07-24",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "function-calling",
+        "json-mode",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General-purpose AI applications",
+        "Customer support",
+        "Content creation",
+        "Research assistance"
+      ],
+      "training_cutoff": "2024-05",
+      "last_updated": "2025-07-17T10:37:06.651449"
+    },
+    {
+      "id": "mistral-medium",
+      "name": "Mistral Medium",
+      "provider": "mistral",
+      "description": "Balanced model for general-purpose tasks",
+      "pricing": {
+        "input": 2.7,
+        "output": 8.1,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 8192,
+      "release_date": "2023-12-11",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Balanced performance tasks",
+        "Educational applications",
+        "Content moderation",
+        "Translation services"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2025-07-17T10:37:06.651451"
+    },
+    {
+      "id": "mistral-small-2409",
+      "name": "Mistral Small 2409",
+      "provider": "mistral",
+      "description": "Cost-effective model for simple tasks",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-09-18",
+      "status": "ga",
+      "features": [
+        "chat",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Simple Q&A",
+        "Basic text generation",
+        "Cost-sensitive applications",
+        "High-volume processing"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2025-07-17T10:37:06.651453"
+    },
+    {
+      "id": "mistral-nemo",
+      "name": "Mistral Nemo",
+      "provider": "mistral",
+      "description": "12B parameter model built in partnership with NVIDIA",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-07-18",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "multilingual",
+        "apache-license"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "On-device deployment",
+        "Privacy-sensitive applications",
+        "Custom fine-tuning",
+        "Edge computing"
+      ],
+      "training_cutoff": "2024-06",
+      "last_updated": "2025-07-17T10:37:06.651454"
+    },
+    {
+      "id": "pixtral-large-2411",
+      "name": "Pixtral Large 2411",
+      "provider": "mistral",
+      "description": "Latest multimodal model with vision capabilities",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-11-21",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Visual content analysis",
+        "Multimodal applications",
+        "Document understanding",
+        "Image captioning",
+        "Visual Q&A"
+      ],
+      "training_cutoff": "2024-09",
+      "last_updated": "2025-07-17T10:37:06.651455"
+    },
+    {
+      "id": "pixtral-12b",
+      "name": "Pixtral 12B",
+      "provider": "mistral",
+      "description": "Open-source multimodal model with vision",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-09-11",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "apache-license"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Open-source vision projects",
+        "Research applications",
+        "Custom multimodal solutions"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2025-07-17T10:37:06.651457"
+    },
+    {
+      "id": "codestral-2405",
+      "name": "Codestral 2405",
+      "provider": "mistral",
+      "description": "Code generation model trained on 80+ programming languages",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 8192,
+      "release_date": "2024-05-29",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-completion",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Code generation",
+        "Programming assistance",
+        "Code completion",
+        "Software development",
+        "Algorithm implementation"
+      ],
+      "training_cutoff": "2024-03",
+      "last_updated": "2025-07-17T10:37:06.651458"
+    },
+    {
+      "id": "codestral-mamba-2407",
+      "name": "Codestral Mamba 2407",
+      "provider": "mistral",
+      "description": "Code generation model with Mamba architecture for faster inference",
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25,
+        "unit": "1M tokens"
+      },
+      "context_window": 256000,
+      "max_output": 8192,
+      "release_date": "2024-07-16",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-completion",
+        "long-context",
+        "fast-inference"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Large codebase analysis",
+        "Long code generation",
+        "Fast inference coding tasks",
+        "Real-time code completion"
+      ],
+      "training_cutoff": "2024-05",
+      "last_updated": "2025-07-17T10:37:06.651459"
+    },
+    {
+      "id": "mistral-7b",
+      "name": "Mistral 7B",
+      "provider": "mistral",
+      "description": "Original open-source model with Apache 2.0 license",
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 8192,
+      "release_date": "2023-09-27",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "apache-license",
+        "open-source"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Open-source projects",
+        "Research and experimentation",
+        "Custom fine-tuning",
+        "Educational purposes"
+      ],
+      "training_cutoff": "2023-07",
+      "last_updated": "2025-07-17T10:37:06.651460"
+    }
+  ]
+}

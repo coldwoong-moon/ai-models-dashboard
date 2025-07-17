@@ -75,10 +75,14 @@ ai-models-dashboard/
 
 ### 지원 제공업체
 
-- OpenAI (GPT-4o, GPT-4, GPT-3.5 등)
-- Anthropic (Claude 3.5, Claude 3 시리즈)
-- Google AI (Gemini 2.0, Gemini 1.5 시리즈)
-- OpenRouter (다양한 오픈소스 모델)
+- **OpenAI** (GPT-4o, o1-preview, GPT-4, GPT-3.5 등)
+- **Anthropic** (Claude 3.5 Sonnet, Claude 3.5 Haiku, Claude 3 시리즈)
+- **Google AI** (Gemini 2.0 Flash, Gemini 1.5 Pro/Flash 시리즈)
+- **DeepSeek** (DeepSeek V3, DeepSeek Coder V2, 수학/코딩 특화)
+- **xAI** (Grok 2, Grok 2 Vision, 실시간 X 데이터 연동)
+- **Mistral AI** (Mistral Large, Codestral, Pixtral Vision)
+- **Cohere** (Command R+, Embed v3.0, Rerank 모델)
+- **OpenRouter** (다양한 오픈소스 및 상용 모델 라우팅)
 
 ### 데이터 업데이트 주기
 

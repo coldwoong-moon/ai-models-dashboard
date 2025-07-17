@@ -1,0 +1,353 @@
+{
+  "provider": "cohere",
+  "provider_info": {
+    "name": "Cohere",
+    "website": "https://cohere.com",
+    "api_endpoint": "https://api.cohere.ai"
+  },
+  "last_updated": "2025-07-17T10:37:06.764300",
+  "models": [
+    {
+      "id": "command-r-plus",
+      "name": "Command R+",
+      "provider": "cohere",
+      "description": "Advanced conversational AI optimized for complex reasoning and RAG",
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-04-04",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "rag",
+        "function-calling",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning tasks",
+        "RAG applications",
+        "Enterprise chatbots",
+        "Document analysis",
+        "Knowledge base queries",
+        "Multi-step workflows"
+      ],
+      "training_cutoff": "2024-01",
+      "last_updated": "2025-07-17T10:37:06.764236"
+    },
+    {
+      "id": "command-r",
+      "name": "Command R",
+      "provider": "cohere",
+      "description": "Balanced model for retrieval-augmented generation and conversation",
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-03-11",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "rag",
+        "function-calling",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Retrieval-augmented generation",
+        "Information synthesis",
+        "Customer support",
+        "Content generation",
+        "Question answering"
+      ],
+      "training_cutoff": "2024-01",
+      "last_updated": "2025-07-17T10:37:06.764248"
+    },
+    {
+      "id": "command",
+      "name": "Command",
+      "provider": "cohere",
+      "description": "General-purpose conversational AI model",
+      "pricing": {
+        "input": 1.0,
+        "output": 2.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 4096,
+      "release_date": "2023-06-01",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General conversations",
+        "Content creation",
+        "Text summarization",
+        "Simple Q&A"
+      ],
+      "training_cutoff": "2023-03",
+      "last_updated": "2025-07-17T10:37:06.764250"
+    },
+    {
+      "id": "command-light",
+      "name": "Command Light",
+      "provider": "cohere",
+      "description": "Faster, lighter version for simple tasks",
+      "pricing": {
+        "input": 0.3,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 4096,
+      "release_date": "2023-06-01",
+      "status": "ga",
+      "features": [
+        "chat",
+        "fast-inference"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "High-throughput applications",
+        "Real-time chat",
+        "Simple text generation",
+        "Cost-sensitive deployments"
+      ],
+      "training_cutoff": "2023-03",
+      "last_updated": "2025-07-17T10:37:06.764251"
+    },
+    {
+      "id": "command-nightly",
+      "name": "Command Nightly",
+      "provider": "cohere",
+      "description": "Experimental model with latest features",
+      "pricing": {
+        "input": 15.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-01-01",
+      "status": "experimental",
+      "features": [
+        "chat",
+        "reasoning",
+        "experimental"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Experimental features testing",
+        "Cutting-edge capabilities",
+        "Research applications"
+      ],
+      "training_cutoff": "2024-01",
+      "last_updated": "2025-07-17T10:37:06.764253"
+    },
+    {
+      "id": "embed-english-v3.0",
+      "name": "Embed English v3.0",
+      "provider": "cohere",
+      "description": "State-of-the-art English text embeddings",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "semantic-search",
+        "clustering"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Semantic search",
+        "Text similarity",
+        "Document clustering",
+        "Recommendation systems",
+        "Content classification"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764254"
+    },
+    {
+      "id": "embed-multilingual-v3.0",
+      "name": "Embed Multilingual v3.0",
+      "provider": "cohere",
+      "description": "Multilingual text embeddings supporting 100+ languages",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "multilingual",
+        "semantic-search"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Cross-lingual search",
+        "Multilingual clustering",
+        "Global content analysis",
+        "International applications"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764255"
+    },
+    {
+      "id": "embed-english-light-v3.0",
+      "name": "Embed English Light v3.0",
+      "provider": "cohere",
+      "description": "Lightweight English embeddings for high-throughput applications",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "fast-inference",
+        "lightweight"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "High-volume embeddings",
+        "Real-time similarity",
+        "Edge deployments"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764257"
+    },
+    {
+      "id": "embed-multilingual-light-v3.0",
+      "name": "Embed Multilingual Light v3.0",
+      "provider": "cohere",
+      "description": "Lightweight multilingual embeddings",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "multilingual",
+        "lightweight"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Lightweight multilingual search",
+        "Fast cross-lingual matching"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764259"
+    },
+    {
+      "id": "rerank-english-v3.0",
+      "name": "Rerank English v3.0",
+      "provider": "cohere",
+      "description": "Advanced reranking model for search relevance",
+      "pricing": {
+        "input": 2.0,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 1,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "reranking",
+        "search-optimization",
+        "relevance-scoring"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Search result optimization",
+        "Relevance scoring",
+        "Information retrieval",
+        "Query optimization"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764261"
+    },
+    {
+      "id": "rerank-multilingual-v3.0",
+      "name": "Rerank Multilingual v3.0",
+      "provider": "cohere",
+      "description": "Multilingual reranking for global search applications",
+      "pricing": {
+        "input": 2.0,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 1,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "reranking",
+        "multilingual",
+        "search-optimization"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Global search systems",
+        "Multilingual relevance",
+        "Cross-language retrieval"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764262"
+    }
+  ]
+}

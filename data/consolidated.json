@@ -1,32 +1,60 @@
 {
-  "last_updated": "2025-07-17T09:19:10.812512",
+  "last_updated": "2025-07-17T10:37:06.800092",
   "providers": {
     "anthropic": {
       "name": "Anthropic",
       "website": "https://anthropic.com",
       "api_endpoint": "https://api.anthropic.com",
-      "last_updated": "2025-07-17T09:19:10.317685",
+      "last_updated": "2025-07-17T10:37:05.877552",
       "model_count": 8
     },
     "openai": {
       "name": "OpenAI",
       "website": "https://openai.com",
       "api_endpoint": "https://api.openai.com/v1",
-      "last_updated": "2025-07-17T09:19:10.175620",
+      "last_updated": "2025-07-17T10:37:05.760913",
       "model_count": 7
+    },
+    "xai": {
+      "name": "Xai",
+      "website": "",
+      "api_endpoint": "",
+      "last_updated": "2025-07-17T10:37:06.534689",
+      "model_count": 6
+    },
+    "mistral": {
+      "name": "Mistral AI",
+      "website": "https://mistral.ai",
+      "api_endpoint": "https://api.mistral.ai",
+      "last_updated": "2025-07-17T10:37:06.651509",
+      "model_count": 10
     },
     "openrouter": {
       "name": "OpenRouter",
       "website": "https://openrouter.ai",
       "api_endpoint": "https://openrouter.ai/api/v1",
-      "last_updated": "2025-07-17T09:19:10.768699",
+      "last_updated": "2025-07-17T10:37:06.295097",
       "model_count": 44
+    },
+    "cohere": {
+      "name": "Cohere",
+      "website": "https://cohere.com",
+      "api_endpoint": "https://api.cohere.ai",
+      "last_updated": "2025-07-17T10:37:06.764300",
+      "model_count": 11
+    },
+    "deepseek": {
+      "name": "Deepseek",
+      "website": "",
+      "api_endpoint": "",
+      "last_updated": "2025-07-17T10:37:06.420919",
+      "model_count": 6
     },
     "google": {
       "name": "Google AI",
       "website": "https://ai.google.dev",
       "api_endpoint": "https://generativelanguage.googleapis.com",
-      "last_updated": "2025-07-17T09:19:10.442645",
+      "last_updated": "2025-07-17T10:37:05.990793",
       "model_count": 8
     }
   },
@@ -65,7 +93,7 @@
         "Image understanding"
       ],
       "training_cutoff": "2024-04",
-      "last_updated": "2025-07-17T09:19:10.317613",
+      "last_updated": "2025-07-17T10:37:05.877498",
       "unique_id": "anthropic/claude-3-5-sonnet-20241022"
     },
     {
@@ -100,7 +128,7 @@
         "Basic image analysis"
       ],
       "training_cutoff": "2024-07",
-      "last_updated": "2025-07-17T09:19:10.317625",
+      "last_updated": "2025-07-17T10:37:05.877508",
       "unique_id": "anthropic/claude-3-5-haiku-20241022"
     },
     {
@@ -133,7 +161,7 @@
         "Expert-level tasks"
       ],
       "training_cutoff": "2023-08",
-      "last_updated": "2025-07-17T09:19:10.317627",
+      "last_updated": "2025-07-17T10:37:05.877510",
       "unique_id": "anthropic/claude-3-opus-20240229"
     },
     {
@@ -166,7 +194,7 @@
         "Code review"
       ],
       "training_cutoff": "2023-08",
-      "last_updated": "2025-07-17T09:19:10.317629",
+      "last_updated": "2025-07-17T10:37:05.877511",
       "unique_id": "anthropic/claude-3-sonnet-20240229"
     },
     {
@@ -199,7 +227,7 @@
         "High-volume processing"
       ],
       "training_cutoff": "2023-08",
-      "last_updated": "2025-07-17T09:19:10.317632",
+      "last_updated": "2025-07-17T10:37:05.877513",
       "unique_id": "anthropic/claude-3-haiku-20240307"
     },
     {
@@ -224,7 +252,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "2023-01",
-      "last_updated": "2025-07-17T09:19:10.317633",
+      "last_updated": "2025-07-17T10:37:05.877514",
       "unique_id": "anthropic/claude-2.1"
     },
     {
@@ -249,7 +277,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "2023-01",
-      "last_updated": "2025-07-17T09:19:10.317635",
+      "last_updated": "2025-07-17T10:37:05.877515",
       "unique_id": "anthropic/claude-2.0"
     },
     {
@@ -274,7 +302,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "2023-01",
-      "last_updated": "2025-07-17T09:19:10.317636",
+      "last_updated": "2025-07-17T10:37:05.877516",
       "unique_id": "anthropic/claude-instant-1.2"
     },
     {
@@ -303,7 +331,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.175540",
+      "last_updated": "2025-07-17T10:37:05.760844",
       "unique_id": "openai/gpt-4o"
     },
     {
@@ -332,7 +360,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.175551",
+      "last_updated": "2025-07-17T10:37:05.760852",
       "unique_id": "openai/gpt-4o-mini"
     },
     {
@@ -358,7 +386,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.175554",
+      "last_updated": "2025-07-17T10:37:05.760855",
       "unique_id": "openai/o1-preview"
     },
     {
@@ -385,7 +413,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.175556",
+      "last_updated": "2025-07-17T10:37:05.760856",
       "unique_id": "openai/o1-mini"
     },
     {
@@ -414,7 +442,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.175557",
+      "last_updated": "2025-07-17T10:37:05.760858",
       "unique_id": "openai/gpt-4-turbo"
     },
     {
@@ -440,7 +468,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.175559",
+      "last_updated": "2025-07-17T10:37:05.760859",
       "unique_id": "openai/gpt-4"
     },
     {
@@ -467,8 +495,544 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.175560",
+      "last_updated": "2025-07-17T10:37:05.760860",
       "unique_id": "openai/gpt-3.5-turbo"
+    },
+    {
+      "id": "grok-2",
+      "name": "Grok 2",
+      "provider": "xai",
+      "description": "xAI flagship model with enhanced reasoning and real-time knowledge",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 131072,
+      "max_output": 8192,
+      "release_date": "2024-08-13",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "real-time-data",
+        "humor"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Real-time news analysis",
+        "Social media insights",
+        "Current events discussion",
+        "Trend analysis",
+        "Interactive conversations",
+        "Research with live data"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2025-07-17T10:37:06.534626",
+      "unique_id": "xai/grok-2"
+    },
+    {
+      "id": "grok-2-vision",
+      "name": "Grok 2 Vision",
+      "provider": "xai",
+      "description": "Grok 2 with advanced vision capabilities for image understanding",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 131072,
+      "max_output": 8192,
+      "release_date": "2024-08-13",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "real-time-data",
+        "humor"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Image analysis with context",
+        "Visual content creation",
+        "Meme generation and analysis",
+        "Social media content review",
+        "Real-time image understanding"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2025-07-17T10:37:06.534638",
+      "unique_id": "xai/grok-2-vision"
+    },
+    {
+      "id": "grok-1.5-vision",
+      "name": "Grok 1.5 Vision",
+      "provider": "xai",
+      "description": "Enhanced version with vision capabilities and improved reasoning",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-04-12",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "real-time-data"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Document analysis",
+        "Chart and graph interpretation",
+        "Visual Q&A",
+        "Educational content creation"
+      ],
+      "training_cutoff": "2024-03",
+      "last_updated": "2025-07-17T10:37:06.534640",
+      "unique_id": "xai/grok-1.5-vision"
+    },
+    {
+      "id": "grok-1.5",
+      "name": "Grok 1.5",
+      "provider": "xai",
+      "description": "Improved version with better coding and math capabilities",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-03-28",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "coding",
+        "math"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Coding assistance",
+        "Mathematical problem solving",
+        "Technical discussions",
+        "Educational tutoring"
+      ],
+      "training_cutoff": "2024-03",
+      "last_updated": "2025-07-17T10:37:06.534642",
+      "unique_id": "xai/grok-1.5"
+    },
+    {
+      "id": "grok-1",
+      "name": "Grok 1",
+      "provider": "xai",
+      "description": "Original Grok model with witty and rebellious personality",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 8192,
+      "max_output": 4096,
+      "release_date": "2023-11-04",
+      "status": "deprecated",
+      "features": [
+        "chat",
+        "humor",
+        "real-time-data"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Casual conversations",
+        "Entertainment discussions",
+        "Humorous content generation",
+        "Alternative perspectives"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2025-07-17T10:37:06.534643",
+      "unique_id": "xai/grok-1"
+    },
+    {
+      "id": "grok-beta",
+      "name": "Grok Beta",
+      "provider": "xai",
+      "description": "Early access model with experimental features",
+      "pricing": {
+        "input": 5.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 25000,
+      "max_output": 4096,
+      "release_date": "2023-12-07",
+      "status": "beta",
+      "features": [
+        "chat",
+        "reasoning",
+        "experimental"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Experimental features testing",
+        "Edge case discussions",
+        "Unconventional problem solving"
+      ],
+      "training_cutoff": "2023-11",
+      "last_updated": "2025-07-17T10:37:06.534644",
+      "unique_id": "xai/grok-beta"
+    },
+    {
+      "id": "mistral-large-2411",
+      "name": "Mistral Large 2411",
+      "provider": "mistral",
+      "description": "Latest flagship model with enhanced reasoning and multilingual capabilities",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-11-15",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "function-calling",
+        "json-mode",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning tasks",
+        "Multilingual applications",
+        "Enterprise chatbots",
+        "Content generation",
+        "Function calling applications",
+        "JSON structured outputs"
+      ],
+      "training_cutoff": "2024-09",
+      "last_updated": "2025-07-17T10:37:06.651438",
+      "unique_id": "mistral/mistral-large-2411"
+    },
+    {
+      "id": "mistral-large-2407",
+      "name": "Mistral Large 2407",
+      "provider": "mistral",
+      "description": "Previous version of the flagship model",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-07-24",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "function-calling",
+        "json-mode",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General-purpose AI applications",
+        "Customer support",
+        "Content creation",
+        "Research assistance"
+      ],
+      "training_cutoff": "2024-05",
+      "last_updated": "2025-07-17T10:37:06.651449",
+      "unique_id": "mistral/mistral-large-2407"
+    },
+    {
+      "id": "mistral-medium",
+      "name": "Mistral Medium",
+      "provider": "mistral",
+      "description": "Balanced model for general-purpose tasks",
+      "pricing": {
+        "input": 2.7,
+        "output": 8.1,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 8192,
+      "release_date": "2023-12-11",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Balanced performance tasks",
+        "Educational applications",
+        "Content moderation",
+        "Translation services"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2025-07-17T10:37:06.651451",
+      "unique_id": "mistral/mistral-medium"
+    },
+    {
+      "id": "mistral-small-2409",
+      "name": "Mistral Small 2409",
+      "provider": "mistral",
+      "description": "Cost-effective model for simple tasks",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-09-18",
+      "status": "ga",
+      "features": [
+        "chat",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Simple Q&A",
+        "Basic text generation",
+        "Cost-sensitive applications",
+        "High-volume processing"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2025-07-17T10:37:06.651453",
+      "unique_id": "mistral/mistral-small-2409"
+    },
+    {
+      "id": "mistral-nemo",
+      "name": "Mistral Nemo",
+      "provider": "mistral",
+      "description": "12B parameter model built in partnership with NVIDIA",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-07-18",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "multilingual",
+        "apache-license"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "On-device deployment",
+        "Privacy-sensitive applications",
+        "Custom fine-tuning",
+        "Edge computing"
+      ],
+      "training_cutoff": "2024-06",
+      "last_updated": "2025-07-17T10:37:06.651454",
+      "unique_id": "mistral/mistral-nemo"
+    },
+    {
+      "id": "pixtral-large-2411",
+      "name": "Pixtral Large 2411",
+      "provider": "mistral",
+      "description": "Latest multimodal model with vision capabilities",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-11-21",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Visual content analysis",
+        "Multimodal applications",
+        "Document understanding",
+        "Image captioning",
+        "Visual Q&A"
+      ],
+      "training_cutoff": "2024-09",
+      "last_updated": "2025-07-17T10:37:06.651455",
+      "unique_id": "mistral/pixtral-large-2411"
+    },
+    {
+      "id": "pixtral-12b",
+      "name": "Pixtral 12B",
+      "provider": "mistral",
+      "description": "Open-source multimodal model with vision",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-09-11",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "apache-license"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Open-source vision projects",
+        "Research applications",
+        "Custom multimodal solutions"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2025-07-17T10:37:06.651457",
+      "unique_id": "mistral/pixtral-12b"
+    },
+    {
+      "id": "codestral-2405",
+      "name": "Codestral 2405",
+      "provider": "mistral",
+      "description": "Code generation model trained on 80+ programming languages",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 8192,
+      "release_date": "2024-05-29",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-completion",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Code generation",
+        "Programming assistance",
+        "Code completion",
+        "Software development",
+        "Algorithm implementation"
+      ],
+      "training_cutoff": "2024-03",
+      "last_updated": "2025-07-17T10:37:06.651458",
+      "unique_id": "mistral/codestral-2405"
+    },
+    {
+      "id": "codestral-mamba-2407",
+      "name": "Codestral Mamba 2407",
+      "provider": "mistral",
+      "description": "Code generation model with Mamba architecture for faster inference",
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25,
+        "unit": "1M tokens"
+      },
+      "context_window": 256000,
+      "max_output": 8192,
+      "release_date": "2024-07-16",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-completion",
+        "long-context",
+        "fast-inference"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Large codebase analysis",
+        "Long code generation",
+        "Fast inference coding tasks",
+        "Real-time code completion"
+      ],
+      "training_cutoff": "2024-05",
+      "last_updated": "2025-07-17T10:37:06.651459",
+      "unique_id": "mistral/codestral-mamba-2407"
+    },
+    {
+      "id": "mistral-7b",
+      "name": "Mistral 7B",
+      "provider": "mistral",
+      "description": "Original open-source model with Apache 2.0 license",
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 8192,
+      "release_date": "2023-09-27",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "apache-license",
+        "open-source"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Open-source projects",
+        "Research and experimentation",
+        "Custom fine-tuning",
+        "Educational purposes"
+      ],
+      "training_cutoff": "2023-07",
+      "last_updated": "2025-07-17T10:37:06.651460",
+      "unique_id": "mistral/mistral-7b"
     },
     {
       "id": "mistralai/mistral-medium-3",
@@ -490,7 +1054,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768538",
+      "last_updated": "2025-07-17T10:37:06.294820",
       "unique_id": "openrouter/mistralai/mistral-medium-3"
     },
     {
@@ -513,7 +1077,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768548",
+      "last_updated": "2025-07-17T10:37:06.294838",
       "unique_id": "openrouter/deepseek/deepseek-chat-v3-0324:free"
     },
     {
@@ -536,7 +1100,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768550",
+      "last_updated": "2025-07-17T10:37:06.294842",
       "unique_id": "openrouter/deepseek/deepseek-chat-v3-0324"
     },
     {
@@ -559,7 +1123,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768551",
+      "last_updated": "2025-07-17T10:37:06.294844",
       "unique_id": "openrouter/openai/gpt-4o-mini-search-preview"
     },
     {
@@ -582,7 +1146,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768552",
+      "last_updated": "2025-07-17T10:37:06.294847",
       "unique_id": "openrouter/openai/gpt-4o-search-preview"
     },
     {
@@ -605,7 +1169,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768554",
+      "last_updated": "2025-07-17T10:37:06.294849",
       "unique_id": "openrouter/deepseek/deepseek-chat:free"
     },
     {
@@ -628,7 +1192,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768555",
+      "last_updated": "2025-07-17T10:37:06.294851",
       "unique_id": "openrouter/deepseek/deepseek-chat"
     },
     {
@@ -651,7 +1215,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768556",
+      "last_updated": "2025-07-17T10:37:06.294853",
       "unique_id": "openrouter/x-ai/grok-2-vision-1212"
     },
     {
@@ -674,7 +1238,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768557",
+      "last_updated": "2025-07-17T10:37:06.294855",
       "unique_id": "openrouter/x-ai/grok-2-1212"
     },
     {
@@ -697,7 +1261,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768558",
+      "last_updated": "2025-07-17T10:37:06.294857",
       "unique_id": "openrouter/google/gemini-2.0-flash-exp:free"
     },
     {
@@ -720,7 +1284,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768559",
+      "last_updated": "2025-07-17T10:37:06.294859",
       "unique_id": "openrouter/meta-llama/llama-3.3-70b-instruct:free"
     },
     {
@@ -743,7 +1307,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768560",
+      "last_updated": "2025-07-17T10:37:06.294861",
       "unique_id": "openrouter/meta-llama/llama-3.3-70b-instruct"
     },
     {
@@ -766,7 +1330,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768561",
+      "last_updated": "2025-07-17T10:37:06.294863",
       "unique_id": "openrouter/openai/gpt-4o-2024-11-20"
     },
     {
@@ -789,7 +1353,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768563",
+      "last_updated": "2025-07-17T10:37:06.294865",
       "unique_id": "openrouter/mistralai/mistral-large-2411"
     },
     {
@@ -812,7 +1376,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768564",
+      "last_updated": "2025-07-17T10:37:06.294867",
       "unique_id": "openrouter/mistralai/mistral-large-2407"
     },
     {
@@ -835,7 +1399,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768565",
+      "last_updated": "2025-07-17T10:37:06.294869",
       "unique_id": "openrouter/mistralai/pixtral-large-2411"
     },
     {
@@ -858,7 +1422,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768566",
+      "last_updated": "2025-07-17T10:37:06.294871",
       "unique_id": "openrouter/anthropic/claude-3.5-haiku:beta"
     },
     {
@@ -881,7 +1445,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768567",
+      "last_updated": "2025-07-17T10:37:06.294874",
       "unique_id": "openrouter/anthropic/claude-3.5-haiku"
     },
     {
@@ -904,7 +1468,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768568",
+      "last_updated": "2025-07-17T10:37:06.294875",
       "unique_id": "openrouter/anthropic/claude-3.5-haiku-20241022:beta"
     },
     {
@@ -927,7 +1491,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768569",
+      "last_updated": "2025-07-17T10:37:06.294878",
       "unique_id": "openrouter/anthropic/claude-3.5-haiku-20241022"
     },
     {
@@ -950,7 +1514,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768570",
+      "last_updated": "2025-07-17T10:37:06.294879",
       "unique_id": "openrouter/anthropic/claude-3.5-sonnet:beta"
     },
     {
@@ -973,7 +1537,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768571",
+      "last_updated": "2025-07-17T10:37:06.294881",
       "unique_id": "openrouter/anthropic/claude-3.5-sonnet"
     },
     {
@@ -996,7 +1560,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768573",
+      "last_updated": "2025-07-17T10:37:06.294883",
       "unique_id": "openrouter/nvidia/llama-3.1-nemotron-70b-instruct"
     },
     {
@@ -1019,7 +1583,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768574",
+      "last_updated": "2025-07-17T10:37:06.294885",
       "unique_id": "openrouter/meta-llama/llama-3.2-90b-vision-instruct"
     },
     {
@@ -1042,7 +1606,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768575",
+      "last_updated": "2025-07-17T10:37:06.294887",
       "unique_id": "openrouter/qwen/qwen-2.5-72b-instruct:free"
     },
     {
@@ -1065,7 +1629,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768576",
+      "last_updated": "2025-07-17T10:37:06.294890",
       "unique_id": "openrouter/qwen/qwen-2.5-72b-instruct"
     },
     {
@@ -1088,8 +1652,31 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768577",
+      "last_updated": "2025-07-17T10:37:06.294892",
       "unique_id": "openrouter/openai/o1-preview"
+    },
+    {
+      "id": "openai/o1-mini-2024-09-12",
+      "name": "OpenAI",
+      "provider": "openrouter",
+      "description": "The latest and strongest model family from OpenAI, o1 is designed to spend more time thinking before responding.\n\nThe o1 models are optimized for math, science, programming, and other STEM-related tasks. They consistently exhibit PhD-level accuracy on benchmarks in physics, chemistry, and biology. Learn more in the [launch announcement](https://openai.com/o1).\n\nNote: This model is currently experimental and not suitable for production use-cases, and may be heavily rate-limited.",
+      "pricing": {
+        "input": 1.1,
+        "output": 4.4,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T10:37:06.294894",
+      "unique_id": "openrouter/openai/o1-mini-2024-09-12"
     },
     {
       "id": "openai/o1-preview-2024-09-12",
@@ -1111,7 +1698,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768578",
+      "last_updated": "2025-07-17T10:37:06.294896",
       "unique_id": "openrouter/openai/o1-preview-2024-09-12"
     },
     {
@@ -1134,31 +1721,8 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768579",
+      "last_updated": "2025-07-17T10:37:06.294898",
       "unique_id": "openrouter/openai/o1-mini"
-    },
-    {
-      "id": "openai/o1-mini-2024-09-12",
-      "name": "OpenAI",
-      "provider": "openrouter",
-      "description": "The latest and strongest model family from OpenAI, o1 is designed to spend more time thinking before responding.\n\nThe o1 models are optimized for math, science, programming, and other STEM-related tasks. They consistently exhibit PhD-level accuracy on benchmarks in physics, chemistry, and biology. Learn more in the [launch announcement](https://openai.com/o1).\n\nNote: This model is currently experimental and not suitable for production use-cases, and may be heavily rate-limited.",
-      "pricing": {
-        "input": 1.1,
-        "output": 4.4,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768580",
-      "unique_id": "openrouter/openai/o1-mini-2024-09-12"
     },
     {
       "id": "cohere/command-r-plus-08-2024",
@@ -1180,7 +1744,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768581",
+      "last_updated": "2025-07-17T10:37:06.294900",
       "unique_id": "openrouter/cohere/command-r-plus-08-2024"
     },
     {
@@ -1203,31 +1767,8 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768582",
+      "last_updated": "2025-07-17T10:37:06.294902",
       "unique_id": "openrouter/openai/gpt-4o-2024-08-06"
-    },
-    {
-      "id": "openai/gpt-4o-mini",
-      "name": "OpenAI",
-      "provider": "openrouter",
-      "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs.\n\nAs their most advanced small model, it is many multiples more affordable than other recent frontier models, and more than 60% cheaper than [GPT-3.5 Turbo](/models/openai/gpt-3.5-turbo). It maintains SOTA intelligence, while being significantly more cost-effective.\n\nGPT-4o mini achieves an 82% score on MMLU and presently ranks higher than GPT-4 on chat preferences [common leaderboards](https://arena.lmsys.org/).\n\nCheck out the [launch announcement](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) to learn more.\n\n#multimodal",
-      "pricing": {
-        "input": 0.15,
-        "output": 0.6,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768583",
-      "unique_id": "openrouter/openai/gpt-4o-mini"
     },
     {
       "id": "openai/gpt-4o-mini-2024-07-18",
@@ -1249,8 +1790,31 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768585",
+      "last_updated": "2025-07-17T10:37:06.294904",
       "unique_id": "openrouter/openai/gpt-4o-mini-2024-07-18"
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "name": "OpenAI",
+      "provider": "openrouter",
+      "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs.\n\nAs their most advanced small model, it is many multiples more affordable than other recent frontier models, and more than 60% cheaper than [GPT-3.5 Turbo](/models/openai/gpt-3.5-turbo). It maintains SOTA intelligence, while being significantly more cost-effective.\n\nGPT-4o mini achieves an 82% score on MMLU and presently ranks higher than GPT-4 on chat preferences [common leaderboards](https://arena.lmsys.org/).\n\nCheck out the [launch announcement](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) to learn more.\n\n#multimodal",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T10:37:06.294906",
+      "unique_id": "openrouter/openai/gpt-4o-mini"
     },
     {
       "id": "anthropic/claude-3.5-sonnet-20240620:beta",
@@ -1272,7 +1836,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768586",
+      "last_updated": "2025-07-17T10:37:06.294908",
       "unique_id": "openrouter/anthropic/claude-3.5-sonnet-20240620:beta"
     },
     {
@@ -1295,8 +1859,31 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768587",
+      "last_updated": "2025-07-17T10:37:06.294910",
       "unique_id": "openrouter/anthropic/claude-3.5-sonnet-20240620"
+    },
+    {
+      "id": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI",
+      "provider": "openrouter",
+      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as fast and 50% more cost-effective. GPT-4o also offers improved performance in processing non-English languages and enhanced visual capabilities.\n\nFor benchmarking against other models, it was briefly called [\"im-also-a-good-gpt2-chatbot\"](https://twitter.com/LiamFedus/status/1790064963966370209)\n\n#multimodal",
+      "pricing": {
+        "input": 5.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T10:37:06.294912",
+      "unique_id": "openrouter/openai/gpt-4o-2024-05-13"
     },
     {
       "id": "openai/gpt-4o",
@@ -1318,7 +1905,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768588",
+      "last_updated": "2025-07-17T10:37:06.294914",
       "unique_id": "openrouter/openai/gpt-4o"
     },
     {
@@ -1341,31 +1928,8 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768589",
+      "last_updated": "2025-07-17T10:37:06.294916",
       "unique_id": "openrouter/openai/gpt-4o:extended"
-    },
-    {
-      "id": "openai/gpt-4o-2024-05-13",
-      "name": "OpenAI",
-      "provider": "openrouter",
-      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as fast and 50% more cost-effective. GPT-4o also offers improved performance in processing non-English languages and enhanced visual capabilities.\n\nFor benchmarking against other models, it was briefly called [\"im-also-a-good-gpt2-chatbot\"](https://twitter.com/LiamFedus/status/1790064963966370209)\n\n#multimodal",
-      "pricing": {
-        "input": 5.0,
-        "output": 15.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768590",
-      "unique_id": "openrouter/openai/gpt-4o-2024-05-13"
     },
     {
       "id": "cohere/command-r-plus",
@@ -1387,7 +1951,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768591",
+      "last_updated": "2025-07-17T10:37:06.294918",
       "unique_id": "openrouter/cohere/command-r-plus"
     },
     {
@@ -1410,7 +1974,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768592",
+      "last_updated": "2025-07-17T10:37:06.294920",
       "unique_id": "openrouter/cohere/command-r-plus-04-2024"
     },
     {
@@ -1433,7 +1997,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768593",
+      "last_updated": "2025-07-17T10:37:06.294922",
       "unique_id": "openrouter/anthropic/claude-3-opus:beta"
     },
     {
@@ -1456,7 +2020,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768594",
+      "last_updated": "2025-07-17T10:37:06.294924",
       "unique_id": "openrouter/anthropic/claude-3-opus"
     },
     {
@@ -1479,8 +2043,562 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T09:19:10.768596",
+      "last_updated": "2025-07-17T10:37:06.294927",
       "unique_id": "openrouter/mistralai/mistral-large"
+    },
+    {
+      "id": "command-r-plus",
+      "name": "Command R+",
+      "provider": "cohere",
+      "description": "Advanced conversational AI optimized for complex reasoning and RAG",
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-04-04",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "rag",
+        "function-calling",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning tasks",
+        "RAG applications",
+        "Enterprise chatbots",
+        "Document analysis",
+        "Knowledge base queries",
+        "Multi-step workflows"
+      ],
+      "training_cutoff": "2024-01",
+      "last_updated": "2025-07-17T10:37:06.764236",
+      "unique_id": "cohere/command-r-plus"
+    },
+    {
+      "id": "command-r",
+      "name": "Command R",
+      "provider": "cohere",
+      "description": "Balanced model for retrieval-augmented generation and conversation",
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-03-11",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "rag",
+        "function-calling",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Retrieval-augmented generation",
+        "Information synthesis",
+        "Customer support",
+        "Content generation",
+        "Question answering"
+      ],
+      "training_cutoff": "2024-01",
+      "last_updated": "2025-07-17T10:37:06.764248",
+      "unique_id": "cohere/command-r"
+    },
+    {
+      "id": "command",
+      "name": "Command",
+      "provider": "cohere",
+      "description": "General-purpose conversational AI model",
+      "pricing": {
+        "input": 1.0,
+        "output": 2.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 4096,
+      "release_date": "2023-06-01",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General conversations",
+        "Content creation",
+        "Text summarization",
+        "Simple Q&A"
+      ],
+      "training_cutoff": "2023-03",
+      "last_updated": "2025-07-17T10:37:06.764250",
+      "unique_id": "cohere/command"
+    },
+    {
+      "id": "command-light",
+      "name": "Command Light",
+      "provider": "cohere",
+      "description": "Faster, lighter version for simple tasks",
+      "pricing": {
+        "input": 0.3,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 4096,
+      "release_date": "2023-06-01",
+      "status": "ga",
+      "features": [
+        "chat",
+        "fast-inference"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "High-throughput applications",
+        "Real-time chat",
+        "Simple text generation",
+        "Cost-sensitive deployments"
+      ],
+      "training_cutoff": "2023-03",
+      "last_updated": "2025-07-17T10:37:06.764251",
+      "unique_id": "cohere/command-light"
+    },
+    {
+      "id": "command-nightly",
+      "name": "Command Nightly",
+      "provider": "cohere",
+      "description": "Experimental model with latest features",
+      "pricing": {
+        "input": 15.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-01-01",
+      "status": "experimental",
+      "features": [
+        "chat",
+        "reasoning",
+        "experimental"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Experimental features testing",
+        "Cutting-edge capabilities",
+        "Research applications"
+      ],
+      "training_cutoff": "2024-01",
+      "last_updated": "2025-07-17T10:37:06.764253",
+      "unique_id": "cohere/command-nightly"
+    },
+    {
+      "id": "embed-english-v3.0",
+      "name": "Embed English v3.0",
+      "provider": "cohere",
+      "description": "State-of-the-art English text embeddings",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "semantic-search",
+        "clustering"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Semantic search",
+        "Text similarity",
+        "Document clustering",
+        "Recommendation systems",
+        "Content classification"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764254",
+      "unique_id": "cohere/embed-english-v3.0"
+    },
+    {
+      "id": "embed-multilingual-v3.0",
+      "name": "Embed Multilingual v3.0",
+      "provider": "cohere",
+      "description": "Multilingual text embeddings supporting 100+ languages",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "multilingual",
+        "semantic-search"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Cross-lingual search",
+        "Multilingual clustering",
+        "Global content analysis",
+        "International applications"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764255",
+      "unique_id": "cohere/embed-multilingual-v3.0"
+    },
+    {
+      "id": "embed-english-light-v3.0",
+      "name": "Embed English Light v3.0",
+      "provider": "cohere",
+      "description": "Lightweight English embeddings for high-throughput applications",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "fast-inference",
+        "lightweight"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "High-volume embeddings",
+        "Real-time similarity",
+        "Edge deployments"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764257",
+      "unique_id": "cohere/embed-english-light-v3.0"
+    },
+    {
+      "id": "embed-multilingual-light-v3.0",
+      "name": "Embed Multilingual Light v3.0",
+      "provider": "cohere",
+      "description": "Lightweight multilingual embeddings",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "multilingual",
+        "lightweight"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Lightweight multilingual search",
+        "Fast cross-lingual matching"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764259",
+      "unique_id": "cohere/embed-multilingual-light-v3.0"
+    },
+    {
+      "id": "rerank-english-v3.0",
+      "name": "Rerank English v3.0",
+      "provider": "cohere",
+      "description": "Advanced reranking model for search relevance",
+      "pricing": {
+        "input": 2.0,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 1,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "reranking",
+        "search-optimization",
+        "relevance-scoring"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Search result optimization",
+        "Relevance scoring",
+        "Information retrieval",
+        "Query optimization"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764261",
+      "unique_id": "cohere/rerank-english-v3.0"
+    },
+    {
+      "id": "rerank-multilingual-v3.0",
+      "name": "Rerank Multilingual v3.0",
+      "provider": "cohere",
+      "description": "Multilingual reranking for global search applications",
+      "pricing": {
+        "input": 2.0,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 1,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "reranking",
+        "multilingual",
+        "search-optimization"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Global search systems",
+        "Multilingual relevance",
+        "Cross-language retrieval"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2025-07-17T10:37:06.764262",
+      "unique_id": "cohere/rerank-multilingual-v3.0"
+    },
+    {
+      "id": "deepseek-v3",
+      "name": "DeepSeek V3",
+      "provider": "deepseek",
+      "description": "Latest flagship model with 671B parameters and enhanced reasoning",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-12-26",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "coding",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning tasks",
+        "Advanced coding projects",
+        "Research assistance",
+        "Multi-step problem solving",
+        "Technical writing",
+        "Code review and analysis"
+      ],
+      "training_cutoff": "2024-09",
+      "last_updated": "2025-07-17T10:37:06.420845",
+      "unique_id": "deepseek/deepseek-v3"
+    },
+    {
+      "id": "deepseek-v2.5",
+      "name": "DeepSeek V2.5",
+      "provider": "deepseek",
+      "description": "Enhanced version with improved coding and reasoning capabilities",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-09-05",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "coding",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General programming",
+        "Code generation",
+        "Algorithm design",
+        "Technical documentation",
+        "System architecture"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2025-07-17T10:37:06.420855",
+      "unique_id": "deepseek/deepseek-v2.5"
+    },
+    {
+      "id": "deepseek-coder-v2",
+      "name": "DeepSeek Coder V2",
+      "provider": "deepseek",
+      "description": "Specialized coding model with 236B parameters",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-06-17",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "function-calling",
+        "code-completion"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Software development",
+        "Code completion",
+        "Bug fixing",
+        "Code refactoring",
+        "API development",
+        "Test generation"
+      ],
+      "training_cutoff": "2024-04",
+      "last_updated": "2025-07-17T10:37:06.420857",
+      "unique_id": "deepseek/deepseek-coder-v2"
+    },
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek Chat",
+      "provider": "deepseek",
+      "description": "General-purpose conversational AI model",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 4096,
+      "release_date": "2024-01-01",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General conversations",
+        "Q&A systems",
+        "Content creation",
+        "Simple reasoning",
+        "Educational assistance"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2025-07-17T10:37:06.420859",
+      "unique_id": "deepseek/deepseek-chat"
+    },
+    {
+      "id": "deepseek-coder",
+      "name": "DeepSeek Coder",
+      "provider": "deepseek",
+      "description": "Code-specialized model for programming tasks",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 16384,
+      "max_output": 4096,
+      "release_date": "2024-01-01",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-completion",
+        "debug"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Code completion",
+        "Simple programming tasks",
+        "Script generation",
+        "Code explanation"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2025-07-17T10:37:06.420860",
+      "unique_id": "deepseek/deepseek-coder"
+    },
+    {
+      "id": "deepseek-math",
+      "name": "DeepSeek Math",
+      "provider": "deepseek",
+      "description": "Mathematics and reasoning specialized model",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 4096,
+      "release_date": "2024-02-01",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "math",
+        "problem-solving"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Mathematical problem solving",
+        "Equation solving",
+        "Proof generation",
+        "Scientific calculations",
+        "Statistical analysis"
+      ],
+      "training_cutoff": "2023-12",
+      "last_updated": "2025-07-17T10:37:06.420861",
+      "unique_id": "deepseek/deepseek-math"
     },
     {
       "id": "gemini-2.0-flash-exp",
@@ -1518,7 +2636,7 @@
         "Video analysis"
       ],
       "training_cutoff": "2024-08",
-      "last_updated": "2025-07-17T09:19:10.442588",
+      "last_updated": "2025-07-17T10:37:05.990743",
       "unique_id": "google/gemini-2.0-flash-exp"
     },
     {
@@ -1559,7 +2677,7 @@
         "Data analysis with code execution"
       ],
       "training_cutoff": "2024-02",
-      "last_updated": "2025-07-17T09:19:10.442596",
+      "last_updated": "2025-07-17T10:37:05.990753",
       "unique_id": "google/gemini-1.5-pro"
     },
     {
@@ -1599,7 +2717,7 @@
         "Multimodal chatbots"
       ],
       "training_cutoff": "2024-05",
-      "last_updated": "2025-07-17T09:19:10.442599",
+      "last_updated": "2025-07-17T10:37:05.990755",
       "unique_id": "google/gemini-1.5-flash"
     },
     {
@@ -1633,7 +2751,7 @@
         "Simple multimodal queries"
       ],
       "training_cutoff": "2024-08",
-      "last_updated": "2025-07-17T09:19:10.442600",
+      "last_updated": "2025-07-17T10:37:05.990756",
       "unique_id": "google/gemini-1.5-flash-8b"
     },
     {
@@ -1664,7 +2782,7 @@
         "Basic reasoning"
       ],
       "training_cutoff": "2023-04",
-      "last_updated": "2025-07-17T09:19:10.442602",
+      "last_updated": "2025-07-17T10:37:05.990758",
       "unique_id": "google/gemini-1.0-pro"
     },
     {
@@ -1693,7 +2811,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "2024-08",
-      "last_updated": "2025-07-17T09:19:10.442603",
+      "last_updated": "2025-07-17T10:37:05.990759",
       "unique_id": "google/gemini-exp-1206"
     },
     {
@@ -1721,7 +2839,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "2024-08",
-      "last_updated": "2025-07-17T09:19:10.442604",
+      "last_updated": "2025-07-17T10:37:05.990760",
       "unique_id": "google/gemini-exp-1121"
     },
     {
@@ -1753,37 +2871,61 @@
         "Curriculum development"
       ],
       "training_cutoff": "2024-11",
-      "last_updated": "2025-07-17T09:19:10.442606",
+      "last_updated": "2025-07-17T10:37:05.990762",
       "unique_id": "google/learnlm-1.5-pro-experimental"
     }
   ],
   "statistics": {
-    "total_models": 67,
-    "free_models": 67,
+    "total_models": 100,
+    "free_models": 100,
     "paid_models": 0,
-    "providers": 4,
+    "providers": 8,
     "provider_breakdown": {
       "anthropic": 8,
       "openai": 7,
+      "xai": 6,
+      "mistral": 10,
       "openrouter": 44,
+      "cohere": 11,
+      "deepseek": 6,
       "google": 8
     },
     "price_range": {
       "min": 0.04,
       "max": 30.0,
-      "average": 3.86
+      "average": 3.01
     },
     "features": {
-      "chat": 21,
-      "vision": 14,
+      "chat": 44,
+      "vision": 18,
       "tool-use": 5,
-      "json-mode": 10,
+      "json-mode": 14,
       "computer-use": 1,
-      "function-calling": 12,
-      "reasoning": 3,
+      "function-calling": 22,
+      "reasoning": 23,
       "complex-tasks": 1,
-      "coding": 1,
+      "coding": 8,
       "fast": 1,
+      "real-time-data": 4,
+      "humor": 3,
+      "math": 2,
+      "experimental": 2,
+      "multilingual": 9,
+      "apache-license": 3,
+      "code-completion": 4,
+      "long-context": 1,
+      "fast-inference": 3,
+      "open-source": 1,
+      "rag": 2,
+      "embeddings": 4,
+      "semantic-search": 2,
+      "clustering": 1,
+      "lightweight": 2,
+      "reranking": 2,
+      "search-optimization": 2,
+      "relevance-scoring": 1,
+      "debug": 1,
+      "problem-solving": 1,
       "audio": 3,
       "multimodal-live": 1,
       "video": 2,
@@ -1792,21 +2934,22 @@
       "tutoring": 1
     },
     "modalities": {
-      "text": 67,
-      "image": 14,
+      "text": 100,
+      "image": 18,
       "audio": 3,
       "video": 3
     },
     "status": {
-      "ga": 58,
-      "deprecated": 3,
+      "ga": 88,
+      "deprecated": 4,
       "preview": 2,
-      "experimental": 4
+      "beta": 1,
+      "experimental": 5
     },
     "context_windows": {
-      "min": 8192,
+      "min": 512,
       "max": 2097152,
-      "over_100k": 57,
+      "over_100k": 74,
       "over_1m": 8
     }
   },
@@ -1816,22 +2959,42 @@
       {
         "provider": "anthropic",
         "file": "anthropic.json",
-        "last_updated": "2025-07-17T09:19:10.317685"
+        "last_updated": "2025-07-17T10:37:05.877552"
       },
       {
         "provider": "openai",
         "file": "openai.json",
-        "last_updated": "2025-07-17T09:19:10.175620"
+        "last_updated": "2025-07-17T10:37:05.760913"
+      },
+      {
+        "provider": "xai",
+        "file": "xai.json",
+        "last_updated": "2025-07-17T10:37:06.534689"
+      },
+      {
+        "provider": "mistral",
+        "file": "mistral.json",
+        "last_updated": "2025-07-17T10:37:06.651509"
       },
       {
         "provider": "openrouter",
         "file": "openrouter.json",
-        "last_updated": "2025-07-17T09:19:10.768699"
+        "last_updated": "2025-07-17T10:37:06.295097"
+      },
+      {
+        "provider": "cohere",
+        "file": "cohere.json",
+        "last_updated": "2025-07-17T10:37:06.764300"
+      },
+      {
+        "provider": "deepseek",
+        "file": "deepseek.json",
+        "last_updated": "2025-07-17T10:37:06.420919"
       },
       {
         "provider": "google",
         "file": "google.json",
-        "last_updated": "2025-07-17T09:19:10.442645"
+        "last_updated": "2025-07-17T10:37:05.990793"
       }
     ]
   },
@@ -1845,6 +3008,10 @@
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
       "openai/gpt-4-turbo",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
       "google/gemini-2.0-flash-exp",
       "google/gemini-1.5-pro",
       "google/gemini-1.5-flash",
@@ -1852,15 +3019,41 @@
       "google/gemini-exp-1206",
       "google/gemini-exp-1121"
     ],
-    "coding_models": [],
+    "coding_models": [
+      "mistral/codestral-2405",
+      "mistral/codestral-mamba-2407",
+      "deepseek/deepseek-coder-v2",
+      "deepseek/deepseek-coder"
+    ],
     "reasoning_models": [
       "openai/o1-preview",
       "openai/o1-mini",
+      "xai/grok-2",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
+      "xai/grok-1.5",
+      "xai/grok-beta",
+      "mistral/mistral-large-2411",
+      "mistral/mistral-large-2407",
+      "mistral/mistral-medium",
+      "mistral/mistral-nemo",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
+      "mistral/mistral-7b",
+      "cohere/command-r-plus",
+      "cohere/command-r",
+      "cohere/command",
+      "cohere/command-nightly",
+      "deepseek/deepseek-v3",
+      "deepseek/deepseek-v2.5",
+      "deepseek/deepseek-chat",
+      "deepseek/deepseek-math",
       "google/gemini-exp-1206"
     ],
     "fast_models": [
       "openai/gpt-4o-mini",
       "openai/o1-mini",
+      "mistral/mistral-small-2409",
       "google/gemini-2.0-flash-exp",
       "google/gemini-1.5-pro",
       "google/gemini-1.5-flash",
@@ -1883,6 +3076,17 @@
       "openai/o1-preview",
       "openai/o1-mini",
       "openai/gpt-4-turbo",
+      "xai/grok-2",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
+      "xai/grok-1.5",
+      "mistral/mistral-large-2411",
+      "mistral/mistral-large-2407",
+      "mistral/mistral-small-2409",
+      "mistral/mistral-nemo",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
+      "mistral/codestral-mamba-2407",
       "openrouter/mistralai/mistral-medium-3",
       "openrouter/deepseek/deepseek-chat-v3-0324",
       "openrouter/openai/gpt-4o-mini-search-preview",
@@ -1905,23 +3109,29 @@
       "openrouter/nvidia/llama-3.1-nemotron-70b-instruct",
       "openrouter/meta-llama/llama-3.2-90b-vision-instruct",
       "openrouter/openai/o1-preview",
+      "openrouter/openai/o1-mini-2024-09-12",
       "openrouter/openai/o1-preview-2024-09-12",
       "openrouter/openai/o1-mini",
-      "openrouter/openai/o1-mini-2024-09-12",
       "openrouter/cohere/command-r-plus-08-2024",
       "openrouter/openai/gpt-4o-2024-08-06",
-      "openrouter/openai/gpt-4o-mini",
       "openrouter/openai/gpt-4o-mini-2024-07-18",
+      "openrouter/openai/gpt-4o-mini",
       "openrouter/anthropic/claude-3.5-sonnet-20240620:beta",
       "openrouter/anthropic/claude-3.5-sonnet-20240620",
+      "openrouter/openai/gpt-4o-2024-05-13",
       "openrouter/openai/gpt-4o",
       "openrouter/openai/gpt-4o:extended",
-      "openrouter/openai/gpt-4o-2024-05-13",
       "openrouter/cohere/command-r-plus",
       "openrouter/cohere/command-r-plus-04-2024",
       "openrouter/anthropic/claude-3-opus:beta",
       "openrouter/anthropic/claude-3-opus",
       "openrouter/mistralai/mistral-large",
+      "cohere/command-r-plus",
+      "cohere/command-r",
+      "cohere/command-nightly",
+      "deepseek/deepseek-v3",
+      "deepseek/deepseek-v2.5",
+      "deepseek/deepseek-coder-v2",
       "google/gemini-2.0-flash-exp",
       "google/gemini-1.5-pro",
       "google/gemini-1.5-flash",
@@ -1939,6 +3149,10 @@
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
       "openai/gpt-4-turbo",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
       "google/gemini-2.0-flash-exp",
       "google/gemini-1.5-pro",
       "google/gemini-1.5-flash",
@@ -1962,6 +3176,22 @@
       "openai/gpt-4-turbo",
       "openai/gpt-4",
       "openai/gpt-3.5-turbo",
+      "xai/grok-2",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
+      "xai/grok-1.5",
+      "xai/grok-1",
+      "xai/grok-beta",
+      "mistral/mistral-large-2411",
+      "mistral/mistral-large-2407",
+      "mistral/mistral-medium",
+      "mistral/mistral-small-2409",
+      "mistral/mistral-nemo",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
+      "mistral/codestral-2405",
+      "mistral/codestral-mamba-2407",
+      "mistral/mistral-7b",
       "openrouter/mistralai/mistral-medium-3",
       "openrouter/deepseek/deepseek-chat-v3-0324:free",
       "openrouter/deepseek/deepseek-chat-v3-0324",
@@ -1989,23 +3219,40 @@
       "openrouter/qwen/qwen-2.5-72b-instruct:free",
       "openrouter/qwen/qwen-2.5-72b-instruct",
       "openrouter/openai/o1-preview",
+      "openrouter/openai/o1-mini-2024-09-12",
       "openrouter/openai/o1-preview-2024-09-12",
       "openrouter/openai/o1-mini",
-      "openrouter/openai/o1-mini-2024-09-12",
       "openrouter/cohere/command-r-plus-08-2024",
       "openrouter/openai/gpt-4o-2024-08-06",
-      "openrouter/openai/gpt-4o-mini",
       "openrouter/openai/gpt-4o-mini-2024-07-18",
+      "openrouter/openai/gpt-4o-mini",
       "openrouter/anthropic/claude-3.5-sonnet-20240620:beta",
       "openrouter/anthropic/claude-3.5-sonnet-20240620",
+      "openrouter/openai/gpt-4o-2024-05-13",
       "openrouter/openai/gpt-4o",
       "openrouter/openai/gpt-4o:extended",
-      "openrouter/openai/gpt-4o-2024-05-13",
       "openrouter/cohere/command-r-plus",
       "openrouter/cohere/command-r-plus-04-2024",
       "openrouter/anthropic/claude-3-opus:beta",
       "openrouter/anthropic/claude-3-opus",
       "openrouter/mistralai/mistral-large",
+      "cohere/command-r-plus",
+      "cohere/command-r",
+      "cohere/command",
+      "cohere/command-light",
+      "cohere/command-nightly",
+      "cohere/embed-english-v3.0",
+      "cohere/embed-multilingual-v3.0",
+      "cohere/embed-english-light-v3.0",
+      "cohere/embed-multilingual-light-v3.0",
+      "cohere/rerank-english-v3.0",
+      "cohere/rerank-multilingual-v3.0",
+      "deepseek/deepseek-v3",
+      "deepseek/deepseek-v2.5",
+      "deepseek/deepseek-coder-v2",
+      "deepseek/deepseek-chat",
+      "deepseek/deepseek-coder",
+      "deepseek/deepseek-math",
       "google/gemini-2.0-flash-exp",
       "google/gemini-1.5-pro",
       "google/gemini-1.5-flash",
@@ -2018,6 +3265,8 @@
     "experimental": [
       "openai/o1-preview",
       "openai/o1-mini",
+      "xai/grok-beta",
+      "cohere/command-nightly",
       "google/gemini-2.0-flash-exp",
       "google/gemini-exp-1206",
       "google/gemini-exp-1121",
@@ -2026,7 +3275,8 @@
     "deprecated": [
       "anthropic/claude-2.1",
       "anthropic/claude-2.0",
-      "anthropic/claude-instant-1.2"
+      "anthropic/claude-instant-1.2",
+      "xai/grok-1"
     ]
   }
 }
