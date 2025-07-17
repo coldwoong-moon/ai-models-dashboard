@@ -1,0 +1,80 @@
+name: Update AI Models Data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # 6시간마다 실행
+  workflow_dispatch:       # 수동 실행 가능
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install Python dependencies
+      run: |
+        pip install -r requirements.txt
+        playwright install chromium
+        
+    - name: Run OpenAI crawler
+      run: python scripts/crawlers/openai_crawler.py
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      continue-on-error: true
+        
+    - name: Run Anthropic crawler
+      run: python scripts/crawlers/anthropic_crawler.py
+      continue-on-error: true
+      
+    - name: Run Google crawler
+      run: python scripts/crawlers/google_crawler.py
+      continue-on-error: true
+      
+    - name: Run OpenRouter crawler
+      run: python scripts/crawlers/openrouter_crawler.py
+      continue-on-error: true
+      
+    - name: Process and consolidate data
+      run: python scripts/data_processor.py
+      
+    - name: Check for price changes
+      id: price-check
+      run: |
+        python scripts/price_monitor.py
+        echo "changes=$(cat price_changes.txt 2>/dev/null || echo 'false')" >> $GITHUB_OUTPUT
+      
+    - name: Create history snapshot
+      run: |
+        DATE=$(date +%Y-%m-%d)
+        mkdir -p data/history
+        cp data/consolidated.json "data/history/${DATE}.json"
+      
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/
+        git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date '+%Y-%m-%d %H:%M:%S')"
+        git push
+        
+    - name: Send notification on price changes
+      if: steps.price-check.outputs.changes == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const changes = fs.readFileSync('price_changes_report.md', 'utf8');
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: '🚨 AI Model Price Changes Detected',
+            body: changes,
+            labels: ['price-alert', 'automated']
+          });

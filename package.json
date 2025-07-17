@@ -1,0 +1,34 @@
+{
+  "name": "ai-models-dashboard",
+  "version": "1.0.0",
+  "description": "AI Models API comparison platform for GitHub Pages",
+  "main": "src/js/app.js",
+  "scripts": {
+    "build": "npm run build:css && npm run build:js && npm run build:html && npm run copy:data",
+    "build:css": "tailwindcss -i ./src/css/main.css -o ./dist/css/main.css --minify",
+    "build:js": "esbuild src/js/app.js --bundle --minify --outfile=dist/js/app.js",
+    "build:html": "cp index.html dist/",
+    "copy:data": "cp -r data dist/",
+    "dev": "python3 -m http.server 8000",
+    "update-data": "python3 scripts/data_processor.py",
+    "crawl:all": "python3 scripts/run_all_crawlers.py"
+  },
+  "keywords": [
+    "ai",
+    "models",
+    "api",
+    "comparison",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "esbuild": "^0.19.0",
+    "@tailwindcss/forms": "^0.5.7"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "date-fns": "^3.0.0"
+  }
+}

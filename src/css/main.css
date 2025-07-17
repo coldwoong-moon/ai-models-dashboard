@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables */
+:root {
+    --primary-color: #3b82f6;
+    --secondary-color: #10b981;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+    --info-color: #06b6d4;
+    --dark-bg: #111827;
+    --dark-card: #1f2937;
+}
+
+/* Dark mode scrollbar */
+html.dark {
+    color-scheme: dark;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 dark:bg-gray-600 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500 dark:bg-gray-500;
+}
+
+/* Loading animation */
+@keyframes pulse-bg {
+    0%, 100% {
+        background-color: rgba(229, 231, 235, 0.5);
+    }
+    50% {
+        background-color: rgba(229, 231, 235, 0.8);
+    }
+}
+
+.loading-skeleton {
+    animation: pulse-bg 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Card animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.model-card {
+    animation: slideIn 0.3s ease-out;
+}
+
+.model-card:nth-child(1) { animation-delay: 0.05s; }
+.model-card:nth-child(2) { animation-delay: 0.1s; }
+.model-card:nth-child(3) { animation-delay: 0.15s; }
+.model-card:nth-child(4) { animation-delay: 0.2s; }
+.model-card:nth-child(5) { animation-delay: 0.25s; }
+.model-card:nth-child(6) { animation-delay: 0.3s; }
+
+/* Hover effects */
+.model-card {
+    @apply transition-all duration-200;
+}
+
+.model-card:hover {
+    @apply transform -translate-y-1;
+}
+
+/* Provider badge colors */
+.provider-badge {
+    @apply px-2 py-1 text-xs font-medium rounded;
+}
+
+.provider-badge.openai {
+    @apply bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+}
+
+.provider-badge.anthropic {
+    @apply bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200;
+}
+
+.provider-badge.google {
+    @apply bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200;
+}
+
+.provider-badge.openrouter {
+    @apply bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200;
+}
+
+.provider-badge.meta {
+    @apply bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200;
+}
+
+.provider-badge.mistral {
+    @apply bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200;
+}
+
+/* Status indicators */
+.status-indicator {
+    @apply px-2 py-1 text-xs font-medium rounded;
+}
+
+.status-ga {
+    @apply bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+}
+
+.status-beta {
+    @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200;
+}
+
+.status-preview {
+    @apply bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200;
+}
+
+.status-experimental {
+    @apply bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200;
+}
+
+.status-deprecated {
+    @apply bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200;
+}
+
+/* Feature tags */
+.feature-tag {
+    @apply inline-block px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded mr-1 mb-1;
+}
+
+/* Notification styles */
+.notification-enter {
+    animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Table styles */
+.comparison-table {
+    @apply w-full border-collapse;
+}
+
+.comparison-table th {
+    @apply text-left p-3 bg-gray-50 dark:bg-gray-800 font-semibold text-gray-900 dark:text-white;
+}
+
+.comparison-table td {
+    @apply p-3 border-t border-gray-200 dark:border-gray-700;
+}
+
+.comparison-table tr:hover {
+    @apply bg-gray-50 dark:bg-gray-800;
+}
+
+/* Price calculator specific */
+.calculator-input {
+    @apply w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white;
+}
+
+.scenario-btn {
+    @apply transition-colors duration-200;
+}
+
+.scenario-btn:hover {
+    @apply bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300;
+}
+
+.scenario-btn.active {
+    @apply bg-blue-500 text-white;
+}
+
+/* Chart container */
+.chart-container {
+    @apply relative h-96 p-4 bg-white dark:bg-gray-800 rounded-lg shadow;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+    .model-card {
+        @apply p-4;
+    }
+    
+    .feature-tag {
+        @apply text-xs px-1.5 py-0.5;
+    }
+    
+    .comparison-table {
+        @apply text-sm;
+    }
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .model-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    body {
+        @apply bg-white;
+    }
+}
+
+/* Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Focus styles */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2 dark:ring-offset-gray-800;
+}
+
+/* Custom utility classes */
+.text-balance {
+    text-wrap: balance;
+}
+
+.gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+}
+
+.glass-effect {
+    @apply bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm;
+}
