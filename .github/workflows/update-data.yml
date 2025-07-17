@@ -5,6 +5,10 @@ on:
     - cron: '0 */6 * * *'  # 6시간마다 실행
   workflow_dispatch:       # 수동 실행 가능
 
+permissions:
+  contents: write
+  issues: write
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
@@ -12,6 +16,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
       
     - name: Setup Python
       uses: actions/setup-python@v4
@@ -70,13 +76,17 @@ jobs:
         mkdir -p data/history
         cp data/consolidated.json "data/history/${DATE}.json"
       
-    - name: Commit changes
+    - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data/
-        git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date '+%Y-%m-%d %H:%M:%S')"
-        git push
+        if ! git diff --staged --quiet; then
+          git commit -m "🤖 Auto-update: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
+        else
+          echo "No changes to commit"
+        fi
         
     - name: Send notification on price changes
       if: steps.price-check.outputs.changes == 'true'
