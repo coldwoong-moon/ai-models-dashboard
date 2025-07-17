@@ -587,16 +587,24 @@ ${model.description}
         if (!container) return;
         
         // 가격 계산기는 별도 컴포넌트로 구현
-        import('./price-calculator.js').then(module => {
-            new module.PriceCalculator(this);
-        });
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.textContent = `
+            import { PriceCalculator } from './src/js/price-calculator.js';
+            new PriceCalculator(window.dashboard);
+        `;
+        document.body.appendChild(script);
     }
     
     renderTrends() {
         // 차트는 별도 컴포넌트로 구현
-        import('./charts.js').then(module => {
-            new module.ChartsManager(this);
-        });
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.textContent = `
+            import { ChartsManager } from './src/js/charts.js';
+            new ChartsManager(window.dashboard);
+        `;
+        document.body.appendChild(script);
     }
     
     applyTheme() {
