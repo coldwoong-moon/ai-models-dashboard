@@ -5,863 +5,210 @@
     "website": "https://ai.google.dev",
     "api_endpoint": "https://generativelanguage.googleapis.com"
   },
-  "last_updated": "2025-10-20T18:12:31.437996",
+  "last_updated": "2025-10-20T23:56:47.627740",
   "models": [
     {
-      "id": "free",
-      "name": "Free",
+      "id": "gemini-2.0-flash-exp",
+      "name": "Gemini 2.0 Flash (Experimental)",
       "provider": "google",
-      "description": "For developers and small projects getting started with the Gemini API.",
+      "description": "Next generation model with multimodal capabilities (experimental)",
       "pricing": {
-        "input": 0,
-        "output": 0,
+        "input": 0.0,
+        "output": 0.0,
         "unit": "1M tokens"
       },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
+      "context_window": 1000000,
+      "max_output": 8192,
+      "release_date": "2024-12-11",
+      "status": "experimental",
       "features": [
+        "chat",
         "vision",
-        "chat"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437763"
-    },
-    {
-      "id": "paid",
-      "name": "Paid",
-      "provider": "google",
-      "description": "For production applications that require higher volumes and advanced features.",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437775"
-    },
-    {
-      "id": "enterprise",
-      "name": "Enterprise",
-      "provider": "google",
-      "description": "For large-scale deployments with custom needs for security, support, and compliance, powered byVertex AI.",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "vision",
-        "chat"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437780"
-    },
-    {
-      "id": "gemini-2.5-pro",
-      "name": "Gemini 2.5 Pro",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437785"
-    },
-    {
-      "id": "gemini-2.5-flash",
-      "name": "Gemini 2.5 Flash",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "fast",
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437789"
-    },
-    {
-      "id": "gemini-2.5-flash-preview",
-      "name": "Gemini 2.5 Flash Preview",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "fast",
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437793"
-    },
-    {
-      "id": "gemini-2.5-flash-lite",
-      "name": "Gemini 2.5 Flash-Lite",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "fast",
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437797"
-    },
-    {
-      "id": "gemini-2.5-flash-lite-preview",
-      "name": "Gemini 2.5 Flash-Lite Preview",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "fast",
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437813"
-    },
-    {
-      "id": "gemini-2.5-flash-native-audio",
-      "name": "Gemini 2.5 Flash Native Audio",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "fast",
+        "video",
         "audio",
-        "chat"
+        "code-execution",
+        "reasoning"
       ],
       "modalities": [
         "text",
+        "image",
+        "video",
         "audio"
       ],
-      "use_cases": [],
+      "use_cases": [
+        "Experimental features",
+        "Advanced multimodal",
+        "Code execution",
+        "Real-time reasoning"
+      ],
       "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437817"
+      "last_updated": "2025-10-20T23:56:47.627608"
     },
     {
-      "id": "gemini-2.5-flash-image",
-      "name": "Gemini 2.5 Flash Image",
+      "id": "gemini-1.5-pro",
+      "name": "Gemini 1.5 Pro",
       "provider": "google",
-      "description": "",
+      "description": "Most capable model with best quality and features",
       "pricing": {
-        "input": 0,
-        "output": 0,
+        "input": 1.25,
+        "output": 5.0,
         "unit": "1M tokens"
       },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
+      "context_window": 2000000,
+      "max_output": 8192,
+      "release_date": "2024-02-15",
       "status": "ga",
       "features": [
-        "fast",
+        "chat",
         "vision",
-        "chat"
+        "video",
+        "audio",
+        "long-context",
+        "reasoning"
+      ],
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "use_cases": [
+        "Complex reasoning",
+        "Long document analysis",
+        "Video understanding",
+        "Research tasks"
+      ],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T23:56:47.627615"
+    },
+    {
+      "id": "gemini-1.5-flash",
+      "name": "Gemini 1.5 Flash",
+      "provider": "google",
+      "description": "Fast and versatile multimodal model for scaling",
+      "pricing": {
+        "input": 0.075,
+        "output": 0.3,
+        "unit": "1M tokens"
+      },
+      "context_window": 1000000,
+      "max_output": 8192,
+      "release_date": "2024-05-14",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "video",
+        "audio",
+        "fast",
+        "long-context"
+      ],
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "use_cases": [
+        "Fast responses",
+        "Multimodal chat",
+        "High volume",
+        "Cost-effective"
+      ],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T23:56:47.627617"
+    },
+    {
+      "id": "gemini-1.5-flash-8b",
+      "name": "Gemini 1.5 Flash-8B",
+      "provider": "google",
+      "description": "Smaller, faster, and more cost-effective model",
+      "pricing": {
+        "input": 0.0375,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 1000000,
+      "max_output": 8192,
+      "release_date": "2024-10-03",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "fast",
+        "cost-effective",
+        "long-context"
       ],
       "modalities": [
         "text",
         "image"
       ],
-      "use_cases": [],
+      "use_cases": [
+        "Simple tasks",
+        "High throughput",
+        "Budget-friendly",
+        "Quick queries"
+      ],
       "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437821"
+      "last_updated": "2025-10-20T23:56:47.627619"
     },
     {
-      "id": "gemini-2.5-flash-preview-tts",
-      "name": "Gemini 2.5 Flash Preview TTS",
+      "id": "gemini-1.0-pro",
+      "name": "Gemini 1.0 Pro",
       "provider": "google",
-      "description": "",
+      "description": "Previous generation text model",
       "pricing": {
-        "input": 0,
-        "output": 0,
+        "input": 0.5,
+        "output": 1.5,
         "unit": "1M tokens"
       },
-      "context_window": 32768,
+      "context_window": 32760,
+      "max_output": 2048,
+      "release_date": "2023-12-13",
+      "status": "legacy",
+      "features": [
+        "chat",
+        "text-only"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Basic chat",
+        "Text generation",
+        "Legacy applications"
+      ],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T23:56:47.627620"
+    },
+    {
+      "id": "text-embedding-004",
+      "name": "Text Embedding 004",
+      "provider": "google",
+      "description": "Latest text embedding model",
+      "pricing": {
+        "input": 0.025,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 2048,
       "max_output": 0,
-      "release_date": "",
+      "release_date": "2024-05-14",
       "status": "ga",
       "features": [
-        "fast",
-        "chat"
+        "embedding",
+        "semantic-search"
       ],
       "modalities": [
         "text"
       ],
-      "use_cases": [],
+      "use_cases": [
+        "Semantic search",
+        "Document similarity",
+        "Retrieval systems"
+      ],
       "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437825"
-    },
-    {
-      "id": "gemini-2.5-pro-preview-tts",
-      "name": "Gemini 2.5 Pro Preview TTS",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437829"
-    },
-    {
-      "id": "gemini-2.0-flash",
-      "name": "Gemini 2.0 Flash",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "fast",
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437833"
-    },
-    {
-      "id": "gemini-embedding",
-      "name": "Gemini Embedding",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437837"
-    },
-    {
-      "id": "gemini-robotics-er-1.5-preview",
-      "name": "Gemini Robotics-ER 1.5 Preview",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437840"
-    },
-    {
-      "id": "gemini-2.5-computer-use-preview",
-      "name": "Gemini 2.5 Computer Use Preview",
-      "provider": "google",
-      "description": "",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 0,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437844"
-    },
-    {
-      "id": "input-price",
-      "name": "Input price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 200000,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437848"
-    },
-    {
-      "id": "output-price",
-      "name": "Output price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 200000,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437855"
-    },
-    {
-      "id": "context-caching-price",
-      "name": "Context caching price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 200000,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437859"
-    },
-    {
-      "id": "grounding-with-google-search",
-      "name": "Grounding with Google Search",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437863"
-    },
-    {
-      "id": "grounding-with-google-maps",
-      "name": "Grounding with Google Maps",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437866"
-    },
-    {
-      "id": "used-to-improve-our-products",
-      "name": "Used to improve our products",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437870"
-    },
-    {
-      "id": "live-api",
-      "name": "Live API",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437874"
-    },
-    {
-      "id": "context-caching",
-      "name": "Context caching",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437877"
-    },
-    {
-      "id": "image-generation-pricing",
-      "name": "Image generation pricing",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437881"
-    },
-    {
-      "id": "tuning-price",
-      "name": "Tuning price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437885"
-    },
-    {
-      "id": "imagen-4-fast-image-price",
-      "name": "Imagen 4 Fast image price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437888"
-    },
-    {
-      "id": "imagen-4-standard-image-price",
-      "name": "Imagen 4 Standard image price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437895"
-    },
-    {
-      "id": "imagen-4-ultra-image-price",
-      "name": "Imagen 4 Ultra image price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437901"
-    },
-    {
-      "id": "image-price",
-      "name": "Image price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437905"
-    },
-    {
-      "id": "veo-3.1-standard-video-with-audio-price",
-      "name": "Veo 3.1 Standard video with audio price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437908"
-    },
-    {
-      "id": "veo-3.1-fast-video-with-audio-price",
-      "name": "Veo 3.1 Fast video with audio price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437912"
-    },
-    {
-      "id": "veo-3-standard-video-with-audio-price",
-      "name": "Veo 3 Standard video with audio price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437915"
-    },
-    {
-      "id": "veo-3-fast-video-with-audio-price",
-      "name": "Veo 3 Fast video with audio price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437919"
-    },
-    {
-      "id": "video-price",
-      "name": "Video price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:31.437922"
+      "last_updated": "2025-10-20T23:56:47.627622"
     }
   ]
 }

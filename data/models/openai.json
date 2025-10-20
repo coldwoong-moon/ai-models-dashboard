@@ -5,13 +5,13 @@
     "website": "https://openai.com",
     "api_endpoint": "https://api.openai.com/v1"
   },
-  "last_updated": "2025-10-20T18:11:54.287948",
+  "last_updated": "2025-10-20T23:56:47.620852",
   "models": [
     {
       "id": "gpt-4o",
       "name": "GPT-4o",
       "provider": "openai",
-      "description": "Most capable multimodal model with vision and advanced reasoning",
+      "description": "Most capable multimodal model, optimized for speed",
       "pricing": {
         "input": 2.5,
         "output": 10.0,
@@ -19,123 +19,7 @@
       },
       "context_window": 128000,
       "max_output": 16384,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "function-calling",
-        "json-mode",
-        "multimodal"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287843"
-    },
-    {
-      "id": "gpt-4o-mini",
-      "name": "GPT-4o mini",
-      "provider": "openai",
-      "description": "Affordable multimodal model with vision capabilities",
-      "pricing": {
-        "input": 0.15,
-        "output": 0.6,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 16384,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "function-calling",
-        "json-mode",
-        "fast",
-        "multimodal"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287855"
-    },
-    {
-      "id": "o1",
-      "name": "o1",
-      "provider": "openai",
-      "description": "Advanced reasoning model for complex problem-solving",
-      "pricing": {
-        "input": 15.0,
-        "output": 60.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 200000,
-      "max_output": 100000,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "reasoning",
-        "complex-tasks",
-        "thinking",
-        "math",
-        "coding"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287861"
-    },
-    {
-      "id": "o1-mini",
-      "name": "o1-mini",
-      "provider": "openai",
-      "description": "Fast reasoning model optimized for coding and STEM",
-      "pricing": {
-        "input": 3.0,
-        "output": 12.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 65536,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "reasoning",
-        "coding",
-        "fast",
-        "thinking",
-        "math",
-        "stem"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287865"
-    },
-    {
-      "id": "gpt-4-turbo",
-      "name": "GPT-4 Turbo",
-      "provider": "openai",
-      "description": "Previous generation high-intelligence model with vision",
-      "pricing": {
-        "input": 10.0,
-        "output": 30.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
+      "release_date": "2024-05-13",
       "status": "ga",
       "features": [
         "chat",
@@ -147,15 +31,210 @@
         "text",
         "image"
       ],
-      "use_cases": [],
+      "use_cases": [
+        "Multimodal understanding",
+        "Complex tasks",
+        "Vision analysis",
+        "Fast responses"
+      ],
       "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287869"
+      "last_updated": "2025-10-20T23:56:47.620599"
+    },
+    {
+      "id": "gpt-4o-mini",
+      "name": "GPT-4o mini",
+      "provider": "openai",
+      "description": "Affordable small model for fast, lightweight tasks",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 16384,
+      "release_date": "2024-07-18",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "function-calling",
+        "json-mode",
+        "fast"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Simple tasks",
+        "Quick responses",
+        "Cost optimization",
+        "High volume"
+      ],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T23:56:47.620611"
+    },
+    {
+      "id": "o1",
+      "name": "o1",
+      "provider": "openai",
+      "description": "Most advanced reasoning model for complex tasks",
+      "pricing": {
+        "input": 15.0,
+        "output": 60.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 200000,
+      "max_output": 100000,
+      "release_date": "2024-12-17",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "complex-tasks",
+        "thinking",
+        "coding",
+        "math"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Advanced reasoning",
+        "Math and science",
+        "Complex coding",
+        "Research"
+      ],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T23:56:47.620613"
+    },
+    {
+      "id": "o1-preview",
+      "name": "o1-preview",
+      "provider": "openai",
+      "description": "Reasoning model for complex tasks in science, coding, and math",
+      "pricing": {
+        "input": 15.0,
+        "output": 60.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 32768,
+      "release_date": "2024-09-12",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "complex-tasks",
+        "thinking"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning",
+        "Research tasks",
+        "Scientific analysis"
+      ],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T23:56:47.620615"
+    },
+    {
+      "id": "o1-mini",
+      "name": "o1-mini",
+      "provider": "openai",
+      "description": "Faster, cheaper reasoning model particularly good at coding",
+      "pricing": {
+        "input": 3.0,
+        "output": 12.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 65536,
+      "release_date": "2024-09-12",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "coding",
+        "fast",
+        "thinking"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Code generation",
+        "Debugging",
+        "Fast reasoning",
+        "STEM tasks"
+      ],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T23:56:47.620620"
+    },
+    {
+      "id": "gpt-4-turbo",
+      "name": "GPT-4 Turbo",
+      "provider": "openai",
+      "description": "Previous generation high-intelligence model",
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-04-09",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Long context",
+        "Vision tasks",
+        "Complex instructions"
+      ],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T23:56:47.620622"
+    },
+    {
+      "id": "gpt-4",
+      "name": "GPT-4",
+      "provider": "openai",
+      "description": "Previous generation model for complex tasks",
+      "pricing": {
+        "input": 30.0,
+        "output": 60.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 8192,
+      "max_output": 8192,
+      "release_date": "2023-03-14",
+      "status": "legacy",
+      "features": [
+        "chat",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex tasks",
+        "High-quality outputs",
+        "Detailed analysis"
+      ],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T23:56:47.620624"
     },
     {
       "id": "gpt-3.5-turbo",
       "name": "GPT-3.5 Turbo",
       "provider": "openai",
-      "description": "Fast and cost-effective model for simple tasks",
+      "description": "Fast, inexpensive model for simple tasks",
       "pricing": {
         "input": 0.5,
         "output": 1.5,
@@ -163,20 +242,25 @@
       },
       "context_window": 16385,
       "max_output": 4096,
-      "release_date": "",
+      "release_date": "2022-11-30",
       "status": "ga",
       "features": [
         "chat",
         "function-calling",
-        "fast",
-        "cost-effective"
+        "json-mode",
+        "fast"
       ],
       "modalities": [
         "text"
       ],
-      "use_cases": [],
+      "use_cases": [
+        "Simple chat",
+        "Quick tasks",
+        "Budget-friendly",
+        "High volume"
+      ],
       "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287873"
+      "last_updated": "2025-10-20T23:56:47.620628"
     }
   ]
 }
