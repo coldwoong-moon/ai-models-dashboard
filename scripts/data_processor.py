@@ -87,7 +87,13 @@ class DataProcessor:
         
         # 카테고리별 분류
         consolidated['categories'] = self.categorize_models(consolidated['models'])
-        
+
+        # Provider 비교 정보 추가
+        consolidated['provider_comparison'] = self.create_provider_comparison(consolidated['models'])
+
+        # 가격대별 분류
+        consolidated['price_tiers'] = self.classify_by_price_tiers(consolidated['models'])
+
         return consolidated
     
     def deduplicate_models(self, models: List[Dict]) -> List[Dict]:
@@ -322,7 +328,188 @@ class DataProcessor:
                 categories['deprecated'].append(unique_id)
         
         return categories
-    
+
+    def create_provider_comparison(self, models: List[Dict]) -> Dict[str, Any]:
+        """Provider별 모델 비교 정보 생성"""
+        comparison = {
+            'by_use_case': {},
+            'by_capability': {},
+            'pricing_comparison': {}
+        }
+
+        # 사용 사례별 모델 그룹화
+        use_cases = {
+            'general_chat': {
+                'keywords': ['chat', 'conversation', 'general'],
+                'models': []
+            },
+            'advanced_reasoning': {
+                'keywords': ['reasoning', 'complex', 'advanced', 'opus', 'o1'],
+                'models': []
+            },
+            'fast_affordable': {
+                'keywords': ['fast', 'mini', 'flash', 'haiku', 'small'],
+                'models': []
+            },
+            'vision': {
+                'keywords': ['vision', 'image', 'multimodal'],
+                'models': []
+            },
+            'coding': {
+                'keywords': ['code', 'coder', 'coding', 'programming'],
+                'models': []
+            },
+            'large_context': {
+                'keywords': ['long', 'context', 'large'],
+                'min_context': 100000,
+                'models': []
+            }
+        }
+
+        for model in models:
+            model_info = {
+                'id': model.get('id'),
+                'name': model.get('name'),
+                'provider': model.get('provider'),
+                'input_price': model.get('pricing', {}).get('input', 0) or model.get('input_price', 0),
+                'output_price': model.get('pricing', {}).get('output', 0) or model.get('output_price', 0),
+                'context_window': model.get('context_window', 0),
+                'features': model.get('features', []),
+                'unique_id': model.get('unique_id', '')
+            }
+
+            # 각 사용 사례별로 분류
+            for use_case, config in use_cases.items():
+                should_include = False
+
+                # 키워드 기반 매칭
+                if 'keywords' in config:
+                    model_text = ' '.join([
+                        model.get('name', '').lower(),
+                        model.get('id', '').lower(),
+                        ' '.join(model.get('features', []))
+                    ])
+
+                    if any(keyword in model_text for keyword in config['keywords']):
+                        should_include = True
+
+                # 컨텍스트 윈도우 기준
+                if 'min_context' in config:
+                    if model.get('context_window', 0) >= config['min_context']:
+                        should_include = True
+
+                if should_include:
+                    config['models'].append(model_info)
+
+        # 사용 사례별로 정리하고 가격순 정렬
+        for use_case, config in use_cases.items():
+            sorted_models = sorted(config['models'],
+                                 key=lambda m: m['input_price'])
+            comparison['by_use_case'][use_case] = sorted_models
+
+        # 기능별 비교 (vision, coding 등)
+        capabilities = ['vision', 'coding', 'reasoning', 'fast']
+        for cap in capabilities:
+            cap_models = []
+            for model in models:
+                if cap in model.get('features', []) or cap in model.get('name', '').lower():
+                    cap_models.append({
+                        'id': model.get('id'),
+                        'name': model.get('name'),
+                        'provider': model.get('provider'),
+                        'input_price': model.get('pricing', {}).get('input', 0) or model.get('input_price', 0),
+                        'output_price': model.get('pricing', {}).get('output', 0) or model.get('output_price', 0),
+                        'unique_id': model.get('unique_id', '')
+                    })
+
+            comparison['by_capability'][cap] = sorted(cap_models,
+                                                     key=lambda m: m['input_price'])
+
+        # Provider별 가격 비교 (동일 작업에 대한 비용)
+        # 예시: 100K input + 10K output 토큰
+        sample_workload = {
+            'input_tokens': 100000,
+            'output_tokens': 10000
+        }
+
+        provider_costs = {}
+        for model in models:
+            provider = model.get('provider')
+            input_price = model.get('pricing', {}).get('input', 0) or model.get('input_price', 0)
+            output_price = model.get('pricing', {}).get('output', 0) or model.get('output_price', 0)
+
+            if input_price > 0:
+                # 1M tokens 기준 가격을 실제 사용량으로 계산
+                cost = (input_price * sample_workload['input_tokens'] / 1000000 +
+                       output_price * sample_workload['output_tokens'] / 1000000)
+
+                if provider not in provider_costs:
+                    provider_costs[provider] = []
+
+                provider_costs[provider].append({
+                    'model': model.get('name'),
+                    'model_id': model.get('id'),
+                    'cost_for_sample': round(cost, 4),
+                    'input_price': input_price,
+                    'output_price': output_price,
+                    'unique_id': model.get('unique_id', '')
+                })
+
+        # Provider별로 정렬
+        for provider in provider_costs:
+            provider_costs[provider] = sorted(provider_costs[provider],
+                                            key=lambda m: m['cost_for_sample'])
+
+        comparison['pricing_comparison'] = {
+            'sample_workload': sample_workload,
+            'by_provider': provider_costs
+        }
+
+        return comparison
+
+    def classify_by_price_tiers(self, models: List[Dict]) -> Dict[str, List[Dict]]:
+        """가격대별로 모델 분류"""
+        tiers = {
+            'budget': {'max': 1.0, 'models': []},      # < $1/M tokens
+            'standard': {'min': 1.0, 'max': 5.0, 'models': []},  # $1-5/M tokens
+            'premium': {'min': 5.0, 'max': 15.0, 'models': []},  # $5-15/M tokens
+            'enterprise': {'min': 15.0, 'models': []}  # > $15/M tokens
+        }
+
+        for model in models:
+            input_price = model.get('pricing', {}).get('input', 0) or model.get('input_price', 0)
+
+            if input_price == 0:
+                continue
+
+            model_info = {
+                'id': model.get('id'),
+                'name': model.get('name'),
+                'provider': model.get('provider'),
+                'input_price': input_price,
+                'output_price': model.get('pricing', {}).get('output', 0) or model.get('output_price', 0),
+                'context_window': model.get('context_window', 0),
+                'features': model.get('features', []),
+                'unique_id': model.get('unique_id', '')
+            }
+
+            # 가격대 분류
+            if input_price < 1.0:
+                tiers['budget']['models'].append(model_info)
+            elif 1.0 <= input_price < 5.0:
+                tiers['standard']['models'].append(model_info)
+            elif 5.0 <= input_price < 15.0:
+                tiers['premium']['models'].append(model_info)
+            else:
+                tiers['enterprise']['models'].append(model_info)
+
+        # 각 티어별로 가격순 정렬
+        for tier in tiers.values():
+            tier['models'] = sorted(tier['models'],
+                                  key=lambda m: m['input_price'])
+
+        return tiers
+
     def save_history_snapshot(self, data: Dict[str, Any]):
         """일별 히스토리 스냅샷 저장"""
         today = datetime.now().strftime("%Y-%m-%d")

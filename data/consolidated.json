@@ -1,19 +1,12 @@
 {
-  "last_updated": "2025-10-20T18:12:49.123174",
+  "last_updated": "2025-10-20T23:49:04.257454",
   "providers": {
-    "xai": {
-      "name": "Xai",
-      "website": "",
-      "api_endpoint": "",
-      "last_updated": "2025-10-20T18:12:43.110525",
-      "model_count": 3
-    },
-    "deepseek": {
-      "name": "Deepseek",
-      "website": "",
-      "api_endpoint": "",
-      "last_updated": "2025-10-20T18:12:38.583586",
-      "model_count": 3
+    "meta": {
+      "name": "Meta",
+      "website": "https://meta.com",
+      "api_endpoint": "https://api.meta.com",
+      "last_updated": "2025-07-17T16:57:28.119320",
+      "model_count": 2
     },
     "google": {
       "name": "Google AI",
@@ -22,13 +15,6 @@
       "last_updated": "2025-10-20T18:12:31.437996",
       "model_count": 35
     },
-    "openai": {
-      "name": "OpenAI",
-      "website": "https://openai.com",
-      "api_endpoint": "https://api.openai.com/v1",
-      "last_updated": "2025-10-20T18:11:54.287948",
-      "model_count": 6
-    },
     "cohere": {
       "name": "Cohere",
       "website": "https://cohere.com",
@@ -36,19 +22,12 @@
       "last_updated": "2025-10-20T18:12:48.890299",
       "model_count": 11
     },
-    "mistral": {
-      "name": "Mistral AI",
-      "website": "https://mistral.ai",
-      "api_endpoint": "https://api.mistral.ai",
-      "last_updated": "2025-10-20T18:12:48.745781",
-      "model_count": 6
-    },
-    "meta": {
-      "name": "Meta",
-      "website": "https://meta.com",
-      "api_endpoint": "https://api.meta.com",
-      "last_updated": "2025-07-17T16:57:28.119320",
-      "model_count": 2
+    "xai": {
+      "name": "Xai",
+      "website": "",
+      "api_endpoint": "",
+      "last_updated": "2025-10-20T18:12:43.110525",
+      "model_count": 3
     },
     "huggingface": {
       "name": "HuggingFace",
@@ -61,368 +40,98 @@
       "name": "Anthropic",
       "website": "https://anthropic.com",
       "api_endpoint": "https://api.anthropic.com",
-      "last_updated": "2025-10-20T18:12:25.030635",
-      "model_count": 0
+      "last_updated": "2025-10-20T23:48:43.711826",
+      "model_count": 5
+    },
+    "deepseek": {
+      "name": "Deepseek",
+      "website": "",
+      "api_endpoint": "",
+      "last_updated": "2025-10-20T18:12:38.583586",
+      "model_count": 3
+    },
+    "mistral": {
+      "name": "Mistral AI",
+      "website": "https://mistral.ai",
+      "api_endpoint": "https://api.mistral.ai",
+      "last_updated": "2025-10-20T18:12:48.745781",
+      "model_count": 6
+    },
+    "openai": {
+      "name": "OpenAI",
+      "website": "https://openai.com",
+      "api_endpoint": "https://api.openai.com/v1",
+      "last_updated": "2025-10-20T18:11:54.287948",
+      "model_count": 6
     }
   },
   "models": [
     {
-      "id": "grok-2",
-      "name": "Grok-2",
-      "provider": "xai",
-      "description": "Advanced reasoning model with real-time knowledge from X platform",
+      "id": "llama-4-scout",
+      "name": "Llama 4 Scout",
+      "provider": "meta",
+      "description": "Fast and efficient Llama 4 model optimized for speed",
+      "pricing": {
+        "input": 0.8,
+        "output": 2.4,
+        "unit": "1M tokens"
+      },
+      "input_price": 0.8,
+      "output_price": 2.4,
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2025-04-15",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "reasoning",
+        "fast",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-07-17T16:57:28.119309",
+      "notes": "Released April 2025 - Fastest Llama 4 variant",
+      "source": "manual_curation",
+      "unique_id": "meta/llama-4-scout"
+    },
+    {
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "provider": "meta",
+      "description": "Powerful Llama 4 model with advanced reasoning capabilities",
       "pricing": {
         "input": 2.0,
-        "output": 10.0,
+        "output": 6.0,
         "unit": "1M tokens"
       },
-      "context_window": 131072,
-      "max_output": 4096,
-      "release_date": "2024",
-      "status": "ga",
-      "features": [
-        "chat",
-        "real-time",
-        "x-integration",
-        "reasoning",
-        "coding",
-        "multilingual",
-        "current-events"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:43.110446",
-      "unique_id": "xai/grok-2"
-    },
-    {
-      "id": "grok-2-vision",
-      "name": "Grok-2 Vision",
-      "provider": "xai",
-      "description": "Multimodal model with vision capabilities and real-time knowledge",
-      "pricing": {
-        "input": 2.0,
-        "output": 10.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 131072,
-      "max_output": 4096,
-      "release_date": "2024",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "real-time",
-        "x-integration",
-        "multimodal",
-        "reasoning",
-        "image-analysis"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:43.110456",
-      "unique_id": "xai/grok-2-vision"
-    },
-    {
-      "id": "grok-beta",
-      "name": "Grok-3 (Beta)",
-      "provider": "xai",
-      "description": "Next generation Grok model with enhanced capabilities",
-      "pricing": {
-        "input": 5.0,
-        "output": 15.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 200000,
-      "max_output": 8192,
-      "release_date": "2024",
-      "status": "beta",
-      "features": [
-        "chat",
-        "reasoning",
-        "advanced-capabilities",
-        "beta",
-        "next-gen"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:43.110460",
-      "unique_id": "xai/grok-beta"
-    },
-    {
-      "id": "deepseek-chat",
-      "name": "DeepSeek-V3",
-      "provider": "deepseek",
-      "description": "DeepSeek-V3: 671B parameter model excelling at reasoning, coding, and math",
-      "pricing": {
-        "input": 0.14,
-        "output": 0.28,
-        "unit": "1M tokens"
-      },
-      "context_window": 64000,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "coding",
-        "math",
-        "reasoning",
-        "long-context",
-        "multilingual",
-        "function-calling"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:38.583469",
-      "unique_id": "deepseek/deepseek-chat"
-    },
-    {
-      "id": "deepseek-reasoner",
-      "name": "DeepSeek-R1",
-      "provider": "deepseek",
-      "description": "Advanced reasoning model with transparent thinking process",
-      "pricing": {
-        "input": 0.55,
-        "output": 2.19,
-        "unit": "1M tokens"
-      },
-      "context_window": 64000,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "reasoning",
-        "thinking",
-        "transparent-reasoning",
-        "math",
-        "complex-tasks"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:38.583480",
-      "unique_id": "deepseek/deepseek-reasoner"
-    },
-    {
-      "id": "deepseek-coder",
-      "name": "DeepSeek-Coder-V2",
-      "provider": "deepseek",
-      "description": "Specialized model for code generation and analysis",
-      "pricing": {
-        "input": 0.14,
-        "output": 0.28,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "coding",
-        "code-generation",
-        "code-analysis",
-        "debugging",
-        "function-calling"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:38.583491",
-      "unique_id": "deepseek/deepseek-coder"
-    },
-    {
-      "id": "gpt-4o",
-      "name": "GPT-4o",
-      "provider": "openai",
-      "description": "Most capable multimodal model with vision and advanced reasoning",
-      "pricing": {
-        "input": 2.5,
-        "output": 10.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
+      "input_price": 2.0,
+      "output_price": 6.0,
+      "context_window": 256000,
       "max_output": 16384,
-      "release_date": "",
+      "release_date": "2025-04-15",
       "status": "ga",
       "features": [
         "chat",
-        "vision",
-        "function-calling",
-        "json-mode",
-        "multimodal"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287843",
-      "unique_id": "openai/gpt-4o"
-    },
-    {
-      "id": "gpt-4o-mini",
-      "name": "GPT-4o mini",
-      "provider": "openai",
-      "description": "Affordable multimodal model with vision capabilities",
-      "pricing": {
-        "input": 0.15,
-        "output": 0.6,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 16384,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "function-calling",
-        "json-mode",
-        "fast",
-        "multimodal"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287855",
-      "unique_id": "openai/gpt-4o-mini"
-    },
-    {
-      "id": "o1",
-      "name": "o1",
-      "provider": "openai",
-      "description": "Advanced reasoning model for complex problem-solving",
-      "pricing": {
-        "input": 15.0,
-        "output": 60.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 200000,
-      "max_output": 100000,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "reasoning",
-        "complex-tasks",
-        "thinking",
-        "math",
-        "coding"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287861",
-      "unique_id": "openai/o1"
-    },
-    {
-      "id": "o1-mini",
-      "name": "o1-mini",
-      "provider": "openai",
-      "description": "Fast reasoning model optimized for coding and STEM",
-      "pricing": {
-        "input": 3.0,
-        "output": 12.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 65536,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "reasoning",
         "coding",
-        "fast",
-        "thinking",
-        "math",
-        "stem"
+        "reasoning",
+        "creative-writing",
+        "analysis",
+        "multilingual"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287865",
-      "unique_id": "openai/o1-mini"
-    },
-    {
-      "id": "gpt-4-turbo",
-      "name": "GPT-4 Turbo",
-      "provider": "openai",
-      "description": "Previous generation high-intelligence model with vision",
-      "pricing": {
-        "input": 10.0,
-        "output": 30.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "function-calling",
-        "json-mode"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287869",
-      "unique_id": "openai/gpt-4-turbo"
-    },
-    {
-      "id": "gpt-3.5-turbo",
-      "name": "GPT-3.5 Turbo",
-      "provider": "openai",
-      "description": "Fast and cost-effective model for simple tasks",
-      "pricing": {
-        "input": 0.5,
-        "output": 1.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 16385,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "function-calling",
-        "fast",
-        "cost-effective"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:11:54.287873",
-      "unique_id": "openai/gpt-3.5-turbo"
+      "last_updated": "2025-07-17T16:57:28.119312",
+      "notes": "Released April 2025 - Most capable Llama 4 variant",
+      "source": "manual_curation",
+      "unique_id": "meta/llama-4-maverick"
     },
     {
       "id": "command-r-plus",
@@ -778,137 +487,58 @@
       "unique_id": "cohere/rerank-multilingual-v3.0"
     },
     {
-      "id": "mistral-large-latest",
-      "name": "Mistral Large",
-      "provider": "mistral",
-      "description": "Top-tier reasoning model for complex tasks",
-      "pricing": {
-        "input": 3.0,
-        "output": 9.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "reasoning",
-        "complex-tasks",
-        "multilingual",
-        "function-calling"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:48.745678",
-      "unique_id": "mistral/mistral-large-latest"
-    },
-    {
-      "id": "mistral-small-latest",
-      "name": "Mistral Small",
-      "provider": "mistral",
-      "description": "Cost-efficient model for simple tasks",
-      "pricing": {
-        "input": 0.2,
-        "output": 0.6,
-        "unit": "1M tokens"
-      },
-      "context_window": 32000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "fast",
-        "cost-efficient",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:48.745694",
-      "unique_id": "mistral/mistral-small-latest"
-    },
-    {
-      "id": "open-mixtral-8x7b",
-      "name": "Mixtral 8x7B",
-      "provider": "mistral",
-      "description": "Mixture of experts model with 8x7B parameters",
-      "pricing": {
-        "input": 0.5,
-        "output": 0.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 32000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "mixture-of-experts",
-        "efficient",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:48.745699",
-      "unique_id": "mistral/open-mixtral-8x7b"
-    },
-    {
-      "id": "open-mixtral-8x22b",
-      "name": "Mixtral 8x22B",
-      "provider": "mistral",
-      "description": "Large mixture of experts model with 8x22B parameters",
+      "id": "grok-2",
+      "name": "Grok-2",
+      "provider": "xai",
+      "description": "Advanced reasoning model with real-time knowledge from X platform",
       "pricing": {
         "input": 2.0,
-        "output": 6.0,
+        "output": 10.0,
         "unit": "1M tokens"
       },
-      "context_window": 65536,
+      "context_window": 131072,
       "max_output": 4096,
-      "release_date": "",
+      "release_date": "2024",
       "status": "ga",
       "features": [
         "chat",
-        "mixture-of-experts",
-        "powerful",
-        "multilingual"
+        "real-time",
+        "x-integration",
+        "reasoning",
+        "coding",
+        "multilingual",
+        "current-events"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:48.745703",
-      "unique_id": "mistral/open-mixtral-8x22b"
+      "last_updated": "2025-10-20T18:12:43.110446",
+      "unique_id": "xai/grok-2"
     },
     {
-      "id": "pixtral-12b",
-      "name": "Pixtral 12B",
-      "provider": "mistral",
-      "description": "Multimodal model for text and image understanding",
+      "id": "grok-2-vision",
+      "name": "Grok-2 Vision",
+      "provider": "xai",
+      "description": "Multimodal model with vision capabilities and real-time knowledge",
       "pricing": {
-        "input": 0.15,
-        "output": 0.15,
+        "input": 2.0,
+        "output": 10.0,
         "unit": "1M tokens"
       },
-      "context_window": 128000,
+      "context_window": 131072,
       "max_output": 4096,
-      "release_date": "",
+      "release_date": "2024",
       "status": "ga",
       "features": [
         "chat",
         "vision",
+        "real-time",
+        "x-integration",
         "multimodal",
-        "image-understanding"
+        "reasoning",
+        "image-analysis"
       ],
       "modalities": [
         "text",
@@ -916,103 +546,37 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:48.745707",
-      "unique_id": "mistral/pixtral-12b"
+      "last_updated": "2025-10-20T18:12:43.110456",
+      "unique_id": "xai/grok-2-vision"
     },
     {
-      "id": "codestral-latest",
-      "name": "Codestral",
-      "provider": "mistral",
-      "description": "Specialized model for code generation",
+      "id": "grok-beta",
+      "name": "Grok-3 (Beta)",
+      "provider": "xai",
+      "description": "Next generation Grok model with enhanced capabilities",
       "pricing": {
-        "input": 0.2,
-        "output": 0.6,
+        "input": 5.0,
+        "output": 15.0,
         "unit": "1M tokens"
       },
-      "context_window": 32000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "coding",
-        "code-generation",
-        "fill-in-the-middle",
-        "multilingual-code"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-10-20T18:12:48.745711",
-      "unique_id": "mistral/codestral-latest"
-    },
-    {
-      "id": "llama-4-scout",
-      "name": "Llama 4 Scout",
-      "provider": "meta",
-      "description": "Fast and efficient Llama 4 model optimized for speed",
-      "pricing": {
-        "input": 0.8,
-        "output": 2.4,
-        "unit": "1M tokens"
-      },
-      "input_price": 0.8,
-      "output_price": 2.4,
-      "context_window": 128000,
+      "context_window": 200000,
       "max_output": 8192,
-      "release_date": "2025-04-15",
-      "status": "ga",
+      "release_date": "2024",
+      "status": "beta",
       "features": [
         "chat",
-        "coding",
         "reasoning",
-        "fast",
-        "multilingual"
+        "advanced-capabilities",
+        "beta",
+        "next-gen"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-07-17T16:57:28.119309",
-      "notes": "Released April 2025 - Fastest Llama 4 variant",
-      "source": "manual_curation",
-      "unique_id": "meta/llama-4-scout"
-    },
-    {
-      "id": "llama-4-maverick",
-      "name": "Llama 4 Maverick",
-      "provider": "meta",
-      "description": "Powerful Llama 4 model with advanced reasoning capabilities",
-      "pricing": {
-        "input": 2.0,
-        "output": 6.0,
-        "unit": "1M tokens"
-      },
-      "input_price": 2.0,
-      "output_price": 6.0,
-      "context_window": 256000,
-      "max_output": 16384,
-      "release_date": "2025-04-15",
-      "status": "ga",
-      "features": [
-        "chat",
-        "coding",
-        "reasoning",
-        "creative-writing",
-        "analysis",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-07-17T16:57:28.119312",
-      "notes": "Released April 2025 - Most capable Llama 4 variant",
-      "source": "manual_curation",
-      "unique_id": "meta/llama-4-maverick"
+      "last_updated": "2025-10-20T18:12:43.110460",
+      "unique_id": "xai/grok-beta"
     },
     {
       "id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
@@ -1311,64 +875,690 @@
       "training_cutoff": "",
       "last_updated": "2025-10-20T18:12:48.998388",
       "unique_id": "huggingface/microsoft/Phi-3-medium-128k-instruct"
+    },
+    {
+      "id": "claude-3-5-sonnet-20241022",
+      "name": "Claude 3.5 Sonnet",
+      "provider": "anthropic",
+      "description": "Most intelligent model with advanced reasoning, coding, and vision capabilities",
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 200000,
+      "max_output": 8192,
+      "release_date": "2024-10-22",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "analysis",
+        "creative-writing",
+        "vision",
+        "computer-use",
+        "reasoning"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Complex reasoning",
+        "Creative writing",
+        "Code generation",
+        "Computer automation",
+        "Advanced analysis",
+        "Image understanding"
+      ],
+      "training_cutoff": "2024-04",
+      "last_updated": "2025-10-20T23:48:43.711807",
+      "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+    },
+    {
+      "id": "claude-3-5-haiku-20241022",
+      "name": "Claude 3.5 Haiku",
+      "provider": "anthropic",
+      "description": "Fast and affordable model with vision capabilities for everyday tasks",
+      "pricing": {
+        "input": 1.0,
+        "output": 5.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 200000,
+      "max_output": 8192,
+      "release_date": "2024-11-04",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "fast",
+        "vision",
+        "cost-effective"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Customer support",
+        "Content moderation",
+        "Quick data extraction",
+        "Simple automation",
+        "Basic image analysis"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2025-10-20T23:48:43.711819",
+      "unique_id": "anthropic/claude-3-5-haiku-20241022"
+    },
+    {
+      "id": "claude-3-opus-20240229",
+      "name": "Claude 3 Opus",
+      "provider": "anthropic",
+      "description": "Most powerful model for complex reasoning and research tasks",
+      "pricing": {
+        "input": 15.0,
+        "output": 75.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 200000,
+      "max_output": 4096,
+      "release_date": "2024-02-29",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "analysis",
+        "research",
+        "complex-reasoning",
+        "vision",
+        "creative-writing"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Research analysis",
+        "Complex problem solving",
+        "Advanced mathematics",
+        "Expert-level tasks"
+      ],
+      "training_cutoff": "2023-08",
+      "last_updated": "2025-10-20T23:48:43.711821",
+      "unique_id": "anthropic/claude-3-opus-20240229"
+    },
+    {
+      "id": "claude-3-sonnet-20240229",
+      "name": "Claude 3 Sonnet",
+      "provider": "anthropic",
+      "description": "Balanced model for general purpose tasks with good performance",
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 200000,
+      "max_output": 4096,
+      "release_date": "2024-02-29",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "analysis",
+        "vision",
+        "general-purpose"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "General assistance",
+        "Content creation",
+        "Data analysis",
+        "Code review"
+      ],
+      "training_cutoff": "2023-08",
+      "last_updated": "2025-10-20T23:48:43.711823",
+      "unique_id": "anthropic/claude-3-sonnet-20240229"
+    },
+    {
+      "id": "claude-3-haiku-20240307",
+      "name": "Claude 3 Haiku",
+      "provider": "anthropic",
+      "description": "Fastest and most compact model for simple tasks",
+      "pricing": {
+        "input": 0.25,
+        "output": 1.25,
+        "unit": "1M tokens"
+      },
+      "context_window": 200000,
+      "max_output": 4096,
+      "release_date": "2024-03-07",
+      "status": "ga",
+      "features": [
+        "chat",
+        "fast",
+        "lightweight",
+        "vision",
+        "simple-tasks"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Quick responses",
+        "Simple queries",
+        "Basic tasks",
+        "High-volume processing"
+      ],
+      "training_cutoff": "2023-08",
+      "last_updated": "2025-10-20T23:48:43.711824",
+      "unique_id": "anthropic/claude-3-haiku-20240307"
+    },
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek-V3",
+      "provider": "deepseek",
+      "description": "DeepSeek-V3: 671B parameter model excelling at reasoning, coding, and math",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 64000,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "math",
+        "reasoning",
+        "long-context",
+        "multilingual",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:12:38.583469",
+      "unique_id": "deepseek/deepseek-chat"
+    },
+    {
+      "id": "deepseek-reasoner",
+      "name": "DeepSeek-R1",
+      "provider": "deepseek",
+      "description": "Advanced reasoning model with transparent thinking process",
+      "pricing": {
+        "input": 0.55,
+        "output": 2.19,
+        "unit": "1M tokens"
+      },
+      "context_window": 64000,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "thinking",
+        "transparent-reasoning",
+        "math",
+        "complex-tasks"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:12:38.583480",
+      "unique_id": "deepseek/deepseek-reasoner"
+    },
+    {
+      "id": "deepseek-coder",
+      "name": "DeepSeek-Coder-V2",
+      "provider": "deepseek",
+      "description": "Specialized model for code generation and analysis",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-generation",
+        "code-analysis",
+        "debugging",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:12:38.583491",
+      "unique_id": "deepseek/deepseek-coder"
+    },
+    {
+      "id": "mistral-large-latest",
+      "name": "Mistral Large",
+      "provider": "mistral",
+      "description": "Top-tier reasoning model for complex tasks",
+      "pricing": {
+        "input": 3.0,
+        "output": 9.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "complex-tasks",
+        "multilingual",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:12:48.745678",
+      "unique_id": "mistral/mistral-large-latest"
+    },
+    {
+      "id": "mistral-small-latest",
+      "name": "Mistral Small",
+      "provider": "mistral",
+      "description": "Cost-efficient model for simple tasks",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "fast",
+        "cost-efficient",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:12:48.745694",
+      "unique_id": "mistral/mistral-small-latest"
+    },
+    {
+      "id": "open-mixtral-8x7b",
+      "name": "Mixtral 8x7B",
+      "provider": "mistral",
+      "description": "Mixture of experts model with 8x7B parameters",
+      "pricing": {
+        "input": 0.5,
+        "output": 0.5,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "mixture-of-experts",
+        "efficient",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:12:48.745699",
+      "unique_id": "mistral/open-mixtral-8x7b"
+    },
+    {
+      "id": "open-mixtral-8x22b",
+      "name": "Mixtral 8x22B",
+      "provider": "mistral",
+      "description": "Large mixture of experts model with 8x22B parameters",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 65536,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "mixture-of-experts",
+        "powerful",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:12:48.745703",
+      "unique_id": "mistral/open-mixtral-8x22b"
+    },
+    {
+      "id": "pixtral-12b",
+      "name": "Pixtral 12B",
+      "provider": "mistral",
+      "description": "Multimodal model for text and image understanding",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "multimodal",
+        "image-understanding"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:12:48.745707",
+      "unique_id": "mistral/pixtral-12b"
+    },
+    {
+      "id": "codestral-latest",
+      "name": "Codestral",
+      "provider": "mistral",
+      "description": "Specialized model for code generation",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-generation",
+        "fill-in-the-middle",
+        "multilingual-code"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:12:48.745711",
+      "unique_id": "mistral/codestral-latest"
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "provider": "openai",
+      "description": "Most capable multimodal model with vision and advanced reasoning",
+      "pricing": {
+        "input": 2.5,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 16384,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "function-calling",
+        "json-mode",
+        "multimodal"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:11:54.287843",
+      "unique_id": "openai/gpt-4o"
+    },
+    {
+      "id": "gpt-4o-mini",
+      "name": "GPT-4o mini",
+      "provider": "openai",
+      "description": "Affordable multimodal model with vision capabilities",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 16384,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "function-calling",
+        "json-mode",
+        "fast",
+        "multimodal"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:11:54.287855",
+      "unique_id": "openai/gpt-4o-mini"
+    },
+    {
+      "id": "o1",
+      "name": "o1",
+      "provider": "openai",
+      "description": "Advanced reasoning model for complex problem-solving",
+      "pricing": {
+        "input": 15.0,
+        "output": 60.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 200000,
+      "max_output": 100000,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "complex-tasks",
+        "thinking",
+        "math",
+        "coding"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:11:54.287861",
+      "unique_id": "openai/o1"
+    },
+    {
+      "id": "o1-mini",
+      "name": "o1-mini",
+      "provider": "openai",
+      "description": "Fast reasoning model optimized for coding and STEM",
+      "pricing": {
+        "input": 3.0,
+        "output": 12.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 65536,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "coding",
+        "fast",
+        "thinking",
+        "math",
+        "stem"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:11:54.287865",
+      "unique_id": "openai/o1-mini"
+    },
+    {
+      "id": "gpt-4-turbo",
+      "name": "GPT-4 Turbo",
+      "provider": "openai",
+      "description": "Previous generation high-intelligence model with vision",
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:11:54.287869",
+      "unique_id": "openai/gpt-4-turbo"
+    },
+    {
+      "id": "gpt-3.5-turbo",
+      "name": "GPT-3.5 Turbo",
+      "provider": "openai",
+      "description": "Fast and cost-effective model for simple tasks",
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5,
+        "unit": "1M tokens"
+      },
+      "context_window": 16385,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "function-calling",
+        "fast",
+        "cost-effective"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2025-10-20T18:11:54.287873",
+      "unique_id": "openai/gpt-3.5-turbo"
     }
   ],
   "statistics": {
-    "total_models": 42,
-    "free_models": 40,
+    "total_models": 47,
+    "free_models": 45,
     "paid_models": 2,
-    "providers": 7,
+    "providers": 8,
     "provider_breakdown": {
-      "xai": 3,
-      "deepseek": 3,
-      "openai": 6,
-      "cohere": 11,
-      "mistral": 6,
       "meta": 2,
-      "huggingface": 11
+      "cohere": 11,
+      "xai": 3,
+      "huggingface": 11,
+      "anthropic": 5,
+      "deepseek": 3,
+      "mistral": 6,
+      "openai": 6
     },
     "price_range": {
       "min": 0.1,
       "max": 15.0,
-      "average": 2.0
+      "average": 2.26
     },
     "features": {
-      "chat": 31,
+      "chat": 36,
+      "coding": 14,
+      "reasoning": 15,
+      "fast": 7,
+      "multilingual": 18,
+      "creative-writing": 3,
+      "analysis": 4,
+      "rag": 2,
+      "function-calling": 9,
+      "fast-inference": 2,
+      "experimental": 1,
+      "embeddings": 4,
+      "semantic-search": 2,
+      "clustering": 1,
+      "lightweight": 3,
+      "reranking": 2,
+      "search-optimization": 2,
+      "relevance-scoring": 1,
       "real-time": 2,
       "x-integration": 2,
-      "reasoning": 14,
-      "coding": 10,
-      "multilingual": 18,
       "current-events": 1,
-      "vision": 6,
+      "vision": 11,
       "multimodal": 5,
       "image-analysis": 1,
       "advanced-capabilities": 1,
       "beta": 1,
       "next-gen": 1,
-      "math": 4,
+      "instruct": 11,
+      "moe": 1,
       "long-context": 2,
-      "function-calling": 9,
+      "computer-use": 1,
+      "cost-effective": 2,
+      "research": 1,
+      "complex-reasoning": 1,
+      "general-purpose": 1,
+      "simple-tasks": 1,
+      "math": 4,
       "thinking": 3,
       "transparent-reasoning": 1,
       "complex-tasks": 3,
       "code-generation": 2,
       "code-analysis": 1,
       "debugging": 1,
-      "json-mode": 3,
-      "fast": 5,
-      "stem": 1,
-      "cost-effective": 1,
-      "rag": 2,
-      "fast-inference": 2,
-      "experimental": 1,
-      "embeddings": 4,
-      "semantic-search": 2,
-      "clustering": 1,
-      "lightweight": 2,
-      "reranking": 2,
-      "search-optimization": 2,
-      "relevance-scoring": 1,
       "cost-efficient": 1,
       "mixture-of-experts": 2,
       "efficient": 1,
@@ -1376,24 +1566,22 @@
       "image-understanding": 1,
       "fill-in-the-middle": 1,
       "multilingual-code": 1,
-      "creative-writing": 1,
-      "analysis": 1,
-      "instruct": 11,
-      "moe": 1
+      "json-mode": 3,
+      "stem": 1
     },
     "modalities": {
-      "text": 42,
-      "image": 6
+      "text": 47,
+      "image": 11
     },
     "status": {
-      "ga": 40,
-      "beta": 1,
-      "experimental": 1
+      "ga": 45,
+      "experimental": 1,
+      "beta": 1
     },
     "context_windows": {
       "min": 512,
       "max": 256000,
-      "over_100k": 21,
+      "over_100k": 26,
       "over_1m": 0
     }
   },
@@ -1401,14 +1589,9 @@
     "version": "1.0",
     "data_sources": [
       {
-        "provider": "xai",
-        "file": "xai.json",
-        "last_updated": "2025-10-20T18:12:43.110525"
-      },
-      {
-        "provider": "deepseek",
-        "file": "deepseek.json",
-        "last_updated": "2025-10-20T18:12:38.583586"
+        "provider": "meta",
+        "file": "meta.json",
+        "last_updated": "2025-07-17T16:57:28.119320"
       },
       {
         "provider": "google",
@@ -1416,24 +1599,14 @@
         "last_updated": "2025-10-20T18:12:31.437996"
       },
       {
-        "provider": "openai",
-        "file": "openai.json",
-        "last_updated": "2025-10-20T18:11:54.287948"
-      },
-      {
         "provider": "cohere",
         "file": "cohere.json",
         "last_updated": "2025-10-20T18:12:48.890299"
       },
       {
-        "provider": "mistral",
-        "file": "mistral.json",
-        "last_updated": "2025-10-20T18:12:48.745781"
-      },
-      {
-        "provider": "meta",
-        "file": "meta.json",
-        "last_updated": "2025-07-17T16:57:28.119320"
+        "provider": "xai",
+        "file": "xai.json",
+        "last_updated": "2025-10-20T18:12:43.110525"
       },
       {
         "provider": "huggingface",
@@ -1443,89 +1616,108 @@
       {
         "provider": "anthropic",
         "file": "anthropic.json",
-        "last_updated": "2025-10-20T18:12:25.030635"
+        "last_updated": "2025-10-20T23:48:43.711826"
+      },
+      {
+        "provider": "deepseek",
+        "file": "deepseek.json",
+        "last_updated": "2025-10-20T18:12:38.583586"
+      },
+      {
+        "provider": "mistral",
+        "file": "mistral.json",
+        "last_updated": "2025-10-20T18:12:48.745781"
+      },
+      {
+        "provider": "openai",
+        "file": "openai.json",
+        "last_updated": "2025-10-20T18:11:54.287948"
       }
     ]
   },
   "categories": {
     "vision_models": [
       "xai/grok-2-vision",
+      "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct",
+      "anthropic/claude-3-5-sonnet-20241022",
+      "anthropic/claude-3-5-haiku-20241022",
+      "anthropic/claude-3-opus-20240229",
+      "anthropic/claude-3-sonnet-20240229",
+      "anthropic/claude-3-haiku-20240307",
+      "mistral/pixtral-12b",
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
-      "openai/gpt-4-turbo",
-      "mistral/pixtral-12b",
-      "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
+      "openai/gpt-4-turbo"
     ],
     "coding_models": [
       "deepseek/deepseek-coder",
       "mistral/codestral-latest"
     ],
     "reasoning_models": [
-      "xai/grok-2",
-      "xai/grok-2-vision",
-      "xai/grok-beta",
-      "deepseek/deepseek-chat",
-      "deepseek/deepseek-reasoner",
-      "openai/o1",
-      "openai/o1-mini",
+      "meta/llama-4-scout",
+      "meta/llama-4-maverick",
       "cohere/command-r-plus",
       "cohere/command-r",
       "cohere/command",
       "cohere/command-nightly",
-      "mistral/mistral-large-latest",
-      "meta/llama-4-scout",
-      "meta/llama-4-maverick"
-    ],
-    "fast_models": [
-      "openai/gpt-4o-mini",
-      "openai/o1-mini",
-      "mistral/mistral-small-latest",
-      "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
-    ],
-    "large_context": [
       "xai/grok-2",
       "xai/grok-2-vision",
       "xai/grok-beta",
-      "deepseek/deepseek-coder",
-      "openai/gpt-4o",
-      "openai/gpt-4o-mini",
+      "anthropic/claude-3-5-sonnet-20241022",
+      "deepseek/deepseek-chat",
+      "deepseek/deepseek-reasoner",
+      "mistral/mistral-large-latest",
       "openai/o1",
-      "openai/o1-mini",
-      "openai/gpt-4-turbo",
+      "openai/o1-mini"
+    ],
+    "fast_models": [
+      "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "mistral/mistral-small-latest",
+      "openai/gpt-4o-mini",
+      "openai/o1-mini"
+    ],
+    "large_context": [
+      "meta/llama-4-scout",
+      "meta/llama-4-maverick",
       "cohere/command-r-plus",
       "cohere/command-r",
       "cohere/command-nightly",
-      "mistral/mistral-large-latest",
-      "mistral/pixtral-12b",
-      "meta/llama-4-scout",
-      "meta/llama-4-maverick",
+      "xai/grok-2",
+      "xai/grok-2-vision",
+      "xai/grok-beta",
       "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct",
       "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct",
-      "huggingface/microsoft/Phi-3-medium-128k-instruct"
-    ],
-    "multimodal": [
-      "xai/grok-2-vision",
-      "openai/gpt-4o",
-      "openai/gpt-4o-mini",
-      "openai/gpt-4-turbo",
-      "mistral/pixtral-12b",
-      "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
-    ],
-    "free_models": [
-      "xai/grok-2",
-      "xai/grok-2-vision",
-      "xai/grok-beta",
-      "deepseek/deepseek-chat",
-      "deepseek/deepseek-reasoner",
+      "huggingface/microsoft/Phi-3-medium-128k-instruct",
+      "anthropic/claude-3-5-sonnet-20241022",
+      "anthropic/claude-3-5-haiku-20241022",
+      "anthropic/claude-3-opus-20240229",
+      "anthropic/claude-3-sonnet-20240229",
+      "anthropic/claude-3-haiku-20240307",
       "deepseek/deepseek-coder",
+      "mistral/mistral-large-latest",
+      "mistral/pixtral-12b",
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
       "openai/o1",
       "openai/o1-mini",
-      "openai/gpt-4-turbo",
-      "openai/gpt-3.5-turbo",
+      "openai/gpt-4-turbo"
+    ],
+    "multimodal": [
+      "xai/grok-2-vision",
+      "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct",
+      "anthropic/claude-3-5-sonnet-20241022",
+      "anthropic/claude-3-5-haiku-20241022",
+      "anthropic/claude-3-opus-20240229",
+      "anthropic/claude-3-sonnet-20240229",
+      "anthropic/claude-3-haiku-20240307",
+      "mistral/pixtral-12b",
+      "openai/gpt-4o",
+      "openai/gpt-4o-mini",
+      "openai/gpt-4-turbo"
+    ],
+    "free_models": [
       "cohere/command-r-plus",
       "cohere/command-r",
       "cohere/command",
@@ -1537,12 +1729,9 @@
       "cohere/embed-multilingual-light-v3.0",
       "cohere/rerank-english-v3.0",
       "cohere/rerank-multilingual-v3.0",
-      "mistral/mistral-large-latest",
-      "mistral/mistral-small-latest",
-      "mistral/open-mixtral-8x7b",
-      "mistral/open-mixtral-8x22b",
-      "mistral/pixtral-12b",
-      "mistral/codestral-latest",
+      "xai/grok-2",
+      "xai/grok-2-vision",
+      "xai/grok-beta",
       "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -1553,12 +1742,3371 @@
       "huggingface/Qwen/Qwen2.5-72B-Instruct",
       "huggingface/Qwen/Qwen2.5-7B-Instruct",
       "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct",
-      "huggingface/microsoft/Phi-3-medium-128k-instruct"
+      "huggingface/microsoft/Phi-3-medium-128k-instruct",
+      "anthropic/claude-3-5-sonnet-20241022",
+      "anthropic/claude-3-5-haiku-20241022",
+      "anthropic/claude-3-opus-20240229",
+      "anthropic/claude-3-sonnet-20240229",
+      "anthropic/claude-3-haiku-20240307",
+      "deepseek/deepseek-chat",
+      "deepseek/deepseek-reasoner",
+      "deepseek/deepseek-coder",
+      "mistral/mistral-large-latest",
+      "mistral/mistral-small-latest",
+      "mistral/open-mixtral-8x7b",
+      "mistral/open-mixtral-8x22b",
+      "mistral/pixtral-12b",
+      "mistral/codestral-latest",
+      "openai/gpt-4o",
+      "openai/gpt-4o-mini",
+      "openai/o1",
+      "openai/o1-mini",
+      "openai/gpt-4-turbo",
+      "openai/gpt-3.5-turbo"
     ],
     "experimental": [
-      "xai/grok-beta",
-      "cohere/command-nightly"
+      "cohere/command-nightly",
+      "xai/grok-beta"
     ],
     "deprecated": []
+  },
+  "provider_comparison": {
+    "by_use_case": {
+      "general_chat": [
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek-V3",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "context_window": 64000,
+          "features": [
+            "chat",
+            "coding",
+            "math",
+            "reasoning",
+            "long-context",
+            "multilingual",
+            "function-calling"
+          ],
+          "unique_id": "deepseek/deepseek-chat"
+        },
+        {
+          "id": "pixtral-12b",
+          "name": "Pixtral 12B",
+          "provider": "mistral",
+          "input_price": 0.15,
+          "output_price": 0.15,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "multimodal",
+            "image-understanding"
+          ],
+          "unique_id": "mistral/pixtral-12b"
+        },
+        {
+          "id": "gpt-4o-mini",
+          "name": "GPT-4o mini",
+          "provider": "openai",
+          "input_price": 0.15,
+          "output_price": 0.6,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode",
+            "fast",
+            "multimodal"
+          ],
+          "unique_id": "openai/gpt-4o-mini"
+        },
+        {
+          "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "name": "Meta Llama 3.1 8B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.2,
+          "output_price": 0.2,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual"
+          ],
+          "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
+        },
+        {
+          "id": "mistral-small-latest",
+          "name": "Mistral Small",
+          "provider": "mistral",
+          "input_price": 0.2,
+          "output_price": 0.6,
+          "context_window": 32000,
+          "features": [
+            "chat",
+            "fast",
+            "cost-efficient",
+            "multilingual"
+          ],
+          "unique_id": "mistral/mistral-small-latest"
+        },
+        {
+          "id": "mistralai/Mistral-7B-Instruct-v0.3",
+          "name": "Mistral 7B Instruct v0.3",
+          "provider": "huggingface",
+          "input_price": 0.25,
+          "output_price": 0.25,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct"
+          ],
+          "unique_id": "huggingface/mistralai/Mistral-7B-Instruct-v0.3"
+        },
+        {
+          "id": "Qwen/Qwen2.5-7B-Instruct",
+          "name": "Qwen 2.5 7B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.25,
+          "output_price": 0.25,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual",
+            "coding"
+          ],
+          "unique_id": "huggingface/Qwen/Qwen2.5-7B-Instruct"
+        },
+        {
+          "id": "claude-3-haiku-20240307",
+          "name": "Claude 3 Haiku",
+          "provider": "anthropic",
+          "input_price": 0.25,
+          "output_price": 1.25,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "fast",
+            "lightweight",
+            "vision",
+            "simple-tasks"
+          ],
+          "unique_id": "anthropic/claude-3-haiku-20240307"
+        },
+        {
+          "id": "command-light",
+          "name": "Command Light",
+          "provider": "cohere",
+          "input_price": 0.3,
+          "output_price": 0.6,
+          "context_window": 4096,
+          "features": [
+            "chat",
+            "fast-inference"
+          ],
+          "unique_id": "cohere/command-light"
+        },
+        {
+          "id": "google/gemma-2-9b-it",
+          "name": "Google Gemma 2 9B IT",
+          "provider": "huggingface",
+          "input_price": 0.3,
+          "output_price": 0.3,
+          "context_window": 8192,
+          "features": [
+            "chat",
+            "instruct"
+          ],
+          "unique_id": "huggingface/google/gemma-2-9b-it"
+        },
+        {
+          "id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+          "name": "Llama 3.2 11B Vision Instruct",
+          "provider": "huggingface",
+          "input_price": 0.35,
+          "output_price": 0.35,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "instruct",
+            "multimodal"
+          ],
+          "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
+        },
+        {
+          "id": "microsoft/Phi-3-medium-128k-instruct",
+          "name": "Phi-3 Medium 128K Instruct",
+          "provider": "huggingface",
+          "input_price": 0.4,
+          "output_price": 0.4,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "long-context"
+          ],
+          "unique_id": "huggingface/microsoft/Phi-3-medium-128k-instruct"
+        },
+        {
+          "id": "command-r",
+          "name": "Command R",
+          "provider": "cohere",
+          "input_price": 0.5,
+          "output_price": 1.5,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "rag",
+            "function-calling",
+            "multilingual"
+          ],
+          "unique_id": "cohere/command-r"
+        },
+        {
+          "id": "open-mixtral-8x7b",
+          "name": "Mixtral 8x7B",
+          "provider": "mistral",
+          "input_price": 0.5,
+          "output_price": 0.5,
+          "context_window": 32000,
+          "features": [
+            "chat",
+            "mixture-of-experts",
+            "efficient",
+            "multilingual"
+          ],
+          "unique_id": "mistral/open-mixtral-8x7b"
+        },
+        {
+          "id": "gpt-3.5-turbo",
+          "name": "GPT-3.5 Turbo",
+          "provider": "openai",
+          "input_price": 0.5,
+          "output_price": 1.5,
+          "context_window": 16385,
+          "features": [
+            "chat",
+            "function-calling",
+            "fast",
+            "cost-effective"
+          ],
+          "unique_id": "openai/gpt-3.5-turbo"
+        },
+        {
+          "id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "name": "Mixtral 8x7B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.7,
+          "output_price": 0.7,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct",
+            "moe"
+          ],
+          "unique_id": "huggingface/mistralai/Mixtral-8x7B-Instruct-v0.1"
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "provider": "meta",
+          "input_price": 0.8,
+          "output_price": 2.4,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "fast",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-scout"
+        },
+        {
+          "id": "google/gemma-2-27b-it",
+          "name": "Google Gemma 2 27B IT",
+          "provider": "huggingface",
+          "input_price": 0.8,
+          "output_price": 0.8,
+          "context_window": 8192,
+          "features": [
+            "chat",
+            "instruct"
+          ],
+          "unique_id": "huggingface/google/gemma-2-27b-it"
+        },
+        {
+          "id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          "name": "Meta Llama 3.1 70B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.9,
+          "output_price": 0.9,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual"
+          ],
+          "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct"
+        },
+        {
+          "id": "Qwen/Qwen2.5-72B-Instruct",
+          "name": "Qwen 2.5 72B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.9,
+          "output_price": 0.9,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual",
+            "coding"
+          ],
+          "unique_id": "huggingface/Qwen/Qwen2.5-72B-Instruct"
+        },
+        {
+          "id": "command",
+          "name": "Command",
+          "provider": "cohere",
+          "input_price": 1.0,
+          "output_price": 2.0,
+          "context_window": 4096,
+          "features": [
+            "chat",
+            "reasoning"
+          ],
+          "unique_id": "cohere/command"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "name": "Claude 3.5 Haiku",
+          "provider": "anthropic",
+          "input_price": 1.0,
+          "output_price": 5.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "fast",
+            "vision",
+            "cost-effective"
+          ],
+          "unique_id": "anthropic/claude-3-5-haiku-20241022"
+        },
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "provider": "meta",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_window": 256000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "creative-writing",
+            "analysis",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-maverick"
+        },
+        {
+          "id": "grok-2",
+          "name": "Grok-2",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "real-time",
+            "x-integration",
+            "reasoning",
+            "coding",
+            "multilingual",
+            "current-events"
+          ],
+          "unique_id": "xai/grok-2"
+        },
+        {
+          "id": "grok-2-vision",
+          "name": "Grok-2 Vision",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "vision",
+            "real-time",
+            "x-integration",
+            "multimodal",
+            "reasoning",
+            "image-analysis"
+          ],
+          "unique_id": "xai/grok-2-vision"
+        },
+        {
+          "id": "open-mixtral-8x22b",
+          "name": "Mixtral 8x22B",
+          "provider": "mistral",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_window": 65536,
+          "features": [
+            "chat",
+            "mixture-of-experts",
+            "powerful",
+            "multilingual"
+          ],
+          "unique_id": "mistral/open-mixtral-8x22b"
+        },
+        {
+          "id": "gpt-4o",
+          "name": "GPT-4o",
+          "provider": "openai",
+          "input_price": 2.5,
+          "output_price": 10.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode",
+            "multimodal"
+          ],
+          "unique_id": "openai/gpt-4o"
+        },
+        {
+          "id": "command-r-plus",
+          "name": "Command R+",
+          "provider": "cohere",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "rag",
+            "function-calling",
+            "multilingual"
+          ],
+          "unique_id": "cohere/command-r-plus"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "name": "Claude 3.5 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "creative-writing",
+            "vision",
+            "computer-use",
+            "reasoning"
+          ],
+          "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+        },
+        {
+          "id": "claude-3-sonnet-20240229",
+          "name": "Claude 3 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "vision",
+            "general-purpose"
+          ],
+          "unique_id": "anthropic/claude-3-sonnet-20240229"
+        },
+        {
+          "id": "mistral-large-latest",
+          "name": "Mistral Large",
+          "provider": "mistral",
+          "input_price": 3.0,
+          "output_price": 9.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "complex-tasks",
+            "multilingual",
+            "function-calling"
+          ],
+          "unique_id": "mistral/mistral-large-latest"
+        },
+        {
+          "id": "grok-beta",
+          "name": "Grok-3 (Beta)",
+          "provider": "xai",
+          "input_price": 5.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "reasoning",
+            "advanced-capabilities",
+            "beta",
+            "next-gen"
+          ],
+          "unique_id": "xai/grok-beta"
+        },
+        {
+          "id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+          "name": "Meta Llama 3.1 405B Instruct",
+          "provider": "huggingface",
+          "input_price": 5.0,
+          "output_price": 16.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual"
+          ],
+          "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct"
+        },
+        {
+          "id": "gpt-4-turbo",
+          "name": "GPT-4 Turbo",
+          "provider": "openai",
+          "input_price": 10.0,
+          "output_price": 30.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode"
+          ],
+          "unique_id": "openai/gpt-4-turbo"
+        },
+        {
+          "id": "command-nightly",
+          "name": "Command Nightly",
+          "provider": "cohere",
+          "input_price": 15.0,
+          "output_price": 15.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "experimental"
+          ],
+          "unique_id": "cohere/command-nightly"
+        },
+        {
+          "id": "claude-3-opus-20240229",
+          "name": "Claude 3 Opus",
+          "provider": "anthropic",
+          "input_price": 15.0,
+          "output_price": 75.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "research",
+            "complex-reasoning",
+            "vision",
+            "creative-writing"
+          ],
+          "unique_id": "anthropic/claude-3-opus-20240229"
+        }
+      ],
+      "advanced_reasoning": [
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek-V3",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "context_window": 64000,
+          "features": [
+            "chat",
+            "coding",
+            "math",
+            "reasoning",
+            "long-context",
+            "multilingual",
+            "function-calling"
+          ],
+          "unique_id": "deepseek/deepseek-chat"
+        },
+        {
+          "id": "command-r",
+          "name": "Command R",
+          "provider": "cohere",
+          "input_price": 0.5,
+          "output_price": 1.5,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "rag",
+            "function-calling",
+            "multilingual"
+          ],
+          "unique_id": "cohere/command-r"
+        },
+        {
+          "id": "deepseek-reasoner",
+          "name": "DeepSeek-R1",
+          "provider": "deepseek",
+          "input_price": 0.55,
+          "output_price": 2.19,
+          "context_window": 64000,
+          "features": [
+            "reasoning",
+            "thinking",
+            "transparent-reasoning",
+            "math",
+            "complex-tasks"
+          ],
+          "unique_id": "deepseek/deepseek-reasoner"
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "provider": "meta",
+          "input_price": 0.8,
+          "output_price": 2.4,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "fast",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-scout"
+        },
+        {
+          "id": "command",
+          "name": "Command",
+          "provider": "cohere",
+          "input_price": 1.0,
+          "output_price": 2.0,
+          "context_window": 4096,
+          "features": [
+            "chat",
+            "reasoning"
+          ],
+          "unique_id": "cohere/command"
+        },
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "provider": "meta",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_window": 256000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "creative-writing",
+            "analysis",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-maverick"
+        },
+        {
+          "id": "grok-2",
+          "name": "Grok-2",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "real-time",
+            "x-integration",
+            "reasoning",
+            "coding",
+            "multilingual",
+            "current-events"
+          ],
+          "unique_id": "xai/grok-2"
+        },
+        {
+          "id": "grok-2-vision",
+          "name": "Grok-2 Vision",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "vision",
+            "real-time",
+            "x-integration",
+            "multimodal",
+            "reasoning",
+            "image-analysis"
+          ],
+          "unique_id": "xai/grok-2-vision"
+        },
+        {
+          "id": "command-r-plus",
+          "name": "Command R+",
+          "provider": "cohere",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "rag",
+            "function-calling",
+            "multilingual"
+          ],
+          "unique_id": "cohere/command-r-plus"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "name": "Claude 3.5 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "creative-writing",
+            "vision",
+            "computer-use",
+            "reasoning"
+          ],
+          "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+        },
+        {
+          "id": "mistral-large-latest",
+          "name": "Mistral Large",
+          "provider": "mistral",
+          "input_price": 3.0,
+          "output_price": 9.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "complex-tasks",
+            "multilingual",
+            "function-calling"
+          ],
+          "unique_id": "mistral/mistral-large-latest"
+        },
+        {
+          "id": "o1-mini",
+          "name": "o1-mini",
+          "provider": "openai",
+          "input_price": 3.0,
+          "output_price": 12.0,
+          "context_window": 128000,
+          "features": [
+            "reasoning",
+            "coding",
+            "fast",
+            "thinking",
+            "math",
+            "stem"
+          ],
+          "unique_id": "openai/o1-mini"
+        },
+        {
+          "id": "grok-beta",
+          "name": "Grok-3 (Beta)",
+          "provider": "xai",
+          "input_price": 5.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "reasoning",
+            "advanced-capabilities",
+            "beta",
+            "next-gen"
+          ],
+          "unique_id": "xai/grok-beta"
+        },
+        {
+          "id": "command-nightly",
+          "name": "Command Nightly",
+          "provider": "cohere",
+          "input_price": 15.0,
+          "output_price": 15.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "experimental"
+          ],
+          "unique_id": "cohere/command-nightly"
+        },
+        {
+          "id": "claude-3-opus-20240229",
+          "name": "Claude 3 Opus",
+          "provider": "anthropic",
+          "input_price": 15.0,
+          "output_price": 75.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "research",
+            "complex-reasoning",
+            "vision",
+            "creative-writing"
+          ],
+          "unique_id": "anthropic/claude-3-opus-20240229"
+        },
+        {
+          "id": "o1",
+          "name": "o1",
+          "provider": "openai",
+          "input_price": 15.0,
+          "output_price": 60.0,
+          "context_window": 200000,
+          "features": [
+            "reasoning",
+            "complex-tasks",
+            "thinking",
+            "math",
+            "coding"
+          ],
+          "unique_id": "openai/o1"
+        }
+      ],
+      "fast_affordable": [
+        {
+          "id": "embed-english-light-v3.0",
+          "name": "Embed English Light v3.0",
+          "provider": "cohere",
+          "input_price": 0.1,
+          "output_price": 0,
+          "context_window": 512,
+          "features": [
+            "embeddings",
+            "fast-inference",
+            "lightweight"
+          ],
+          "unique_id": "cohere/embed-english-light-v3.0"
+        },
+        {
+          "id": "gpt-4o-mini",
+          "name": "GPT-4o mini",
+          "provider": "openai",
+          "input_price": 0.15,
+          "output_price": 0.6,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode",
+            "fast",
+            "multimodal"
+          ],
+          "unique_id": "openai/gpt-4o-mini"
+        },
+        {
+          "id": "mistral-small-latest",
+          "name": "Mistral Small",
+          "provider": "mistral",
+          "input_price": 0.2,
+          "output_price": 0.6,
+          "context_window": 32000,
+          "features": [
+            "chat",
+            "fast",
+            "cost-efficient",
+            "multilingual"
+          ],
+          "unique_id": "mistral/mistral-small-latest"
+        },
+        {
+          "id": "claude-3-haiku-20240307",
+          "name": "Claude 3 Haiku",
+          "provider": "anthropic",
+          "input_price": 0.25,
+          "output_price": 1.25,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "fast",
+            "lightweight",
+            "vision",
+            "simple-tasks"
+          ],
+          "unique_id": "anthropic/claude-3-haiku-20240307"
+        },
+        {
+          "id": "command-light",
+          "name": "Command Light",
+          "provider": "cohere",
+          "input_price": 0.3,
+          "output_price": 0.6,
+          "context_window": 4096,
+          "features": [
+            "chat",
+            "fast-inference"
+          ],
+          "unique_id": "cohere/command-light"
+        },
+        {
+          "id": "gpt-3.5-turbo",
+          "name": "GPT-3.5 Turbo",
+          "provider": "openai",
+          "input_price": 0.5,
+          "output_price": 1.5,
+          "context_window": 16385,
+          "features": [
+            "chat",
+            "function-calling",
+            "fast",
+            "cost-effective"
+          ],
+          "unique_id": "openai/gpt-3.5-turbo"
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "provider": "meta",
+          "input_price": 0.8,
+          "output_price": 2.4,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "fast",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-scout"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "name": "Claude 3.5 Haiku",
+          "provider": "anthropic",
+          "input_price": 1.0,
+          "output_price": 5.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "fast",
+            "vision",
+            "cost-effective"
+          ],
+          "unique_id": "anthropic/claude-3-5-haiku-20241022"
+        },
+        {
+          "id": "o1-mini",
+          "name": "o1-mini",
+          "provider": "openai",
+          "input_price": 3.0,
+          "output_price": 12.0,
+          "context_window": 128000,
+          "features": [
+            "reasoning",
+            "coding",
+            "fast",
+            "thinking",
+            "math",
+            "stem"
+          ],
+          "unique_id": "openai/o1-mini"
+        }
+      ],
+      "vision": [
+        {
+          "id": "pixtral-12b",
+          "name": "Pixtral 12B",
+          "provider": "mistral",
+          "input_price": 0.15,
+          "output_price": 0.15,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "multimodal",
+            "image-understanding"
+          ],
+          "unique_id": "mistral/pixtral-12b"
+        },
+        {
+          "id": "gpt-4o-mini",
+          "name": "GPT-4o mini",
+          "provider": "openai",
+          "input_price": 0.15,
+          "output_price": 0.6,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode",
+            "fast",
+            "multimodal"
+          ],
+          "unique_id": "openai/gpt-4o-mini"
+        },
+        {
+          "id": "claude-3-haiku-20240307",
+          "name": "Claude 3 Haiku",
+          "provider": "anthropic",
+          "input_price": 0.25,
+          "output_price": 1.25,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "fast",
+            "lightweight",
+            "vision",
+            "simple-tasks"
+          ],
+          "unique_id": "anthropic/claude-3-haiku-20240307"
+        },
+        {
+          "id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+          "name": "Llama 3.2 11B Vision Instruct",
+          "provider": "huggingface",
+          "input_price": 0.35,
+          "output_price": 0.35,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "instruct",
+            "multimodal"
+          ],
+          "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "name": "Claude 3.5 Haiku",
+          "provider": "anthropic",
+          "input_price": 1.0,
+          "output_price": 5.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "fast",
+            "vision",
+            "cost-effective"
+          ],
+          "unique_id": "anthropic/claude-3-5-haiku-20241022"
+        },
+        {
+          "id": "grok-2-vision",
+          "name": "Grok-2 Vision",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "vision",
+            "real-time",
+            "x-integration",
+            "multimodal",
+            "reasoning",
+            "image-analysis"
+          ],
+          "unique_id": "xai/grok-2-vision"
+        },
+        {
+          "id": "gpt-4o",
+          "name": "GPT-4o",
+          "provider": "openai",
+          "input_price": 2.5,
+          "output_price": 10.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode",
+            "multimodal"
+          ],
+          "unique_id": "openai/gpt-4o"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "name": "Claude 3.5 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "creative-writing",
+            "vision",
+            "computer-use",
+            "reasoning"
+          ],
+          "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+        },
+        {
+          "id": "claude-3-sonnet-20240229",
+          "name": "Claude 3 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "vision",
+            "general-purpose"
+          ],
+          "unique_id": "anthropic/claude-3-sonnet-20240229"
+        },
+        {
+          "id": "gpt-4-turbo",
+          "name": "GPT-4 Turbo",
+          "provider": "openai",
+          "input_price": 10.0,
+          "output_price": 30.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode"
+          ],
+          "unique_id": "openai/gpt-4-turbo"
+        },
+        {
+          "id": "claude-3-opus-20240229",
+          "name": "Claude 3 Opus",
+          "provider": "anthropic",
+          "input_price": 15.0,
+          "output_price": 75.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "research",
+            "complex-reasoning",
+            "vision",
+            "creative-writing"
+          ],
+          "unique_id": "anthropic/claude-3-opus-20240229"
+        }
+      ],
+      "coding": [
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek-V3",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "context_window": 64000,
+          "features": [
+            "chat",
+            "coding",
+            "math",
+            "reasoning",
+            "long-context",
+            "multilingual",
+            "function-calling"
+          ],
+          "unique_id": "deepseek/deepseek-chat"
+        },
+        {
+          "id": "deepseek-coder",
+          "name": "DeepSeek-Coder-V2",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "context_window": 128000,
+          "features": [
+            "coding",
+            "code-generation",
+            "code-analysis",
+            "debugging",
+            "function-calling"
+          ],
+          "unique_id": "deepseek/deepseek-coder"
+        },
+        {
+          "id": "codestral-latest",
+          "name": "Codestral",
+          "provider": "mistral",
+          "input_price": 0.2,
+          "output_price": 0.6,
+          "context_window": 32000,
+          "features": [
+            "coding",
+            "code-generation",
+            "fill-in-the-middle",
+            "multilingual-code"
+          ],
+          "unique_id": "mistral/codestral-latest"
+        },
+        {
+          "id": "Qwen/Qwen2.5-7B-Instruct",
+          "name": "Qwen 2.5 7B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.25,
+          "output_price": 0.25,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual",
+            "coding"
+          ],
+          "unique_id": "huggingface/Qwen/Qwen2.5-7B-Instruct"
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "provider": "meta",
+          "input_price": 0.8,
+          "output_price": 2.4,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "fast",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-scout"
+        },
+        {
+          "id": "Qwen/Qwen2.5-72B-Instruct",
+          "name": "Qwen 2.5 72B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.9,
+          "output_price": 0.9,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual",
+            "coding"
+          ],
+          "unique_id": "huggingface/Qwen/Qwen2.5-72B-Instruct"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "name": "Claude 3.5 Haiku",
+          "provider": "anthropic",
+          "input_price": 1.0,
+          "output_price": 5.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "fast",
+            "vision",
+            "cost-effective"
+          ],
+          "unique_id": "anthropic/claude-3-5-haiku-20241022"
+        },
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "provider": "meta",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_window": 256000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "creative-writing",
+            "analysis",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-maverick"
+        },
+        {
+          "id": "grok-2",
+          "name": "Grok-2",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "real-time",
+            "x-integration",
+            "reasoning",
+            "coding",
+            "multilingual",
+            "current-events"
+          ],
+          "unique_id": "xai/grok-2"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "name": "Claude 3.5 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "creative-writing",
+            "vision",
+            "computer-use",
+            "reasoning"
+          ],
+          "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+        },
+        {
+          "id": "claude-3-sonnet-20240229",
+          "name": "Claude 3 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "vision",
+            "general-purpose"
+          ],
+          "unique_id": "anthropic/claude-3-sonnet-20240229"
+        },
+        {
+          "id": "o1-mini",
+          "name": "o1-mini",
+          "provider": "openai",
+          "input_price": 3.0,
+          "output_price": 12.0,
+          "context_window": 128000,
+          "features": [
+            "reasoning",
+            "coding",
+            "fast",
+            "thinking",
+            "math",
+            "stem"
+          ],
+          "unique_id": "openai/o1-mini"
+        },
+        {
+          "id": "claude-3-opus-20240229",
+          "name": "Claude 3 Opus",
+          "provider": "anthropic",
+          "input_price": 15.0,
+          "output_price": 75.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "research",
+            "complex-reasoning",
+            "vision",
+            "creative-writing"
+          ],
+          "unique_id": "anthropic/claude-3-opus-20240229"
+        },
+        {
+          "id": "o1",
+          "name": "o1",
+          "provider": "openai",
+          "input_price": 15.0,
+          "output_price": 60.0,
+          "context_window": 200000,
+          "features": [
+            "reasoning",
+            "complex-tasks",
+            "thinking",
+            "math",
+            "coding"
+          ],
+          "unique_id": "openai/o1"
+        }
+      ],
+      "large_context": [
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek-V3",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "context_window": 64000,
+          "features": [
+            "chat",
+            "coding",
+            "math",
+            "reasoning",
+            "long-context",
+            "multilingual",
+            "function-calling"
+          ],
+          "unique_id": "deepseek/deepseek-chat"
+        },
+        {
+          "id": "deepseek-coder",
+          "name": "DeepSeek-Coder-V2",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "context_window": 128000,
+          "features": [
+            "coding",
+            "code-generation",
+            "code-analysis",
+            "debugging",
+            "function-calling"
+          ],
+          "unique_id": "deepseek/deepseek-coder"
+        },
+        {
+          "id": "pixtral-12b",
+          "name": "Pixtral 12B",
+          "provider": "mistral",
+          "input_price": 0.15,
+          "output_price": 0.15,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "multimodal",
+            "image-understanding"
+          ],
+          "unique_id": "mistral/pixtral-12b"
+        },
+        {
+          "id": "gpt-4o-mini",
+          "name": "GPT-4o mini",
+          "provider": "openai",
+          "input_price": 0.15,
+          "output_price": 0.6,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode",
+            "fast",
+            "multimodal"
+          ],
+          "unique_id": "openai/gpt-4o-mini"
+        },
+        {
+          "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "name": "Meta Llama 3.1 8B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.2,
+          "output_price": 0.2,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual"
+          ],
+          "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
+        },
+        {
+          "id": "claude-3-haiku-20240307",
+          "name": "Claude 3 Haiku",
+          "provider": "anthropic",
+          "input_price": 0.25,
+          "output_price": 1.25,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "fast",
+            "lightweight",
+            "vision",
+            "simple-tasks"
+          ],
+          "unique_id": "anthropic/claude-3-haiku-20240307"
+        },
+        {
+          "id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+          "name": "Llama 3.2 11B Vision Instruct",
+          "provider": "huggingface",
+          "input_price": 0.35,
+          "output_price": 0.35,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "instruct",
+            "multimodal"
+          ],
+          "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
+        },
+        {
+          "id": "microsoft/Phi-3-medium-128k-instruct",
+          "name": "Phi-3 Medium 128K Instruct",
+          "provider": "huggingface",
+          "input_price": 0.4,
+          "output_price": 0.4,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "long-context"
+          ],
+          "unique_id": "huggingface/microsoft/Phi-3-medium-128k-instruct"
+        },
+        {
+          "id": "command-r",
+          "name": "Command R",
+          "provider": "cohere",
+          "input_price": 0.5,
+          "output_price": 1.5,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "rag",
+            "function-calling",
+            "multilingual"
+          ],
+          "unique_id": "cohere/command-r"
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "provider": "meta",
+          "input_price": 0.8,
+          "output_price": 2.4,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "fast",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-scout"
+        },
+        {
+          "id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          "name": "Meta Llama 3.1 70B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.9,
+          "output_price": 0.9,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual"
+          ],
+          "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "name": "Claude 3.5 Haiku",
+          "provider": "anthropic",
+          "input_price": 1.0,
+          "output_price": 5.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "fast",
+            "vision",
+            "cost-effective"
+          ],
+          "unique_id": "anthropic/claude-3-5-haiku-20241022"
+        },
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "provider": "meta",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_window": 256000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "creative-writing",
+            "analysis",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-maverick"
+        },
+        {
+          "id": "grok-2",
+          "name": "Grok-2",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "real-time",
+            "x-integration",
+            "reasoning",
+            "coding",
+            "multilingual",
+            "current-events"
+          ],
+          "unique_id": "xai/grok-2"
+        },
+        {
+          "id": "grok-2-vision",
+          "name": "Grok-2 Vision",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "vision",
+            "real-time",
+            "x-integration",
+            "multimodal",
+            "reasoning",
+            "image-analysis"
+          ],
+          "unique_id": "xai/grok-2-vision"
+        },
+        {
+          "id": "gpt-4o",
+          "name": "GPT-4o",
+          "provider": "openai",
+          "input_price": 2.5,
+          "output_price": 10.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode",
+            "multimodal"
+          ],
+          "unique_id": "openai/gpt-4o"
+        },
+        {
+          "id": "command-r-plus",
+          "name": "Command R+",
+          "provider": "cohere",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "rag",
+            "function-calling",
+            "multilingual"
+          ],
+          "unique_id": "cohere/command-r-plus"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "name": "Claude 3.5 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "creative-writing",
+            "vision",
+            "computer-use",
+            "reasoning"
+          ],
+          "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+        },
+        {
+          "id": "claude-3-sonnet-20240229",
+          "name": "Claude 3 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "vision",
+            "general-purpose"
+          ],
+          "unique_id": "anthropic/claude-3-sonnet-20240229"
+        },
+        {
+          "id": "mistral-large-latest",
+          "name": "Mistral Large",
+          "provider": "mistral",
+          "input_price": 3.0,
+          "output_price": 9.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "complex-tasks",
+            "multilingual",
+            "function-calling"
+          ],
+          "unique_id": "mistral/mistral-large-latest"
+        },
+        {
+          "id": "o1-mini",
+          "name": "o1-mini",
+          "provider": "openai",
+          "input_price": 3.0,
+          "output_price": 12.0,
+          "context_window": 128000,
+          "features": [
+            "reasoning",
+            "coding",
+            "fast",
+            "thinking",
+            "math",
+            "stem"
+          ],
+          "unique_id": "openai/o1-mini"
+        },
+        {
+          "id": "grok-beta",
+          "name": "Grok-3 (Beta)",
+          "provider": "xai",
+          "input_price": 5.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "reasoning",
+            "advanced-capabilities",
+            "beta",
+            "next-gen"
+          ],
+          "unique_id": "xai/grok-beta"
+        },
+        {
+          "id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+          "name": "Meta Llama 3.1 405B Instruct",
+          "provider": "huggingface",
+          "input_price": 5.0,
+          "output_price": 16.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual"
+          ],
+          "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct"
+        },
+        {
+          "id": "gpt-4-turbo",
+          "name": "GPT-4 Turbo",
+          "provider": "openai",
+          "input_price": 10.0,
+          "output_price": 30.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode"
+          ],
+          "unique_id": "openai/gpt-4-turbo"
+        },
+        {
+          "id": "command-nightly",
+          "name": "Command Nightly",
+          "provider": "cohere",
+          "input_price": 15.0,
+          "output_price": 15.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "experimental"
+          ],
+          "unique_id": "cohere/command-nightly"
+        },
+        {
+          "id": "claude-3-opus-20240229",
+          "name": "Claude 3 Opus",
+          "provider": "anthropic",
+          "input_price": 15.0,
+          "output_price": 75.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "research",
+            "complex-reasoning",
+            "vision",
+            "creative-writing"
+          ],
+          "unique_id": "anthropic/claude-3-opus-20240229"
+        },
+        {
+          "id": "o1",
+          "name": "o1",
+          "provider": "openai",
+          "input_price": 15.0,
+          "output_price": 60.0,
+          "context_window": 200000,
+          "features": [
+            "reasoning",
+            "complex-tasks",
+            "thinking",
+            "math",
+            "coding"
+          ],
+          "unique_id": "openai/o1"
+        }
+      ]
+    },
+    "by_capability": {
+      "vision": [
+        {
+          "id": "pixtral-12b",
+          "name": "Pixtral 12B",
+          "provider": "mistral",
+          "input_price": 0.15,
+          "output_price": 0.15,
+          "unique_id": "mistral/pixtral-12b"
+        },
+        {
+          "id": "gpt-4o-mini",
+          "name": "GPT-4o mini",
+          "provider": "openai",
+          "input_price": 0.15,
+          "output_price": 0.6,
+          "unique_id": "openai/gpt-4o-mini"
+        },
+        {
+          "id": "claude-3-haiku-20240307",
+          "name": "Claude 3 Haiku",
+          "provider": "anthropic",
+          "input_price": 0.25,
+          "output_price": 1.25,
+          "unique_id": "anthropic/claude-3-haiku-20240307"
+        },
+        {
+          "id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+          "name": "Llama 3.2 11B Vision Instruct",
+          "provider": "huggingface",
+          "input_price": 0.35,
+          "output_price": 0.35,
+          "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "name": "Claude 3.5 Haiku",
+          "provider": "anthropic",
+          "input_price": 1.0,
+          "output_price": 5.0,
+          "unique_id": "anthropic/claude-3-5-haiku-20241022"
+        },
+        {
+          "id": "grok-2-vision",
+          "name": "Grok-2 Vision",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "unique_id": "xai/grok-2-vision"
+        },
+        {
+          "id": "gpt-4o",
+          "name": "GPT-4o",
+          "provider": "openai",
+          "input_price": 2.5,
+          "output_price": 10.0,
+          "unique_id": "openai/gpt-4o"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "name": "Claude 3.5 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+        },
+        {
+          "id": "claude-3-sonnet-20240229",
+          "name": "Claude 3 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "unique_id": "anthropic/claude-3-sonnet-20240229"
+        },
+        {
+          "id": "gpt-4-turbo",
+          "name": "GPT-4 Turbo",
+          "provider": "openai",
+          "input_price": 10.0,
+          "output_price": 30.0,
+          "unique_id": "openai/gpt-4-turbo"
+        },
+        {
+          "id": "claude-3-opus-20240229",
+          "name": "Claude 3 Opus",
+          "provider": "anthropic",
+          "input_price": 15.0,
+          "output_price": 75.0,
+          "unique_id": "anthropic/claude-3-opus-20240229"
+        }
+      ],
+      "coding": [
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek-V3",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "unique_id": "deepseek/deepseek-chat"
+        },
+        {
+          "id": "deepseek-coder",
+          "name": "DeepSeek-Coder-V2",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "unique_id": "deepseek/deepseek-coder"
+        },
+        {
+          "id": "codestral-latest",
+          "name": "Codestral",
+          "provider": "mistral",
+          "input_price": 0.2,
+          "output_price": 0.6,
+          "unique_id": "mistral/codestral-latest"
+        },
+        {
+          "id": "Qwen/Qwen2.5-7B-Instruct",
+          "name": "Qwen 2.5 7B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.25,
+          "output_price": 0.25,
+          "unique_id": "huggingface/Qwen/Qwen2.5-7B-Instruct"
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "provider": "meta",
+          "input_price": 0.8,
+          "output_price": 2.4,
+          "unique_id": "meta/llama-4-scout"
+        },
+        {
+          "id": "Qwen/Qwen2.5-72B-Instruct",
+          "name": "Qwen 2.5 72B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.9,
+          "output_price": 0.9,
+          "unique_id": "huggingface/Qwen/Qwen2.5-72B-Instruct"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "name": "Claude 3.5 Haiku",
+          "provider": "anthropic",
+          "input_price": 1.0,
+          "output_price": 5.0,
+          "unique_id": "anthropic/claude-3-5-haiku-20241022"
+        },
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "provider": "meta",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "unique_id": "meta/llama-4-maverick"
+        },
+        {
+          "id": "grok-2",
+          "name": "Grok-2",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "unique_id": "xai/grok-2"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "name": "Claude 3.5 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+        },
+        {
+          "id": "claude-3-sonnet-20240229",
+          "name": "Claude 3 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "unique_id": "anthropic/claude-3-sonnet-20240229"
+        },
+        {
+          "id": "o1-mini",
+          "name": "o1-mini",
+          "provider": "openai",
+          "input_price": 3.0,
+          "output_price": 12.0,
+          "unique_id": "openai/o1-mini"
+        },
+        {
+          "id": "claude-3-opus-20240229",
+          "name": "Claude 3 Opus",
+          "provider": "anthropic",
+          "input_price": 15.0,
+          "output_price": 75.0,
+          "unique_id": "anthropic/claude-3-opus-20240229"
+        },
+        {
+          "id": "o1",
+          "name": "o1",
+          "provider": "openai",
+          "input_price": 15.0,
+          "output_price": 60.0,
+          "unique_id": "openai/o1"
+        }
+      ],
+      "reasoning": [
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek-V3",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "unique_id": "deepseek/deepseek-chat"
+        },
+        {
+          "id": "command-r",
+          "name": "Command R",
+          "provider": "cohere",
+          "input_price": 0.5,
+          "output_price": 1.5,
+          "unique_id": "cohere/command-r"
+        },
+        {
+          "id": "deepseek-reasoner",
+          "name": "DeepSeek-R1",
+          "provider": "deepseek",
+          "input_price": 0.55,
+          "output_price": 2.19,
+          "unique_id": "deepseek/deepseek-reasoner"
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "provider": "meta",
+          "input_price": 0.8,
+          "output_price": 2.4,
+          "unique_id": "meta/llama-4-scout"
+        },
+        {
+          "id": "command",
+          "name": "Command",
+          "provider": "cohere",
+          "input_price": 1.0,
+          "output_price": 2.0,
+          "unique_id": "cohere/command"
+        },
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "provider": "meta",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "unique_id": "meta/llama-4-maverick"
+        },
+        {
+          "id": "grok-2",
+          "name": "Grok-2",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "unique_id": "xai/grok-2"
+        },
+        {
+          "id": "grok-2-vision",
+          "name": "Grok-2 Vision",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "unique_id": "xai/grok-2-vision"
+        },
+        {
+          "id": "command-r-plus",
+          "name": "Command R+",
+          "provider": "cohere",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "unique_id": "cohere/command-r-plus"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "name": "Claude 3.5 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+        },
+        {
+          "id": "mistral-large-latest",
+          "name": "Mistral Large",
+          "provider": "mistral",
+          "input_price": 3.0,
+          "output_price": 9.0,
+          "unique_id": "mistral/mistral-large-latest"
+        },
+        {
+          "id": "o1-mini",
+          "name": "o1-mini",
+          "provider": "openai",
+          "input_price": 3.0,
+          "output_price": 12.0,
+          "unique_id": "openai/o1-mini"
+        },
+        {
+          "id": "grok-beta",
+          "name": "Grok-3 (Beta)",
+          "provider": "xai",
+          "input_price": 5.0,
+          "output_price": 15.0,
+          "unique_id": "xai/grok-beta"
+        },
+        {
+          "id": "command-nightly",
+          "name": "Command Nightly",
+          "provider": "cohere",
+          "input_price": 15.0,
+          "output_price": 15.0,
+          "unique_id": "cohere/command-nightly"
+        },
+        {
+          "id": "o1",
+          "name": "o1",
+          "provider": "openai",
+          "input_price": 15.0,
+          "output_price": 60.0,
+          "unique_id": "openai/o1"
+        }
+      ],
+      "fast": [
+        {
+          "id": "gpt-4o-mini",
+          "name": "GPT-4o mini",
+          "provider": "openai",
+          "input_price": 0.15,
+          "output_price": 0.6,
+          "unique_id": "openai/gpt-4o-mini"
+        },
+        {
+          "id": "mistral-small-latest",
+          "name": "Mistral Small",
+          "provider": "mistral",
+          "input_price": 0.2,
+          "output_price": 0.6,
+          "unique_id": "mistral/mistral-small-latest"
+        },
+        {
+          "id": "claude-3-haiku-20240307",
+          "name": "Claude 3 Haiku",
+          "provider": "anthropic",
+          "input_price": 0.25,
+          "output_price": 1.25,
+          "unique_id": "anthropic/claude-3-haiku-20240307"
+        },
+        {
+          "id": "gpt-3.5-turbo",
+          "name": "GPT-3.5 Turbo",
+          "provider": "openai",
+          "input_price": 0.5,
+          "output_price": 1.5,
+          "unique_id": "openai/gpt-3.5-turbo"
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "provider": "meta",
+          "input_price": 0.8,
+          "output_price": 2.4,
+          "unique_id": "meta/llama-4-scout"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "name": "Claude 3.5 Haiku",
+          "provider": "anthropic",
+          "input_price": 1.0,
+          "output_price": 5.0,
+          "unique_id": "anthropic/claude-3-5-haiku-20241022"
+        },
+        {
+          "id": "o1-mini",
+          "name": "o1-mini",
+          "provider": "openai",
+          "input_price": 3.0,
+          "output_price": 12.0,
+          "unique_id": "openai/o1-mini"
+        }
+      ]
+    },
+    "pricing_comparison": {
+      "sample_workload": {
+        "input_tokens": 100000,
+        "output_tokens": 10000
+      },
+      "by_provider": {
+        "meta": [
+          {
+            "model": "Llama 4 Scout",
+            "model_id": "llama-4-scout",
+            "cost_for_sample": 0.104,
+            "input_price": 0.8,
+            "output_price": 2.4,
+            "unique_id": "meta/llama-4-scout"
+          },
+          {
+            "model": "Llama 4 Maverick",
+            "model_id": "llama-4-maverick",
+            "cost_for_sample": 0.26,
+            "input_price": 2.0,
+            "output_price": 6.0,
+            "unique_id": "meta/llama-4-maverick"
+          }
+        ],
+        "cohere": [
+          {
+            "model": "Embed English v3.0",
+            "model_id": "embed-english-v3.0",
+            "cost_for_sample": 0.01,
+            "input_price": 0.1,
+            "output_price": 0,
+            "unique_id": "cohere/embed-english-v3.0"
+          },
+          {
+            "model": "Embed Multilingual v3.0",
+            "model_id": "embed-multilingual-v3.0",
+            "cost_for_sample": 0.01,
+            "input_price": 0.1,
+            "output_price": 0,
+            "unique_id": "cohere/embed-multilingual-v3.0"
+          },
+          {
+            "model": "Embed English Light v3.0",
+            "model_id": "embed-english-light-v3.0",
+            "cost_for_sample": 0.01,
+            "input_price": 0.1,
+            "output_price": 0,
+            "unique_id": "cohere/embed-english-light-v3.0"
+          },
+          {
+            "model": "Embed Multilingual Light v3.0",
+            "model_id": "embed-multilingual-light-v3.0",
+            "cost_for_sample": 0.01,
+            "input_price": 0.1,
+            "output_price": 0,
+            "unique_id": "cohere/embed-multilingual-light-v3.0"
+          },
+          {
+            "model": "Command Light",
+            "model_id": "command-light",
+            "cost_for_sample": 0.036,
+            "input_price": 0.3,
+            "output_price": 0.6,
+            "unique_id": "cohere/command-light"
+          },
+          {
+            "model": "Command R",
+            "model_id": "command-r",
+            "cost_for_sample": 0.065,
+            "input_price": 0.5,
+            "output_price": 1.5,
+            "unique_id": "cohere/command-r"
+          },
+          {
+            "model": "Command",
+            "model_id": "command",
+            "cost_for_sample": 0.12,
+            "input_price": 1.0,
+            "output_price": 2.0,
+            "unique_id": "cohere/command"
+          },
+          {
+            "model": "Rerank English v3.0",
+            "model_id": "rerank-english-v3.0",
+            "cost_for_sample": 0.2,
+            "input_price": 2.0,
+            "output_price": 0,
+            "unique_id": "cohere/rerank-english-v3.0"
+          },
+          {
+            "model": "Rerank Multilingual v3.0",
+            "model_id": "rerank-multilingual-v3.0",
+            "cost_for_sample": 0.2,
+            "input_price": 2.0,
+            "output_price": 0,
+            "unique_id": "cohere/rerank-multilingual-v3.0"
+          },
+          {
+            "model": "Command R+",
+            "model_id": "command-r-plus",
+            "cost_for_sample": 0.45,
+            "input_price": 3.0,
+            "output_price": 15.0,
+            "unique_id": "cohere/command-r-plus"
+          },
+          {
+            "model": "Command Nightly",
+            "model_id": "command-nightly",
+            "cost_for_sample": 1.65,
+            "input_price": 15.0,
+            "output_price": 15.0,
+            "unique_id": "cohere/command-nightly"
+          }
+        ],
+        "xai": [
+          {
+            "model": "Grok-2",
+            "model_id": "grok-2",
+            "cost_for_sample": 0.3,
+            "input_price": 2.0,
+            "output_price": 10.0,
+            "unique_id": "xai/grok-2"
+          },
+          {
+            "model": "Grok-2 Vision",
+            "model_id": "grok-2-vision",
+            "cost_for_sample": 0.3,
+            "input_price": 2.0,
+            "output_price": 10.0,
+            "unique_id": "xai/grok-2-vision"
+          },
+          {
+            "model": "Grok-3 (Beta)",
+            "model_id": "grok-beta",
+            "cost_for_sample": 0.65,
+            "input_price": 5.0,
+            "output_price": 15.0,
+            "unique_id": "xai/grok-beta"
+          }
+        ],
+        "huggingface": [
+          {
+            "model": "Meta Llama 3.1 8B Instruct",
+            "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+            "cost_for_sample": 0.022,
+            "input_price": 0.2,
+            "output_price": 0.2,
+            "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
+          },
+          {
+            "model": "Mistral 7B Instruct v0.3",
+            "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+            "cost_for_sample": 0.0275,
+            "input_price": 0.25,
+            "output_price": 0.25,
+            "unique_id": "huggingface/mistralai/Mistral-7B-Instruct-v0.3"
+          },
+          {
+            "model": "Qwen 2.5 7B Instruct",
+            "model_id": "Qwen/Qwen2.5-7B-Instruct",
+            "cost_for_sample": 0.0275,
+            "input_price": 0.25,
+            "output_price": 0.25,
+            "unique_id": "huggingface/Qwen/Qwen2.5-7B-Instruct"
+          },
+          {
+            "model": "Google Gemma 2 9B IT",
+            "model_id": "google/gemma-2-9b-it",
+            "cost_for_sample": 0.033,
+            "input_price": 0.3,
+            "output_price": 0.3,
+            "unique_id": "huggingface/google/gemma-2-9b-it"
+          },
+          {
+            "model": "Llama 3.2 11B Vision Instruct",
+            "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+            "cost_for_sample": 0.0385,
+            "input_price": 0.35,
+            "output_price": 0.35,
+            "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
+          },
+          {
+            "model": "Phi-3 Medium 128K Instruct",
+            "model_id": "microsoft/Phi-3-medium-128k-instruct",
+            "cost_for_sample": 0.044,
+            "input_price": 0.4,
+            "output_price": 0.4,
+            "unique_id": "huggingface/microsoft/Phi-3-medium-128k-instruct"
+          },
+          {
+            "model": "Mixtral 8x7B Instruct",
+            "model_id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+            "cost_for_sample": 0.077,
+            "input_price": 0.7,
+            "output_price": 0.7,
+            "unique_id": "huggingface/mistralai/Mixtral-8x7B-Instruct-v0.1"
+          },
+          {
+            "model": "Google Gemma 2 27B IT",
+            "model_id": "google/gemma-2-27b-it",
+            "cost_for_sample": 0.088,
+            "input_price": 0.8,
+            "output_price": 0.8,
+            "unique_id": "huggingface/google/gemma-2-27b-it"
+          },
+          {
+            "model": "Meta Llama 3.1 70B Instruct",
+            "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+            "cost_for_sample": 0.099,
+            "input_price": 0.9,
+            "output_price": 0.9,
+            "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct"
+          },
+          {
+            "model": "Qwen 2.5 72B Instruct",
+            "model_id": "Qwen/Qwen2.5-72B-Instruct",
+            "cost_for_sample": 0.099,
+            "input_price": 0.9,
+            "output_price": 0.9,
+            "unique_id": "huggingface/Qwen/Qwen2.5-72B-Instruct"
+          },
+          {
+            "model": "Meta Llama 3.1 405B Instruct",
+            "model_id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+            "cost_for_sample": 0.66,
+            "input_price": 5.0,
+            "output_price": 16.0,
+            "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct"
+          }
+        ],
+        "anthropic": [
+          {
+            "model": "Claude 3 Haiku",
+            "model_id": "claude-3-haiku-20240307",
+            "cost_for_sample": 0.0375,
+            "input_price": 0.25,
+            "output_price": 1.25,
+            "unique_id": "anthropic/claude-3-haiku-20240307"
+          },
+          {
+            "model": "Claude 3.5 Haiku",
+            "model_id": "claude-3-5-haiku-20241022",
+            "cost_for_sample": 0.15,
+            "input_price": 1.0,
+            "output_price": 5.0,
+            "unique_id": "anthropic/claude-3-5-haiku-20241022"
+          },
+          {
+            "model": "Claude 3.5 Sonnet",
+            "model_id": "claude-3-5-sonnet-20241022",
+            "cost_for_sample": 0.45,
+            "input_price": 3.0,
+            "output_price": 15.0,
+            "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+          },
+          {
+            "model": "Claude 3 Sonnet",
+            "model_id": "claude-3-sonnet-20240229",
+            "cost_for_sample": 0.45,
+            "input_price": 3.0,
+            "output_price": 15.0,
+            "unique_id": "anthropic/claude-3-sonnet-20240229"
+          },
+          {
+            "model": "Claude 3 Opus",
+            "model_id": "claude-3-opus-20240229",
+            "cost_for_sample": 2.25,
+            "input_price": 15.0,
+            "output_price": 75.0,
+            "unique_id": "anthropic/claude-3-opus-20240229"
+          }
+        ],
+        "deepseek": [
+          {
+            "model": "DeepSeek-V3",
+            "model_id": "deepseek-chat",
+            "cost_for_sample": 0.0168,
+            "input_price": 0.14,
+            "output_price": 0.28,
+            "unique_id": "deepseek/deepseek-chat"
+          },
+          {
+            "model": "DeepSeek-Coder-V2",
+            "model_id": "deepseek-coder",
+            "cost_for_sample": 0.0168,
+            "input_price": 0.14,
+            "output_price": 0.28,
+            "unique_id": "deepseek/deepseek-coder"
+          },
+          {
+            "model": "DeepSeek-R1",
+            "model_id": "deepseek-reasoner",
+            "cost_for_sample": 0.0769,
+            "input_price": 0.55,
+            "output_price": 2.19,
+            "unique_id": "deepseek/deepseek-reasoner"
+          }
+        ],
+        "mistral": [
+          {
+            "model": "Pixtral 12B",
+            "model_id": "pixtral-12b",
+            "cost_for_sample": 0.0165,
+            "input_price": 0.15,
+            "output_price": 0.15,
+            "unique_id": "mistral/pixtral-12b"
+          },
+          {
+            "model": "Mistral Small",
+            "model_id": "mistral-small-latest",
+            "cost_for_sample": 0.026,
+            "input_price": 0.2,
+            "output_price": 0.6,
+            "unique_id": "mistral/mistral-small-latest"
+          },
+          {
+            "model": "Codestral",
+            "model_id": "codestral-latest",
+            "cost_for_sample": 0.026,
+            "input_price": 0.2,
+            "output_price": 0.6,
+            "unique_id": "mistral/codestral-latest"
+          },
+          {
+            "model": "Mixtral 8x7B",
+            "model_id": "open-mixtral-8x7b",
+            "cost_for_sample": 0.055,
+            "input_price": 0.5,
+            "output_price": 0.5,
+            "unique_id": "mistral/open-mixtral-8x7b"
+          },
+          {
+            "model": "Mixtral 8x22B",
+            "model_id": "open-mixtral-8x22b",
+            "cost_for_sample": 0.26,
+            "input_price": 2.0,
+            "output_price": 6.0,
+            "unique_id": "mistral/open-mixtral-8x22b"
+          },
+          {
+            "model": "Mistral Large",
+            "model_id": "mistral-large-latest",
+            "cost_for_sample": 0.39,
+            "input_price": 3.0,
+            "output_price": 9.0,
+            "unique_id": "mistral/mistral-large-latest"
+          }
+        ],
+        "openai": [
+          {
+            "model": "GPT-4o mini",
+            "model_id": "gpt-4o-mini",
+            "cost_for_sample": 0.021,
+            "input_price": 0.15,
+            "output_price": 0.6,
+            "unique_id": "openai/gpt-4o-mini"
+          },
+          {
+            "model": "GPT-3.5 Turbo",
+            "model_id": "gpt-3.5-turbo",
+            "cost_for_sample": 0.065,
+            "input_price": 0.5,
+            "output_price": 1.5,
+            "unique_id": "openai/gpt-3.5-turbo"
+          },
+          {
+            "model": "GPT-4o",
+            "model_id": "gpt-4o",
+            "cost_for_sample": 0.35,
+            "input_price": 2.5,
+            "output_price": 10.0,
+            "unique_id": "openai/gpt-4o"
+          },
+          {
+            "model": "o1-mini",
+            "model_id": "o1-mini",
+            "cost_for_sample": 0.42,
+            "input_price": 3.0,
+            "output_price": 12.0,
+            "unique_id": "openai/o1-mini"
+          },
+          {
+            "model": "GPT-4 Turbo",
+            "model_id": "gpt-4-turbo",
+            "cost_for_sample": 1.3,
+            "input_price": 10.0,
+            "output_price": 30.0,
+            "unique_id": "openai/gpt-4-turbo"
+          },
+          {
+            "model": "o1",
+            "model_id": "o1",
+            "cost_for_sample": 2.1,
+            "input_price": 15.0,
+            "output_price": 60.0,
+            "unique_id": "openai/o1"
+          }
+        ]
+      }
+    }
+  },
+  "price_tiers": {
+    "budget": {
+      "max": 1.0,
+      "models": [
+        {
+          "id": "embed-english-v3.0",
+          "name": "Embed English v3.0",
+          "provider": "cohere",
+          "input_price": 0.1,
+          "output_price": 0,
+          "context_window": 512,
+          "features": [
+            "embeddings",
+            "semantic-search",
+            "clustering"
+          ],
+          "unique_id": "cohere/embed-english-v3.0"
+        },
+        {
+          "id": "embed-multilingual-v3.0",
+          "name": "Embed Multilingual v3.0",
+          "provider": "cohere",
+          "input_price": 0.1,
+          "output_price": 0,
+          "context_window": 512,
+          "features": [
+            "embeddings",
+            "multilingual",
+            "semantic-search"
+          ],
+          "unique_id": "cohere/embed-multilingual-v3.0"
+        },
+        {
+          "id": "embed-english-light-v3.0",
+          "name": "Embed English Light v3.0",
+          "provider": "cohere",
+          "input_price": 0.1,
+          "output_price": 0,
+          "context_window": 512,
+          "features": [
+            "embeddings",
+            "fast-inference",
+            "lightweight"
+          ],
+          "unique_id": "cohere/embed-english-light-v3.0"
+        },
+        {
+          "id": "embed-multilingual-light-v3.0",
+          "name": "Embed Multilingual Light v3.0",
+          "provider": "cohere",
+          "input_price": 0.1,
+          "output_price": 0,
+          "context_window": 512,
+          "features": [
+            "embeddings",
+            "multilingual",
+            "lightweight"
+          ],
+          "unique_id": "cohere/embed-multilingual-light-v3.0"
+        },
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek-V3",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "context_window": 64000,
+          "features": [
+            "chat",
+            "coding",
+            "math",
+            "reasoning",
+            "long-context",
+            "multilingual",
+            "function-calling"
+          ],
+          "unique_id": "deepseek/deepseek-chat"
+        },
+        {
+          "id": "deepseek-coder",
+          "name": "DeepSeek-Coder-V2",
+          "provider": "deepseek",
+          "input_price": 0.14,
+          "output_price": 0.28,
+          "context_window": 128000,
+          "features": [
+            "coding",
+            "code-generation",
+            "code-analysis",
+            "debugging",
+            "function-calling"
+          ],
+          "unique_id": "deepseek/deepseek-coder"
+        },
+        {
+          "id": "pixtral-12b",
+          "name": "Pixtral 12B",
+          "provider": "mistral",
+          "input_price": 0.15,
+          "output_price": 0.15,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "multimodal",
+            "image-understanding"
+          ],
+          "unique_id": "mistral/pixtral-12b"
+        },
+        {
+          "id": "gpt-4o-mini",
+          "name": "GPT-4o mini",
+          "provider": "openai",
+          "input_price": 0.15,
+          "output_price": 0.6,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode",
+            "fast",
+            "multimodal"
+          ],
+          "unique_id": "openai/gpt-4o-mini"
+        },
+        {
+          "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "name": "Meta Llama 3.1 8B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.2,
+          "output_price": 0.2,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual"
+          ],
+          "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
+        },
+        {
+          "id": "mistral-small-latest",
+          "name": "Mistral Small",
+          "provider": "mistral",
+          "input_price": 0.2,
+          "output_price": 0.6,
+          "context_window": 32000,
+          "features": [
+            "chat",
+            "fast",
+            "cost-efficient",
+            "multilingual"
+          ],
+          "unique_id": "mistral/mistral-small-latest"
+        },
+        {
+          "id": "codestral-latest",
+          "name": "Codestral",
+          "provider": "mistral",
+          "input_price": 0.2,
+          "output_price": 0.6,
+          "context_window": 32000,
+          "features": [
+            "coding",
+            "code-generation",
+            "fill-in-the-middle",
+            "multilingual-code"
+          ],
+          "unique_id": "mistral/codestral-latest"
+        },
+        {
+          "id": "mistralai/Mistral-7B-Instruct-v0.3",
+          "name": "Mistral 7B Instruct v0.3",
+          "provider": "huggingface",
+          "input_price": 0.25,
+          "output_price": 0.25,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct"
+          ],
+          "unique_id": "huggingface/mistralai/Mistral-7B-Instruct-v0.3"
+        },
+        {
+          "id": "Qwen/Qwen2.5-7B-Instruct",
+          "name": "Qwen 2.5 7B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.25,
+          "output_price": 0.25,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual",
+            "coding"
+          ],
+          "unique_id": "huggingface/Qwen/Qwen2.5-7B-Instruct"
+        },
+        {
+          "id": "claude-3-haiku-20240307",
+          "name": "Claude 3 Haiku",
+          "provider": "anthropic",
+          "input_price": 0.25,
+          "output_price": 1.25,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "fast",
+            "lightweight",
+            "vision",
+            "simple-tasks"
+          ],
+          "unique_id": "anthropic/claude-3-haiku-20240307"
+        },
+        {
+          "id": "command-light",
+          "name": "Command Light",
+          "provider": "cohere",
+          "input_price": 0.3,
+          "output_price": 0.6,
+          "context_window": 4096,
+          "features": [
+            "chat",
+            "fast-inference"
+          ],
+          "unique_id": "cohere/command-light"
+        },
+        {
+          "id": "google/gemma-2-9b-it",
+          "name": "Google Gemma 2 9B IT",
+          "provider": "huggingface",
+          "input_price": 0.3,
+          "output_price": 0.3,
+          "context_window": 8192,
+          "features": [
+            "chat",
+            "instruct"
+          ],
+          "unique_id": "huggingface/google/gemma-2-9b-it"
+        },
+        {
+          "id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+          "name": "Llama 3.2 11B Vision Instruct",
+          "provider": "huggingface",
+          "input_price": 0.35,
+          "output_price": 0.35,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "instruct",
+            "multimodal"
+          ],
+          "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
+        },
+        {
+          "id": "microsoft/Phi-3-medium-128k-instruct",
+          "name": "Phi-3 Medium 128K Instruct",
+          "provider": "huggingface",
+          "input_price": 0.4,
+          "output_price": 0.4,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "long-context"
+          ],
+          "unique_id": "huggingface/microsoft/Phi-3-medium-128k-instruct"
+        },
+        {
+          "id": "command-r",
+          "name": "Command R",
+          "provider": "cohere",
+          "input_price": 0.5,
+          "output_price": 1.5,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "rag",
+            "function-calling",
+            "multilingual"
+          ],
+          "unique_id": "cohere/command-r"
+        },
+        {
+          "id": "open-mixtral-8x7b",
+          "name": "Mixtral 8x7B",
+          "provider": "mistral",
+          "input_price": 0.5,
+          "output_price": 0.5,
+          "context_window": 32000,
+          "features": [
+            "chat",
+            "mixture-of-experts",
+            "efficient",
+            "multilingual"
+          ],
+          "unique_id": "mistral/open-mixtral-8x7b"
+        },
+        {
+          "id": "gpt-3.5-turbo",
+          "name": "GPT-3.5 Turbo",
+          "provider": "openai",
+          "input_price": 0.5,
+          "output_price": 1.5,
+          "context_window": 16385,
+          "features": [
+            "chat",
+            "function-calling",
+            "fast",
+            "cost-effective"
+          ],
+          "unique_id": "openai/gpt-3.5-turbo"
+        },
+        {
+          "id": "deepseek-reasoner",
+          "name": "DeepSeek-R1",
+          "provider": "deepseek",
+          "input_price": 0.55,
+          "output_price": 2.19,
+          "context_window": 64000,
+          "features": [
+            "reasoning",
+            "thinking",
+            "transparent-reasoning",
+            "math",
+            "complex-tasks"
+          ],
+          "unique_id": "deepseek/deepseek-reasoner"
+        },
+        {
+          "id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "name": "Mixtral 8x7B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.7,
+          "output_price": 0.7,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct",
+            "moe"
+          ],
+          "unique_id": "huggingface/mistralai/Mixtral-8x7B-Instruct-v0.1"
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "provider": "meta",
+          "input_price": 0.8,
+          "output_price": 2.4,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "fast",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-scout"
+        },
+        {
+          "id": "google/gemma-2-27b-it",
+          "name": "Google Gemma 2 27B IT",
+          "provider": "huggingface",
+          "input_price": 0.8,
+          "output_price": 0.8,
+          "context_window": 8192,
+          "features": [
+            "chat",
+            "instruct"
+          ],
+          "unique_id": "huggingface/google/gemma-2-27b-it"
+        },
+        {
+          "id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          "name": "Meta Llama 3.1 70B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.9,
+          "output_price": 0.9,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual"
+          ],
+          "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct"
+        },
+        {
+          "id": "Qwen/Qwen2.5-72B-Instruct",
+          "name": "Qwen 2.5 72B Instruct",
+          "provider": "huggingface",
+          "input_price": 0.9,
+          "output_price": 0.9,
+          "context_window": 32768,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual",
+            "coding"
+          ],
+          "unique_id": "huggingface/Qwen/Qwen2.5-72B-Instruct"
+        }
+      ]
+    },
+    "standard": {
+      "min": 1.0,
+      "max": 5.0,
+      "models": [
+        {
+          "id": "command",
+          "name": "Command",
+          "provider": "cohere",
+          "input_price": 1.0,
+          "output_price": 2.0,
+          "context_window": 4096,
+          "features": [
+            "chat",
+            "reasoning"
+          ],
+          "unique_id": "cohere/command"
+        },
+        {
+          "id": "claude-3-5-haiku-20241022",
+          "name": "Claude 3.5 Haiku",
+          "provider": "anthropic",
+          "input_price": 1.0,
+          "output_price": 5.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "fast",
+            "vision",
+            "cost-effective"
+          ],
+          "unique_id": "anthropic/claude-3-5-haiku-20241022"
+        },
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "provider": "meta",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_window": 256000,
+          "features": [
+            "chat",
+            "coding",
+            "reasoning",
+            "creative-writing",
+            "analysis",
+            "multilingual"
+          ],
+          "unique_id": "meta/llama-4-maverick"
+        },
+        {
+          "id": "rerank-english-v3.0",
+          "name": "Rerank English v3.0",
+          "provider": "cohere",
+          "input_price": 2.0,
+          "output_price": 0,
+          "context_window": 4096,
+          "features": [
+            "reranking",
+            "search-optimization",
+            "relevance-scoring"
+          ],
+          "unique_id": "cohere/rerank-english-v3.0"
+        },
+        {
+          "id": "rerank-multilingual-v3.0",
+          "name": "Rerank Multilingual v3.0",
+          "provider": "cohere",
+          "input_price": 2.0,
+          "output_price": 0,
+          "context_window": 4096,
+          "features": [
+            "reranking",
+            "multilingual",
+            "search-optimization"
+          ],
+          "unique_id": "cohere/rerank-multilingual-v3.0"
+        },
+        {
+          "id": "grok-2",
+          "name": "Grok-2",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "real-time",
+            "x-integration",
+            "reasoning",
+            "coding",
+            "multilingual",
+            "current-events"
+          ],
+          "unique_id": "xai/grok-2"
+        },
+        {
+          "id": "grok-2-vision",
+          "name": "Grok-2 Vision",
+          "provider": "xai",
+          "input_price": 2.0,
+          "output_price": 10.0,
+          "context_window": 131072,
+          "features": [
+            "chat",
+            "vision",
+            "real-time",
+            "x-integration",
+            "multimodal",
+            "reasoning",
+            "image-analysis"
+          ],
+          "unique_id": "xai/grok-2-vision"
+        },
+        {
+          "id": "open-mixtral-8x22b",
+          "name": "Mixtral 8x22B",
+          "provider": "mistral",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_window": 65536,
+          "features": [
+            "chat",
+            "mixture-of-experts",
+            "powerful",
+            "multilingual"
+          ],
+          "unique_id": "mistral/open-mixtral-8x22b"
+        },
+        {
+          "id": "gpt-4o",
+          "name": "GPT-4o",
+          "provider": "openai",
+          "input_price": 2.5,
+          "output_price": 10.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode",
+            "multimodal"
+          ],
+          "unique_id": "openai/gpt-4o"
+        },
+        {
+          "id": "command-r-plus",
+          "name": "Command R+",
+          "provider": "cohere",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "rag",
+            "function-calling",
+            "multilingual"
+          ],
+          "unique_id": "cohere/command-r-plus"
+        },
+        {
+          "id": "claude-3-5-sonnet-20241022",
+          "name": "Claude 3.5 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "creative-writing",
+            "vision",
+            "computer-use",
+            "reasoning"
+          ],
+          "unique_id": "anthropic/claude-3-5-sonnet-20241022"
+        },
+        {
+          "id": "claude-3-sonnet-20240229",
+          "name": "Claude 3 Sonnet",
+          "provider": "anthropic",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "vision",
+            "general-purpose"
+          ],
+          "unique_id": "anthropic/claude-3-sonnet-20240229"
+        },
+        {
+          "id": "mistral-large-latest",
+          "name": "Mistral Large",
+          "provider": "mistral",
+          "input_price": 3.0,
+          "output_price": 9.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "complex-tasks",
+            "multilingual",
+            "function-calling"
+          ],
+          "unique_id": "mistral/mistral-large-latest"
+        },
+        {
+          "id": "o1-mini",
+          "name": "o1-mini",
+          "provider": "openai",
+          "input_price": 3.0,
+          "output_price": 12.0,
+          "context_window": 128000,
+          "features": [
+            "reasoning",
+            "coding",
+            "fast",
+            "thinking",
+            "math",
+            "stem"
+          ],
+          "unique_id": "openai/o1-mini"
+        }
+      ]
+    },
+    "premium": {
+      "min": 5.0,
+      "max": 15.0,
+      "models": [
+        {
+          "id": "grok-beta",
+          "name": "Grok-3 (Beta)",
+          "provider": "xai",
+          "input_price": 5.0,
+          "output_price": 15.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "reasoning",
+            "advanced-capabilities",
+            "beta",
+            "next-gen"
+          ],
+          "unique_id": "xai/grok-beta"
+        },
+        {
+          "id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+          "name": "Meta Llama 3.1 405B Instruct",
+          "provider": "huggingface",
+          "input_price": 5.0,
+          "output_price": 16.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "instruct",
+            "multilingual"
+          ],
+          "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct"
+        },
+        {
+          "id": "gpt-4-turbo",
+          "name": "GPT-4 Turbo",
+          "provider": "openai",
+          "input_price": 10.0,
+          "output_price": 30.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "vision",
+            "function-calling",
+            "json-mode"
+          ],
+          "unique_id": "openai/gpt-4-turbo"
+        }
+      ]
+    },
+    "enterprise": {
+      "min": 15.0,
+      "models": [
+        {
+          "id": "command-nightly",
+          "name": "Command Nightly",
+          "provider": "cohere",
+          "input_price": 15.0,
+          "output_price": 15.0,
+          "context_window": 128000,
+          "features": [
+            "chat",
+            "reasoning",
+            "experimental"
+          ],
+          "unique_id": "cohere/command-nightly"
+        },
+        {
+          "id": "claude-3-opus-20240229",
+          "name": "Claude 3 Opus",
+          "provider": "anthropic",
+          "input_price": 15.0,
+          "output_price": 75.0,
+          "context_window": 200000,
+          "features": [
+            "chat",
+            "coding",
+            "analysis",
+            "research",
+            "complex-reasoning",
+            "vision",
+            "creative-writing"
+          ],
+          "unique_id": "anthropic/claude-3-opus-20240229"
+        },
+        {
+          "id": "o1",
+          "name": "o1",
+          "provider": "openai",
+          "input_price": 15.0,
+          "output_price": 60.0,
+          "context_window": 200000,
+          "features": [
+            "reasoning",
+            "complex-tasks",
+            "thinking",
+            "math",
+            "coding"
+          ],
+          "unique_id": "openai/o1"
+        }
+      ]
+    }
   }
 }

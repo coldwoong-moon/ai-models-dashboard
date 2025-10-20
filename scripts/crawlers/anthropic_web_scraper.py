@@ -304,17 +304,21 @@ class AnthropicWebScraper(WebScraperBase):
                 'context_window': 200000,
                 'max_output': 8192,
                 'features': ['chat', 'coding', 'analysis', 'creative-writing', 'vision', 'computer-use', 'reasoning'],
+                'modalities': ['text', 'image'],
+                'release_date': '2024-10-22',
+                'training_cutoff': '2024-04',
                 'status': 'ga'
             },
             {
                 'id': 'claude-3-5-haiku-20241022',
                 'name': 'Claude 3.5 Haiku',
                 'description': 'Fast and affordable model with vision capabilities for everyday tasks',
-                'input_price': 0.80,
-                'output_price': 4.00,
+                'input_price': 1.00,
+                'output_price': 5.00,
                 'context_window': 200000,
                 'max_output': 8192,
                 'features': ['chat', 'coding', 'fast', 'vision', 'cost-effective'],
+                'modalities': ['text', 'image'],
                 'status': 'ga'
             },
             {
@@ -326,6 +330,9 @@ class AnthropicWebScraper(WebScraperBase):
                 'context_window': 200000,
                 'max_output': 4096,
                 'features': ['chat', 'coding', 'analysis', 'research', 'complex-reasoning', 'vision', 'creative-writing'],
+                'modalities': ['text', 'image'],
+                'release_date': '2024-02-29',
+                'training_cutoff': '2023-08',
                 'status': 'ga'
             },
             {
@@ -337,6 +344,9 @@ class AnthropicWebScraper(WebScraperBase):
                 'context_window': 200000,
                 'max_output': 4096,
                 'features': ['chat', 'coding', 'analysis', 'vision', 'general-purpose'],
+                'modalities': ['text', 'image'],
+                'release_date': '2024-02-29',
+                'training_cutoff': '2023-08',
                 'status': 'ga'
             },
             {
@@ -348,6 +358,9 @@ class AnthropicWebScraper(WebScraperBase):
                 'context_window': 200000,
                 'max_output': 4096,
                 'features': ['chat', 'fast', 'lightweight', 'vision', 'simple-tasks'],
+                'modalities': ['text', 'image'],
+                'release_date': '2024-03-07',
+                'training_cutoff': '2023-08',
                 'status': 'ga'
             }
         ]
