@@ -332,6 +332,12 @@ class AIModelsDashboard {
         const availableProviders = model.available_providers || [model.provider];
         const hasMultipleProviders = availableProviders.length > 1;
         
+        // 제공업체 링크 생성 함수
+        const getProviderLink = (providerName) => {
+            const pInfo = this.data.providers[providerName] || {};
+            return pInfo.platform_url || pInfo.website || '#';
+        };
+        
         return `
             <div class="model-card bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-start justify-between mb-4">
@@ -341,14 +347,19 @@ class AIModelsDashboard {
                                 <span class="text-xs font-medium text-blue-700 dark:text-blue-300">다중 제공업체:</span>
                                 ${availableProviders.slice(0, 3).map(p => {
                                     const pInfo = this.data.providers[p] || { name: p };
-                                    return `<span class="px-1.5 py-0.5 text-xs font-medium rounded ${providerColors[p] || 'bg-gray-100 text-gray-800'}">${pInfo.name}</span>`;
+                                    const providerLink = getProviderLink(p);
+                                    return `<a href="${providerLink}" target="_blank" rel="noopener noreferrer" 
+                                            class="px-1.5 py-0.5 text-xs font-medium rounded ${providerColors[p] || 'bg-gray-100 text-gray-800'} hover:opacity-80 transition-opacity" 
+                                            title="${pInfo.name}에서 사용하기">${pInfo.name}</a>`;
                                 }).join('')}
                                 ${availableProviders.length > 3 ? `<span class="text-xs text-blue-600 dark:text-blue-400">+${availableProviders.length - 3}</span>` : ''}
                             </div>
                         ` : `
-                            <span class="px-2 py-1 text-xs font-medium rounded ${providerColors[model.provider] || 'bg-gray-100 text-gray-800'}">
+                            <a href="${getProviderLink(model.provider)}" target="_blank" rel="noopener noreferrer" 
+                               class="px-2 py-1 text-xs font-medium rounded ${providerColors[model.provider] || 'bg-gray-100 text-gray-800'} hover:opacity-80 transition-opacity inline-block" 
+                               title="${provider.name}에서 사용하기">
                                 ${provider.name}
-                            </span>
+                            </a>
                         `}
                         ${model.status ? `
                             <span class="px-2 py-1 text-xs font-medium rounded ${statusColors[model.status] || 'bg-gray-100 text-gray-800'}">

@@ -1,0 +1,72 @@
+name: Collect Provider Data
+
+on:
+  workflow_call:
+    inputs:
+      provider:
+        description: 'Provider name (openai, anthropic, google, etc.)'
+        required: true
+        type: string
+      scraper_script:
+        description: 'Scraper script to run (e.g., openai_web_scraper.py)'
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: 'Provider name (openai, anthropic, google, etc.)'
+        required: true
+        type: choice
+        options:
+          - openai
+          - anthropic
+          - google
+          - deepseek
+          - xai
+          - mistral
+          - cohere
+          - huggingface
+      scraper_script:
+        description: 'Scraper script to run'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  collect-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+        
+    - name: Install Python dependencies
+      run: |
+        pip install -r requirements.txt
+        playwright install chromium
+        
+    - name: Run ${{ inputs.provider }} scraper
+      run: python scripts/crawlers/${{ inputs.scraper_script }}
+      continue-on-error: false
+      
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/models/${{ inputs.provider }}.json
+        if ! git diff --staged --quiet; then
+          git commit -m "🤖 Update ${{ inputs.provider }} data: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
+        else
+          echo "No changes to commit for ${{ inputs.provider }}"
+        fi

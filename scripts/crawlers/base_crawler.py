@@ -71,44 +71,70 @@ class BaseCrawler(ABC):
             'openai': {
                 'name': 'OpenAI',
                 'website': 'https://openai.com',
-                'api_endpoint': 'https://api.openai.com/v1'
+                'api_endpoint': 'https://api.openai.com/v1',
+                'platform_url': 'https://platform.openai.com'
             },
             'anthropic': {
                 'name': 'Anthropic',
                 'website': 'https://anthropic.com',
-                'api_endpoint': 'https://api.anthropic.com'
+                'api_endpoint': 'https://api.anthropic.com',
+                'platform_url': 'https://console.anthropic.com'
             },
             'google': {
                 'name': 'Google AI',
                 'website': 'https://ai.google.dev',
-                'api_endpoint': 'https://generativelanguage.googleapis.com'
+                'api_endpoint': 'https://generativelanguage.googleapis.com',
+                'platform_url': 'https://aistudio.google.com'
             },
             'openrouter': {
                 'name': 'OpenRouter',
                 'website': 'https://openrouter.ai',
-                'api_endpoint': 'https://openrouter.ai/api/v1'
+                'api_endpoint': 'https://openrouter.ai/api/v1',
+                'platform_url': 'https://openrouter.ai'
             },
             'mistral': {
                 'name': 'Mistral AI',
                 'website': 'https://mistral.ai',
-                'api_endpoint': 'https://api.mistral.ai'
+                'api_endpoint': 'https://api.mistral.ai',
+                'platform_url': 'https://console.mistral.ai'
             },
             'cohere': {
                 'name': 'Cohere',
                 'website': 'https://cohere.com',
-                'api_endpoint': 'https://api.cohere.ai'
+                'api_endpoint': 'https://api.cohere.ai',
+                'platform_url': 'https://dashboard.cohere.com'
             },
             'huggingface': {
                 'name': 'HuggingFace',
                 'website': 'https://huggingface.co',
-                'api_endpoint': 'https://api-inference.huggingface.co'
+                'api_endpoint': 'https://api-inference.huggingface.co',
+                'platform_url': 'https://huggingface.co/models'
+            },
+            'deepseek': {
+                'name': 'DeepSeek',
+                'website': 'https://deepseek.com',
+                'api_endpoint': 'https://api.deepseek.com',
+                'platform_url': 'https://platform.deepseek.com'
+            },
+            'xai': {
+                'name': 'xAI',
+                'website': 'https://x.ai',
+                'api_endpoint': 'https://api.x.ai',
+                'platform_url': 'https://console.x.ai'
+            },
+            'meta': {
+                'name': 'Meta',
+                'website': 'https://meta.com',
+                'api_endpoint': 'https://api.meta.com',
+                'platform_url': 'https://ai.meta.com'
             }
         }
         
         return provider_info.get(self.provider_name, {
             'name': self.provider_name.title(),
             'website': '',
-            'api_endpoint': ''
+            'api_endpoint': '',
+            'platform_url': ''
         })
     
     def parse_price(self, price_text: str) -> float:
