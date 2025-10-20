@@ -303,7 +303,13 @@ class AIModelsDashboard {
             openai: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
             anthropic: 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200',
             google: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
-            openrouter: 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200'
+            openrouter: 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200',
+            deepseek: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200',
+            xai: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200',
+            mistral: 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200',
+            cohere: 'bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200',
+            huggingface: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
+            meta: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
         };
         
         const statusColors = {
@@ -322,13 +328,28 @@ class AIModelsDashboard {
             deprecated: 'Deprecated'
         };
         
+        // 여러 제공업체에서 제공되는 경우
+        const availableProviders = model.available_providers || [model.provider];
+        const hasMultipleProviders = availableProviders.length > 1;
+        
         return `
             <div class="model-card bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-start justify-between mb-4">
-                    <div class="flex items-center gap-2">
-                        <span class="px-2 py-1 text-xs font-medium rounded ${providerColors[model.provider] || 'bg-gray-100 text-gray-800'}">
-                            ${provider.name}
-                        </span>
+                    <div class="flex flex-wrap items-center gap-2">
+                        ${hasMultipleProviders ? `
+                            <div class="flex items-center gap-1 px-2 py-1 bg-blue-50 dark:bg-blue-900/20 rounded">
+                                <span class="text-xs font-medium text-blue-700 dark:text-blue-300">다중 제공업체:</span>
+                                ${availableProviders.slice(0, 3).map(p => {
+                                    const pInfo = this.data.providers[p] || { name: p };
+                                    return `<span class="px-1.5 py-0.5 text-xs font-medium rounded ${providerColors[p] || 'bg-gray-100 text-gray-800'}">${pInfo.name}</span>`;
+                                }).join('')}
+                                ${availableProviders.length > 3 ? `<span class="text-xs text-blue-600 dark:text-blue-400">+${availableProviders.length - 3}</span>` : ''}
+                            </div>
+                        ` : `
+                            <span class="px-2 py-1 text-xs font-medium rounded ${providerColors[model.provider] || 'bg-gray-100 text-gray-800'}">
+                                ${provider.name}
+                            </span>
+                        `}
                         ${model.status ? `
                             <span class="px-2 py-1 text-xs font-medium rounded ${statusColors[model.status] || 'bg-gray-100 text-gray-800'}">
                                 ${statusLabels[model.status] || model.status}
@@ -468,6 +489,9 @@ class AIModelsDashboard {
             case 'trends':
                 this.renderTrends();
                 break;
+            case 'providers':
+                this.renderProviders();
+                break;
         }
     }
     
@@ -605,6 +629,112 @@ ${model.description}
             new ChartsManager(window.dashboard);
         `;
         document.body.appendChild(script);
+    }
+    
+    renderProviders() {
+        const providersView = document.getElementById('providersView');
+        if (!providersView) return;
+        
+        const providerColors = {
+            openai: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 border-green-300',
+            anthropic: 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200 border-orange-300',
+            google: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 border-blue-300',
+            deepseek: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200 border-indigo-300',
+            xai: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200 border-cyan-300',
+            mistral: 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200 border-pink-300',
+            cohere: 'bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200 border-teal-300',
+            huggingface: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 border-yellow-300',
+            meta: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 border-blue-300'
+        };
+        
+        const providers = Object.keys(this.data.providers).filter(p => p !== 'openrouter');
+        
+        providersView.innerHTML = `
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                ${providers.map(providerKey => {
+                    const provider = this.data.providers[providerKey];
+                    const providerModels = this.data.models.filter(m => m.provider === providerKey);
+                    
+                    // 가격 범위 계산
+                    const prices = providerModels
+                        .map(m => m.pricing?.input || 0)
+                        .filter(p => p > 0);
+                    const minPrice = prices.length > 0 ? Math.min(...prices) : 0;
+                    const maxPrice = prices.length > 0 ? Math.max(...prices) : 0;
+                    
+                    return `
+                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-2 ${providerColors[providerKey]?.split(' ').pop() || 'border-gray-300'} p-6 hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">${provider.name}</h3>
+                                <span class="px-3 py-1 text-sm font-medium rounded ${providerColors[providerKey] || 'bg-gray-100 text-gray-800'}">
+                                    ${provider.model_count} 모델
+                                </span>
+                            </div>
+                            
+                            <div class="space-y-3 mb-4">
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-gray-500 dark:text-gray-400">웹사이트</span>
+                                    <a href="${provider.website}" target="_blank" class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 flex items-center gap-1">
+                                        <span>방문</span>
+                                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                
+                                ${prices.length > 0 ? `
+                                    <div class="flex items-center justify-between text-sm">
+                                        <span class="text-gray-500 dark:text-gray-400">가격 범위</span>
+                                        <span class="font-medium text-gray-900 dark:text-white">
+                                            $${minPrice.toFixed(2)} - $${maxPrice.toFixed(2)}
+                                        </span>
+                                    </div>
+                                ` : ''}
+                                
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-gray-500 dark:text-gray-400">마지막 업데이트</span>
+                                    <span class="text-gray-700 dark:text-gray-300">
+                                        ${new Date(provider.last_updated).toLocaleDateString('ko-KR')}
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <button 
+                                class="filter-btn w-full px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                                data-filter="${providerKey}"
+                            >
+                                모델 보기
+                            </button>
+                            
+                            <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                                <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">주요 모델</h4>
+                                <ul class="space-y-1">
+                                    ${providerModels.slice(0, 3).map(m => `
+                                        <li class="text-xs text-gray-600 dark:text-gray-400 truncate">
+                                            • ${m.name}
+                                        </li>
+                                    `).join('')}
+                                    ${providerModels.length > 3 ? `
+                                        <li class="text-xs text-gray-500 dark:text-gray-500">
+                                            ... 외 ${providerModels.length - 3}개
+                                        </li>
+                                    ` : ''}
+                                </ul>
+                            </div>
+                        </div>
+                    `;
+                }).join('')}
+            </div>
+        `;
+        
+        // 필터 버튼 이벤트 리스너는 이미 설정되어 있음
+        // "모델 보기" 버튼을 누르면 models 탭으로 이동하고 해당 제공업체 필터 적용
+        providersView.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.switchTab('models');
+                this.handleFilterClick(btn);
+            });
+        });
     }
     
     applyTheme() {

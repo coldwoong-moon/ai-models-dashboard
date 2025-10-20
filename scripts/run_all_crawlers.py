@@ -41,7 +41,8 @@ def main():
         "crawlers/deepseek_crawler.py",
         "crawlers/xai_crawler.py",
         "crawlers/mistral_crawler.py",
-        "crawlers/cohere_crawler.py"
+        "crawlers/cohere_crawler.py",
+        "crawlers/huggingface_crawler.py"
     ]
     
     success_count = 0
