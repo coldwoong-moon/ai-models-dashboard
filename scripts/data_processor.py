@@ -64,6 +64,15 @@ class DataProcessor:
                     else:
                         model['unique_id'] = f"{provider_name}/{model['id']}"
                     
+                    # 무료 모델 (사용량 제한) 제외
+                    # 입력/출력 가격이 모두 0인 모델은 제외
+                    pricing = model.get('pricing', {})
+                    input_price = pricing.get('input', 0) or model.get('input_price', 0)
+                    output_price = pricing.get('output', 0) or model.get('output_price', 0)
+                    
+                    if input_price == 0 and output_price == 0:
+                        continue  # 무료 모델 제외
+                    
                     consolidated['models'].append(model)
                     
             except Exception as e:
@@ -82,27 +91,93 @@ class DataProcessor:
         return consolidated
     
     def deduplicate_models(self, models: List[Dict]) -> List[Dict]:
-        """중복 모델 제거 (OpenRouter 등에서 중복 제공되는 모델 처리)"""
-        seen = {}
-        deduped = []
+        """중복 모델 제거 및 다중 제공업체 추적"""
+        # 모델 이름과 주요 파라미터로 그룹화
+        model_groups = {}
         
         for model in models:
-            # 원본 제공업체가 있는 경우 우선순위 부여
-            if 'provider_original' in model:
-                key = f"{model['provider_original']}/{model['id'].split('/')[-1]}"
-            else:
-                key = model['unique_id']
+            # 모델 이름에서 제공업체 프리픽스 제거하고 기본 이름 추출
+            model_name = model.get('name', '').lower()
+            model_id = model.get('id', '').split('/')[-1].lower()
             
-            if key not in seen:
-                seen[key] = model
-                deduped.append(model)
+            # 그룹화 키 생성 (모델 이름 기반)
+            # 예: "Llama 3.1 70B", "GPT-4o" 등
+            group_key = None
+            
+            # Llama 모델 그룹화
+            if 'llama' in model_name or 'llama' in model_id:
+                if '405b' in model_name or '405b' in model_id:
+                    group_key = 'llama-3.1-405b'
+                elif '70b' in model_name or '70b' in model_id:
+                    group_key = 'llama-3.1-70b'
+                elif '8b' in model_name or '8b' in model_id:
+                    group_key = 'llama-3.1-8b'
+            
+            # Mistral 모델 그룹화
+            elif 'mistral' in model_name or 'mistral' in model_id:
+                if '7b' in model_name or '7b' in model_id:
+                    group_key = 'mistral-7b'
+                elif 'mixtral' in model_name or 'mixtral' in model_id:
+                    group_key = 'mixtral-8x7b'
+            
+            # Gemma 모델 그룹화
+            elif 'gemma' in model_name or 'gemma' in model_id:
+                if '27b' in model_name or '27b' in model_id:
+                    group_key = 'gemma-2-27b'
+                elif '9b' in model_name or '9b' in model_id:
+                    group_key = 'gemma-2-9b'
+            
+            # Qwen 모델 그룹화
+            elif 'qwen' in model_name or 'qwen' in model_id:
+                if '72b' in model_name or '72b' in model_id:
+                    group_key = 'qwen-2.5-72b'
+                elif '7b' in model_name or '7b' in model_id:
+                    group_key = 'qwen-2.5-7b'
+            
+            # 그룹이 없으면 unique_id 사용
+            if not group_key:
+                group_key = model['unique_id']
+            
+            # 그룹에 추가
+            if group_key not in model_groups:
+                model_groups[group_key] = []
+            model_groups[group_key].append(model)
+        
+        # 각 그룹에서 대표 모델 선택 및 다중 제공업체 추적
+        deduped = []
+        for group_key, group_models in model_groups.items():
+            if len(group_models) == 1:
+                # 단일 제공업체
+                deduped.append(group_models[0])
             else:
-                # 가격 정보가 더 상세한 모델 유지
-                existing = seen[key]
-                if (model.get('pricing', {}).get('input', 0) > 0 and 
-                    existing.get('pricing', {}).get('input', 0) == 0):
-                    seen[key] = model
-                    deduped[deduped.index(existing)] = model
+                # 다중 제공업체 - 가장 상세한 정보를 가진 모델을 선택하고
+                # 다른 제공업체 정보를 추가
+                primary_model = max(group_models, 
+                                   key=lambda m: (
+                                       m.get('pricing', {}).get('input', 0),
+                                       len(m.get('description', '')),
+                                       len(m.get('features', []))
+                                   ))
+                
+                # 다른 제공업체 정보 수집
+                available_providers = [m['provider'] for m in group_models]
+                primary_model['available_providers'] = list(set(available_providers))
+                
+                # 제공업체별 가격 정보 저장 (가격이 다를 경우)
+                provider_pricing = {}
+                for m in group_models:
+                    provider = m['provider']
+                    pricing = m.get('pricing', {})
+                    if pricing.get('input', 0) > 0:
+                        provider_pricing[provider] = {
+                            'input': pricing.get('input', 0),
+                            'output': pricing.get('output', 0)
+                        }
+                
+                if len(provider_pricing) > 1:
+                    primary_model['provider_pricing'] = provider_pricing
+                
+                deduped.append(primary_model)
         
         return deduped
     

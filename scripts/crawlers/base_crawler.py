@@ -97,6 +97,11 @@ class BaseCrawler(ABC):
                 'name': 'Cohere',
                 'website': 'https://cohere.com',
                 'api_endpoint': 'https://api.cohere.ai'
+            },
+            'huggingface': {
+                'name': 'HuggingFace',
+                'website': 'https://huggingface.co',
+                'api_endpoint': 'https://api-inference.huggingface.co'
             }
         }
         
