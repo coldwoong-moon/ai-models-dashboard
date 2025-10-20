@@ -10,7 +10,66 @@ permissions:
   issues: write
 
 jobs:
-  update-data:
+  # 각 제공업체별 데이터 수집 (병렬 실행)
+  collect-openai:
+    uses: ./.github/workflows/collect-provider-data.yml
+    with:
+      provider: openai
+      scraper_script: openai_web_scraper.py
+    secrets: inherit
+      
+  collect-anthropic:
+    uses: ./.github/workflows/collect-provider-data.yml
+    with:
+      provider: anthropic
+      scraper_script: anthropic_web_scraper.py
+    secrets: inherit
+      
+  collect-google:
+    uses: ./.github/workflows/collect-provider-data.yml
+    with:
+      provider: google
+      scraper_script: google_web_scraper.py
+    secrets: inherit
+      
+  collect-deepseek:
+    uses: ./.github/workflows/collect-provider-data.yml
+    with:
+      provider: deepseek
+      scraper_script: deepseek_web_scraper.py
+    secrets: inherit
+      
+  collect-xai:
+    uses: ./.github/workflows/collect-provider-data.yml
+    with:
+      provider: xai
+      scraper_script: xai_web_scraper.py
+    secrets: inherit
+      
+  collect-mistral:
+    uses: ./.github/workflows/collect-provider-data.yml
+    with:
+      provider: mistral
+      scraper_script: mistral_web_scraper.py
+    secrets: inherit
+      
+  collect-cohere:
+    uses: ./.github/workflows/collect-provider-data.yml
+    with:
+      provider: cohere
+      scraper_script: cohere_crawler.py
+    secrets: inherit
+      
+  collect-huggingface:
+    uses: ./.github/workflows/collect-provider-data.yml
+    with:
+      provider: huggingface
+      scraper_script: huggingface_crawler.py
+    secrets: inherit
+
+  # 데이터 통합 및 처리
+  consolidate-data:
+    needs: [collect-openai, collect-anthropic, collect-google, collect-deepseek, collect-xai, collect-mistral, collect-cohere, collect-huggingface]
     runs-on: ubuntu-latest
     
     steps:
@@ -23,47 +82,10 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
+        cache: 'pip'
         
     - name: Install Python dependencies
-      run: |
-        pip install -r requirements.txt
-        playwright install chromium
-        
-    - name: Run OpenAI web scraper
-      run: python scripts/crawlers/openai_web_scraper.py
-      continue-on-error: true
-        
-    - name: Run Anthropic web scraper
-      run: python scripts/crawlers/anthropic_web_scraper.py
-      continue-on-error: true
-      
-    - name: Run Google web scraper
-      run: python scripts/crawlers/google_web_scraper.py
-      continue-on-error: true
-      
-    - name: Run DeepSeek web scraper
-      run: python scripts/crawlers/deepseek_web_scraper.py
-      continue-on-error: true
-      
-    - name: Run xAI web scraper
-      run: python scripts/crawlers/xai_web_scraper.py
-      continue-on-error: true
-      
-    - name: Run Mistral web scraper
-      run: python scripts/crawlers/mistral_web_scraper.py
-      continue-on-error: true
-      
-    - name: Run Cohere web scraper
-      run: python scripts/crawlers/cohere_web_scraper.py
-      continue-on-error: true
-      
-    - name: Run HuggingFace crawler
-      run: python scripts/crawlers/huggingface_crawler.py
-      continue-on-error: true
-      
-    - name: Run all crawlers (alternative)
-      run: python scripts/run_all_crawlers.py
-      continue-on-error: true
+      run: pip install -r requirements.txt
       
     - name: Process and consolidate data
       run: python scripts/data_processor.py

@@ -42,6 +42,7 @@ class DataProcessor:
                     'name': provider_info.get('name', provider_name),
                     'website': provider_info.get('website', ''),
                     'api_endpoint': provider_info.get('api_endpoint', ''),
+                    'platform_url': provider_info.get('platform_url', ''),
                     'last_updated': provider_data.get('last_updated'),
                     'model_count': len(provider_data.get('models', []))
                 }
