@@ -312,6 +312,53 @@ class AIModelsDashboard {
         }
     }
 
+    renderProvidersLoading(loading) {
+        const providersView = document.getElementById('providersView');
+        if (!providersView) return;
+
+        if (loading) {
+            // Show skeleton loading cards
+            providersView.innerHTML = `
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    ${Array(6).fill(0).map(() => `
+                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border-2 border-gray-200 dark:border-gray-700 p-6 animate-pulse">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="h-6 bg-gray-200 dark:bg-gray-700 rounded w-32"></div>
+                                <div class="h-6 bg-gray-200 dark:bg-gray-700 rounded w-20"></div>
+                            </div>
+                            <div class="space-y-3 mb-4">
+                                <div class="flex items-center justify-between">
+                                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-16"></div>
+                                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-24"></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-20"></div>
+                                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-32"></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-24"></div>
+                                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-28"></div>
+                                </div>
+                            </div>
+                            <div class="h-10 bg-gray-200 dark:bg-gray-700 rounded w-full"></div>
+                            <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                                <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-20 mb-2"></div>
+                                <div class="space-y-2">
+                                    <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full"></div>
+                                    <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full"></div>
+                                    <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded w-3/4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        } else {
+            // Render actual providers when not loading
+            this.renderProviders();
+        }
+    }
+
     sortModels(sortBy) {
         const sorted = [...this.filteredModels];
 
@@ -750,7 +797,12 @@ class AIModelsDashboard {
     }
 
     closeModal() {
-        // Can be implemented for custom modals
+        const modal = document.getElementById('modelModal');
+        if (modal) {
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
     }
 
     renderComparison() {
