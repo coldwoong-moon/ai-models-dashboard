@@ -207,11 +207,8 @@ class AnthropicCrawler(BaseCrawler):
                 'name': info['name'],
                 'provider': 'anthropic',
                 'description': info['description'],
-                'pricing': {
-                    'input': info['input_price'],
-                    'output': info['output_price'],
-                    'unit': '1M tokens'
-                },
+                'input_price': info['input_price'],
+                'output_price': info['output_price'],
                 'context_window': info['context_window'],
                 'max_output': info['max_output'],
                 'release_date': info.get('release_date', ''),
