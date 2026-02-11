@@ -325,7 +325,6 @@ class XAICrawler(BaseCrawler):
         return traits_map.get(model_id, ['Standard AI assistant'])
 
 if __name__ == "__main__":
-    # 웹 스크래핑 버전 사용
-    from xai_web_scraper import XAICrawlerV2
-    crawler = XAICrawlerV2()
+    # 하드코딩 데이터 사용 (네트워크 제한 환경에서도 안정적)
+    crawler = XAICrawler()
     crawler.run()
