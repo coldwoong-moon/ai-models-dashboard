@@ -174,9 +174,87 @@ html.dark {
     @apply bg-gray-50 dark:bg-gray-800;
 }
 
+/* Sticky table headers for comparison view */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+html.dark .sticky-header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Comparison table container */
+.comparison-table-container {
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Comparison card styles for mobile */
+.comparison-card {
+    animation: fadeInUp 0.3s ease-out;
+    transition: all 0.2s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.comparison-card:hover {
+    @apply shadow-md transform -translate-y-1;
+}
+
+/* Comparison cards container */
+.comparison-cards-container {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Remove comparison button */
+.remove-comparison-btn {
+    flex-shrink: 0;
+}
+
+/* Comparison badge on tab */
+.comparison-badge {
+    animation: scaleIn 0.2s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 /* Price calculator specific */
 .calculator-input {
     @apply w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white;
+}
+
+/* Number inputs with tabular-nums for better alignment */
+.calculator-number-input {
+    font-variant-numeric: tabular-nums;
+    @apply w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white;
+}
+
+/* Number display with tabular-nums for better alignment */
+.calculator-number-display {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
 }
 
 .scenario-btn {
@@ -191,6 +269,33 @@ html.dark {
     @apply bg-blue-500 text-white;
 }
 
+/* Calculator table styles */
+.calculator-table {
+    @apply w-full border-collapse;
+}
+
+.calculator-table th,
+.calculator-table td {
+    @apply text-sm;
+}
+
+.calculator-table tbody tr {
+    @apply transition-colors duration-150;
+}
+
+.calculator-table-wrapper {
+    @apply rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden;
+}
+
+/* Provider toggle buttons */
+.provider-toggle {
+    @apply transition-all duration-200;
+}
+
+.provider-toggle:hover {
+    @apply scale-105;
+}
+
 /* Chart container */
 .chart-container {
     @apply relative h-96 p-4 bg-white dark:bg-gray-800 rounded-lg shadow;
@@ -201,13 +306,45 @@ html.dark {
     .model-card {
         @apply p-4;
     }
-    
+
     .feature-tag {
         @apply text-xs px-1.5 py-0.5;
     }
-    
+
     .comparison-table {
         @apply text-sm;
+    }
+
+    /* Calculator mobile optimizations */
+    .calculator-table th,
+    .calculator-table td {
+        @apply px-2 py-2 text-xs;
+    }
+
+    .calculator-table th:first-child,
+    .calculator-table td:first-child {
+        @apply sticky left-0 bg-white dark:bg-gray-800 z-10;
+    }
+
+    .calculator-table-wrapper {
+        @apply overflow-x-auto -mx-2;
+    }
+
+    #modelCheckboxes {
+        @apply max-h-64;
+    }
+
+    /* Reduce padding on mobile for calculator */
+    #priceCalculator .bg-white {
+        @apply p-4;
+    }
+}
+
+/* Medium screen optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .calculator-table th,
+    .calculator-table td {
+        @apply px-3 py-2;
     }
 }
 
@@ -259,4 +396,61 @@ select:focus-visible {
 
 .glass-effect {
     @apply bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm;
+}
+
+/* Tab button styles */
+.tab-button {
+    @apply px-4 py-2 font-medium text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white border-b-2 border-transparent hover:border-gray-300 dark:hover:border-gray-600 transition-colors;
+}
+
+.tab-button.active {
+    @apply text-blue-600 dark:text-blue-400 border-blue-500;
+}
+/* Modal Styles */
+#modelModal {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+#modelModal.hidden {
+    display: none !important;
+}
+
+#modelModal > div {
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Loading Indicator */
+#loadingIndicator {
+    animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Result Count */
+#resultCount {
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Improved transitions for model cards */
+.opacity-50 {
+    transition: opacity 0.2s ease-in-out;
 }
