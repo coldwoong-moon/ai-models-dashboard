@@ -5,7 +5,7 @@
     "website": "https://ai.google.dev",
     "api_endpoint": "https://generativelanguage.googleapis.com"
   },
-  "last_updated": "2025-11-05T00:32:55.296129",
+  "last_updated": "2026-02-11T18:29:32.025148",
   "models": [
     {
       "id": "free",
@@ -22,8 +22,8 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "vision"
+        "vision",
+        "chat"
       ],
       "modalities": [
         "text",
@@ -31,7 +31,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.295975"
+      "last_updated": "2026-02-11T18:29:32.024886"
     },
     {
       "id": "paid",
@@ -55,7 +55,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.295986"
+      "last_updated": "2026-02-11T18:29:32.024903"
     },
     {
       "id": "enterprise",
@@ -72,8 +72,8 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "vision"
+        "vision",
+        "chat"
       ],
       "modalities": [
         "text",
@@ -81,7 +81,82 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.295989"
+      "last_updated": "2026-02-11T18:29:32.024908"
+    },
+    {
+      "id": "gemini-3-pro-preview",
+      "name": "Gemini 3 Pro Preview",
+      "provider": "google",
+      "description": "",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 0,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.024912"
+    },
+    {
+      "id": "gemini-3-flash-preview",
+      "name": "Gemini 3 Flash Preview",
+      "provider": "google",
+      "description": "",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 0,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "fast",
+        "chat"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.024917"
+    },
+    {
+      "id": "gemini-3-pro-image-preview-🍌",
+      "name": "Gemini 3 Pro Image Preview 🍌",
+      "provider": "google",
+      "description": "",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 0,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "vision",
+        "chat"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.024921"
     },
     {
       "id": "gemini-2.5-pro",
@@ -105,7 +180,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.295992"
+      "last_updated": "2026-02-11T18:29:32.024925"
     },
     {
       "id": "gemini-2.5-flash",
@@ -122,15 +197,15 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "fast"
+        "fast",
+        "chat"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.295995"
+      "last_updated": "2026-02-11T18:29:32.024932"
     },
     {
       "id": "gemini-2.5-flash-preview",
@@ -147,15 +222,15 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "fast"
+        "fast",
+        "chat"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.295997"
+      "last_updated": "2026-02-11T18:29:32.024936"
     },
     {
       "id": "gemini-2.5-flash-lite",
@@ -172,15 +247,15 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "fast"
+        "fast",
+        "chat"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296000"
+      "last_updated": "2026-02-11T18:29:32.024940"
     },
     {
       "id": "gemini-2.5-flash-lite-preview",
@@ -197,15 +272,15 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "fast"
+        "fast",
+        "chat"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296006"
+      "last_updated": "2026-02-11T18:29:32.024944"
     },
     {
       "id": "gemini-2.5-flash-native-audio",
@@ -222,8 +297,8 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
         "fast",
+        "chat",
         "audio"
       ],
       "modalities": [
@@ -232,11 +307,11 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296014"
+      "last_updated": "2026-02-11T18:29:32.024951"
     },
     {
-      "id": "gemini-2.5-flash-image",
-      "name": "Gemini 2.5 Flash Image",
+      "id": "gemini-2.5-flash-image-🍌",
+      "name": "Gemini 2.5 Flash Image 🍌",
       "provider": "google",
       "description": "",
       "pricing": {
@@ -249,8 +324,8 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
         "vision",
+        "chat",
         "fast"
       ],
       "modalities": [
@@ -259,7 +334,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296017"
+      "last_updated": "2026-02-11T18:29:32.024954"
     },
     {
       "id": "gemini-2.5-flash-preview-tts",
@@ -276,15 +351,15 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "fast"
+        "fast",
+        "chat"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296019"
+      "last_updated": "2026-02-11T18:29:32.024958"
     },
     {
       "id": "gemini-2.5-pro-preview-tts",
@@ -308,7 +383,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296021"
+      "last_updated": "2026-02-11T18:29:32.024961"
     },
     {
       "id": "gemini-2.0-flash",
@@ -325,15 +400,15 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "fast"
+        "fast",
+        "chat"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296024"
+      "last_updated": "2026-02-11T18:29:32.024964"
     },
     {
       "id": "gemini-embedding",
@@ -357,7 +432,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296026"
+      "last_updated": "2026-02-11T18:29:32.024967"
     },
     {
       "id": "gemini-robotics-er-1.5-preview",
@@ -381,7 +456,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296028"
+      "last_updated": "2026-02-11T18:29:32.024970"
     },
     {
       "id": "gemini-2.5-computer-use-preview",
@@ -405,7 +480,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296030"
+      "last_updated": "2026-02-11T18:29:32.024974"
     },
     {
       "id": "input-price",
@@ -429,7 +504,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296032"
+      "last_updated": "2026-02-11T18:29:32.024978"
     },
     {
       "id": "output-price",
@@ -453,7 +528,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296034"
+      "last_updated": "2026-02-11T18:29:32.024982"
     },
     {
       "id": "context-caching-price",
@@ -477,11 +552,11 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296038"
+      "last_updated": "2026-02-11T18:29:32.025009"
     },
     {
-      "id": "grounding-with-google-search",
-      "name": "Grounding with Google Search",
+      "id": "grounding-with-google-search*",
+      "name": "Grounding with Google Search*",
       "provider": "google",
       "description": "Google AI language model",
       "pricing": {
@@ -501,7 +576,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296040"
+      "last_updated": "2026-02-11T18:29:32.025012"
     },
     {
       "id": "grounding-with-google-maps",
@@ -525,7 +600,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296043"
+      "last_updated": "2026-02-11T18:29:32.025016"
     },
     {
       "id": "used-to-improve-our-products",
@@ -549,7 +624,31 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296045"
+      "last_updated": "2026-02-11T18:29:32.025020"
+    },
+    {
+      "id": "grounding-with-google-search",
+      "name": "Grounding with Google Search",
+      "provider": "google",
+      "description": "Google AI language model",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.025023"
     },
     {
       "id": "context-caching",
@@ -573,7 +672,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296047"
+      "last_updated": "2026-02-11T18:29:32.025026"
     },
     {
       "id": "image-generation-pricing",
@@ -597,7 +696,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296049"
+      "last_updated": "2026-02-11T18:29:32.025030"
     },
     {
       "id": "tuning-price",
@@ -621,7 +720,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296051"
+      "last_updated": "2026-02-11T18:29:32.025033"
     },
     {
       "id": "imagen-4-fast-image-price",
@@ -645,7 +744,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296054"
+      "last_updated": "2026-02-11T18:29:32.025036"
     },
     {
       "id": "imagen-4-standard-image-price",
@@ -669,7 +768,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296056"
+      "last_updated": "2026-02-11T18:29:32.025039"
     },
     {
       "id": "imagen-4-ultra-image-price",
@@ -693,31 +792,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296058"
-    },
-    {
-      "id": "image-price",
-      "name": "Image price",
-      "provider": "google",
-      "description": "Google AI language model",
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296062"
+      "last_updated": "2026-02-11T18:29:32.025043"
     },
     {
       "id": "veo-3.1-standard-video-with-audio-price",
@@ -741,7 +816,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296064"
+      "last_updated": "2026-02-11T18:29:32.025046"
     },
     {
       "id": "veo-3.1-fast-video-with-audio-price",
@@ -765,7 +840,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296066"
+      "last_updated": "2026-02-11T18:29:32.025050"
     },
     {
       "id": "veo-3-standard-video-with-audio-price",
@@ -789,7 +864,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296068"
+      "last_updated": "2026-02-11T18:29:32.025053"
     },
     {
       "id": "veo-3-fast-video-with-audio-price",
@@ -813,7 +888,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296070"
+      "last_updated": "2026-02-11T18:29:32.025059"
     },
     {
       "id": "video-price",
@@ -837,7 +912,151 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2025-11-05T00:32:55.296072"
+      "last_updated": "2026-02-11T18:29:32.025062"
+    },
+    {
+      "id": "google-search",
+      "name": "Google Search",
+      "provider": "google",
+      "description": "Google AI language model",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.025065"
+    },
+    {
+      "id": "google-maps",
+      "name": "Google Maps",
+      "provider": "google",
+      "description": "Google AI language model",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.025068"
+    },
+    {
+      "id": "code-execution",
+      "name": "Code execution",
+      "provider": "google",
+      "description": "Google AI language model",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.025071"
+    },
+    {
+      "id": "url-context",
+      "name": "URL context",
+      "provider": "google",
+      "description": "Google AI language model",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.025074"
+    },
+    {
+      "id": "computer-use",
+      "name": "Computer use",
+      "provider": "google",
+      "description": "Google AI language model",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.025077"
+    },
+    {
+      "id": "file-search",
+      "name": "File search",
+      "provider": "google",
+      "description": "Google AI language model",
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "unit": "1M tokens"
+      },
+      "context_window": 1000,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-02-11T18:29:32.025080"
     }
   ]
 }
