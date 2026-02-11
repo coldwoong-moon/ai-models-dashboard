@@ -27,10 +27,10 @@ class WebScraperBase(ABC):
         if self.browser:
             await self.browser.close()
     
-    async def fetch_html(self, url: str, use_playwright: bool = False) -> str:
+    async def fetch_html(self, url: str, use_playwright: bool = False, wait_selector: str = None) -> str:
         """HTML 페이지 가져오기"""
         if use_playwright:
-            return await self.fetch_with_playwright(url)
+            return await self.fetch_with_playwright(url, wait_selector=wait_selector)
         else:
             return await self.fetch_with_aiohttp(url)
     
@@ -43,7 +43,7 @@ class WebScraperBase(ABC):
         async with self.session.get(url, headers=headers) as response:
             return await response.text()
     
-    async def fetch_with_playwright(self, url: str) -> str:
+    async def fetch_with_playwright(self, url: str, wait_selector: str = None) -> str:
         """Playwright를 사용하여 JavaScript 렌더링 페이지 가져오기"""
         if not self.browser:
             playwright = await async_playwright().start()
@@ -53,8 +53,14 @@ class WebScraperBase(ABC):
         page = await self.context.new_page()
         await page.goto(url, wait_until='networkidle')
         
-        # 페이지가 완전히 로드될 때까지 대기
-        await page.wait_for_timeout(3000)
+        if wait_selector:
+            try:
+                await page.wait_for_selector(wait_selector, timeout=10000, state='attached')
+            except Exception as e:
+                print(f"Warning: Timeout waiting for selector '{wait_selector}'")
+        else:
+            # 페이지가 완전히 로드될 때까지 대기
+            await page.wait_for_timeout(3000)
         
         content = await page.content()
         await page.close()

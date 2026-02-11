@@ -24,7 +24,7 @@ class OpenAIWebScraper(WebScraperBase):
         
         try:
             # 가격 페이지에서 모델 정보 추출
-            html = await self.fetch_html(self.pricing_url, use_playwright=True)
+            html = await self.fetch_html(self.pricing_url, use_playwright=True, wait_selector='body')
             soup = self.parse_html(html)
             
             # 가격 테이블 찾기
