@@ -32,6 +32,7 @@ class AIModelsDashboard {
             }
             
             this.data = await response.json();
+            this.preprocessData();
             this.filteredModels = [...this.data.models];
             
             console.log(`📊 Loaded ${this.data.statistics.total_models} models from ${this.data.statistics.providers} providers`);
@@ -82,10 +83,25 @@ class AIModelsDashboard {
             }
         };
         
+        this.preprocessData();
         this.filteredModels = [...this.data.models];
         console.warn('Using sample data');
     }
     
+
+    preprocessData() {
+        if (!this.data || !this.data.models) return;
+
+        this.data.models.forEach(model => {
+            model._searchableText = [
+                model.name,
+                model.description,
+                model.provider,
+                ...(model.features || [])
+            ].join(' ').toLowerCase();
+        });
+    }
+
     setupEventListeners() {
         // 검색
         const searchInput = document.getElementById('searchInput');
@@ -220,18 +236,11 @@ class AIModelsDashboard {
         
         // 검색 필터
         if (this.searchTerm) {
-            filtered = filtered.filter(model => {
-                const searchableText = [
-                    model.name,
-                    model.description,
-                    model.provider,
-                    ...(model.features || [])
-                ].join(' ').toLowerCase();
-                
-                return searchableText.includes(this.searchTerm);
-            });
+            filtered = filtered.filter(model =>
+                (model._searchableText || '').includes(this.searchTerm)
+            );
         }
-        
+
         this.filteredModels = filtered;
         this.renderModels();
     }
