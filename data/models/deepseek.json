@@ -5,6 +5,202 @@
     "website": "",
     "api_endpoint": ""
   },
-  "last_updated": "2026-02-11T23:33:11.516914",
-  "models": []
+  "last_updated": "2026-02-11T23:37:04.953705",
+  "models": [
+    {
+      "id": "deepseek-v3",
+      "name": "DeepSeek V3",
+      "provider": "deepseek",
+      "description": "Latest flagship model with 671B parameters and enhanced reasoning",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-12-26",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "coding",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning tasks",
+        "Advanced coding projects",
+        "Research assistance",
+        "Multi-step problem solving",
+        "Technical writing",
+        "Code review and analysis"
+      ],
+      "training_cutoff": "2024-09",
+      "last_updated": "2026-02-11T23:37:04.953605"
+    },
+    {
+      "id": "deepseek-v2.5",
+      "name": "DeepSeek V2.5",
+      "provider": "deepseek",
+      "description": "Enhanced version with improved coding and reasoning capabilities",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-09-05",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "coding",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General programming",
+        "Code generation",
+        "Algorithm design",
+        "Technical documentation",
+        "System architecture"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2026-02-11T23:37:04.953617"
+    },
+    {
+      "id": "deepseek-coder-v2",
+      "name": "DeepSeek Coder V2",
+      "provider": "deepseek",
+      "description": "Specialized coding model with 236B parameters",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-06-17",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "function-calling",
+        "code-completion"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Software development",
+        "Code completion",
+        "Bug fixing",
+        "Code refactoring",
+        "API development",
+        "Test generation"
+      ],
+      "training_cutoff": "2024-04",
+      "last_updated": "2026-02-11T23:37:04.953622"
+    },
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek Chat",
+      "provider": "deepseek",
+      "description": "General-purpose conversational AI model",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 4096,
+      "release_date": "2024-01-01",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General conversations",
+        "Q&A systems",
+        "Content creation",
+        "Simple reasoning",
+        "Educational assistance"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2026-02-11T23:37:04.953625"
+    },
+    {
+      "id": "deepseek-coder",
+      "name": "DeepSeek Coder",
+      "provider": "deepseek",
+      "description": "Code-specialized model for programming tasks",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 16384,
+      "max_output": 4096,
+      "release_date": "2024-01-01",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-completion",
+        "debug"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Code completion",
+        "Simple programming tasks",
+        "Script generation",
+        "Code explanation"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2026-02-11T23:37:04.953629"
+    },
+    {
+      "id": "deepseek-math",
+      "name": "DeepSeek Math",
+      "provider": "deepseek",
+      "description": "Mathematics and reasoning specialized model",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 4096,
+      "release_date": "2024-02-01",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "math",
+        "problem-solving"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Mathematical problem solving",
+        "Equation solving",
+        "Proof generation",
+        "Scientific calculations",
+        "Statistical analysis"
+      ],
+      "training_cutoff": "2023-12",
+      "last_updated": "2026-02-11T23:37:04.953633"
+    }
+  ]
 }

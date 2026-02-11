@@ -1,40 +1,53 @@
 {
   "date": "2026-02-11",
-  "timestamp": "2026-02-11T23:33:12.228112",
+  "timestamp": "2026-02-11T23:37:05.706366",
   "statistics": {
-    "total_models": 30,
-    "free_models": 28,
+    "total_models": 55,
+    "free_models": 53,
     "paid_models": 2,
-    "providers": 4,
+    "providers": 8,
     "provider_breakdown": {
+      "deepseek": 6,
       "openai": 6,
+      "google": 4,
+      "mistral": 10,
       "cohere": 11,
+      "xai": 6,
       "meta": 2,
-      "huggingface": 11
+      "huggingface": 10
     },
     "price_range": {
-      "min": 0.1,
+      "min": 0.04,
       "max": 15.0,
-      "average": 2.27
+      "average": 1.74
     },
     "features": {
-      "chat": 22,
-      "vision": 4,
-      "function-calling": 6,
-      "json-mode": 3,
+      "chat": 43,
+      "reasoning": 24,
+      "coding": 13,
+      "function-calling": 18,
+      "code-completion": 4,
+      "debug": 1,
+      "math": 4,
+      "problem-solving": 1,
+      "vision": 11,
+      "json-mode": 10,
       "multimodal": 3,
       "fast": 4,
-      "reasoning": 8,
       "complex-tasks": 1,
       "thinking": 2,
-      "math": 2,
-      "coding": 6,
       "stem": 1,
       "cost-effective": 1,
+      "audio": 2,
+      "video": 2,
+      "code-execution": 2,
+      "multilingual": 16,
+      "apache-license": 3,
+      "long-context": 2,
+      "fast-inference": 3,
+      "open-source": 1,
       "rag": 2,
-      "multilingual": 12,
-      "fast-inference": 2,
-      "experimental": 1,
+      "experimental": 2,
       "embeddings": 4,
       "semantic-search": 2,
       "clustering": 1,
@@ -42,30 +55,95 @@
       "reranking": 2,
       "search-optimization": 2,
       "relevance-scoring": 1,
+      "real-time-data": 4,
+      "humor": 3,
       "creative-writing": 1,
       "analysis": 1,
-      "instruct": 11,
-      "moe": 1,
-      "long-context": 1
+      "instruct": 10,
+      "moe": 1
     },
     "modalities": {
-      "text": 30,
-      "image": 4
+      "text": 55,
+      "image": 11,
+      "audio": 2,
+      "video": 2
     },
     "status": {
-      "ga": 29,
-      "experimental": 1
+      "ga": 52,
+      "experimental": 1,
+      "deprecated": 1,
+      "beta": 1
     },
     "context_windows": {
       "min": 512,
-      "max": 256000,
-      "over_100k": 15,
-      "over_1m": 0
+      "max": 2097152,
+      "over_100k": 32,
+      "over_1m": 3
     }
   },
   "provider_count": 9,
-  "model_count": 30,
+  "model_count": 55,
   "price_snapshot": [
+    {
+      "unique_id": "deepseek/deepseek-v3",
+      "id": "deepseek-v3",
+      "name": "DeepSeek V3",
+      "provider": "deepseek",
+      "input_price": 0.14,
+      "output_price": 0.28,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "deepseek/deepseek-v2.5",
+      "id": "deepseek-v2.5",
+      "name": "DeepSeek V2.5",
+      "provider": "deepseek",
+      "input_price": 0.14,
+      "output_price": 0.28,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "deepseek/deepseek-coder-v2",
+      "id": "deepseek-coder-v2",
+      "name": "DeepSeek Coder V2",
+      "provider": "deepseek",
+      "input_price": 0.14,
+      "output_price": 0.28,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "deepseek/deepseek-chat",
+      "id": "deepseek-chat",
+      "name": "DeepSeek Chat",
+      "provider": "deepseek",
+      "input_price": 0.14,
+      "output_price": 0.28,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "deepseek/deepseek-coder",
+      "id": "deepseek-coder",
+      "name": "DeepSeek Coder",
+      "provider": "deepseek",
+      "input_price": 0.14,
+      "output_price": 0.28,
+      "context_window": 16384,
+      "status": "ga"
+    },
+    {
+      "unique_id": "deepseek/deepseek-math",
+      "id": "deepseek-math",
+      "name": "DeepSeek Math",
+      "provider": "deepseek",
+      "input_price": 0.14,
+      "output_price": 0.28,
+      "context_window": 32768,
+      "status": "ga"
+    },
     {
       "unique_id": "openai/gpt-4o",
       "id": "gpt-4o",
@@ -124,6 +202,146 @@
       "input_price": 0.5,
       "output_price": 1.5,
       "context_window": 16385,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/gemini-1.5-pro",
+      "id": "gemini-1.5-pro",
+      "name": "Gemini 1.5 Pro",
+      "provider": "google",
+      "input_price": 1.25,
+      "output_price": 5.0,
+      "context_window": 2097152,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/gemini-1.5-flash",
+      "id": "gemini-1.5-flash",
+      "name": "Gemini 1.5 Flash",
+      "provider": "google",
+      "input_price": 0.075,
+      "output_price": 0.3,
+      "context_window": 1048576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/gemini-1.5-flash-8b",
+      "id": "gemini-1.5-flash-8b",
+      "name": "Gemini 1.5 Flash-8B",
+      "provider": "google",
+      "input_price": 0.0375,
+      "output_price": 0.15,
+      "context_window": 1048576,
+      "status": "ga"
+    },
+    {
+      "unique_id": "google/gemini-1.0-pro",
+      "id": "gemini-1.0-pro",
+      "name": "Gemini 1.0 Pro",
+      "provider": "google",
+      "input_price": 0.5,
+      "output_price": 1.5,
+      "context_window": 32768,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/mistral-large-2411",
+      "id": "mistral-large-2411",
+      "name": "Mistral Large 2411",
+      "provider": "mistral",
+      "input_price": 2.0,
+      "output_price": 6.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/mistral-large-2407",
+      "id": "mistral-large-2407",
+      "name": "Mistral Large 2407",
+      "provider": "mistral",
+      "input_price": 2.0,
+      "output_price": 6.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/mistral-medium",
+      "id": "mistral-medium",
+      "name": "Mistral Medium",
+      "provider": "mistral",
+      "input_price": 2.7,
+      "output_price": 8.1,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/mistral-small-2409",
+      "id": "mistral-small-2409",
+      "name": "Mistral Small 2409",
+      "provider": "mistral",
+      "input_price": 0.2,
+      "output_price": 0.6,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/mistral-nemo",
+      "id": "mistral-nemo",
+      "name": "Mistral Nemo",
+      "provider": "mistral",
+      "input_price": 0.15,
+      "output_price": 0.15,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/pixtral-large-2411",
+      "id": "pixtral-large-2411",
+      "name": "Pixtral Large 2411",
+      "provider": "mistral",
+      "input_price": 2.0,
+      "output_price": 6.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/pixtral-12b",
+      "id": "pixtral-12b",
+      "name": "Pixtral 12B",
+      "provider": "mistral",
+      "input_price": 0.15,
+      "output_price": 0.15,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/codestral-2405",
+      "id": "codestral-2405",
+      "name": "Codestral 2405",
+      "provider": "mistral",
+      "input_price": 0.2,
+      "output_price": 0.6,
+      "context_window": 32000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/codestral-mamba-2407",
+      "id": "codestral-mamba-2407",
+      "name": "Codestral Mamba 2407",
+      "provider": "mistral",
+      "input_price": 0.25,
+      "output_price": 0.25,
+      "context_window": 256000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "mistral/mistral-7b",
+      "id": "mistral-7b",
+      "name": "Mistral 7B",
+      "provider": "mistral",
+      "input_price": 0.25,
+      "output_price": 0.25,
+      "context_window": 32000,
       "status": "ga"
     },
     {
@@ -237,6 +455,66 @@
       "status": "ga"
     },
     {
+      "unique_id": "xai/grok-2",
+      "id": "grok-2",
+      "name": "Grok 2",
+      "provider": "xai",
+      "input_price": 2.0,
+      "output_price": 10.0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "xai/grok-2-vision",
+      "id": "grok-2-vision",
+      "name": "Grok 2 Vision",
+      "provider": "xai",
+      "input_price": 2.0,
+      "output_price": 10.0,
+      "context_window": 131072,
+      "status": "ga"
+    },
+    {
+      "unique_id": "xai/grok-1.5-vision",
+      "id": "grok-1.5-vision",
+      "name": "Grok 1.5 Vision",
+      "provider": "xai",
+      "input_price": 2.0,
+      "output_price": 10.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "xai/grok-1.5",
+      "id": "grok-1.5",
+      "name": "Grok 1.5",
+      "provider": "xai",
+      "input_price": 2.0,
+      "output_price": 10.0,
+      "context_window": 128000,
+      "status": "ga"
+    },
+    {
+      "unique_id": "xai/grok-1",
+      "id": "grok-1",
+      "name": "Grok 1",
+      "provider": "xai",
+      "input_price": 2.0,
+      "output_price": 10.0,
+      "context_window": 8192,
+      "status": "deprecated"
+    },
+    {
+      "unique_id": "xai/grok-beta",
+      "id": "grok-beta",
+      "name": "Grok Beta",
+      "provider": "xai",
+      "input_price": 5.0,
+      "output_price": 15.0,
+      "context_window": 25000,
+      "status": "beta"
+    },
+    {
       "unique_id": "meta/llama-4-scout",
       "id": "llama-4-scout",
       "name": "Llama 4 Scout",
@@ -293,16 +571,6 @@
       "provider": "huggingface",
       "input_price": 0.7,
       "output_price": 0.7,
-      "context_window": 32768,
-      "status": "ga"
-    },
-    {
-      "unique_id": "huggingface/mistralai/Mistral-7B-Instruct-v0.3",
-      "id": "mistralai/Mistral-7B-Instruct-v0.3",
-      "name": "Mistral 7B Instruct v0.3",
-      "provider": "huggingface",
-      "input_price": 0.25,
-      "output_price": 0.25,
       "context_window": 32768,
       "status": "ga"
     },

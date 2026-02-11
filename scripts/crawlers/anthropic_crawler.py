@@ -198,6 +198,32 @@ class AnthropicCrawler(BaseCrawler):
         
         return use_cases_map.get(model_id, [])
     
+    def fetch_models(self) -> List[Dict]:
+        """하드코딩된 모델 정보 반환"""
+        models = []
+        for model_id, info in self.model_info.items():
+            model_data = {
+                'id': model_id,
+                'name': info['name'],
+                'provider': 'anthropic',
+                'description': info['description'],
+                'pricing': {
+                    'input': info['input_price'],
+                    'output': info['output_price'],
+                    'unit': '1M tokens'
+                },
+                'context_window': info['context_window'],
+                'max_output': info['max_output'],
+                'release_date': info.get('release_date', ''),
+                'status': info['status'],
+                'features': info['features'],
+                'modalities': info['modalities'],
+                'use_cases': self.get_use_cases(model_id),
+                'training_cutoff': self.get_training_cutoff(model_id)
+            }
+            models.append(model_data)
+        return models
+    
     def get_training_cutoff(self, model_id: str) -> str:
         """모델별 훈련 데이터 컷오프 날짜"""
         cutoff_dates = {
@@ -220,7 +246,6 @@ class AnthropicCrawler(BaseCrawler):
         return {}
 
 if __name__ == "__main__":
-    # 웹 스크래핑 버전 사용
-    from anthropic_web_scraper import AnthropicCrawlerV2
-    crawler = AnthropicCrawlerV2()
+    # 하드코딩 데이터 사용 (네트워크 제한 환경에서도 안정적)
+    crawler = AnthropicCrawler()
     crawler.run()

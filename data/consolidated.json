@@ -1,54 +1,54 @@
 {
-  "last_updated": "2026-02-11T23:33:12.225916",
+  "last_updated": "2026-02-11T23:37:05.703066",
   "providers": {
     "deepseek": {
       "name": "Deepseek",
       "website": "",
       "api_endpoint": "",
-      "last_updated": "2026-02-11T23:33:11.516914",
-      "model_count": 0
+      "last_updated": "2026-02-11T23:37:04.953705",
+      "model_count": 6
     },
     "anthropic": {
       "name": "Anthropic",
       "website": "https://anthropic.com",
       "api_endpoint": "https://api.anthropic.com",
-      "last_updated": "2026-02-11T23:33:11.492485",
-      "model_count": 0
+      "last_updated": "2026-02-11T23:37:04.948503",
+      "model_count": 8
     },
     "openai": {
       "name": "OpenAI",
       "website": "https://openai.com",
       "api_endpoint": "https://api.openai.com/v1",
-      "last_updated": "2026-02-11T23:33:11.486441",
+      "last_updated": "2026-02-11T23:37:05.628456",
       "model_count": 6
     },
     "google": {
       "name": "Google AI",
       "website": "https://ai.google.dev",
       "api_endpoint": "https://generativelanguage.googleapis.com",
-      "last_updated": "2026-02-11T23:33:11.495000",
-      "model_count": 0
+      "last_updated": "2026-02-11T23:37:04.953337",
+      "model_count": 8
     },
     "mistral": {
       "name": "Mistral AI",
       "website": "https://mistral.ai",
       "api_endpoint": "https://api.mistral.ai",
-      "last_updated": "2026-02-11T23:33:12.149791",
-      "model_count": 0
+      "last_updated": "2026-02-11T23:37:05.110915",
+      "model_count": 10
     },
     "cohere": {
       "name": "Cohere",
       "website": "https://cohere.com",
       "api_endpoint": "https://api.cohere.ai",
-      "last_updated": "2026-02-11T23:33:11.717489",
+      "last_updated": "2026-02-11T23:37:05.110972",
       "model_count": 11
     },
     "xai": {
       "name": "Xai",
       "website": "",
       "api_endpoint": "",
-      "last_updated": "2026-02-11T23:33:12.142813",
-      "model_count": 0
+      "last_updated": "2026-02-11T23:37:05.112506",
+      "model_count": 6
     },
     "meta": {
       "name": "Meta",
@@ -61,11 +61,212 @@
       "name": "HuggingFace",
       "website": "https://huggingface.co",
       "api_endpoint": "https://api-inference.huggingface.co",
-      "last_updated": "2026-02-11T23:33:11.733115",
+      "last_updated": "2026-02-11T23:37:05.229789",
       "model_count": 11
     }
   },
   "models": [
+    {
+      "id": "deepseek-v3",
+      "name": "DeepSeek V3",
+      "provider": "deepseek",
+      "description": "Latest flagship model with 671B parameters and enhanced reasoning",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-12-26",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "coding",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning tasks",
+        "Advanced coding projects",
+        "Research assistance",
+        "Multi-step problem solving",
+        "Technical writing",
+        "Code review and analysis"
+      ],
+      "training_cutoff": "2024-09",
+      "last_updated": "2026-02-11T23:37:04.953605",
+      "unique_id": "deepseek/deepseek-v3"
+    },
+    {
+      "id": "deepseek-v2.5",
+      "name": "DeepSeek V2.5",
+      "provider": "deepseek",
+      "description": "Enhanced version with improved coding and reasoning capabilities",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-09-05",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "coding",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General programming",
+        "Code generation",
+        "Algorithm design",
+        "Technical documentation",
+        "System architecture"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2026-02-11T23:37:04.953617",
+      "unique_id": "deepseek/deepseek-v2.5"
+    },
+    {
+      "id": "deepseek-coder-v2",
+      "name": "DeepSeek Coder V2",
+      "provider": "deepseek",
+      "description": "Specialized coding model with 236B parameters",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-06-17",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "function-calling",
+        "code-completion"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Software development",
+        "Code completion",
+        "Bug fixing",
+        "Code refactoring",
+        "API development",
+        "Test generation"
+      ],
+      "training_cutoff": "2024-04",
+      "last_updated": "2026-02-11T23:37:04.953622",
+      "unique_id": "deepseek/deepseek-coder-v2"
+    },
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek Chat",
+      "provider": "deepseek",
+      "description": "General-purpose conversational AI model",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 4096,
+      "release_date": "2024-01-01",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General conversations",
+        "Q&A systems",
+        "Content creation",
+        "Simple reasoning",
+        "Educational assistance"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2026-02-11T23:37:04.953625",
+      "unique_id": "deepseek/deepseek-chat"
+    },
+    {
+      "id": "deepseek-coder",
+      "name": "DeepSeek Coder",
+      "provider": "deepseek",
+      "description": "Code-specialized model for programming tasks",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 16384,
+      "max_output": 4096,
+      "release_date": "2024-01-01",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-completion",
+        "debug"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Code completion",
+        "Simple programming tasks",
+        "Script generation",
+        "Code explanation"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2026-02-11T23:37:04.953629",
+      "unique_id": "deepseek/deepseek-coder"
+    },
+    {
+      "id": "deepseek-math",
+      "name": "DeepSeek Math",
+      "provider": "deepseek",
+      "description": "Mathematics and reasoning specialized model",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 4096,
+      "release_date": "2024-02-01",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "math",
+        "problem-solving"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Mathematical problem solving",
+        "Equation solving",
+        "Proof generation",
+        "Scientific calculations",
+        "Statistical analysis"
+      ],
+      "training_cutoff": "2023-12",
+      "last_updated": "2026-02-11T23:37:04.953633",
+      "unique_id": "deepseek/deepseek-math"
+    },
     {
       "id": "gpt-4o",
       "name": "GPT-4o",
@@ -93,7 +294,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.486325",
+      "last_updated": "2026-02-11T23:37:05.628346",
       "unique_id": "openai/gpt-4o"
     },
     {
@@ -124,7 +325,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.486337",
+      "last_updated": "2026-02-11T23:37:05.628359",
       "unique_id": "openai/gpt-4o-mini"
     },
     {
@@ -153,7 +354,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.486342",
+      "last_updated": "2026-02-11T23:37:05.628362",
       "unique_id": "openai/o1"
     },
     {
@@ -183,7 +384,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.486346",
+      "last_updated": "2026-02-11T23:37:05.628365",
       "unique_id": "openai/o1-mini"
     },
     {
@@ -212,7 +413,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.486350",
+      "last_updated": "2026-02-11T23:37:05.628368",
       "unique_id": "openai/gpt-4-turbo"
     },
     {
@@ -240,8 +441,503 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.486353",
+      "last_updated": "2026-02-11T23:37:05.628370",
       "unique_id": "openai/gpt-3.5-turbo"
+    },
+    {
+      "id": "gemini-1.5-pro",
+      "name": "Gemini 1.5 Pro",
+      "provider": "google",
+      "description": "Advanced multimodal model with long context",
+      "pricing": {
+        "input": 1.25,
+        "output": 5.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 2097152,
+      "max_output": 8192,
+      "release_date": "2024-05-14",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "audio",
+        "video",
+        "function-calling",
+        "json-mode",
+        "code-execution"
+      ],
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "use_cases": [
+        "Document analysis",
+        "Long-form content",
+        "Code generation",
+        "Video understanding",
+        "Complex reasoning",
+        "Data analysis with code execution"
+      ],
+      "training_cutoff": "2024-02",
+      "last_updated": "2026-02-11T23:37:04.953207",
+      "unique_id": "google/gemini-1.5-pro"
+    },
+    {
+      "id": "gemini-1.5-flash",
+      "name": "Gemini 1.5 Flash",
+      "provider": "google",
+      "description": "Fast multimodal model optimized for high-volume tasks",
+      "pricing": {
+        "input": 0.075,
+        "output": 0.3,
+        "unit": "1M tokens"
+      },
+      "context_window": 1048576,
+      "max_output": 8192,
+      "release_date": "2024-05-24",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "audio",
+        "video",
+        "function-calling",
+        "json-mode",
+        "code-execution"
+      ],
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "use_cases": [
+        "High-volume tasks",
+        "Quick responses",
+        "Content moderation",
+        "Real-time applications",
+        "Multimodal chatbots"
+      ],
+      "training_cutoff": "2024-05",
+      "last_updated": "2026-02-11T23:37:04.953212",
+      "unique_id": "google/gemini-1.5-flash"
+    },
+    {
+      "id": "gemini-1.5-flash-8b",
+      "name": "Gemini 1.5 Flash-8B",
+      "provider": "google",
+      "description": "Smaller, faster variant of Flash optimized for speed",
+      "pricing": {
+        "input": 0.0375,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 1048576,
+      "max_output": 8192,
+      "release_date": "2024-10-03",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Edge deployment",
+        "Low-latency applications",
+        "Cost-sensitive tasks",
+        "Simple multimodal queries"
+      ],
+      "training_cutoff": "2024-08",
+      "last_updated": "2026-02-11T23:37:04.953215",
+      "unique_id": "google/gemini-1.5-flash-8b"
+    },
+    {
+      "id": "gemini-1.0-pro",
+      "name": "Gemini 1.0 Pro",
+      "provider": "google",
+      "description": "First generation Gemini model",
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "2023-12-06",
+      "status": "ga",
+      "features": [
+        "chat",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Text generation",
+        "Chatbots",
+        "Content creation",
+        "Basic reasoning"
+      ],
+      "training_cutoff": "2023-04",
+      "last_updated": "2026-02-11T23:37:04.953218",
+      "unique_id": "google/gemini-1.0-pro"
+    },
+    {
+      "id": "mistral-large-2411",
+      "name": "Mistral Large 2411",
+      "provider": "mistral",
+      "description": "Latest flagship model with enhanced reasoning and multilingual capabilities",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-11-15",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "function-calling",
+        "json-mode",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning tasks",
+        "Multilingual applications",
+        "Enterprise chatbots",
+        "Content generation",
+        "Function calling applications",
+        "JSON structured outputs"
+      ],
+      "training_cutoff": "2024-09",
+      "last_updated": "2026-02-11T23:37:05.110683",
+      "unique_id": "mistral/mistral-large-2411"
+    },
+    {
+      "id": "mistral-large-2407",
+      "name": "Mistral Large 2407",
+      "provider": "mistral",
+      "description": "Previous version of the flagship model",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-07-24",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "function-calling",
+        "json-mode",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General-purpose AI applications",
+        "Customer support",
+        "Content creation",
+        "Research assistance"
+      ],
+      "training_cutoff": "2024-05",
+      "last_updated": "2026-02-11T23:37:05.110698",
+      "unique_id": "mistral/mistral-large-2407"
+    },
+    {
+      "id": "mistral-medium",
+      "name": "Mistral Medium",
+      "provider": "mistral",
+      "description": "Balanced model for general-purpose tasks",
+      "pricing": {
+        "input": 2.7,
+        "output": 8.1,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 8192,
+      "release_date": "2023-12-11",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Balanced performance tasks",
+        "Educational applications",
+        "Content moderation",
+        "Translation services"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2026-02-11T23:37:05.110703",
+      "unique_id": "mistral/mistral-medium"
+    },
+    {
+      "id": "mistral-small-2409",
+      "name": "Mistral Small 2409",
+      "provider": "mistral",
+      "description": "Cost-effective model for simple tasks",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-09-18",
+      "status": "ga",
+      "features": [
+        "chat",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Simple Q&A",
+        "Basic text generation",
+        "Cost-sensitive applications",
+        "High-volume processing"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2026-02-11T23:37:05.110706",
+      "unique_id": "mistral/mistral-small-2409"
+    },
+    {
+      "id": "mistral-nemo",
+      "name": "Mistral Nemo",
+      "provider": "mistral",
+      "description": "12B parameter model built in partnership with NVIDIA",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-07-18",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "multilingual",
+        "apache-license"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "On-device deployment",
+        "Privacy-sensitive applications",
+        "Custom fine-tuning",
+        "Edge computing"
+      ],
+      "training_cutoff": "2024-06",
+      "last_updated": "2026-02-11T23:37:05.110710",
+      "unique_id": "mistral/mistral-nemo"
+    },
+    {
+      "id": "pixtral-large-2411",
+      "name": "Pixtral Large 2411",
+      "provider": "mistral",
+      "description": "Latest multimodal model with vision capabilities",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-11-21",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Visual content analysis",
+        "Multimodal applications",
+        "Document understanding",
+        "Image captioning",
+        "Visual Q&A"
+      ],
+      "training_cutoff": "2024-09",
+      "last_updated": "2026-02-11T23:37:05.110713",
+      "unique_id": "mistral/pixtral-large-2411"
+    },
+    {
+      "id": "pixtral-12b",
+      "name": "Pixtral 12B",
+      "provider": "mistral",
+      "description": "Open-source multimodal model with vision",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "2024-09-11",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "apache-license"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Open-source vision projects",
+        "Research applications",
+        "Custom multimodal solutions"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2026-02-11T23:37:05.110717",
+      "unique_id": "mistral/pixtral-12b"
+    },
+    {
+      "id": "codestral-2405",
+      "name": "Codestral 2405",
+      "provider": "mistral",
+      "description": "Code generation model trained on 80+ programming languages",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 8192,
+      "release_date": "2024-05-29",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-completion",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Code generation",
+        "Programming assistance",
+        "Code completion",
+        "Software development",
+        "Algorithm implementation"
+      ],
+      "training_cutoff": "2024-03",
+      "last_updated": "2026-02-11T23:37:05.110720",
+      "unique_id": "mistral/codestral-2405"
+    },
+    {
+      "id": "codestral-mamba-2407",
+      "name": "Codestral Mamba 2407",
+      "provider": "mistral",
+      "description": "Code generation model with Mamba architecture for faster inference",
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25,
+        "unit": "1M tokens"
+      },
+      "context_window": 256000,
+      "max_output": 8192,
+      "release_date": "2024-07-16",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-completion",
+        "long-context",
+        "fast-inference"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Large codebase analysis",
+        "Long code generation",
+        "Fast inference coding tasks",
+        "Real-time code completion"
+      ],
+      "training_cutoff": "2024-05",
+      "last_updated": "2026-02-11T23:37:05.110838",
+      "unique_id": "mistral/codestral-mamba-2407"
+    },
+    {
+      "id": "mistral-7b",
+      "name": "Mistral 7B",
+      "provider": "mistral",
+      "description": "Original open-source model with Apache 2.0 license",
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 8192,
+      "release_date": "2023-09-27",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "apache-license",
+        "open-source"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Open-source projects",
+        "Research and experimentation",
+        "Custom fine-tuning",
+        "Educational purposes"
+      ],
+      "training_cutoff": "2023-07",
+      "last_updated": "2026-02-11T23:37:05.110842",
+      "unique_id": "mistral/mistral-7b",
+      "available_providers": [
+        "huggingface",
+        "mistral"
+      ],
+      "provider_pricing": {
+        "mistral": {
+          "input": 0.25,
+          "output": 0.25
+        },
+        "huggingface": {
+          "input": 0.25,
+          "output": 0.25
+        }
+      }
     },
     {
       "id": "command-r-plus",
@@ -276,7 +972,7 @@
         "Multi-step workflows"
       ],
       "training_cutoff": "2024-01",
-      "last_updated": "2026-02-11T23:33:11.717219",
+      "last_updated": "2026-02-11T23:37:05.110753",
       "unique_id": "cohere/command-r-plus"
     },
     {
@@ -311,7 +1007,7 @@
         "Question answering"
       ],
       "training_cutoff": "2024-01",
-      "last_updated": "2026-02-11T23:33:11.717259",
+      "last_updated": "2026-02-11T23:37:05.110763",
       "unique_id": "cohere/command-r"
     },
     {
@@ -342,7 +1038,7 @@
         "Simple Q&A"
       ],
       "training_cutoff": "2023-03",
-      "last_updated": "2026-02-11T23:33:11.717265",
+      "last_updated": "2026-02-11T23:37:05.110767",
       "unique_id": "cohere/command"
     },
     {
@@ -373,7 +1069,7 @@
         "Cost-sensitive deployments"
       ],
       "training_cutoff": "2023-03",
-      "last_updated": "2026-02-11T23:33:11.717269",
+      "last_updated": "2026-02-11T23:37:05.110771",
       "unique_id": "cohere/command-light"
     },
     {
@@ -404,7 +1100,7 @@
         "Research applications"
       ],
       "training_cutoff": "2024-01",
-      "last_updated": "2026-02-11T23:33:11.717272",
+      "last_updated": "2026-02-11T23:37:05.110774",
       "unique_id": "cohere/command-nightly"
     },
     {
@@ -437,7 +1133,7 @@
         "Content classification"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-02-11T23:33:11.717276",
+      "last_updated": "2026-02-11T23:37:05.110777",
       "unique_id": "cohere/embed-english-v3.0"
     },
     {
@@ -469,7 +1165,7 @@
         "International applications"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-02-11T23:33:11.717279",
+      "last_updated": "2026-02-11T23:37:05.110780",
       "unique_id": "cohere/embed-multilingual-v3.0"
     },
     {
@@ -500,7 +1196,7 @@
         "Edge deployments"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-02-11T23:33:11.717283",
+      "last_updated": "2026-02-11T23:37:05.110787",
       "unique_id": "cohere/embed-english-light-v3.0"
     },
     {
@@ -530,7 +1226,7 @@
         "Fast cross-lingual matching"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-02-11T23:33:11.717291",
+      "last_updated": "2026-02-11T23:37:05.110791",
       "unique_id": "cohere/embed-multilingual-light-v3.0"
     },
     {
@@ -562,7 +1258,7 @@
         "Query optimization"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-02-11T23:33:11.717409",
+      "last_updated": "2026-02-11T23:37:05.110903",
       "unique_id": "cohere/rerank-english-v3.0"
     },
     {
@@ -593,8 +1289,209 @@
         "Cross-language retrieval"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-02-11T23:33:11.717417",
+      "last_updated": "2026-02-11T23:37:05.110913",
       "unique_id": "cohere/rerank-multilingual-v3.0"
+    },
+    {
+      "id": "grok-2",
+      "name": "Grok 2",
+      "provider": "xai",
+      "description": "xAI flagship model with enhanced reasoning and real-time knowledge",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 131072,
+      "max_output": 8192,
+      "release_date": "2024-08-13",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "real-time-data",
+        "humor"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Real-time news analysis",
+        "Social media insights",
+        "Current events discussion",
+        "Trend analysis",
+        "Interactive conversations",
+        "Research with live data"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2026-02-11T23:37:05.112412",
+      "unique_id": "xai/grok-2"
+    },
+    {
+      "id": "grok-2-vision",
+      "name": "Grok 2 Vision",
+      "provider": "xai",
+      "description": "Grok 2 with advanced vision capabilities for image understanding",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 131072,
+      "max_output": 8192,
+      "release_date": "2024-08-13",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "real-time-data",
+        "humor"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Image analysis with context",
+        "Visual content creation",
+        "Meme generation and analysis",
+        "Social media content review",
+        "Real-time image understanding"
+      ],
+      "training_cutoff": "2024-07",
+      "last_updated": "2026-02-11T23:37:05.112424",
+      "unique_id": "xai/grok-2-vision"
+    },
+    {
+      "id": "grok-1.5-vision",
+      "name": "Grok 1.5 Vision",
+      "provider": "xai",
+      "description": "Enhanced version with vision capabilities and improved reasoning",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-04-12",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "reasoning",
+        "real-time-data"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [
+        "Document analysis",
+        "Chart and graph interpretation",
+        "Visual Q&A",
+        "Educational content creation"
+      ],
+      "training_cutoff": "2024-03",
+      "last_updated": "2026-02-11T23:37:05.112429",
+      "unique_id": "xai/grok-1.5-vision"
+    },
+    {
+      "id": "grok-1.5",
+      "name": "Grok 1.5",
+      "provider": "xai",
+      "description": "Improved version with better coding and math capabilities",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-03-28",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "coding",
+        "math"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Coding assistance",
+        "Mathematical problem solving",
+        "Technical discussions",
+        "Educational tutoring"
+      ],
+      "training_cutoff": "2024-03",
+      "last_updated": "2026-02-11T23:37:05.112432",
+      "unique_id": "xai/grok-1.5"
+    },
+    {
+      "id": "grok-1",
+      "name": "Grok 1",
+      "provider": "xai",
+      "description": "Original Grok model with witty and rebellious personality",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 8192,
+      "max_output": 4096,
+      "release_date": "2023-11-04",
+      "status": "deprecated",
+      "features": [
+        "chat",
+        "humor",
+        "real-time-data"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Casual conversations",
+        "Entertainment discussions",
+        "Humorous content generation",
+        "Alternative perspectives"
+      ],
+      "training_cutoff": "2023-10",
+      "last_updated": "2026-02-11T23:37:05.112436",
+      "unique_id": "xai/grok-1"
+    },
+    {
+      "id": "grok-beta",
+      "name": "Grok Beta",
+      "provider": "xai",
+      "description": "Early access model with experimental features",
+      "pricing": {
+        "input": 5.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 25000,
+      "max_output": 4096,
+      "release_date": "2023-12-07",
+      "status": "beta",
+      "features": [
+        "chat",
+        "reasoning",
+        "experimental"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Experimental features testing",
+        "Edge case discussions",
+        "Unconventional problem solving"
+      ],
+      "training_cutoff": "2023-11",
+      "last_updated": "2026-02-11T23:37:05.112439",
+      "unique_id": "xai/grok-beta"
     },
     {
       "id": "llama-4-scout",
@@ -687,7 +1584,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733008",
+      "last_updated": "2026-02-11T23:37:05.229712",
       "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct"
     },
     {
@@ -714,7 +1611,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733019",
+      "last_updated": "2026-02-11T23:37:05.229721",
       "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct"
     },
     {
@@ -741,7 +1638,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733024",
+      "last_updated": "2026-02-11T23:37:05.229724",
       "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
     },
     {
@@ -768,34 +1665,8 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733030",
+      "last_updated": "2026-02-11T23:37:05.229728",
       "unique_id": "huggingface/mistralai/Mixtral-8x7B-Instruct-v0.1"
-    },
-    {
-      "id": "mistralai/Mistral-7B-Instruct-v0.3",
-      "name": "Mistral 7B Instruct v0.3",
-      "provider": "huggingface",
-      "description": "Mistral의 효율적인 7B 모델",
-      "pricing": {
-        "input": 0.25,
-        "output": 0.25,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733034",
-      "unique_id": "huggingface/mistralai/Mistral-7B-Instruct-v0.3"
     },
     {
       "id": "google/gemma-2-27b-it",
@@ -820,7 +1691,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733038",
+      "last_updated": "2026-02-11T23:37:05.229732",
       "unique_id": "huggingface/google/gemma-2-27b-it"
     },
     {
@@ -846,7 +1717,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733042",
+      "last_updated": "2026-02-11T23:37:05.229734",
       "unique_id": "huggingface/google/gemma-2-9b-it"
     },
     {
@@ -874,7 +1745,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733045",
+      "last_updated": "2026-02-11T23:37:05.229736",
       "unique_id": "huggingface/Qwen/Qwen2.5-72B-Instruct"
     },
     {
@@ -902,7 +1773,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733048",
+      "last_updated": "2026-02-11T23:37:05.229738",
       "unique_id": "huggingface/Qwen/Qwen2.5-7B-Instruct"
     },
     {
@@ -931,7 +1802,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733052",
+      "last_updated": "2026-02-11T23:37:05.229739",
       "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
     },
     {
@@ -958,44 +1829,57 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-02-11T23:33:11.733055",
+      "last_updated": "2026-02-11T23:37:05.229741",
       "unique_id": "huggingface/microsoft/Phi-3-medium-128k-instruct"
     }
   ],
   "statistics": {
-    "total_models": 30,
-    "free_models": 28,
+    "total_models": 55,
+    "free_models": 53,
     "paid_models": 2,
-    "providers": 4,
+    "providers": 8,
     "provider_breakdown": {
+      "deepseek": 6,
       "openai": 6,
+      "google": 4,
+      "mistral": 10,
       "cohere": 11,
+      "xai": 6,
       "meta": 2,
-      "huggingface": 11
+      "huggingface": 10
     },
     "price_range": {
-      "min": 0.1,
+      "min": 0.04,
       "max": 15.0,
-      "average": 2.27
+      "average": 1.74
     },
     "features": {
-      "chat": 22,
-      "vision": 4,
-      "function-calling": 6,
-      "json-mode": 3,
+      "chat": 43,
+      "reasoning": 24,
+      "coding": 13,
+      "function-calling": 18,
+      "code-completion": 4,
+      "debug": 1,
+      "math": 4,
+      "problem-solving": 1,
+      "vision": 11,
+      "json-mode": 10,
       "multimodal": 3,
       "fast": 4,
-      "reasoning": 8,
       "complex-tasks": 1,
       "thinking": 2,
-      "math": 2,
-      "coding": 6,
       "stem": 1,
       "cost-effective": 1,
+      "audio": 2,
+      "video": 2,
+      "code-execution": 2,
+      "multilingual": 16,
+      "apache-license": 3,
+      "long-context": 2,
+      "fast-inference": 3,
+      "open-source": 1,
       "rag": 2,
-      "multilingual": 12,
-      "fast-inference": 2,
-      "experimental": 1,
+      "experimental": 2,
       "embeddings": 4,
       "semantic-search": 2,
       "clustering": 1,
@@ -1003,25 +1887,30 @@
       "reranking": 2,
       "search-optimization": 2,
       "relevance-scoring": 1,
+      "real-time-data": 4,
+      "humor": 3,
       "creative-writing": 1,
       "analysis": 1,
-      "instruct": 11,
-      "moe": 1,
-      "long-context": 1
+      "instruct": 10,
+      "moe": 1
     },
     "modalities": {
-      "text": 30,
-      "image": 4
+      "text": 55,
+      "image": 11,
+      "audio": 2,
+      "video": 2
     },
     "status": {
-      "ga": 29,
-      "experimental": 1
+      "ga": 52,
+      "experimental": 1,
+      "deprecated": 1,
+      "beta": 1
     },
     "context_windows": {
       "min": 512,
-      "max": 256000,
-      "over_100k": 15,
-      "over_1m": 0
+      "max": 2097152,
+      "over_100k": 32,
+      "over_1m": 3
     }
   },
   "metadata": {
@@ -1030,37 +1919,37 @@
       {
         "provider": "deepseek",
         "file": "deepseek.json",
-        "last_updated": "2026-02-11T23:33:11.516914"
+        "last_updated": "2026-02-11T23:37:04.953705"
       },
       {
         "provider": "anthropic",
         "file": "anthropic.json",
-        "last_updated": "2026-02-11T23:33:11.492485"
+        "last_updated": "2026-02-11T23:37:04.948503"
       },
       {
         "provider": "openai",
         "file": "openai.json",
-        "last_updated": "2026-02-11T23:33:11.486441"
+        "last_updated": "2026-02-11T23:37:05.628456"
       },
       {
         "provider": "google",
         "file": "google.json",
-        "last_updated": "2026-02-11T23:33:11.495000"
+        "last_updated": "2026-02-11T23:37:04.953337"
       },
       {
         "provider": "mistral",
         "file": "mistral.json",
-        "last_updated": "2026-02-11T23:33:12.149791"
+        "last_updated": "2026-02-11T23:37:05.110915"
       },
       {
         "provider": "cohere",
         "file": "cohere.json",
-        "last_updated": "2026-02-11T23:33:11.717489"
+        "last_updated": "2026-02-11T23:37:05.110972"
       },
       {
         "provider": "xai",
         "file": "xai.json",
-        "last_updated": "2026-02-11T23:33:12.142813"
+        "last_updated": "2026-02-11T23:37:05.112506"
       },
       {
         "provider": "meta",
@@ -1070,7 +1959,7 @@
       {
         "provider": "huggingface",
         "file": "huggingface.json",
-        "last_updated": "2026-02-11T23:33:11.733115"
+        "last_updated": "2026-02-11T23:37:05.229789"
       }
     ]
   },
@@ -1079,33 +1968,83 @@
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
       "openai/gpt-4-turbo",
+      "google/gemini-1.5-pro",
+      "google/gemini-1.5-flash",
+      "google/gemini-1.5-flash-8b",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
       "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
     ],
-    "coding_models": [],
+    "coding_models": [
+      "deepseek/deepseek-coder-v2",
+      "deepseek/deepseek-coder",
+      "mistral/codestral-2405",
+      "mistral/codestral-mamba-2407"
+    ],
     "reasoning_models": [
+      "deepseek/deepseek-v3",
+      "deepseek/deepseek-v2.5",
+      "deepseek/deepseek-chat",
+      "deepseek/deepseek-math",
       "openai/o1",
       "openai/o1-mini",
+      "mistral/mistral-large-2411",
+      "mistral/mistral-large-2407",
+      "mistral/mistral-medium",
+      "mistral/mistral-nemo",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
+      "mistral/mistral-7b",
       "cohere/command-r-plus",
       "cohere/command-r",
       "cohere/command",
       "cohere/command-nightly",
+      "xai/grok-2",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
+      "xai/grok-1.5",
+      "xai/grok-beta",
       "meta/llama-4-scout",
       "meta/llama-4-maverick"
     ],
     "fast_models": [
       "openai/gpt-4o-mini",
       "openai/o1-mini",
+      "google/gemini-1.5-pro",
+      "google/gemini-1.5-flash",
+      "google/gemini-1.5-flash-8b",
+      "google/gemini-1.0-pro",
+      "mistral/mistral-small-2409",
       "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
     ],
     "large_context": [
+      "deepseek/deepseek-v3",
+      "deepseek/deepseek-v2.5",
+      "deepseek/deepseek-coder-v2",
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
       "openai/o1",
       "openai/o1-mini",
       "openai/gpt-4-turbo",
+      "google/gemini-1.5-pro",
+      "google/gemini-1.5-flash",
+      "google/gemini-1.5-flash-8b",
+      "mistral/mistral-large-2411",
+      "mistral/mistral-large-2407",
+      "mistral/mistral-small-2409",
+      "mistral/mistral-nemo",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
+      "mistral/codestral-mamba-2407",
       "cohere/command-r-plus",
       "cohere/command-r",
       "cohere/command-nightly",
+      "xai/grok-2",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
+      "xai/grok-1.5",
       "meta/llama-4-scout",
       "meta/llama-4-maverick",
       "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct",
@@ -1118,15 +2057,42 @@
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
       "openai/gpt-4-turbo",
+      "google/gemini-1.5-pro",
+      "google/gemini-1.5-flash",
+      "google/gemini-1.5-flash-8b",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
       "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
     ],
     "free_models": [
+      "deepseek/deepseek-v3",
+      "deepseek/deepseek-v2.5",
+      "deepseek/deepseek-coder-v2",
+      "deepseek/deepseek-chat",
+      "deepseek/deepseek-coder",
+      "deepseek/deepseek-math",
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
       "openai/o1",
       "openai/o1-mini",
       "openai/gpt-4-turbo",
       "openai/gpt-3.5-turbo",
+      "google/gemini-1.5-pro",
+      "google/gemini-1.5-flash",
+      "google/gemini-1.5-flash-8b",
+      "google/gemini-1.0-pro",
+      "mistral/mistral-large-2411",
+      "mistral/mistral-large-2407",
+      "mistral/mistral-medium",
+      "mistral/mistral-small-2409",
+      "mistral/mistral-nemo",
+      "mistral/pixtral-large-2411",
+      "mistral/pixtral-12b",
+      "mistral/codestral-2405",
+      "mistral/codestral-mamba-2407",
+      "mistral/mistral-7b",
       "cohere/command-r-plus",
       "cohere/command-r",
       "cohere/command",
@@ -1138,11 +2104,16 @@
       "cohere/embed-multilingual-light-v3.0",
       "cohere/rerank-english-v3.0",
       "cohere/rerank-multilingual-v3.0",
+      "xai/grok-2",
+      "xai/grok-2-vision",
+      "xai/grok-1.5-vision",
+      "xai/grok-1.5",
+      "xai/grok-1",
+      "xai/grok-beta",
       "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct",
       "huggingface/mistralai/Mixtral-8x7B-Instruct-v0.1",
-      "huggingface/mistralai/Mistral-7B-Instruct-v0.3",
       "huggingface/google/gemma-2-27b-it",
       "huggingface/google/gemma-2-9b-it",
       "huggingface/Qwen/Qwen2.5-72B-Instruct",
@@ -1151,8 +2122,11 @@
       "huggingface/microsoft/Phi-3-medium-128k-instruct"
     ],
     "experimental": [
-      "cohere/command-nightly"
+      "cohere/command-nightly",
+      "xai/grok-beta"
     ],
-    "deprecated": []
+    "deprecated": [
+      "xai/grok-1"
+    ]
   }
 }
