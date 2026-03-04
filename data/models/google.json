@@ -5,7 +5,7 @@
     "website": "https://ai.google.dev",
     "api_endpoint": "https://generativelanguage.googleapis.com"
   },
-  "last_updated": "2026-03-04T12:20:53.806642",
+  "last_updated": "2026-03-04T18:22:22.791372",
   "models": [
     {
       "id": "free",
@@ -22,8 +22,8 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "vision"
+        "vision",
+        "chat"
       ],
       "modalities": [
         "text",
@@ -31,7 +31,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806462"
+      "last_updated": "2026-03-04T18:22:22.791107"
     },
     {
       "id": "paid",
@@ -55,7 +55,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806471"
+      "last_updated": "2026-03-04T18:22:22.791118"
     },
     {
       "id": "enterprise",
@@ -72,8 +72,8 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "vision"
+        "vision",
+        "chat"
       ],
       "modalities": [
         "text",
@@ -81,7 +81,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806474"
+      "last_updated": "2026-03-04T18:22:22.791123"
     },
     {
       "id": "gemini-3.1-pro-preview",
@@ -106,7 +106,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806477"
+      "last_updated": "2026-03-04T18:22:22.791127"
     },
     {
       "id": "gemini-3.1-flash-lite-preview",
@@ -131,7 +131,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806480"
+      "last_updated": "2026-03-04T18:22:22.791131"
     },
     {
       "id": "gemini-3.1-flash-image-preview-🍌",
@@ -148,9 +148,9 @@
       "release_date": "",
       "status": "ga",
       "features": [
+        "vision",
         "chat",
-        "fast",
-        "vision"
+        "fast"
       ],
       "modalities": [
         "text",
@@ -158,7 +158,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806482"
+      "last_updated": "2026-03-04T18:22:22.791135"
     },
     {
       "id": "gemini-3-pro-preview",
@@ -182,7 +182,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806485"
+      "last_updated": "2026-03-04T18:22:22.791138"
     },
     {
       "id": "gemini-3-flash-preview",
@@ -207,7 +207,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806491"
+      "last_updated": "2026-03-04T18:22:22.791166"
     },
     {
       "id": "gemini-3-pro-image-preview-🍌",
@@ -224,8 +224,8 @@
       "release_date": "",
       "status": "ga",
       "features": [
-        "chat",
-        "vision"
+        "vision",
+        "chat"
       ],
       "modalities": [
         "text",
@@ -233,7 +233,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806494"
+      "last_updated": "2026-03-04T18:22:22.791170"
     },
     {
       "id": "gemini-2.5-pro",
@@ -257,7 +257,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806496"
+      "last_updated": "2026-03-04T18:22:22.791174"
     },
     {
       "id": "gemini-2.5-flash",
@@ -282,7 +282,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806499"
+      "last_updated": "2026-03-04T18:22:22.791177"
     },
     {
       "id": "gemini-2.5-flash-lite",
@@ -307,7 +307,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806501"
+      "last_updated": "2026-03-04T18:22:22.791181"
     },
     {
       "id": "gemini-2.5-flash-lite-preview",
@@ -332,7 +332,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806503"
+      "last_updated": "2026-03-04T18:22:22.791184"
     },
     {
       "id": "gemini-2.5-flash-native-audio",
@@ -349,9 +349,9 @@
       "release_date": "",
       "status": "ga",
       "features": [
+        "audio",
         "chat",
-        "fast",
-        "audio"
+        "fast"
       ],
       "modalities": [
         "text",
@@ -359,7 +359,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806505"
+      "last_updated": "2026-03-04T18:22:22.791188"
     },
     {
       "id": "gemini-2.5-flash-image-🍌",
@@ -376,9 +376,9 @@
       "release_date": "",
       "status": "ga",
       "features": [
+        "vision",
         "chat",
-        "fast",
-        "vision"
+        "fast"
       ],
       "modalities": [
         "text",
@@ -386,7 +386,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806508"
+      "last_updated": "2026-03-04T18:22:22.791191"
     },
     {
       "id": "gemini-2.5-flash-preview-tts",
@@ -411,7 +411,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806510"
+      "last_updated": "2026-03-04T18:22:22.791194"
     },
     {
       "id": "gemini-2.5-pro-preview-tts",
@@ -435,7 +435,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806512"
+      "last_updated": "2026-03-04T18:22:22.791198"
     },
     {
       "id": "gemini-2.0-flash",
@@ -460,7 +460,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806514"
+      "last_updated": "2026-03-04T18:22:22.791201"
     },
     {
       "id": "gemini-embedding",
@@ -484,7 +484,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806516"
+      "last_updated": "2026-03-04T18:22:22.791204"
     },
     {
       "id": "gemini-robotics-er-1.5-preview",
@@ -508,7 +508,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806518"
+      "last_updated": "2026-03-04T18:22:22.791207"
     },
     {
       "id": "gemini-2.5-computer-use-preview",
@@ -532,7 +532,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806520"
+      "last_updated": "2026-03-04T18:22:22.791211"
     },
     {
       "id": "input-price",
@@ -556,7 +556,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806523"
+      "last_updated": "2026-03-04T18:22:22.791215"
     },
     {
       "id": "output-price",
@@ -580,7 +580,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806525"
+      "last_updated": "2026-03-04T18:22:22.791218"
     },
     {
       "id": "context-caching-price",
@@ -604,7 +604,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806527"
+      "last_updated": "2026-03-04T18:22:22.791221"
     },
     {
       "id": "grounding-with-google-search*",
@@ -628,7 +628,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806530"
+      "last_updated": "2026-03-04T18:22:22.791224"
     },
     {
       "id": "grounding-with-google-maps",
@@ -652,7 +652,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806532"
+      "last_updated": "2026-03-04T18:22:22.791228"
     },
     {
       "id": "used-to-improve-our-products",
@@ -676,7 +676,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806534"
+      "last_updated": "2026-03-04T18:22:22.791231"
     },
     {
       "id": "grounding-with-google-search**",
@@ -700,7 +700,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806536"
+      "last_updated": "2026-03-04T18:22:22.791235"
     },
     {
       "id": "grounding-with-google-web-and-image-search***",
@@ -724,7 +724,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806539"
+      "last_updated": "2026-03-04T18:22:22.791238"
     },
     {
       "id": "grounding-with-google-search",
@@ -748,7 +748,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806541"
+      "last_updated": "2026-03-04T18:22:22.791242"
     },
     {
       "id": "context-caching",
@@ -772,7 +772,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806544"
+      "last_updated": "2026-03-04T18:22:22.791246"
     },
     {
       "id": "image-generation-pricing",
@@ -796,7 +796,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806546"
+      "last_updated": "2026-03-04T18:22:22.791249"
     },
     {
       "id": "tuning-price",
@@ -820,7 +820,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806548"
+      "last_updated": "2026-03-04T18:22:22.791252"
     },
     {
       "id": "imagen-4-fast-image-price",
@@ -844,7 +844,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806550"
+      "last_updated": "2026-03-04T18:22:22.791256"
     },
     {
       "id": "imagen-4-standard-image-price",
@@ -868,7 +868,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806553"
+      "last_updated": "2026-03-04T18:22:22.791259"
     },
     {
       "id": "imagen-4-ultra-image-price",
@@ -892,7 +892,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806555"
+      "last_updated": "2026-03-04T18:22:22.791261"
     },
     {
       "id": "veo-3.1-standard-video-with-audio-price",
@@ -916,7 +916,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806557"
+      "last_updated": "2026-03-04T18:22:22.791264"
     },
     {
       "id": "veo-3.1-fast-video-with-audio-price",
@@ -940,7 +940,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806559"
+      "last_updated": "2026-03-04T18:22:22.791267"
     },
     {
       "id": "veo-3-standard-video-with-audio-price",
@@ -964,7 +964,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806561"
+      "last_updated": "2026-03-04T18:22:22.791270"
     },
     {
       "id": "veo-3-fast-video-with-audio-price",
@@ -988,7 +988,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806562"
+      "last_updated": "2026-03-04T18:22:22.791273"
     },
     {
       "id": "video-price",
@@ -1012,7 +1012,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806564"
+      "last_updated": "2026-03-04T18:22:22.791276"
     },
     {
       "id": "google-search",
@@ -1036,7 +1036,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806572"
+      "last_updated": "2026-03-04T18:22:22.791285"
     },
     {
       "id": "google-maps",
@@ -1060,7 +1060,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806574"
+      "last_updated": "2026-03-04T18:22:22.791289"
     },
     {
       "id": "code-execution",
@@ -1084,7 +1084,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806575"
+      "last_updated": "2026-03-04T18:22:22.791291"
     },
     {
       "id": "url-context",
@@ -1108,7 +1108,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806577"
+      "last_updated": "2026-03-04T18:22:22.791295"
     },
     {
       "id": "computer-use",
@@ -1132,7 +1132,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806579"
+      "last_updated": "2026-03-04T18:22:22.791298"
     },
     {
       "id": "file-search",
@@ -1156,7 +1156,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806581"
+      "last_updated": "2026-03-04T18:22:22.791301"
     },
     {
       "id": "custom-tools-endpoint",
@@ -1180,7 +1180,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-04T12:20:53.806583"
+      "last_updated": "2026-03-04T18:22:22.791304"
     }
   ]
 }
