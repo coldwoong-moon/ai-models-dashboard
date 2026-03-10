@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-03-10T12:22:45.309365",
+  "last_updated": "2026-03-10T18:24:55.386998",
   "providers": {
     "google": {
       "name": "Google AI",
       "website": "https://ai.google.dev",
       "api_endpoint": "https://generativelanguage.googleapis.com",
-      "last_updated": "2026-03-10T12:22:02.276676",
-      "model_count": 48
+      "last_updated": "2026-03-10T18:24:12.349141",
+      "model_count": 53
     },
     "meta": {
       "name": "Meta",
@@ -19,49 +19,49 @@
       "name": "OpenAI",
       "website": "https://openai.com",
       "api_endpoint": "https://api.openai.com/v1",
-      "last_updated": "2026-03-10T12:21:46.542184",
+      "last_updated": "2026-03-10T18:23:56.817769",
       "model_count": 6
     },
     "huggingface": {
       "name": "HuggingFace",
       "website": "https://huggingface.co",
       "api_endpoint": "https://api-inference.huggingface.co",
-      "last_updated": "2026-03-10T12:22:45.177424",
+      "last_updated": "2026-03-10T18:24:55.260043",
       "model_count": 11
     },
     "deepseek": {
       "name": "Deepseek",
       "website": "",
       "api_endpoint": "",
-      "last_updated": "2026-03-10T12:22:08.396488",
+      "last_updated": "2026-03-10T18:24:18.365468",
       "model_count": 3
     },
     "cohere": {
       "name": "Cohere",
       "website": "https://cohere.com",
       "api_endpoint": "https://api.cohere.ai",
-      "last_updated": "2026-03-10T12:22:45.066374",
+      "last_updated": "2026-03-10T18:24:55.153622",
       "model_count": 11
     },
     "xai": {
       "name": "Xai",
       "website": "",
       "api_endpoint": "",
-      "last_updated": "2026-03-10T12:22:39.132694",
+      "last_updated": "2026-03-10T18:24:49.060909",
       "model_count": 0
     },
     "anthropic": {
       "name": "Anthropic",
       "website": "https://anthropic.com",
       "api_endpoint": "https://api.anthropic.com",
-      "last_updated": "2026-03-10T12:21:55.471503",
+      "last_updated": "2026-03-10T18:24:05.349925",
       "model_count": 5
     },
     "mistral": {
       "name": "Mistral AI",
       "website": "https://mistral.ai",
       "api_endpoint": "https://api.mistral.ai",
-      "last_updated": "2026-03-10T12:22:44.916970",
+      "last_updated": "2026-03-10T18:24:55.016833",
       "model_count": 6
     }
   },
@@ -160,7 +160,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:46.542014",
+      "last_updated": "2026-03-10T18:23:56.817675",
       "unique_id": "openai/gpt-4o"
     },
     {
@@ -191,7 +191,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:46.542024",
+      "last_updated": "2026-03-10T18:23:56.817685",
       "unique_id": "openai/gpt-4o-mini"
     },
     {
@@ -220,7 +220,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:46.542028",
+      "last_updated": "2026-03-10T18:23:56.817691",
       "unique_id": "openai/o1"
     },
     {
@@ -250,7 +250,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:46.542030",
+      "last_updated": "2026-03-10T18:23:56.817695",
       "unique_id": "openai/o1-mini"
     },
     {
@@ -279,7 +279,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:46.542033",
+      "last_updated": "2026-03-10T18:23:56.817699",
       "unique_id": "openai/gpt-4-turbo"
     },
     {
@@ -307,7 +307,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:46.542035",
+      "last_updated": "2026-03-10T18:23:56.817703",
       "unique_id": "openai/gpt-3.5-turbo"
     },
     {
@@ -334,7 +334,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177355",
+      "last_updated": "2026-03-10T18:24:55.259981",
       "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct"
     },
     {
@@ -361,7 +361,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177363",
+      "last_updated": "2026-03-10T18:24:55.259988",
       "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct"
     },
     {
@@ -388,7 +388,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177366",
+      "last_updated": "2026-03-10T18:24:55.259990",
       "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
     },
     {
@@ -415,7 +415,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177368",
+      "last_updated": "2026-03-10T18:24:55.259993",
       "unique_id": "huggingface/mistralai/Mixtral-8x7B-Instruct-v0.1"
     },
     {
@@ -441,7 +441,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177370",
+      "last_updated": "2026-03-10T18:24:55.259995",
       "unique_id": "huggingface/mistralai/Mistral-7B-Instruct-v0.3"
     },
     {
@@ -467,7 +467,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177372",
+      "last_updated": "2026-03-10T18:24:55.259997",
       "unique_id": "huggingface/google/gemma-2-27b-it"
     },
     {
@@ -493,7 +493,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177374",
+      "last_updated": "2026-03-10T18:24:55.259999",
       "unique_id": "huggingface/google/gemma-2-9b-it"
     },
     {
@@ -521,7 +521,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177379",
+      "last_updated": "2026-03-10T18:24:55.260004",
       "unique_id": "huggingface/Qwen/Qwen2.5-72B-Instruct"
     },
     {
@@ -549,7 +549,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177382",
+      "last_updated": "2026-03-10T18:24:55.260006",
       "unique_id": "huggingface/Qwen/Qwen2.5-7B-Instruct"
     },
     {
@@ -578,7 +578,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177388",
+      "last_updated": "2026-03-10T18:24:55.260013",
       "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
     },
     {
@@ -605,7 +605,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:45.177390",
+      "last_updated": "2026-03-10T18:24:55.260014",
       "unique_id": "huggingface/microsoft/Phi-3-medium-128k-instruct"
     },
     {
@@ -636,7 +636,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:08.396408",
+      "last_updated": "2026-03-10T18:24:18.365390",
       "unique_id": "deepseek/deepseek-chat"
     },
     {
@@ -665,7 +665,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:08.396423",
+      "last_updated": "2026-03-10T18:24:18.365401",
       "unique_id": "deepseek/deepseek-reasoner"
     },
     {
@@ -694,7 +694,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:08.396426",
+      "last_updated": "2026-03-10T18:24:18.365405",
       "unique_id": "deepseek/deepseek-coder"
     },
     {
@@ -730,7 +730,7 @@
         "Multi-step workflows"
       ],
       "training_cutoff": "2024-01",
-      "last_updated": "2026-03-10T12:22:45.066297",
+      "last_updated": "2026-03-10T18:24:55.153553",
       "unique_id": "cohere/command-r-plus"
     },
     {
@@ -765,7 +765,7 @@
         "Question answering"
       ],
       "training_cutoff": "2024-01",
-      "last_updated": "2026-03-10T12:22:45.066308",
+      "last_updated": "2026-03-10T18:24:55.153561",
       "unique_id": "cohere/command-r"
     },
     {
@@ -796,7 +796,7 @@
         "Simple Q&A"
       ],
       "training_cutoff": "2023-03",
-      "last_updated": "2026-03-10T12:22:45.066311",
+      "last_updated": "2026-03-10T18:24:55.153564",
       "unique_id": "cohere/command"
     },
     {
@@ -827,7 +827,7 @@
         "Cost-sensitive deployments"
       ],
       "training_cutoff": "2023-03",
-      "last_updated": "2026-03-10T12:22:45.066313",
+      "last_updated": "2026-03-10T18:24:55.153566",
       "unique_id": "cohere/command-light"
     },
     {
@@ -858,7 +858,7 @@
         "Research applications"
       ],
       "training_cutoff": "2024-01",
-      "last_updated": "2026-03-10T12:22:45.066315",
+      "last_updated": "2026-03-10T18:24:55.153568",
       "unique_id": "cohere/command-nightly"
     },
     {
@@ -891,7 +891,7 @@
         "Content classification"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-03-10T12:22:45.066317",
+      "last_updated": "2026-03-10T18:24:55.153570",
       "unique_id": "cohere/embed-english-v3.0"
     },
     {
@@ -923,7 +923,7 @@
         "International applications"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-03-10T12:22:45.066322",
+      "last_updated": "2026-03-10T18:24:55.153574",
       "unique_id": "cohere/embed-multilingual-v3.0"
     },
     {
@@ -954,7 +954,7 @@
         "Edge deployments"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-03-10T12:22:45.066327",
+      "last_updated": "2026-03-10T18:24:55.153579",
       "unique_id": "cohere/embed-english-light-v3.0"
     },
     {
@@ -984,7 +984,7 @@
         "Fast cross-lingual matching"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-03-10T12:22:45.066329",
+      "last_updated": "2026-03-10T18:24:55.153582",
       "unique_id": "cohere/embed-multilingual-light-v3.0"
     },
     {
@@ -1016,7 +1016,7 @@
         "Query optimization"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-03-10T12:22:45.066332",
+      "last_updated": "2026-03-10T18:24:55.153584",
       "unique_id": "cohere/rerank-english-v3.0"
     },
     {
@@ -1047,7 +1047,7 @@
         "Cross-language retrieval"
       ],
       "training_cutoff": "2023-09",
-      "last_updated": "2026-03-10T12:22:45.066333",
+      "last_updated": "2026-03-10T18:24:55.153586",
       "unique_id": "cohere/rerank-multilingual-v3.0"
     },
     {
@@ -1079,7 +1079,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:55.471408",
+      "last_updated": "2026-03-10T18:24:05.349853",
       "unique_id": "anthropic/claude-3-5-sonnet-20241022"
     },
     {
@@ -1109,7 +1109,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:55.471420",
+      "last_updated": "2026-03-10T18:24:05.349862",
       "unique_id": "anthropic/claude-3-5-haiku-20241022"
     },
     {
@@ -1141,7 +1141,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:55.471425",
+      "last_updated": "2026-03-10T18:24:05.349865",
       "unique_id": "anthropic/claude-3-opus-20240229"
     },
     {
@@ -1171,7 +1171,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:55.471429",
+      "last_updated": "2026-03-10T18:24:05.349868",
       "unique_id": "anthropic/claude-3-sonnet-20240229"
     },
     {
@@ -1201,7 +1201,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:21:55.471433",
+      "last_updated": "2026-03-10T18:24:05.349870",
       "unique_id": "anthropic/claude-3-haiku-20240307"
     },
     {
@@ -1230,7 +1230,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:44.916868",
+      "last_updated": "2026-03-10T18:24:55.016756",
       "unique_id": "mistral/mistral-large-latest"
     },
     {
@@ -1258,7 +1258,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:44.916880",
+      "last_updated": "2026-03-10T18:24:55.016766",
       "unique_id": "mistral/mistral-small-latest"
     },
     {
@@ -1286,7 +1286,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:44.916885",
+      "last_updated": "2026-03-10T18:24:55.016769",
       "unique_id": "mistral/open-mixtral-8x7b"
     },
     {
@@ -1314,7 +1314,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:44.916889",
+      "last_updated": "2026-03-10T18:24:55.016772",
       "unique_id": "mistral/open-mixtral-8x22b"
     },
     {
@@ -1343,7 +1343,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:44.916893",
+      "last_updated": "2026-03-10T18:24:55.016775",
       "unique_id": "mistral/pixtral-12b"
     },
     {
@@ -1371,7 +1371,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-10T12:22:44.916897",
+      "last_updated": "2026-03-10T18:24:55.016777",
       "unique_id": "mistral/codestral-latest"
     }
   ],
@@ -1462,7 +1462,7 @@
       {
         "provider": "google",
         "file": "google.json",
-        "last_updated": "2026-03-10T12:22:02.276676"
+        "last_updated": "2026-03-10T18:24:12.349141"
       },
       {
         "provider": "meta",
@@ -1472,37 +1472,37 @@
       {
         "provider": "openai",
         "file": "openai.json",
-        "last_updated": "2026-03-10T12:21:46.542184"
+        "last_updated": "2026-03-10T18:23:56.817769"
       },
       {
         "provider": "huggingface",
         "file": "huggingface.json",
-        "last_updated": "2026-03-10T12:22:45.177424"
+        "last_updated": "2026-03-10T18:24:55.260043"
       },
       {
         "provider": "deepseek",
         "file": "deepseek.json",
-        "last_updated": "2026-03-10T12:22:08.396488"
+        "last_updated": "2026-03-10T18:24:18.365468"
       },
       {
         "provider": "cohere",
         "file": "cohere.json",
-        "last_updated": "2026-03-10T12:22:45.066374"
+        "last_updated": "2026-03-10T18:24:55.153622"
       },
       {
         "provider": "xai",
         "file": "xai.json",
-        "last_updated": "2026-03-10T12:22:39.132694"
+        "last_updated": "2026-03-10T18:24:49.060909"
       },
       {
         "provider": "anthropic",
         "file": "anthropic.json",
-        "last_updated": "2026-03-10T12:21:55.471503"
+        "last_updated": "2026-03-10T18:24:05.349925"
       },
       {
         "provider": "mistral",
         "file": "mistral.json",
-        "last_updated": "2026-03-10T12:22:44.916970"
+        "last_updated": "2026-03-10T18:24:55.016833"
       }
     ]
   },
