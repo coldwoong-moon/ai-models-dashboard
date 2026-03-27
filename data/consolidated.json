@@ -1,12 +1,54 @@
 {
-  "last_updated": "2026-03-27T06:37:17.667495",
+  "last_updated": "2026-03-27T12:25:26.090850",
   "providers": {
+    "openai": {
+      "name": "OpenAI",
+      "website": "https://openai.com",
+      "api_endpoint": "https://api.openai.com/v1",
+      "last_updated": "2026-03-27T12:24:26.432575",
+      "model_count": 6
+    },
     "google": {
       "name": "Google AI",
       "website": "https://ai.google.dev",
       "api_endpoint": "https://generativelanguage.googleapis.com",
-      "last_updated": "2026-03-27T06:36:32.501587",
+      "last_updated": "2026-03-27T12:24:41.361492",
       "model_count": 55
+    },
+    "deepseek": {
+      "name": "Deepseek",
+      "website": "",
+      "api_endpoint": "",
+      "last_updated": "2026-03-27T12:24:49.137895",
+      "model_count": 3
+    },
+    "huggingface": {
+      "name": "HuggingFace",
+      "website": "https://huggingface.co",
+      "api_endpoint": "https://api-inference.huggingface.co",
+      "last_updated": "2026-03-27T12:25:25.967806",
+      "model_count": 11
+    },
+    "mistral": {
+      "name": "Mistral AI",
+      "website": "https://mistral.ai",
+      "api_endpoint": "https://api.mistral.ai",
+      "last_updated": "2026-03-27T12:25:25.687675",
+      "model_count": 6
+    },
+    "xai": {
+      "name": "Xai",
+      "website": "",
+      "api_endpoint": "",
+      "last_updated": "2026-03-27T12:25:19.870714",
+      "model_count": 0
+    },
+    "cohere": {
+      "name": "Cohere",
+      "website": "https://cohere.com",
+      "api_endpoint": "https://api.cohere.ai",
+      "last_updated": "2026-03-27T12:25:25.842519",
+      "model_count": 11
     },
     "meta": {
       "name": "Meta",
@@ -15,57 +57,1102 @@
       "last_updated": "2025-07-17T16:57:28.119320",
       "model_count": 2
     },
-    "openai": {
-      "name": "OpenAI",
-      "website": "https://openai.com",
-      "api_endpoint": "https://api.openai.com/v1",
-      "last_updated": "2026-03-27T06:36:17.283697",
-      "model_count": 6
-    },
-    "huggingface": {
-      "name": "HuggingFace",
-      "website": "https://huggingface.co",
-      "api_endpoint": "https://api-inference.huggingface.co",
-      "last_updated": "2026-03-27T06:37:17.545500",
-      "model_count": 11
-    },
-    "deepseek": {
-      "name": "Deepseek",
-      "website": "",
-      "api_endpoint": "",
-      "last_updated": "2026-03-27T06:36:40.711684",
-      "model_count": 3
-    },
-    "cohere": {
-      "name": "Cohere",
-      "website": "https://cohere.com",
-      "api_endpoint": "https://api.cohere.ai",
-      "last_updated": "2026-03-27T06:37:17.431020",
-      "model_count": 11
-    },
-    "xai": {
-      "name": "Xai",
-      "website": "",
-      "api_endpoint": "",
-      "last_updated": "2026-03-27T06:37:11.340776",
-      "model_count": 0
-    },
     "anthropic": {
       "name": "Anthropic",
       "website": "https://anthropic.com",
       "api_endpoint": "https://api.anthropic.com",
-      "last_updated": "2026-03-27T06:36:25.884760",
+      "last_updated": "2026-03-27T12:24:34.927956",
       "model_count": 5
-    },
-    "mistral": {
-      "name": "Mistral AI",
-      "website": "https://mistral.ai",
-      "api_endpoint": "https://api.mistral.ai",
-      "last_updated": "2026-03-27T06:37:17.273908",
-      "model_count": 6
     }
   },
   "models": [
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "provider": "openai",
+      "description": "Most capable multimodal model with vision and advanced reasoning",
+      "pricing": {
+        "input": 2.5,
+        "output": 10.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 16384,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "function-calling",
+        "json-mode",
+        "multimodal"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:24:26.432481",
+      "unique_id": "openai/gpt-4o"
+    },
+    {
+      "id": "gpt-4o-mini",
+      "name": "GPT-4o mini",
+      "provider": "openai",
+      "description": "Affordable multimodal model with vision capabilities",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 16384,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "function-calling",
+        "json-mode",
+        "fast",
+        "multimodal"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:24:26.432492",
+      "unique_id": "openai/gpt-4o-mini"
+    },
+    {
+      "id": "o1",
+      "name": "o1",
+      "provider": "openai",
+      "description": "Advanced reasoning model for complex problem-solving",
+      "pricing": {
+        "input": 15.0,
+        "output": 60.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 200000,
+      "max_output": 100000,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "complex-tasks",
+        "thinking",
+        "math",
+        "coding"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:24:26.432497",
+      "unique_id": "openai/o1"
+    },
+    {
+      "id": "o1-mini",
+      "name": "o1-mini",
+      "provider": "openai",
+      "description": "Fast reasoning model optimized for coding and STEM",
+      "pricing": {
+        "input": 3.0,
+        "output": 12.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 65536,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "coding",
+        "fast",
+        "thinking",
+        "math",
+        "stem"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:24:26.432501",
+      "unique_id": "openai/o1-mini"
+    },
+    {
+      "id": "gpt-4-turbo",
+      "name": "GPT-4 Turbo",
+      "provider": "openai",
+      "description": "Previous generation high-intelligence model with vision",
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "function-calling",
+        "json-mode"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:24:26.432505",
+      "unique_id": "openai/gpt-4-turbo"
+    },
+    {
+      "id": "gpt-3.5-turbo",
+      "name": "GPT-3.5 Turbo",
+      "provider": "openai",
+      "description": "Fast and cost-effective model for simple tasks",
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5,
+        "unit": "1M tokens"
+      },
+      "context_window": 16385,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "function-calling",
+        "fast",
+        "cost-effective"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:24:26.432509",
+      "unique_id": "openai/gpt-3.5-turbo"
+    },
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek-V3",
+      "provider": "deepseek",
+      "description": "DeepSeek-V3: 671B parameter model excelling at reasoning, coding, and math",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 64000,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "coding",
+        "math",
+        "reasoning",
+        "long-context",
+        "multilingual",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:24:49.137819",
+      "unique_id": "deepseek/deepseek-chat"
+    },
+    {
+      "id": "deepseek-reasoner",
+      "name": "DeepSeek-R1",
+      "provider": "deepseek",
+      "description": "Advanced reasoning model with transparent thinking process",
+      "pricing": {
+        "input": 0.55,
+        "output": 2.19,
+        "unit": "1M tokens"
+      },
+      "context_window": 64000,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "reasoning",
+        "thinking",
+        "transparent-reasoning",
+        "math",
+        "complex-tasks"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:24:49.137830",
+      "unique_id": "deepseek/deepseek-reasoner"
+    },
+    {
+      "id": "deepseek-coder",
+      "name": "DeepSeek-Coder-V2",
+      "provider": "deepseek",
+      "description": "Specialized model for code generation and analysis",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-generation",
+        "code-analysis",
+        "debugging",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:24:49.137833",
+      "unique_id": "deepseek/deepseek-coder"
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+      "name": "Meta Llama 3.1 405B Instruct",
+      "provider": "huggingface",
+      "description": "Meta의 최대 규모 오픈소스 LLM, 405B 파라미터",
+      "pricing": {
+        "input": 5.0,
+        "output": 16.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967739",
+      "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct"
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+      "name": "Meta Llama 3.1 70B Instruct",
+      "provider": "huggingface",
+      "description": "고품질 오픈소스 LLM, 70B 파라미터",
+      "pricing": {
+        "input": 0.9,
+        "output": 0.9,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967748",
+      "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct"
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "name": "Meta Llama 3.1 8B Instruct",
+      "provider": "huggingface",
+      "description": "효율적인 오픈소스 LLM, 8B 파라미터",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.2,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967750",
+      "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
+    },
+    {
+      "id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "name": "Mixtral 8x7B Instruct",
+      "provider": "huggingface",
+      "description": "Mistral의 MoE 아키텍처 모델",
+      "pricing": {
+        "input": 0.7,
+        "output": 0.7,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct",
+        "moe"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967753",
+      "unique_id": "huggingface/mistralai/Mixtral-8x7B-Instruct-v0.1"
+    },
+    {
+      "id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "name": "Mistral 7B Instruct v0.3",
+      "provider": "huggingface",
+      "description": "Mistral의 효율적인 7B 모델",
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967755",
+      "unique_id": "huggingface/mistralai/Mistral-7B-Instruct-v0.3"
+    },
+    {
+      "id": "google/gemma-2-27b-it",
+      "name": "Google Gemma 2 27B IT",
+      "provider": "huggingface",
+      "description": "Google의 오픈 모델 Gemma 2세대",
+      "pricing": {
+        "input": 0.8,
+        "output": 0.8,
+        "unit": "1M tokens"
+      },
+      "context_window": 8192,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967757",
+      "unique_id": "huggingface/google/gemma-2-27b-it"
+    },
+    {
+      "id": "google/gemma-2-9b-it",
+      "name": "Google Gemma 2 9B IT",
+      "provider": "huggingface",
+      "description": "Google의 경량 Gemma 모델",
+      "pricing": {
+        "input": 0.3,
+        "output": 0.3,
+        "unit": "1M tokens"
+      },
+      "context_window": 8192,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967759",
+      "unique_id": "huggingface/google/gemma-2-9b-it"
+    },
+    {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "name": "Qwen 2.5 72B Instruct",
+      "provider": "huggingface",
+      "description": "Alibaba의 강력한 다국어 모델",
+      "pricing": {
+        "input": 0.9,
+        "output": 0.9,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct",
+        "multilingual",
+        "coding"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967764",
+      "unique_id": "huggingface/Qwen/Qwen2.5-72B-Instruct"
+    },
+    {
+      "id": "Qwen/Qwen2.5-7B-Instruct",
+      "name": "Qwen 2.5 7B Instruct",
+      "provider": "huggingface",
+      "description": "Qwen 경량 모델",
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25,
+        "unit": "1M tokens"
+      },
+      "context_window": 32768,
+      "max_output": 8192,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct",
+        "multilingual",
+        "coding"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967767",
+      "unique_id": "huggingface/Qwen/Qwen2.5-7B-Instruct"
+    },
+    {
+      "id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+      "name": "Llama 3.2 11B Vision Instruct",
+      "provider": "huggingface",
+      "description": "Meta의 비전 기능이 있는 Llama 모델",
+      "pricing": {
+        "input": 0.35,
+        "output": 0.35,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "instruct",
+        "multimodal"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967769",
+      "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
+    },
+    {
+      "id": "microsoft/Phi-3-medium-128k-instruct",
+      "name": "Phi-3 Medium 128K Instruct",
+      "provider": "huggingface",
+      "description": "Microsoft의 효율적인 소형 모델",
+      "pricing": {
+        "input": 0.4,
+        "output": 0.4,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "instruct",
+        "long-context"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.967771",
+      "unique_id": "huggingface/microsoft/Phi-3-medium-128k-instruct"
+    },
+    {
+      "id": "mistral-large-latest",
+      "name": "Mistral Large",
+      "provider": "mistral",
+      "description": "Top-tier reasoning model for complex tasks",
+      "pricing": {
+        "input": 3.0,
+        "output": 9.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "complex-tasks",
+        "multilingual",
+        "function-calling"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.687596",
+      "unique_id": "mistral/mistral-large-latest"
+    },
+    {
+      "id": "mistral-small-latest",
+      "name": "Mistral Small",
+      "provider": "mistral",
+      "description": "Cost-efficient model for simple tasks",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "fast",
+        "cost-efficient",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.687606",
+      "unique_id": "mistral/mistral-small-latest"
+    },
+    {
+      "id": "open-mixtral-8x7b",
+      "name": "Mixtral 8x7B",
+      "provider": "mistral",
+      "description": "Mixture of experts model with 8x7B parameters",
+      "pricing": {
+        "input": 0.5,
+        "output": 0.5,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "mixture-of-experts",
+        "efficient",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.687610",
+      "unique_id": "mistral/open-mixtral-8x7b"
+    },
+    {
+      "id": "open-mixtral-8x22b",
+      "name": "Mixtral 8x22B",
+      "provider": "mistral",
+      "description": "Large mixture of experts model with 8x22B parameters",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 65536,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "mixture-of-experts",
+        "powerful",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.687613",
+      "unique_id": "mistral/open-mixtral-8x22b"
+    },
+    {
+      "id": "pixtral-12b",
+      "name": "Pixtral 12B",
+      "provider": "mistral",
+      "description": "Multimodal model for text and image understanding",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "multimodal",
+        "image-understanding"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.687615",
+      "unique_id": "mistral/pixtral-12b"
+    },
+    {
+      "id": "codestral-latest",
+      "name": "Codestral",
+      "provider": "mistral",
+      "description": "Specialized model for code generation",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-generation",
+        "fill-in-the-middle",
+        "multilingual-code"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-03-27T12:25:25.687618",
+      "unique_id": "mistral/codestral-latest"
+    },
+    {
+      "id": "command-r-plus",
+      "name": "Command R+",
+      "provider": "cohere",
+      "description": "Advanced conversational AI optimized for complex reasoning and RAG",
+      "pricing": {
+        "input": 3.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-04-04",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "rag",
+        "function-calling",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Complex reasoning tasks",
+        "RAG applications",
+        "Enterprise chatbots",
+        "Document analysis",
+        "Knowledge base queries",
+        "Multi-step workflows"
+      ],
+      "training_cutoff": "2024-01",
+      "last_updated": "2026-03-27T12:25:25.842445",
+      "unique_id": "cohere/command-r-plus"
+    },
+    {
+      "id": "command-r",
+      "name": "Command R",
+      "provider": "cohere",
+      "description": "Balanced model for retrieval-augmented generation and conversation",
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-03-11",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning",
+        "rag",
+        "function-calling",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Retrieval-augmented generation",
+        "Information synthesis",
+        "Customer support",
+        "Content generation",
+        "Question answering"
+      ],
+      "training_cutoff": "2024-01",
+      "last_updated": "2026-03-27T12:25:25.842455",
+      "unique_id": "cohere/command-r"
+    },
+    {
+      "id": "command",
+      "name": "Command",
+      "provider": "cohere",
+      "description": "General-purpose conversational AI model",
+      "pricing": {
+        "input": 1.0,
+        "output": 2.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 4096,
+      "release_date": "2023-06-01",
+      "status": "ga",
+      "features": [
+        "chat",
+        "reasoning"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "General conversations",
+        "Content creation",
+        "Text summarization",
+        "Simple Q&A"
+      ],
+      "training_cutoff": "2023-03",
+      "last_updated": "2026-03-27T12:25:25.842458",
+      "unique_id": "cohere/command"
+    },
+    {
+      "id": "command-light",
+      "name": "Command Light",
+      "provider": "cohere",
+      "description": "Faster, lighter version for simple tasks",
+      "pricing": {
+        "input": 0.3,
+        "output": 0.6,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 4096,
+      "release_date": "2023-06-01",
+      "status": "ga",
+      "features": [
+        "chat",
+        "fast-inference"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "High-throughput applications",
+        "Real-time chat",
+        "Simple text generation",
+        "Cost-sensitive deployments"
+      ],
+      "training_cutoff": "2023-03",
+      "last_updated": "2026-03-27T12:25:25.842460",
+      "unique_id": "cohere/command-light"
+    },
+    {
+      "id": "command-nightly",
+      "name": "Command Nightly",
+      "provider": "cohere",
+      "description": "Experimental model with latest features",
+      "pricing": {
+        "input": 15.0,
+        "output": 15.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "2024-01-01",
+      "status": "experimental",
+      "features": [
+        "chat",
+        "reasoning",
+        "experimental"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Experimental features testing",
+        "Cutting-edge capabilities",
+        "Research applications"
+      ],
+      "training_cutoff": "2024-01",
+      "last_updated": "2026-03-27T12:25:25.842462",
+      "unique_id": "cohere/command-nightly"
+    },
+    {
+      "id": "embed-english-v3.0",
+      "name": "Embed English v3.0",
+      "provider": "cohere",
+      "description": "State-of-the-art English text embeddings",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "semantic-search",
+        "clustering"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Semantic search",
+        "Text similarity",
+        "Document clustering",
+        "Recommendation systems",
+        "Content classification"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2026-03-27T12:25:25.842466",
+      "unique_id": "cohere/embed-english-v3.0"
+    },
+    {
+      "id": "embed-multilingual-v3.0",
+      "name": "Embed Multilingual v3.0",
+      "provider": "cohere",
+      "description": "Multilingual text embeddings supporting 100+ languages",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "multilingual",
+        "semantic-search"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Cross-lingual search",
+        "Multilingual clustering",
+        "Global content analysis",
+        "International applications"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2026-03-27T12:25:25.842468",
+      "unique_id": "cohere/embed-multilingual-v3.0"
+    },
+    {
+      "id": "embed-english-light-v3.0",
+      "name": "Embed English Light v3.0",
+      "provider": "cohere",
+      "description": "Lightweight English embeddings for high-throughput applications",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "fast-inference",
+        "lightweight"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "High-volume embeddings",
+        "Real-time similarity",
+        "Edge deployments"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2026-03-27T12:25:25.842473",
+      "unique_id": "cohere/embed-english-light-v3.0"
+    },
+    {
+      "id": "embed-multilingual-light-v3.0",
+      "name": "Embed Multilingual Light v3.0",
+      "provider": "cohere",
+      "description": "Lightweight multilingual embeddings",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 512,
+      "max_output": 1024,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "embeddings",
+        "multilingual",
+        "lightweight"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Lightweight multilingual search",
+        "Fast cross-lingual matching"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2026-03-27T12:25:25.842477",
+      "unique_id": "cohere/embed-multilingual-light-v3.0"
+    },
+    {
+      "id": "rerank-english-v3.0",
+      "name": "Rerank English v3.0",
+      "provider": "cohere",
+      "description": "Advanced reranking model for search relevance",
+      "pricing": {
+        "input": 2.0,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 1,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "reranking",
+        "search-optimization",
+        "relevance-scoring"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Search result optimization",
+        "Relevance scoring",
+        "Information retrieval",
+        "Query optimization"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2026-03-27T12:25:25.842480",
+      "unique_id": "cohere/rerank-english-v3.0"
+    },
+    {
+      "id": "rerank-multilingual-v3.0",
+      "name": "Rerank Multilingual v3.0",
+      "provider": "cohere",
+      "description": "Multilingual reranking for global search applications",
+      "pricing": {
+        "input": 2.0,
+        "output": 0.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 4096,
+      "max_output": 1,
+      "release_date": "2023-11-02",
+      "status": "ga",
+      "features": [
+        "reranking",
+        "multilingual",
+        "search-optimization"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [
+        "Global search systems",
+        "Multilingual relevance",
+        "Cross-language retrieval"
+      ],
+      "training_cutoff": "2023-09",
+      "last_updated": "2026-03-27T12:25:25.842482",
+      "unique_id": "cohere/rerank-multilingual-v3.0"
+    },
     {
       "id": "llama-4-scout",
       "name": "Llama 4 Scout",
@@ -134,923 +1221,6 @@
       "unique_id": "meta/llama-4-maverick"
     },
     {
-      "id": "gpt-4o",
-      "name": "GPT-4o",
-      "provider": "openai",
-      "description": "Most capable multimodal model with vision and advanced reasoning",
-      "pricing": {
-        "input": 2.5,
-        "output": 10.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 16384,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "function-calling",
-        "json-mode",
-        "multimodal"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:17.283621",
-      "unique_id": "openai/gpt-4o"
-    },
-    {
-      "id": "gpt-4o-mini",
-      "name": "GPT-4o mini",
-      "provider": "openai",
-      "description": "Affordable multimodal model with vision capabilities",
-      "pricing": {
-        "input": 0.15,
-        "output": 0.6,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 16384,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "function-calling",
-        "json-mode",
-        "fast",
-        "multimodal"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:17.283631",
-      "unique_id": "openai/gpt-4o-mini"
-    },
-    {
-      "id": "o1",
-      "name": "o1",
-      "provider": "openai",
-      "description": "Advanced reasoning model for complex problem-solving",
-      "pricing": {
-        "input": 15.0,
-        "output": 60.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 200000,
-      "max_output": 100000,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "reasoning",
-        "complex-tasks",
-        "thinking",
-        "math",
-        "coding"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:17.283634",
-      "unique_id": "openai/o1"
-    },
-    {
-      "id": "o1-mini",
-      "name": "o1-mini",
-      "provider": "openai",
-      "description": "Fast reasoning model optimized for coding and STEM",
-      "pricing": {
-        "input": 3.0,
-        "output": 12.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 65536,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "reasoning",
-        "coding",
-        "fast",
-        "thinking",
-        "math",
-        "stem"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:17.283637",
-      "unique_id": "openai/o1-mini"
-    },
-    {
-      "id": "gpt-4-turbo",
-      "name": "GPT-4 Turbo",
-      "provider": "openai",
-      "description": "Previous generation high-intelligence model with vision",
-      "pricing": {
-        "input": 10.0,
-        "output": 30.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "function-calling",
-        "json-mode"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:17.283639",
-      "unique_id": "openai/gpt-4-turbo"
-    },
-    {
-      "id": "gpt-3.5-turbo",
-      "name": "GPT-3.5 Turbo",
-      "provider": "openai",
-      "description": "Fast and cost-effective model for simple tasks",
-      "pricing": {
-        "input": 0.5,
-        "output": 1.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 16385,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "function-calling",
-        "fast",
-        "cost-effective"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:17.283643",
-      "unique_id": "openai/gpt-3.5-turbo"
-    },
-    {
-      "id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
-      "name": "Meta Llama 3.1 405B Instruct",
-      "provider": "huggingface",
-      "description": "Meta의 최대 규모 오픈소스 LLM, 405B 파라미터",
-      "pricing": {
-        "input": 5.0,
-        "output": 16.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545434",
-      "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct"
-    },
-    {
-      "id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
-      "name": "Meta Llama 3.1 70B Instruct",
-      "provider": "huggingface",
-      "description": "고품질 오픈소스 LLM, 70B 파라미터",
-      "pricing": {
-        "input": 0.9,
-        "output": 0.9,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545443",
-      "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct"
-    },
-    {
-      "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
-      "name": "Meta Llama 3.1 8B Instruct",
-      "provider": "huggingface",
-      "description": "효율적인 오픈소스 LLM, 8B 파라미터",
-      "pricing": {
-        "input": 0.2,
-        "output": 0.2,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545446",
-      "unique_id": "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
-    },
-    {
-      "id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
-      "name": "Mixtral 8x7B Instruct",
-      "provider": "huggingface",
-      "description": "Mistral의 MoE 아키텍처 모델",
-      "pricing": {
-        "input": 0.7,
-        "output": 0.7,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct",
-        "moe"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545448",
-      "unique_id": "huggingface/mistralai/Mixtral-8x7B-Instruct-v0.1"
-    },
-    {
-      "id": "mistralai/Mistral-7B-Instruct-v0.3",
-      "name": "Mistral 7B Instruct v0.3",
-      "provider": "huggingface",
-      "description": "Mistral의 효율적인 7B 모델",
-      "pricing": {
-        "input": 0.25,
-        "output": 0.25,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545450",
-      "unique_id": "huggingface/mistralai/Mistral-7B-Instruct-v0.3"
-    },
-    {
-      "id": "google/gemma-2-27b-it",
-      "name": "Google Gemma 2 27B IT",
-      "provider": "huggingface",
-      "description": "Google의 오픈 모델 Gemma 2세대",
-      "pricing": {
-        "input": 0.8,
-        "output": 0.8,
-        "unit": "1M tokens"
-      },
-      "context_window": 8192,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545453",
-      "unique_id": "huggingface/google/gemma-2-27b-it"
-    },
-    {
-      "id": "google/gemma-2-9b-it",
-      "name": "Google Gemma 2 9B IT",
-      "provider": "huggingface",
-      "description": "Google의 경량 Gemma 모델",
-      "pricing": {
-        "input": 0.3,
-        "output": 0.3,
-        "unit": "1M tokens"
-      },
-      "context_window": 8192,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545455",
-      "unique_id": "huggingface/google/gemma-2-9b-it"
-    },
-    {
-      "id": "Qwen/Qwen2.5-72B-Instruct",
-      "name": "Qwen 2.5 72B Instruct",
-      "provider": "huggingface",
-      "description": "Alibaba의 강력한 다국어 모델",
-      "pricing": {
-        "input": 0.9,
-        "output": 0.9,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct",
-        "multilingual",
-        "coding"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545460",
-      "unique_id": "huggingface/Qwen/Qwen2.5-72B-Instruct"
-    },
-    {
-      "id": "Qwen/Qwen2.5-7B-Instruct",
-      "name": "Qwen 2.5 7B Instruct",
-      "provider": "huggingface",
-      "description": "Qwen 경량 모델",
-      "pricing": {
-        "input": 0.25,
-        "output": 0.25,
-        "unit": "1M tokens"
-      },
-      "context_window": 32768,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct",
-        "multilingual",
-        "coding"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545462",
-      "unique_id": "huggingface/Qwen/Qwen2.5-7B-Instruct"
-    },
-    {
-      "id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
-      "name": "Llama 3.2 11B Vision Instruct",
-      "provider": "huggingface",
-      "description": "Meta의 비전 기능이 있는 Llama 모델",
-      "pricing": {
-        "input": 0.35,
-        "output": 0.35,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "instruct",
-        "multimodal"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545465",
-      "unique_id": "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct"
-    },
-    {
-      "id": "microsoft/Phi-3-medium-128k-instruct",
-      "name": "Phi-3 Medium 128K Instruct",
-      "provider": "huggingface",
-      "description": "Microsoft의 효율적인 소형 모델",
-      "pricing": {
-        "input": 0.4,
-        "output": 0.4,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "instruct",
-        "long-context"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.545466",
-      "unique_id": "huggingface/microsoft/Phi-3-medium-128k-instruct"
-    },
-    {
-      "id": "deepseek-chat",
-      "name": "DeepSeek-V3",
-      "provider": "deepseek",
-      "description": "DeepSeek-V3: 671B parameter model excelling at reasoning, coding, and math",
-      "pricing": {
-        "input": 0.14,
-        "output": 0.28,
-        "unit": "1M tokens"
-      },
-      "context_window": 64000,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "coding",
-        "math",
-        "reasoning",
-        "long-context",
-        "multilingual",
-        "function-calling"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:40.711615",
-      "unique_id": "deepseek/deepseek-chat"
-    },
-    {
-      "id": "deepseek-reasoner",
-      "name": "DeepSeek-R1",
-      "provider": "deepseek",
-      "description": "Advanced reasoning model with transparent thinking process",
-      "pricing": {
-        "input": 0.55,
-        "output": 2.19,
-        "unit": "1M tokens"
-      },
-      "context_window": 64000,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "reasoning",
-        "thinking",
-        "transparent-reasoning",
-        "math",
-        "complex-tasks"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:40.711625",
-      "unique_id": "deepseek/deepseek-reasoner"
-    },
-    {
-      "id": "deepseek-coder",
-      "name": "DeepSeek-Coder-V2",
-      "provider": "deepseek",
-      "description": "Specialized model for code generation and analysis",
-      "pricing": {
-        "input": 0.14,
-        "output": 0.28,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 8192,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "coding",
-        "code-generation",
-        "code-analysis",
-        "debugging",
-        "function-calling"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:40.711628",
-      "unique_id": "deepseek/deepseek-coder"
-    },
-    {
-      "id": "command-r-plus",
-      "name": "Command R+",
-      "provider": "cohere",
-      "description": "Advanced conversational AI optimized for complex reasoning and RAG",
-      "pricing": {
-        "input": 3.0,
-        "output": 15.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "2024-04-04",
-      "status": "ga",
-      "features": [
-        "chat",
-        "reasoning",
-        "rag",
-        "function-calling",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "Complex reasoning tasks",
-        "RAG applications",
-        "Enterprise chatbots",
-        "Document analysis",
-        "Knowledge base queries",
-        "Multi-step workflows"
-      ],
-      "training_cutoff": "2024-01",
-      "last_updated": "2026-03-27T06:37:17.430951",
-      "unique_id": "cohere/command-r-plus"
-    },
-    {
-      "id": "command-r",
-      "name": "Command R",
-      "provider": "cohere",
-      "description": "Balanced model for retrieval-augmented generation and conversation",
-      "pricing": {
-        "input": 0.5,
-        "output": 1.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "2024-03-11",
-      "status": "ga",
-      "features": [
-        "chat",
-        "reasoning",
-        "rag",
-        "function-calling",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "Retrieval-augmented generation",
-        "Information synthesis",
-        "Customer support",
-        "Content generation",
-        "Question answering"
-      ],
-      "training_cutoff": "2024-01",
-      "last_updated": "2026-03-27T06:37:17.430960",
-      "unique_id": "cohere/command-r"
-    },
-    {
-      "id": "command",
-      "name": "Command",
-      "provider": "cohere",
-      "description": "General-purpose conversational AI model",
-      "pricing": {
-        "input": 1.0,
-        "output": 2.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 4096,
-      "max_output": 4096,
-      "release_date": "2023-06-01",
-      "status": "ga",
-      "features": [
-        "chat",
-        "reasoning"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "General conversations",
-        "Content creation",
-        "Text summarization",
-        "Simple Q&A"
-      ],
-      "training_cutoff": "2023-03",
-      "last_updated": "2026-03-27T06:37:17.430962",
-      "unique_id": "cohere/command"
-    },
-    {
-      "id": "command-light",
-      "name": "Command Light",
-      "provider": "cohere",
-      "description": "Faster, lighter version for simple tasks",
-      "pricing": {
-        "input": 0.3,
-        "output": 0.6,
-        "unit": "1M tokens"
-      },
-      "context_window": 4096,
-      "max_output": 4096,
-      "release_date": "2023-06-01",
-      "status": "ga",
-      "features": [
-        "chat",
-        "fast-inference"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "High-throughput applications",
-        "Real-time chat",
-        "Simple text generation",
-        "Cost-sensitive deployments"
-      ],
-      "training_cutoff": "2023-03",
-      "last_updated": "2026-03-27T06:37:17.430964",
-      "unique_id": "cohere/command-light"
-    },
-    {
-      "id": "command-nightly",
-      "name": "Command Nightly",
-      "provider": "cohere",
-      "description": "Experimental model with latest features",
-      "pricing": {
-        "input": 15.0,
-        "output": 15.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "2024-01-01",
-      "status": "experimental",
-      "features": [
-        "chat",
-        "reasoning",
-        "experimental"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "Experimental features testing",
-        "Cutting-edge capabilities",
-        "Research applications"
-      ],
-      "training_cutoff": "2024-01",
-      "last_updated": "2026-03-27T06:37:17.430967",
-      "unique_id": "cohere/command-nightly"
-    },
-    {
-      "id": "embed-english-v3.0",
-      "name": "Embed English v3.0",
-      "provider": "cohere",
-      "description": "State-of-the-art English text embeddings",
-      "pricing": {
-        "input": 0.1,
-        "output": 0.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 512,
-      "max_output": 1024,
-      "release_date": "2023-11-02",
-      "status": "ga",
-      "features": [
-        "embeddings",
-        "semantic-search",
-        "clustering"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "Semantic search",
-        "Text similarity",
-        "Document clustering",
-        "Recommendation systems",
-        "Content classification"
-      ],
-      "training_cutoff": "2023-09",
-      "last_updated": "2026-03-27T06:37:17.430969",
-      "unique_id": "cohere/embed-english-v3.0"
-    },
-    {
-      "id": "embed-multilingual-v3.0",
-      "name": "Embed Multilingual v3.0",
-      "provider": "cohere",
-      "description": "Multilingual text embeddings supporting 100+ languages",
-      "pricing": {
-        "input": 0.1,
-        "output": 0.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 512,
-      "max_output": 1024,
-      "release_date": "2023-11-02",
-      "status": "ga",
-      "features": [
-        "embeddings",
-        "multilingual",
-        "semantic-search"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "Cross-lingual search",
-        "Multilingual clustering",
-        "Global content analysis",
-        "International applications"
-      ],
-      "training_cutoff": "2023-09",
-      "last_updated": "2026-03-27T06:37:17.430971",
-      "unique_id": "cohere/embed-multilingual-v3.0"
-    },
-    {
-      "id": "embed-english-light-v3.0",
-      "name": "Embed English Light v3.0",
-      "provider": "cohere",
-      "description": "Lightweight English embeddings for high-throughput applications",
-      "pricing": {
-        "input": 0.1,
-        "output": 0.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 512,
-      "max_output": 1024,
-      "release_date": "2023-11-02",
-      "status": "ga",
-      "features": [
-        "embeddings",
-        "fast-inference",
-        "lightweight"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "High-volume embeddings",
-        "Real-time similarity",
-        "Edge deployments"
-      ],
-      "training_cutoff": "2023-09",
-      "last_updated": "2026-03-27T06:37:17.430975",
-      "unique_id": "cohere/embed-english-light-v3.0"
-    },
-    {
-      "id": "embed-multilingual-light-v3.0",
-      "name": "Embed Multilingual Light v3.0",
-      "provider": "cohere",
-      "description": "Lightweight multilingual embeddings",
-      "pricing": {
-        "input": 0.1,
-        "output": 0.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 512,
-      "max_output": 1024,
-      "release_date": "2023-11-02",
-      "status": "ga",
-      "features": [
-        "embeddings",
-        "multilingual",
-        "lightweight"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "Lightweight multilingual search",
-        "Fast cross-lingual matching"
-      ],
-      "training_cutoff": "2023-09",
-      "last_updated": "2026-03-27T06:37:17.430979",
-      "unique_id": "cohere/embed-multilingual-light-v3.0"
-    },
-    {
-      "id": "rerank-english-v3.0",
-      "name": "Rerank English v3.0",
-      "provider": "cohere",
-      "description": "Advanced reranking model for search relevance",
-      "pricing": {
-        "input": 2.0,
-        "output": 0.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 4096,
-      "max_output": 1,
-      "release_date": "2023-11-02",
-      "status": "ga",
-      "features": [
-        "reranking",
-        "search-optimization",
-        "relevance-scoring"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "Search result optimization",
-        "Relevance scoring",
-        "Information retrieval",
-        "Query optimization"
-      ],
-      "training_cutoff": "2023-09",
-      "last_updated": "2026-03-27T06:37:17.430982",
-      "unique_id": "cohere/rerank-english-v3.0"
-    },
-    {
-      "id": "rerank-multilingual-v3.0",
-      "name": "Rerank Multilingual v3.0",
-      "provider": "cohere",
-      "description": "Multilingual reranking for global search applications",
-      "pricing": {
-        "input": 2.0,
-        "output": 0.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 4096,
-      "max_output": 1,
-      "release_date": "2023-11-02",
-      "status": "ga",
-      "features": [
-        "reranking",
-        "multilingual",
-        "search-optimization"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [
-        "Global search systems",
-        "Multilingual relevance",
-        "Cross-language retrieval"
-      ],
-      "training_cutoff": "2023-09",
-      "last_updated": "2026-03-27T06:37:17.430984",
-      "unique_id": "cohere/rerank-multilingual-v3.0"
-    },
-    {
       "id": "claude-3-5-sonnet-20241022",
       "name": "Claude 3.5 Sonnet",
       "provider": "anthropic",
@@ -1079,7 +1249,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:25.884659",
+      "last_updated": "2026-03-27T12:24:34.927869",
       "unique_id": "anthropic/claude-3-5-sonnet-20241022"
     },
     {
@@ -1109,7 +1279,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:25.884672",
+      "last_updated": "2026-03-27T12:24:34.927879",
       "unique_id": "anthropic/claude-3-5-haiku-20241022"
     },
     {
@@ -1141,7 +1311,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:25.884677",
+      "last_updated": "2026-03-27T12:24:34.927883",
       "unique_id": "anthropic/claude-3-opus-20240229"
     },
     {
@@ -1171,7 +1341,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:25.884687",
+      "last_updated": "2026-03-27T12:24:34.927891",
       "unique_id": "anthropic/claude-3-sonnet-20240229"
     },
     {
@@ -1201,178 +1371,8 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-03-27T06:36:25.884692",
+      "last_updated": "2026-03-27T12:24:34.927894",
       "unique_id": "anthropic/claude-3-haiku-20240307"
-    },
-    {
-      "id": "mistral-large-latest",
-      "name": "Mistral Large",
-      "provider": "mistral",
-      "description": "Top-tier reasoning model for complex tasks",
-      "pricing": {
-        "input": 3.0,
-        "output": 9.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "reasoning",
-        "complex-tasks",
-        "multilingual",
-        "function-calling"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.273810",
-      "unique_id": "mistral/mistral-large-latest"
-    },
-    {
-      "id": "mistral-small-latest",
-      "name": "Mistral Small",
-      "provider": "mistral",
-      "description": "Cost-efficient model for simple tasks",
-      "pricing": {
-        "input": 0.2,
-        "output": 0.6,
-        "unit": "1M tokens"
-      },
-      "context_window": 32000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "fast",
-        "cost-efficient",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.273822",
-      "unique_id": "mistral/mistral-small-latest"
-    },
-    {
-      "id": "open-mixtral-8x7b",
-      "name": "Mixtral 8x7B",
-      "provider": "mistral",
-      "description": "Mixture of experts model with 8x7B parameters",
-      "pricing": {
-        "input": 0.5,
-        "output": 0.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 32000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "mixture-of-experts",
-        "efficient",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.273827",
-      "unique_id": "mistral/open-mixtral-8x7b"
-    },
-    {
-      "id": "open-mixtral-8x22b",
-      "name": "Mixtral 8x22B",
-      "provider": "mistral",
-      "description": "Large mixture of experts model with 8x22B parameters",
-      "pricing": {
-        "input": 2.0,
-        "output": 6.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 65536,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "mixture-of-experts",
-        "powerful",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.273832",
-      "unique_id": "mistral/open-mixtral-8x22b"
-    },
-    {
-      "id": "pixtral-12b",
-      "name": "Pixtral 12B",
-      "provider": "mistral",
-      "description": "Multimodal model for text and image understanding",
-      "pricing": {
-        "input": 0.15,
-        "output": 0.15,
-        "unit": "1M tokens"
-      },
-      "context_window": 128000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "chat",
-        "vision",
-        "multimodal",
-        "image-understanding"
-      ],
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.273836",
-      "unique_id": "mistral/pixtral-12b"
-    },
-    {
-      "id": "codestral-latest",
-      "name": "Codestral",
-      "provider": "mistral",
-      "description": "Specialized model for code generation",
-      "pricing": {
-        "input": 0.2,
-        "output": 0.6,
-        "unit": "1M tokens"
-      },
-      "context_window": 32000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "coding",
-        "code-generation",
-        "fill-in-the-middle",
-        "multilingual-code"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-03-27T06:37:17.273840",
-      "unique_id": "mistral/codestral-latest"
     }
   ],
   "statistics": {
@@ -1381,13 +1381,13 @@
     "paid_models": 2,
     "providers": 7,
     "provider_breakdown": {
-      "meta": 2,
       "openai": 6,
-      "huggingface": 11,
       "deepseek": 3,
+      "huggingface": 11,
+      "mistral": 6,
       "cohere": 11,
-      "anthropic": 5,
-      "mistral": 6
+      "meta": 2,
+      "anthropic": 5
     },
     "price_range": {
       "min": 0.1,
@@ -1396,28 +1396,33 @@
     },
     "features": {
       "chat": 33,
-      "coding": 13,
-      "reasoning": 12,
-      "fast": 7,
-      "multilingual": 17,
-      "creative-writing": 3,
-      "analysis": 4,
       "vision": 10,
       "function-calling": 9,
       "json-mode": 3,
       "multimodal": 4,
+      "fast": 7,
+      "reasoning": 12,
       "complex-tasks": 3,
       "thinking": 3,
       "math": 4,
+      "coding": 13,
       "stem": 1,
       "cost-effective": 2,
-      "instruct": 11,
-      "moe": 1,
       "long-context": 2,
+      "multilingual": 17,
       "transparent-reasoning": 1,
       "code-generation": 2,
       "code-analysis": 1,
       "debugging": 1,
+      "instruct": 11,
+      "moe": 1,
+      "cost-efficient": 1,
+      "mixture-of-experts": 2,
+      "efficient": 1,
+      "powerful": 1,
+      "image-understanding": 1,
+      "fill-in-the-middle": 1,
+      "multilingual-code": 1,
       "rag": 2,
       "fast-inference": 2,
       "experimental": 1,
@@ -1428,18 +1433,13 @@
       "reranking": 2,
       "search-optimization": 2,
       "relevance-scoring": 1,
+      "creative-writing": 3,
+      "analysis": 4,
       "computer-use": 1,
       "research": 1,
       "complex-reasoning": 1,
       "general-purpose": 1,
-      "simple-tasks": 1,
-      "cost-efficient": 1,
-      "mixture-of-experts": 2,
-      "efficient": 1,
-      "powerful": 1,
-      "image-understanding": 1,
-      "fill-in-the-middle": 1,
-      "multilingual-code": 1
+      "simple-tasks": 1
     },
     "modalities": {
       "text": 44,
@@ -1460,9 +1460,39 @@
     "version": "1.0",
     "data_sources": [
       {
+        "provider": "openai",
+        "file": "openai.json",
+        "last_updated": "2026-03-27T12:24:26.432575"
+      },
+      {
         "provider": "google",
         "file": "google.json",
-        "last_updated": "2026-03-27T06:36:32.501587"
+        "last_updated": "2026-03-27T12:24:41.361492"
+      },
+      {
+        "provider": "deepseek",
+        "file": "deepseek.json",
+        "last_updated": "2026-03-27T12:24:49.137895"
+      },
+      {
+        "provider": "huggingface",
+        "file": "huggingface.json",
+        "last_updated": "2026-03-27T12:25:25.967806"
+      },
+      {
+        "provider": "mistral",
+        "file": "mistral.json",
+        "last_updated": "2026-03-27T12:25:25.687675"
+      },
+      {
+        "provider": "xai",
+        "file": "xai.json",
+        "last_updated": "2026-03-27T12:25:19.870714"
+      },
+      {
+        "provider": "cohere",
+        "file": "cohere.json",
+        "last_updated": "2026-03-27T12:25:25.842519"
       },
       {
         "provider": "meta",
@@ -1470,39 +1500,9 @@
         "last_updated": "2025-07-17T16:57:28.119320"
       },
       {
-        "provider": "openai",
-        "file": "openai.json",
-        "last_updated": "2026-03-27T06:36:17.283697"
-      },
-      {
-        "provider": "huggingface",
-        "file": "huggingface.json",
-        "last_updated": "2026-03-27T06:37:17.545500"
-      },
-      {
-        "provider": "deepseek",
-        "file": "deepseek.json",
-        "last_updated": "2026-03-27T06:36:40.711684"
-      },
-      {
-        "provider": "cohere",
-        "file": "cohere.json",
-        "last_updated": "2026-03-27T06:37:17.431020"
-      },
-      {
-        "provider": "xai",
-        "file": "xai.json",
-        "last_updated": "2026-03-27T06:37:11.340776"
-      },
-      {
         "provider": "anthropic",
         "file": "anthropic.json",
-        "last_updated": "2026-03-27T06:36:25.884760"
-      },
-      {
-        "provider": "mistral",
-        "file": "mistral.json",
-        "last_updated": "2026-03-27T06:37:17.273908"
+        "last_updated": "2026-03-27T12:24:34.927956"
       }
     ]
   },
@@ -1512,30 +1512,30 @@
       "openai/gpt-4o-mini",
       "openai/gpt-4-turbo",
       "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct",
+      "mistral/pixtral-12b",
       "anthropic/claude-3-5-sonnet-20241022",
       "anthropic/claude-3-5-haiku-20241022",
       "anthropic/claude-3-opus-20240229",
       "anthropic/claude-3-sonnet-20240229",
-      "anthropic/claude-3-haiku-20240307",
-      "mistral/pixtral-12b"
+      "anthropic/claude-3-haiku-20240307"
     ],
     "coding_models": [
       "deepseek/deepseek-coder",
       "mistral/codestral-latest"
     ],
     "reasoning_models": [
-      "meta/llama-4-scout",
-      "meta/llama-4-maverick",
       "openai/o1",
       "openai/o1-mini",
       "deepseek/deepseek-chat",
       "deepseek/deepseek-reasoner",
+      "mistral/mistral-large-latest",
       "cohere/command-r-plus",
       "cohere/command-r",
       "cohere/command",
       "cohere/command-nightly",
-      "anthropic/claude-3-5-sonnet-20241022",
-      "mistral/mistral-large-latest"
+      "meta/llama-4-scout",
+      "meta/llama-4-maverick",
+      "anthropic/claude-3-5-sonnet-20241022"
     ],
     "fast_models": [
       "openai/gpt-4o-mini",
@@ -1544,41 +1544,41 @@
       "mistral/mistral-small-latest"
     ],
     "large_context": [
-      "meta/llama-4-scout",
-      "meta/llama-4-maverick",
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
       "openai/o1",
       "openai/o1-mini",
       "openai/gpt-4-turbo",
+      "deepseek/deepseek-coder",
       "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct",
       "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct",
       "huggingface/microsoft/Phi-3-medium-128k-instruct",
-      "deepseek/deepseek-coder",
+      "mistral/mistral-large-latest",
+      "mistral/pixtral-12b",
       "cohere/command-r-plus",
       "cohere/command-r",
       "cohere/command-nightly",
+      "meta/llama-4-scout",
+      "meta/llama-4-maverick",
       "anthropic/claude-3-5-sonnet-20241022",
       "anthropic/claude-3-5-haiku-20241022",
       "anthropic/claude-3-opus-20240229",
       "anthropic/claude-3-sonnet-20240229",
-      "anthropic/claude-3-haiku-20240307",
-      "mistral/mistral-large-latest",
-      "mistral/pixtral-12b"
+      "anthropic/claude-3-haiku-20240307"
     ],
     "multimodal": [
       "openai/gpt-4o",
       "openai/gpt-4o-mini",
       "openai/gpt-4-turbo",
       "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct",
+      "mistral/pixtral-12b",
       "anthropic/claude-3-5-sonnet-20241022",
       "anthropic/claude-3-5-haiku-20241022",
       "anthropic/claude-3-opus-20240229",
       "anthropic/claude-3-sonnet-20240229",
-      "anthropic/claude-3-haiku-20240307",
-      "mistral/pixtral-12b"
+      "anthropic/claude-3-haiku-20240307"
     ],
     "free_models": [
       "openai/gpt-4o",
@@ -1587,6 +1587,9 @@
       "openai/o1-mini",
       "openai/gpt-4-turbo",
       "openai/gpt-3.5-turbo",
+      "deepseek/deepseek-chat",
+      "deepseek/deepseek-reasoner",
+      "deepseek/deepseek-coder",
       "huggingface/meta-llama/Meta-Llama-3.1-405B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-70B-Instruct",
       "huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -1598,9 +1601,12 @@
       "huggingface/Qwen/Qwen2.5-7B-Instruct",
       "huggingface/meta-llama/Llama-3.2-11B-Vision-Instruct",
       "huggingface/microsoft/Phi-3-medium-128k-instruct",
-      "deepseek/deepseek-chat",
-      "deepseek/deepseek-reasoner",
-      "deepseek/deepseek-coder",
+      "mistral/mistral-large-latest",
+      "mistral/mistral-small-latest",
+      "mistral/open-mixtral-8x7b",
+      "mistral/open-mixtral-8x22b",
+      "mistral/pixtral-12b",
+      "mistral/codestral-latest",
       "cohere/command-r-plus",
       "cohere/command-r",
       "cohere/command",
@@ -1616,13 +1622,7 @@
       "anthropic/claude-3-5-haiku-20241022",
       "anthropic/claude-3-opus-20240229",
       "anthropic/claude-3-sonnet-20240229",
-      "anthropic/claude-3-haiku-20240307",
-      "mistral/mistral-large-latest",
-      "mistral/mistral-small-latest",
-      "mistral/open-mixtral-8x7b",
-      "mistral/open-mixtral-8x22b",
-      "mistral/pixtral-12b",
-      "mistral/codestral-latest"
+      "anthropic/claude-3-haiku-20240307"
     ],
     "experimental": [
       "cohere/command-nightly"
