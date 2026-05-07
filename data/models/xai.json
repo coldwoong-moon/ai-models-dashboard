@@ -5,160 +5,16 @@
     "website": "",
     "api_endpoint": ""
   },
-  "last_updated": "2026-05-06T18:43:57.300679",
+  "last_updated": "2026-05-07T00:59:42.465104",
   "models": [
     {
-      "id": "grok-43",
-      "name": "grok-43",
+      "id": "grok-2",
+      "name": "Grok-2",
       "provider": "xai",
-      "description": "xAI language model by Elon Musk",
+      "description": "Advanced reasoning model with real-time knowledge from X platform",
       "pricing": {
-        "input": 1.25,
-        "output": 2.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 1000000,
-      "max_output": 4096,
-      "release_date": "2024",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300582"
-    },
-    {
-      "id": "grok-420-multi-agent-0309",
-      "name": "grok-420-multi-agent-0309",
-      "provider": "xai",
-      "description": "xAI language model by Elon Musk",
-      "pricing": {
-        "input": 1.25,
-        "output": 2.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 2000000,
-      "max_output": 4096,
-      "release_date": "2024",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300591"
-    },
-    {
-      "id": "grok-420-0309-reasoning",
-      "name": "grok-420-0309-reasoning",
-      "provider": "xai",
-      "description": "xAI language model by Elon Musk",
-      "pricing": {
-        "input": 1.25,
-        "output": 2.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 2000000,
-      "max_output": 4096,
-      "release_date": "2024",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300594"
-    },
-    {
-      "id": "grok-420-0309-non-reasoning",
-      "name": "grok-420-0309-non-reasoning",
-      "provider": "xai",
-      "description": "xAI language model by Elon Musk",
-      "pricing": {
-        "input": 1.25,
-        "output": 2.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 2000000,
-      "max_output": 4096,
-      "release_date": "2024",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300597"
-    },
-    {
-      "id": "grok-4-1-fast-reasoning",
-      "name": "grok-4-1-fast-reasoning",
-      "provider": "xai",
-      "description": "xAI language model by Elon Musk",
-      "pricing": {
-        "input": 0.2,
-        "output": 0.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 2000000,
-      "max_output": 4096,
-      "release_date": "2024",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300599"
-    },
-    {
-      "id": "grok-4-1-fast-non-reasoning",
-      "name": "grok-4-1-fast-non-reasoning",
-      "provider": "xai",
-      "description": "xAI language model by Elon Musk",
-      "pricing": {
-        "input": 0.2,
-        "output": 0.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 2000000,
-      "max_output": 4096,
-      "release_date": "2024",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300602"
-    },
-    {
-      "id": "grok-imagine-image-quality",
-      "name": "grok-imagine-image-quality",
-      "provider": "xai",
-      "description": "xAI language model by Elon Musk",
-      "pricing": {
-        "input": 10.0,
-        "output": 30.0,
+        "input": 2.0,
+        "output": 10.0,
         "unit": "1M tokens"
       },
       "context_window": 131072,
@@ -166,23 +22,29 @@
       "release_date": "2024",
       "status": "ga",
       "features": [
-        "chat"
+        "chat",
+        "real-time",
+        "x-integration",
+        "reasoning",
+        "coding",
+        "multilingual",
+        "current-events"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300610"
+      "last_updated": "2026-05-07T00:59:42.465026"
     },
     {
-      "id": "grok-imagine-image-pro",
-      "name": "grok-imagine-image-pro",
+      "id": "grok-2-vision",
+      "name": "Grok-2 Vision",
       "provider": "xai",
-      "description": "xAI language model by Elon Musk",
+      "description": "Multimodal model with vision capabilities and real-time knowledge",
       "pricing": {
-        "input": 10.0,
-        "output": 30.0,
+        "input": 2.0,
+        "output": 10.0,
         "unit": "1M tokens"
       },
       "context_window": 131072,
@@ -190,62 +52,49 @@
       "release_date": "2024",
       "status": "ga",
       "features": [
-        "chat"
+        "chat",
+        "vision",
+        "real-time",
+        "x-integration",
+        "multimodal",
+        "reasoning",
+        "image-analysis"
       ],
       "modalities": [
-        "text"
+        "text",
+        "image"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300615"
+      "last_updated": "2026-05-07T00:59:42.465037"
     },
     {
-      "id": "grok-imagine-image",
-      "name": "grok-imagine-image",
+      "id": "grok-beta",
+      "name": "Grok-3 (Beta)",
       "provider": "xai",
-      "description": "xAI language model by Elon Musk",
+      "description": "Next generation Grok model with enhanced capabilities",
       "pricing": {
-        "input": 10.0,
-        "output": 30.0,
+        "input": 5.0,
+        "output": 15.0,
         "unit": "1M tokens"
       },
-      "context_window": 131072,
-      "max_output": 4096,
+      "context_window": 200000,
+      "max_output": 8192,
       "release_date": "2024",
-      "status": "ga",
+      "status": "beta",
       "features": [
-        "chat"
+        "chat",
+        "reasoning",
+        "advanced-capabilities",
+        "beta",
+        "next-gen"
       ],
       "modalities": [
         "text"
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300618"
-    },
-    {
-      "id": "grok-imagine-video",
-      "name": "grok-imagine-video",
-      "provider": "xai",
-      "description": "xAI language model by Elon Musk",
-      "pricing": {
-        "input": 10.0,
-        "output": 30.0,
-        "unit": "1M tokens"
-      },
-      "context_window": 131072,
-      "max_output": 4096,
-      "release_date": "2024",
-      "status": "ga",
-      "features": [
-        "chat"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-05-06T18:43:57.300620"
+      "last_updated": "2026-05-07T00:59:42.465042"
     }
   ]
 }
