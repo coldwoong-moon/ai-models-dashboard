@@ -5,7 +5,7 @@
     "website": "https://mistral.ai",
     "api_endpoint": "https://api.mistral.ai"
   },
-  "last_updated": "2026-06-05T13:15:01.543984",
+  "last_updated": "2026-06-05T18:48:31.318250",
   "models": [
     {
       "id": "mistral-large-latest",
@@ -33,7 +33,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-06-05T13:15:01.543916"
+      "last_updated": "2026-06-05T18:48:31.318176"
     },
     {
       "id": "mistral-medium",
@@ -59,34 +59,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-06-05T13:15:01.543925"
-    },
-    {
-      "id": "codestral-latest",
-      "name": "Codestral",
-      "provider": "mistral",
-      "description": "Specialized model for code generation",
-      "pricing": {
-        "input": 0.3,
-        "output": 0.9,
-        "unit": "1M tokens"
-      },
-      "context_window": 32000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "ga",
-      "features": [
-        "coding",
-        "code-generation",
-        "fill-in-the-middle",
-        "multilingual-code"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-06-05T13:15:01.543928"
+      "last_updated": "2026-06-05T18:48:31.318186"
     },
     {
       "id": "mistral-small-latest",
@@ -113,7 +86,34 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-06-05T13:15:01.543931"
+      "last_updated": "2026-06-05T18:48:31.318189"
+    },
+    {
+      "id": "codestral-latest",
+      "name": "Codestral",
+      "provider": "mistral",
+      "description": "Specialized model for code generation",
+      "pricing": {
+        "input": 0.3,
+        "output": 0.9,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "coding",
+        "code-generation",
+        "fill-in-the-middle",
+        "multilingual-code"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-06-05T18:48:31.318192"
     }
   ]
 }
