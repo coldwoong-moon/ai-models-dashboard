@@ -5,7 +5,7 @@
     "website": "https://mistral.ai",
     "api_endpoint": "https://api.mistral.ai"
   },
-  "last_updated": "2026-06-23T13:10:51.467603",
+  "last_updated": "2026-06-23T18:52:43.365835",
   "models": [
     {
       "id": "mistral-large-latest",
@@ -33,7 +33,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-06-23T13:10:51.467524"
+      "last_updated": "2026-06-23T18:52:43.365763"
     },
     {
       "id": "mistral-medium",
@@ -59,7 +59,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-06-23T13:10:51.467534"
+      "last_updated": "2026-06-23T18:52:43.365772"
     },
     {
       "id": "mistral-small-latest",
@@ -67,8 +67,8 @@
       "provider": "mistral",
       "description": "Cost-efficient model for simple tasks",
       "pricing": {
-        "input": 0.1,
-        "output": 0.3,
+        "input": 0.15,
+        "output": 0.6,
         "unit": "1M tokens"
       },
       "context_window": 32000,
@@ -86,7 +86,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-06-23T13:10:51.467538"
+      "last_updated": "2026-06-23T18:52:43.365775"
     },
     {
       "id": "codestral-latest",
@@ -113,7 +113,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-06-23T13:10:51.467541"
+      "last_updated": "2026-06-23T18:52:43.365778"
     }
   ]
 }
