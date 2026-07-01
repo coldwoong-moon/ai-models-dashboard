@@ -5,7 +5,7 @@
     "website": "https://mistral.ai",
     "api_endpoint": "https://api.mistral.ai"
   },
-  "last_updated": "2026-07-01T07:43:30.334446",
+  "last_updated": "2026-07-01T13:07:58.287689",
   "models": [
     {
       "id": "mistral-large-latest",
@@ -13,8 +13,8 @@
       "provider": "mistral",
       "description": "Top-tier reasoning model for complex tasks",
       "pricing": {
-        "input": 14.99,
-        "output": 24.99,
+        "input": 3.0,
+        "output": 9.0,
         "unit": "1M tokens"
       },
       "context_window": 128000,
@@ -33,33 +33,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-07-01T07:43:30.334365"
-    },
-    {
-      "id": "mistral-medium",
-      "name": "Mistral Medium",
-      "provider": "mistral",
-      "description": "Balanced model for general tasks",
-      "pricing": {
-        "input": 1.5,
-        "output": 7.5,
-        "unit": "1M tokens"
-      },
-      "context_window": 1000,
-      "max_output": 4096,
-      "release_date": "",
-      "status": "deprecated",
-      "features": [
-        "chat",
-        "general-purpose",
-        "multilingual"
-      ],
-      "modalities": [
-        "text"
-      ],
-      "use_cases": [],
-      "training_cutoff": "",
-      "last_updated": "2026-07-01T07:43:30.334376"
+      "last_updated": "2026-07-01T13:07:58.287608"
     },
     {
       "id": "mistral-small-latest",
@@ -67,7 +41,7 @@
       "provider": "mistral",
       "description": "Cost-efficient model for simple tasks",
       "pricing": {
-        "input": 0.15,
+        "input": 0.2,
         "output": 0.6,
         "unit": "1M tokens"
       },
@@ -86,7 +60,89 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-07-01T07:43:30.334380"
+      "last_updated": "2026-07-01T13:07:58.287617"
+    },
+    {
+      "id": "open-mixtral-8x7b",
+      "name": "Mixtral 8x7B",
+      "provider": "mistral",
+      "description": "Mixture of experts model with 8x7B parameters",
+      "pricing": {
+        "input": 0.5,
+        "output": 0.5,
+        "unit": "1M tokens"
+      },
+      "context_window": 32000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "mixture-of-experts",
+        "efficient",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-07-01T13:07:58.287621"
+    },
+    {
+      "id": "open-mixtral-8x22b",
+      "name": "Mixtral 8x22B",
+      "provider": "mistral",
+      "description": "Large mixture of experts model with 8x22B parameters",
+      "pricing": {
+        "input": 2.0,
+        "output": 6.0,
+        "unit": "1M tokens"
+      },
+      "context_window": 65536,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "mixture-of-experts",
+        "powerful",
+        "multilingual"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-07-01T13:07:58.287628"
+    },
+    {
+      "id": "pixtral-12b",
+      "name": "Pixtral 12B",
+      "provider": "mistral",
+      "description": "Multimodal model for text and image understanding",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15,
+        "unit": "1M tokens"
+      },
+      "context_window": 128000,
+      "max_output": 4096,
+      "release_date": "",
+      "status": "ga",
+      "features": [
+        "chat",
+        "vision",
+        "multimodal",
+        "image-understanding"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "use_cases": [],
+      "training_cutoff": "",
+      "last_updated": "2026-07-01T13:07:58.287631"
     },
     {
       "id": "codestral-latest",
@@ -94,8 +150,8 @@
       "provider": "mistral",
       "description": "Specialized model for code generation",
       "pricing": {
-        "input": 0.3,
-        "output": 0.9,
+        "input": 0.2,
+        "output": 0.6,
         "unit": "1M tokens"
       },
       "context_window": 32000,
@@ -113,7 +169,7 @@
       ],
       "use_cases": [],
       "training_cutoff": "",
-      "last_updated": "2026-07-01T07:43:30.334384"
+      "last_updated": "2026-07-01T13:07:58.287633"
     }
   ]
 }
